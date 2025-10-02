@@ -209,3 +209,64 @@ body {
         font-size: 17px;
     }
 }
+
+/* Legg til i styles.css */
+html,
+body {
+    min-height: 100%;
+    background: var(--off);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    html,
+    body {
+        background: #0b1220;
+    }
+
+    /* samme som resten */
+    .brand .tagline {
+        color: #cbd5e1;
+    }
+
+    /* mer kontrast på tagline */
+    .card a {
+        background: #1f2a3a;
+    }
+
+    /* bedre CTA på mørk bakgrunn */
+    .badge {
+        color: #0f172a;
+    }
+
+    /* mørk tekst på lyse badges */
+}
+
+.footer {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 24px);
+}
+
+.container {
+    padding-left: max(1.25rem, env(safe-area-inset-left));
+    padding-right: max(1.25rem, env(safe-area-inset-right));
+}
+
+.filters button {
+    min-height: 44px;
+    padding: .6rem 1rem;
+}
+
+.filters button:active,
+.card a:active {
+    transform: translateY(1px);
+}
+
+.filters {
+    position: sticky;
+    top: calc(env(safe-area-inset-top) + 8px);
+    z-index: 10;
+    backdrop-filter: blur(6px);
+    background: rgba(13, 27, 42, .35);
+    border-radius: 16px;
+    padding: .5rem;
+}
