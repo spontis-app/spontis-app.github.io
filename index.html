@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SPONTIS — What’s on. Right now.</title>
+  <meta name="description" content="Spontis: concerts, quiz nights, cinema, workshops and spontaneous fun — right now." />
+  <meta property="og:title" content="SPONTIS" />
+  <meta property="og:description" content="What’s on. Right now." />
+  <meta property="og:image" content="/assets/og-image.jpg" />
+  <link rel="icon" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="container hero">
+    <div class="brand">
+      <h1 class="logo">SPONTIS</h1>
+      <p class="tagline">What’s on. Right now.</p>
+    </div>
+    <nav class="filters">
+      <button data-filter="all" class="chip chip--active">All</button>
+      <button data-filter="date">Date night ❤️</button>
+      <button data-filter="girls">Girls' night 🍷</button>
+      <button data-filter="quiz">Quiz 🍻</button>
+      <button data-filter="cinema">Cinema 🎥</button>
+      <button data-filter="rave">Rave 🔊</button>
+      <button id="surprise" class="chip chip--accent">Inspire me</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="events" class="grid"></section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Spontis. Bergen at your fingertips.</p>
+  </footer>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
