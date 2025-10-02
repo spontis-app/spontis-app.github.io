@@ -2,8 +2,8 @@ from datetime import datetime, timedelta
 import json
 from pathlib import Path
 
-from normalize import TZ
-from sources import bergen_kino, resident_advisor
+from scraper.normalize import TZ
+from scraper.sources import bergen_kino, resident_advisor  # <-- absolute
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "events.json"
@@ -20,9 +20,7 @@ def _dedupe_keep_latest(items):
     return out
 
 def _filter_next_days(items, days=14):
-    now = datetime.now(TZ)
-    limit = now + timedelta(days=days)
-    # our 'when' is label; we keep all for now. (Optional: attach ISO for sorting later)
+    # placeholder – beholder alle foreløpig
     return items
 
 def main():
