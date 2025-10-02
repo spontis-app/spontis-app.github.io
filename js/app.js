@@ -41,3 +41,19 @@ $('#surprise').addEventListener('click', () => {
 $('#year').textContent = new Date().getFullYear();
 
 if (!list.length) { eventsEl.innerHTML = `<p style="opacity:.7">No events yet. Try another filter.</p>`; return; }
+
+async function boot() {
+    try {
+        const r = await fetch('./data/events.sample.json?v=4');
+        if (!r.ok) throw new Error();
+        window.__ALL = await r.json();
+    } catch {
+        window.__ALL = [
+            { title: "Quiz at Det Akademiske Kvarter", when: "Thu 20:00", where: "Kvarteret", tags: ["quiz"], url: "https://kvarteret.no/" },
+            { title: "Midnight Rave", when: "Fri 23:59", where: "USF Verftet", tags: ["rave"], url: "https://ra.co/" },
+            { title: "Paint n’ Sip", when: "Sat 18:00", where: "Kulturhuset", tags: ["girls", "date"], url: "https://ticketco.events/" },
+            { title: "Cinema: Sci-Fi Classics", when: "Tonight 21:15", where: "Bergen Kino", tags: ["cinema", "date"], url: "https://bergenkino.no/" }
+        ];
+    }
+    paint(window.__ALL);
+}
