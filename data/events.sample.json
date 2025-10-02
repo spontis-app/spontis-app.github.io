@@ -1,7 +1,40 @@
 [
-    {"title":"Quiz at Det Akademiske Kvarter","when":"Thu 20:00","where":"Kvarteret","tags":["quiz"],"url":"https://kvarteret.no/"},
-    {"title":"Midnight Rave","when":"Fri 23:59","where":"USF Verftet","tags":["rave"],"url":"https://ra.co/"},
-    {"title":"Paint n’ Sip","when":"Sat 18:00","where":"Kulturhuset","tags":["girls","date"],"url":"https://ticketco.events/"},
-    {"title":"Cinema: Sci-Fi Classics","when":"Tonight 21:15","where":"Bergen Kino","tags":["cinema","date"],"url":"https://bergenkino.no/"}
-  ]
-  
+    {
+        "title": "Quiz at Det Akademiske Kvarter",
+        "when": "Thu 20:00",
+        "where": "Kvarteret",
+        "tags": [
+            "quiz"
+        ],
+        "url": "https://kvarteret.no/"
+    },
+    {
+        "title": "Midnight Rave",
+        "when": "Fri 23:59",
+        "where": "USF Verftet",
+        "tags": [
+            "rave"
+        ],
+        "url": "https://ra.co/"
+    },
+    {
+        "title": "Paint n’ Sip",
+        "when": "Sat 18:00",
+        "where": "Kulturhuset",
+        "tags": [
+            "girls",
+            "date"
+        ],
+        "url": "https://ticketco.events/"
+    },
+    {
+        "title": "Cinema: Sci-Fi Classics",
+        "when": "Tonight 21:15",
+        "where": "Bergen Kino",
+        "tags": [
+            "cinema",
+            "date"
+        ],
+        "url": "https://bergenkino.no/"
+    }
+]
