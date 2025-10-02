@@ -44,7 +44,7 @@ if (!list.length) { eventsEl.innerHTML = `<p style="opacity:.7">No events yet. T
 
 async function boot() {
     try {
-        const r = await fetch('./data/events.sample.json?v=4');
+        const r = await fetch('./data/events.sample.json?v=3');
         if (!r.ok) throw new Error();
         window.__ALL = await r.json();
     } catch {
