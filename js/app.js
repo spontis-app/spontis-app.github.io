@@ -6,6 +6,26 @@ const spotlightEl = $('#spotlight');
 const clusterDeckEl = $('#cluster-deck');
 const densityEl = $('#density-map');
 
+const FALLBACK_DEFAULT_FILTERS = ['all', 'date', 'girls', 'quiz', 'cinema', 'rave', 'live', 'dj', 'jazz', 'culture', 'bar'];
+
+const derivedFilterOrder = filterBar
+    ? Array.from(filterBar.querySelectorAll('[data-filter]'))
+        .map(button => button.dataset.filter)
+        .filter(Boolean)
+        .filter(tag => tag !== 'surprise')
+    : [];
+
+const BASE_FILTERS = (derivedFilterOrder.length
+    ? Array.from(new Set([...derivedFilterOrder, ...FALLBACK_DEFAULT_FILTERS]))
+    : FALLBACK_DEFAULT_FILTERS).reduce((acc, tag) => {
+        if (tag === 'all') {
+            if (!acc.includes(tag)) acc.unshift(tag);
+        } else if (!acc.includes(tag)) {
+            acc.push(tag);
+        }
+        return acc;
+    }, []);
+
 const TAG_STYLE = {
     date: 'badge--date',
     girls: 'badge--girls',
@@ -53,8 +73,6 @@ const SMART_TAG_RULES = [
     { tag: 'lecture', pattern: /lecture|talk|samtale|conversation|panel|debate|foredrag|seminar|artist talk|workshop/iu },
     { tag: 'festival', pattern: /festival|weekender|marathon|takeover|all-?nighter/iu }
 ];
-
-const BASE_FILTERS = ['all', 'date', 'girls', 'quiz', 'cinema', 'rave', 'live', 'dj', 'jazz', 'culture', 'bar'];
 
 const VIBE_PROFILES = [
     {
