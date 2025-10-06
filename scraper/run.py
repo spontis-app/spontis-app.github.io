@@ -25,6 +25,9 @@ USE_USF = os.getenv("ENABLE_USF", "1") != "0"
 USE_BERGEN_KJOTT = os.getenv("ENABLE_BERGEN_KJOTT", "1") != "0"
 USE_KUNSTHALL = os.getenv("ENABLE_KUNSTHALL", "1") != "0"
 USE_KENNEL = os.getenv("ENABLE_IG_KENNEL", "0") == "1"
+USE_BIT = os.getenv("ENABLE_BIT", "1") != "0"
+USE_LITTERATURHUSET = os.getenv("ENABLE_LITTERATURHUSET", "1") != "0"
+USE_KULTURHUSET = os.getenv("ENABLE_KULTURHUSET", "1") != "0"
 OFFLINE_MODE = os.getenv("SPONTIS_OFFLINE", "0") == "1"
 DEFAULT_RETENTION_HOURS = int(os.getenv("SPONTIS_EVENT_RETENTION_HOURS", "6"))
 
@@ -49,6 +52,15 @@ if USE_KUNSTHALL:
 
 if USE_KENNEL:
     from scraper.sources import kennel_vinylbar
+
+if USE_BIT:
+    from scraper.sources import bit_teatergarasjen
+
+if USE_LITTERATURHUSET:
+    from scraper.sources import litteraturhuset
+
+if USE_KULTURHUSET:
+    from scraper.sources import kulturhuset
 
 
 Source = Tuple[str, Callable[[], Iterable[dict]]]
@@ -107,6 +119,12 @@ def _sources() -> List[Source]:
         sources.append(("Bergen Kjøtt", bergen_kjott.fetch))
     if USE_KUNSTHALL:
         sources.append(("Bergen Kunsthall", bergen_kunsthall.fetch))
+    if USE_BIT:
+        sources.append(("BIT Teatergarasjen", bit_teatergarasjen.fetch))
+    if USE_LITTERATURHUSET:
+        sources.append(("Litteraturhuset", litteraturhuset.fetch))
+    if USE_KULTURHUSET:
+        sources.append(("Kulturhuset i Bergen", kulturhuset.fetch))
     if USE_RA:
         sources.append(("Resident Advisor", resident_advisor.fetch))
     if USE_KENNEL:

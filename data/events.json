@@ -57,5 +57,39 @@
     "sources": [
       "Sample"
     ]
+  },
+  {
+    "source": "BIT Teatergarasjen",
+    "title": "Avant Garde Performance",
+    "url": "https://bit-teatergarasjen.no/program/avant-garde",
+    "city": "Bergen",
+    "starts_at": "2024-05-22T19:00:00+02:00",
+    "venue": "BIT Teatergarasjen",
+    "tags": [
+      "culture"
+    ]
+  },
+  {
+    "source": "Litteraturhuset i Bergen",
+    "title": "Nordic Noir Conversations",
+    "url": "https://www.litteraturhuset.no/program/nordic-noir",
+    "city": "Bergen",
+    "starts_at": "2024-05-23T19:00:00+02:00",
+    "venue": "Litteraturhuset i Bergen",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Rooftop Sessions",
+    "url": "https://www.kulturhusetibergen.no/program/rooftop-sessions",
+    "city": "Bergen",
+    "starts_at": "2024-05-25T22:00:00+02:00",
+    "venue": "Kulturhuset i Bergen",
+    "tags": [
+      "live",
+      "dj"
+    ]
   }
 ]
