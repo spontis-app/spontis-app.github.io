@@ -66,25 +66,32 @@ def _run_source(name: str, fetch: Callable[[], Iterable[dict]]) -> List[dict]:
 
 def _dedupe_key(event: dict) -> Optional[tuple]:
     title = (event.get("title") or "").strip().lower()
+    venue = (event.get("venue") or event.get("where") or "").strip().lower()
     starts_at = event.get("starts_at")
     when = event.get("when")
     url_hash = event.get("urlHash") or event.get("url_hash")
     url = event.get("url")
 
-    if not starts_at and not when:
+    if not starts_at and not when and not url_hash and not url:
         return None
 
+    date_key: Optional[str] = None
     if starts_at:
-        return ("starts", title, starts_at, url_hash or url)
+        start_str = str(starts_at).strip()
+        if start_str:
+            date_key = start_str[:10]
+
+    if date_key:
+        return ("starts", title, date_key, venue, url_hash or url)
 
     normalized_when = (when or "").strip().lower() or None
     if normalized_when:
         if url_hash or url:
-            return ("when", title, normalized_when, url_hash or url)
-        return ("when", title, normalized_when)
+            return ("when", title, normalized_when, venue, url_hash or url)
+        return ("when", title, normalized_when, venue)
 
     if url_hash or url:
-        return ("url", title, url_hash or url)
+        return ("url", title, venue, url_hash or url)
 
     return None
 

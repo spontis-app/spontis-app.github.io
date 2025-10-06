@@ -73,6 +73,25 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.filter-shell {
+    position: relative;
+}
+
+.filters--legacy {
+    position: static;
+    top: auto;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    gap: .4rem;
+}
+
+.filters--legacy .chip {
+    background: rgba(255, 255, 255, .85);
+}
+
 .chip {
     border: 1px solid #e6e6e6;
     background: #fff;

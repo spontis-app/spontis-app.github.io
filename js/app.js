@@ -1,15 +1,20 @@
 const $ = selector => document.querySelector(selector);
 
 const eventsEl = $('#events');
-const filterBar = $('#filters') || document.querySelector('.filters');
+const stickyFilterBar = $('#filter-chips');
+const legacyFilterBar = document.querySelector('#filters.filters--legacy') || document.querySelector('.filters.filters--legacy');
+const filterBar = stickyFilterBar || legacyFilterBar || document.querySelector('.filters');
+const filterContainers = [stickyFilterBar, legacyFilterBar].filter(Boolean);
 const spotlightEl = $('#spotlight');
 const clusterDeckEl = $('#cluster-deck');
 const densityEl = $('#density-map');
 
 const FALLBACK_DEFAULT_FILTERS = ['all', 'date', 'girls', 'quiz', 'cinema', 'rave', 'live', 'dj', 'jazz', 'culture', 'bar'];
 
-const derivedFilterOrder = filterBar
-    ? Array.from(filterBar.querySelectorAll('[data-filter]'))
+const seedFilterBar = legacyFilterBar || filterBar;
+
+const derivedFilterOrder = seedFilterBar
+    ? Array.from(seedFilterBar.querySelectorAll('[data-filter]'))
         .map(button => button.dataset.filter)
         .filter(Boolean)
         .filter(tag => tag !== 'surprise')
@@ -73,6 +78,37 @@ const SMART_TAG_RULES = [
     { tag: 'lecture', pattern: /lecture|talk|samtale|conversation|panel|debate|foredrag|seminar|artist talk|workshop/iu },
     { tag: 'festival', pattern: /festival|weekender|marathon|takeover|all-?nighter/iu }
 ];
+
+const TAG_ALLOW_LIST = new Set([
+    ...new Set([
+        ...Object.keys(TAG_STYLE),
+        ...FALLBACK_DEFAULT_FILTERS.filter(tag => tag !== 'all'),
+        ...SMART_TAG_RULES.map(rule => rule.tag)
+    ])
+]);
+
+function normalizeTagValue(tag) {
+    if (!tag && tag !== 0) return null;
+    const slug = String(tag)
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]+/g, ' ')
+        .trim()
+        .replace(/\s+/g, '-');
+    if (!slug || !TAG_ALLOW_LIST.has(slug)) return null;
+    return slug;
+}
+
+function sanitizeTagList(tags) {
+    if (!tags || !tags.length) return [];
+    const clean = [];
+    for (const tag of tags) {
+        const normalized = normalizeTagValue(tag);
+        if (normalized && !clean.includes(normalized)) {
+            clean.push(normalized);
+        }
+    }
+    return sortTags(clean);
+}
 
 const VIBE_PROFILES = [
     {
@@ -248,51 +284,122 @@ function compareEvents(a, b) {
     const bKey = getEventSortKey(b);
 
     if (aKey.type === 'absolute' && bKey.type === 'absolute') {
-        return aKey.value - bKey.value;
+        const diff = aKey.value - bKey.value;
+        if (diff !== 0) return diff;
     }
 
     if (aKey.type === 'absolute') return -1;
     if (bKey.type === 'absolute') return 1;
 
-    return aKey.value - bKey.value;
+    const diff = aKey.value - bKey.value;
+    if (diff !== 0) return diff;
+
+    const titleA = (a.title || '').toLowerCase();
+    const titleB = (b.title || '').toLowerCase();
+    if (titleA !== titleB) return titleA.localeCompare(titleB);
+
+    const urlA = (a.url || '').toLowerCase();
+    const urlB = (b.url || '').toLowerCase();
+    return urlA.localeCompare(urlB);
 }
 
 function sortByEventTime(events) {
     return events.slice().sort(compareEvents);
 }
 
+function getEventLinkMeta(event) {
+    if (!event || !event.url) return null;
+    const rawStatus = event.url_status;
+    const statusNumber = typeof rawStatus === 'number' ? rawStatus : Number(rawStatus);
+    const hasStatus = Number.isFinite(statusNumber);
+    const isCalendarFallback = hasStatus && statusNumber !== 200;
+    const label = isCalendarFallback ? 'Se kalender' : 'Open';
+    return { href: event.url, label, isCalendarFallback };
+}
+
+function buildDedupeKey(raw) {
+    const titleKey = normalizeText(raw.title || '');
+    const venueKey = normalizeText(raw.venue || raw.where || '');
+    let dateKey = '';
+
+    if (raw.starts_at) {
+        const parsed = new Date(raw.starts_at);
+        if (!Number.isNaN(parsed.getTime())) {
+            dateKey = parsed.toISOString().slice(0, 10);
+        }
+    }
+
+    if (!dateKey && raw.when) {
+        dateKey = String(raw.when).trim().toLowerCase();
+    }
+
+    if (!dateKey) {
+        const urlHash = raw.urlHash || raw.url_hash || raw.url;
+        if (!urlHash) {
+            return null;
+        }
+        dateKey = String(urlHash).trim().toLowerCase();
+    }
+
+    const parts = [titleKey, dateKey, venueKey].filter(Boolean);
+    return parts.length ? parts.join('|') : null;
+}
+
 function dedupeEvents(events) {
     const map = new Map();
+    const deduped = [];
+    let merged = 0;
+    let skipped = 0;
 
     for (const raw of events) {
-        const baseTitle = normalizeText(raw.title || '');
         const day = getDayInfo(raw);
-        let dateKey = '';
-        if (raw.starts_at) {
-            const parsed = new Date(raw.starts_at);
-            if (!Number.isNaN(parsed.getTime())) {
-                dateKey = parsed.toISOString().slice(0, 10);
+        const key = buildDedupeKey(raw);
+        const baseTags = sanitizeTagList(raw.tags || []);
+        const initialSources = [
+            ...(Array.isArray(raw.sources) ? raw.sources : []),
+            ...(raw.source ? [raw.source] : [])
+        ].filter(Boolean);
+        const baseSources = Array.from(new Set(initialSources));
+        const linkCandidates = Array.isArray(raw.sourceLinks)
+            ? [...raw.sourceLinks]
+            : Array.isArray(raw.source_links)
+                ? [...raw.source_links]
+                : [];
+        if (raw.source && raw.url) {
+            linkCandidates.push({ source: raw.source, url: raw.url });
+        }
+        const sourceLinks = [];
+        for (const entry of linkCandidates) {
+            if (!entry || !entry.url) continue;
+            if (!sourceLinks.some(item => item.url === entry.url)) {
+                sourceLinks.push({ source: entry.source || raw.source, url: entry.url });
             }
         }
-        if (!dateKey) dateKey = day?.short || '';
-        const venueKey = normalizeText(raw.venue || raw.where || '');
-        const key = [baseTitle, dateKey, venueKey].filter(Boolean).join('|') || baseTitle;
 
         const next = {
             ...raw,
-            tags: Array.from(new Set(raw.tags || [])),
-            sources: raw.source ? [raw.source] : [],
-            sourceLinks: raw.source && raw.url ? [{ source: raw.source, url: raw.url }] : [],
+            tags: baseTags,
+            sources: baseSources,
+            sourceLinks,
             dayIndex: day?.index ?? null
         };
 
+        if (!key) {
+            skipped += 1;
+            deduped.push(next);
+            continue;
+        }
+
         if (!map.has(key)) {
             map.set(key, next);
+            deduped.push(next);
             continue;
         }
 
         const existing = map.get(key);
-        existing.tags = Array.from(new Set([...(existing.tags || []), ...(next.tags || [])]));
+        merged += 1;
+
+        existing.tags = sanitizeTagList([...(existing.tags || []), ...(next.tags || [])]);
 
         const mergedSources = new Set([...(existing.sources || []), ...(next.sources || [])].filter(Boolean));
         existing.sources = Array.from(mergedSources);
@@ -305,14 +412,24 @@ function dedupeEvents(events) {
         }
 
         if (!existing.url && next.url) existing.url = next.url;
+        if (existing.url_status == null && next.url_status != null) existing.url_status = next.url_status;
+        if (existing.url_status && Number(existing.url_status) !== 200 && next.url_status && Number(next.url_status) === 200 && next.url) {
+            existing.url = next.url;
+            existing.url_status = next.url_status;
+        }
         if (!existing.when && next.when) existing.when = next.when;
         if (!existing.where && next.where) existing.where = next.where;
         if (!existing.description && next.description) existing.description = next.description;
         if (!existing.summary && next.summary) existing.summary = next.summary;
         if (existing.dayIndex == null && next.dayIndex != null) existing.dayIndex = next.dayIndex;
+        if (!existing.ticket_url && next.ticket_url) existing.ticket_url = next.ticket_url;
     }
 
-    return Array.from(map.values());
+    if (merged || skipped) {
+        console.info(`Dedupe results → merged: ${merged}, kept: ${deduped.length}, skipped: ${skipped}`);
+    }
+
+    return deduped;
 }
 
 function applySmartTags(event, combinedText) {
@@ -322,7 +439,7 @@ function applySmartTags(event, combinedText) {
             tags.add(rule.tag);
         }
     }
-    event.tags = sortTags(tags);
+    event.tags = sanitizeTagList([...tags]);
 }
 
 function detectVibe(event, combinedText) {
@@ -407,8 +524,9 @@ function paint(list) {
             ? `<div class="card__sources">Kilder: ${event.sources.join(' + ')}</div>`
             : '';
         const whenWhere = [event.when, event.where].filter(Boolean).join(' • ');
-        const link = event.url
-            ? `<a href="${event.url}" target="_blank" rel="noopener">Open</a>`
+        const linkMeta = getEventLinkMeta(event);
+        const link = linkMeta
+            ? `<a href="${linkMeta.href}" target="_blank" rel="noopener">${linkMeta.label}</a>`
             : '';
 
         return `<article class="card" data-index="${idx}">
@@ -422,9 +540,11 @@ function paint(list) {
 }
 
 function setActive(tag) {
-    if (!filterBar) return;
-    filterBar.querySelectorAll('.chip').forEach(button => {
-        button.classList.toggle('chip--active', button.dataset.filter === tag);
+    if (!filterContainers.length) return;
+    filterContainers.forEach(container => {
+        container.querySelectorAll('.chip').forEach(button => {
+            button.classList.toggle('chip--active', button.dataset.filter === tag);
+        });
     });
 }
 
@@ -454,7 +574,10 @@ function applyFilter(tag) {
 function showSpotlight(event) {
     if (!spotlightEl) return;
     const whenWhere = [event.when, event.where].filter(Boolean).join(' • ');
-    const link = event.url ? `<a class="spotlight__link" href="${event.url}" target="_blank" rel="noopener">Open event</a>` : '';
+    const linkMeta = getEventLinkMeta(event);
+    const link = linkMeta
+        ? `<a class="spotlight__link" href="${linkMeta.href}" target="_blank" rel="noopener">${linkMeta.isCalendarFallback ? 'Se kalender' : 'Open event'}</a>`
+        : '';
     const metaHtml = whenWhere ? `<div class="spotlight__meta">${whenWhere}</div>` : '';
     const html = `<strong>Inspire me</strong>
     <div class="spotlight__title">${event.title}</div>
@@ -664,16 +787,18 @@ async function boot() {
 
 boot();
 
-filterBar?.addEventListener('click', (e) => {
-    const button = e.target.closest('button');
-    if (!button) return;
-    if (button.dataset.filter) {
-        applyFilter(button.dataset.filter);
-        return;
-    }
-    if (button.id === 'surprise') {
-        handleSurprise();
-    }
+filterContainers.forEach(container => {
+    container.addEventListener('click', (e) => {
+        const button = e.target.closest('button');
+        if (!button) return;
+        if (button.dataset.filter) {
+            applyFilter(button.dataset.filter);
+            return;
+        }
+        if (button.id === 'surprise') {
+            handleSurprise();
+        }
+    });
 });
 
 $('#year').textContent = new Date().getFullYear();

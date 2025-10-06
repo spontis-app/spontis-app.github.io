@@ -27,7 +27,7 @@
             <h1 class="logo">SPONTIS</h1>
             <p class="tagline">What’s on. Right now.</p>
         </div>
-        <nav class="filters" aria-label="Filter events">
+        <nav id="filters" class="filters filters--legacy" aria-label="Filter events">
             <button data-filter="all" class="chip chip--active">All</button>
             <button data-filter="date" class="chip">Date night ❤️</button>
             <button data-filter="girls" class="chip">Girls' night 🍷</button>
@@ -37,6 +37,10 @@
             <button id="surprise" class="chip chip--accent">Inspire me</button>
         </nav>
     </header>
+
+    <div class="container filter-shell">
+        <nav id="filter-chips" class="filters" aria-label="Sticky filter chips"></nav>
+    </div>
 
     <main class="container">
         <section id="cluster-deck" class="cluster-deck" aria-label="Event vibes"></section>

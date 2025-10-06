@@ -50,17 +50,22 @@ def _extract_datetime(node: Tag) -> Optional[datetime]:
     return None
 
 
-def _fetch_html(url: str) -> Optional[BeautifulSoup]:
+def _fetch_page(url: str) -> Tuple[Optional[BeautifulSoup], Optional[int]]:
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-        resp.raise_for_status()
+        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
     except Exception:
-        return None
-    return BeautifulSoup(resp.text, "html.parser")
+        return None, None
+
+    status = resp.status_code
+    soup = BeautifulSoup(resp.text, "html.parser") if resp.text else None
+    return soup, status
 
 
-def _detail_datetime(url: str) -> Optional[datetime]:
-    soup = _fetch_html(url)
+def _detail_datetime(url: str, soup: Optional[BeautifulSoup] = None) -> Optional[datetime]:
+    if soup is None:
+        soup, status = _fetch_page(url)
+        if status and status >= 400:
+            return None
     if not soup:
         return None
 
@@ -76,7 +81,7 @@ def _detail_datetime(url: str) -> Optional[datetime]:
 
 
 def fetch() -> list[dict]:
-    soup = _fetch_html(PROGRAM_URL)
+    soup, _ = _fetch_page(PROGRAM_URL)
     if not soup:
         return []
 
@@ -100,20 +105,52 @@ def fetch() -> list[dict]:
             continue
         seen.add(key)
 
+        detail_soup, url_status = _fetch_page(absolute_url)
+
         starts_at = _extract_datetime(link)
         if not starts_at:
-            starts_at = _detail_datetime(absolute_url)
+            starts_at = _detail_datetime(absolute_url, detail_soup)
 
         extra = {"where": "Bergen Kjøtt"}
         label = to_weekday_label(starts_at)
         if label:
             extra["when"] = label
 
+        if url_status is not None:
+            extra["url_status"] = url_status
+        ticket_url: Optional[str] = None
+        if url_status and url_status >= 400:
+            # Look for TicketCo alternatives near the listing or within the detail page
+            neighbours = []
+            parent = link.parent if isinstance(link.parent, Tag) else None
+            if parent:
+                neighbours.extend(parent.select("a[href]"))
+            if detail_soup:
+                neighbours.extend(detail_soup.select("a[href]"))
+
+            for candidate in neighbours:
+                href = candidate.get("href")
+                if not href or "ticketco" not in href.lower():
+                    continue
+                ticket_url = urljoin(absolute_url, href)
+                break
+
+        if ticket_url:
+            extra["ticket_url"] = ticket_url
+            final_url = ticket_url
+        elif url_status and url_status >= 400:
+            final_url = PROGRAM_URL
+        else:
+            final_url = absolute_url
+
+        if url_status and url_status >= 400:
+            extra["url_original"] = absolute_url
+
         events.append(
             build_event(
                 source="Bergen Kjøtt",
                 title=title,
-                url=absolute_url,
+                url=final_url,
                 starts_at=starts_at,
                 venue="Bergen Kjøtt",
                 tags=["culture"],
