@@ -20,3 +20,4 @@ Static site (GitHub Pages) · Vanilla JS/CSS · Data i `/data/events.sample.json
   - `ENABLE_IG_KENNEL` — Kennel Vinylbar (default av; forvent 403 mulig)
   - `SCRAPE_RA` må være aktivert for RA, de andre fungerer uavhengig.
 - Runneren deduper på (`title`, `starts_at`, `url`), logger antall per kilde og feiler ikke om én kilde skulle falle igjennom — du får alltid gyldig JSON (tom liste om det ikke finnes events).
+- Offline test? Kjør `python -m scraper.run --offline --no-update-views` for å skrive sample-data lokalt uten nettverkskall.
