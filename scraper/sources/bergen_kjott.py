@@ -13,6 +13,27 @@ from bs4 import BeautifulSoup, Tag
 from scraper.normalize import build_event, to_weekday_label
 
 PROGRAM_URL = "https://www.bergenkjott.org/kalendar"
+_URL_ATTRS = (
+    "data-item-url",
+    "data-url",
+    "data-ajax-url",
+    "data-ajax-route",
+    "data-controller-url",
+    "data-lightbox-url",
+    "data-record-url",
+)
+TICKET_KEYWORDS = (
+    "ticket",
+    "billet",
+    "tikkio",
+    "ticketco",
+    "eventbrite",
+    "dice.fm",
+    "hoopla",
+    "checkin",
+    "billetto",
+    "facebook.com/events",
+)
 HEADERS = {
     "User-Agent": "SpontisBot/0.2 (+https://spontis-app.github.io)",
     "Accept-Language": "nb,en;q=0.8",
@@ -59,20 +80,76 @@ def _fetch_html(url: str) -> Optional[BeautifulSoup]:
     return BeautifulSoup(resp.text, "html.parser")
 
 
-def _detail_datetime(url: str) -> Optional[datetime]:
+def _detail_info(url: str) -> tuple[Optional[BeautifulSoup], Optional[datetime]]:
     soup = _fetch_html(url)
     if not soup:
-        return None
+        return None, None
 
     for selector in ("time", "meta[itemprop='startDate']", "meta[property='event:start_time']"):
         for tag in soup.select(selector):
             stamp = tag.get("datetime") or tag.get("content")
             dt = _parse_datetime(stamp) or _parse_datetime(tag.get_text(" ", strip=True))
             if dt:
-                return dt
+                return soup, dt
 
     text = " ".join(soup.stripped_strings)
-    return _parse_datetime(text)
+    return soup, _parse_datetime(text)
+
+
+def _normalize_internal_url(url: str) -> Optional[str]:
+    if not url:
+        return None
+    absolute = urljoin(PROGRAM_URL, url)
+    if absolute.rstrip("/#") in {"https://www.bergenkjott.org", PROGRAM_URL}:
+        return None
+    return absolute
+
+
+def _resolve_link_url(link: Tag) -> Optional[str]:
+    candidates = []
+    href = link.get("href")
+    if href:
+        candidates.append(href)
+
+    for attr in _URL_ATTRS:
+        value = link.get(attr)
+        if value:
+            candidates.append(value)
+
+    for candidate in candidates:
+        absolute = urljoin(PROGRAM_URL, candidate)
+        if absolute.startswith("http"):
+            normalized = _normalize_internal_url(absolute)
+            if normalized:
+                return normalized
+            if not absolute.startswith("https://www.bergenkjott.org"):
+                return absolute
+    return None
+
+
+def _find_useful_link(original_url: str, soup: Optional[BeautifulSoup]) -> str:
+    if not soup:
+        return original_url
+
+    for selector in ("link[rel='canonical']", "meta[property='og:url']", "meta[name='twitter:url']"):
+        for tag in soup.select(selector):
+            candidate = tag.get("href") or tag.get("content")
+            normalized = _normalize_internal_url(candidate) if candidate else None
+            if normalized and normalized != original_url:
+                return normalized
+
+    for anchor in soup.select("a[href]"):
+        href = anchor.get("href")
+        if not href:
+            continue
+        text = anchor.get_text(" ", strip=True).lower()
+        lowered = href.lower()
+        if any(keyword in lowered or keyword in text for keyword in TICKET_KEYWORDS):
+            resolved = urljoin(original_url, href)
+            if resolved:
+                return resolved
+
+    return original_url
 
 
 def fetch() -> list[dict]:
@@ -83,12 +160,9 @@ def fetch() -> list[dict]:
     events: list[dict] = []
     seen: set[Tuple[str, str]] = set()
 
-    for link in soup.select("a[href]"):
-        href = link.get("href")
-        if not href:
-            continue
-        absolute_url = urljoin(PROGRAM_URL, href)
-        if not absolute_url.startswith("https://www.bergenkjott.org"):
+    for link in soup.select("a"):
+        absolute_url = _resolve_link_url(link)
+        if not absolute_url:
             continue
 
         title = link.get_text(" ", strip=True)
@@ -101,8 +175,22 @@ def fetch() -> list[dict]:
         seen.add(key)
 
         starts_at = _extract_datetime(link)
-        if not starts_at:
-            starts_at = _detail_datetime(absolute_url)
+        detail_soup: Optional[BeautifulSoup] = None
+        is_internal = absolute_url.startswith("https://www.bergenkjott.org")
+        if is_internal:
+            if not starts_at:
+                detail_soup, starts_at = _detail_info(absolute_url)
+            else:
+                detail_soup, _ = _detail_info(absolute_url)
+        elif not starts_at:
+            # External links won't contain event metadata, so skip if we
+            # couldn't read a time from the calendar listing itself.
+            continue
+
+        if starts_at is None:
+            continue
+
+        final_url = _find_useful_link(absolute_url, detail_soup) if is_internal else absolute_url
 
         extra = {"where": "Bergen Kjøtt"}
         label = to_weekday_label(starts_at)
@@ -113,7 +201,7 @@ def fetch() -> list[dict]:
             build_event(
                 source="Bergen Kjøtt",
                 title=title,
-                url=absolute_url,
+                url=final_url,
                 starts_at=starts_at,
                 venue="Bergen Kjøtt",
                 tags=["culture"],
