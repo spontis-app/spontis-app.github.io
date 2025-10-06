@@ -23,9 +23,19 @@
 
 <body>
     <header class="container hero">
-        <div class="brand">
-            <h1 class="logo">SPONTIS</h1>
-            <p class="tagline">What’s on. Right now.</p>
+        <div class="hero__content">
+            <div class="brand">
+                <h1 class="logo">SPONTIS</h1>
+                <p class="tagline">What’s on. Right now.</p>
+            </div>
+            <p class="hero__lede">Curated concerts, cinema, quizzes and more popping up across Bergen—updated so you can go now.</p>
+            <div class="hero__actions">
+                <div class="hero__stat" aria-live="polite">
+                    <span class="hero__stat-value" id="event-count">0</span>
+                    <span class="hero__stat-label" id="dataset-label">Events this week</span>
+                </div>
+                <a class="hero__cta" href="mailto:hello@spontis.app?subject=Submit%20an%20event">Submit an event</a>
+            </div>
         </div>
         <nav class="filters">
             <button data-filter="all" data-scope="dataset" class="chip chip--active">All</button>
@@ -51,6 +61,10 @@
 
     <footer class="container footer">
         <p>© <span id="year"></span> Spontis. Bergen at your fingertips.</p>
+        <p class="footer__links">
+            <a class="footer__link" href="mailto:hello@spontis.app">Contact</a>
+            <a class="footer__link" href="https://instagram.com/spontisapp" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </p>
     </footer>
 
     <script src="/js/app.js" defer></script>

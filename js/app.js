@@ -4,9 +4,23 @@ const filterBar = document.querySelector('.filters');
 const spotlightEl = $('#spotlight');
 const heatmapEl = $('#heatmap');
 const heatmapGrid = $('#heatmap-bars');
+const eventCountEl = $('#event-count');
+const datasetLabelEl = $('#dataset-label');
 
 const DATASET_FILTERS = new Set(['all', 'today', 'tonight']);
 const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const DATASET_LABELS = {
+    all: 'Events this week',
+    today: 'Happening today',
+    tonight: 'Happening tonight'
+};
+const TAG_LABELS = {
+    date: 'Date night',
+    girls: "Girls' night",
+    quiz: 'Quiz',
+    cinema: 'Cinema',
+    rave: 'Rave'
+};
 
 const TAG_STYLE = {
     date: 'badge--date', girls: 'badge--girls', quiz: 'badge--quiz',
@@ -21,9 +35,14 @@ function paint(list) {
     eventsEl.innerHTML = '';
 
     if (!list.length) {
-        const emptyState = document.createElement('p');
-        emptyState.style.opacity = '.7';
-        emptyState.textContent = 'No events yet. Try another filter or check back later.';
+        const emptyState = document.createElement('article');
+        emptyState.className = 'card card--empty';
+        const title = document.createElement('h3');
+        title.textContent = 'No events yet';
+        emptyState.appendChild(title);
+        const copy = document.createElement('p');
+        copy.textContent = 'Try another filter or check back shortly for new happenings.';
+        emptyState.appendChild(copy);
         eventsEl.appendChild(emptyState);
         return;
     }
@@ -35,27 +54,44 @@ function paint(list) {
         article.className = 'card';
         article.dataset.index = String(idx);
 
-        const meta = document.createElement('span');
-        meta.className = 'meta';
-        (event.tags || []).forEach(tag => {
-            const badge = document.createElement('span');
-            const classes = ['badge'];
-            if (TAG_STYLE[tag]) classes.push(TAG_STYLE[tag]);
-            badge.className = classes.join(' ');
-            badge.textContent = tag;
-            meta.appendChild(badge);
-        });
-        article.appendChild(meta);
+        const tags = Array.isArray(event.tags) ? event.tags.filter(Boolean) : [];
+        if (tags.length) {
+            const meta = document.createElement('span');
+            meta.className = 'meta';
+            tags.forEach(tag => {
+                const badge = document.createElement('span');
+                const classes = ['badge'];
+                if (TAG_STYLE[tag]) classes.push(TAG_STYLE[tag]);
+                badge.className = classes.join(' ');
+                badge.textContent = TAG_LABELS[tag] || tag;
+                meta.appendChild(badge);
+            });
+            article.appendChild(meta);
+        }
 
         const title = document.createElement('h3');
         title.textContent = event.title || 'Untitled event';
         article.appendChild(title);
 
-        const details = [event.when, event.where].filter(Boolean).join(' • ');
-        if (details) {
-            const detailEl = document.createElement('p');
-            detailEl.textContent = details;
-            article.appendChild(detailEl);
+        const detailsWrapper = document.createElement('div');
+        detailsWrapper.className = 'card__details';
+
+        if (event.when) {
+            const timeDetail = document.createElement('p');
+            timeDetail.className = 'card__detail card__detail--time';
+            timeDetail.textContent = event.when;
+            detailsWrapper.appendChild(timeDetail);
+        }
+
+        if (event.where) {
+            const whereDetail = document.createElement('p');
+            whereDetail.className = 'card__detail card__detail--location';
+            whereDetail.textContent = event.where;
+            detailsWrapper.appendChild(whereDetail);
+        }
+
+        if (detailsWrapper.childElementCount) {
+            article.appendChild(detailsWrapper);
         }
 
         if (event.url) {
@@ -63,7 +99,13 @@ function paint(list) {
             link.href = event.url;
             link.target = '_blank';
             link.rel = 'noopener noreferrer';
-            link.textContent = 'Open';
+            link.className = 'card__cta';
+            link.textContent = 'Open event';
+            const icon = document.createElement('span');
+            icon.className = 'card__cta-icon';
+            icon.setAttribute('aria-hidden', 'true');
+            icon.textContent = '→';
+            link.appendChild(icon);
             article.appendChild(link);
         }
 
@@ -71,6 +113,11 @@ function paint(list) {
     });
 
     eventsEl.appendChild(fragment);
+}
+
+function updateHeroStats(count, label) {
+    if (eventCountEl) eventCountEl.textContent = String(count);
+    if (datasetLabelEl) datasetLabelEl.textContent = label;
 }
 
 function setActive(value, scope) {
@@ -108,6 +155,7 @@ function applyFilter(tag) {
         setActive(null, 'tag');
         currentList = data;
         clearSpotlight();
+        updateHeroStats(currentList.length, DATASET_LABELS[activeDatasetKey] || DATASET_LABELS.all);
         return;
     }
 
@@ -118,12 +166,20 @@ function applyFilter(tag) {
     setActive(tag, 'tag');
     currentList = data;
     clearSpotlight();
+    const label = TAG_LABELS[tag] ? `Matching “${TAG_LABELS[tag]}”` : `Matching “${tag}”`;
+    updateHeroStats(currentList.length, label);
 }
 
 function showSpotlight(event) {
     if (!spotlightEl) return;
 
     spotlightEl.replaceChildren();
+
+    const icon = document.createElement('span');
+    icon.className = 'spotlight__icon';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = '✨';
+    spotlightEl.appendChild(icon);
 
     const intro = document.createElement('strong');
     intro.textContent = 'Inspire me';
