@@ -60,7 +60,16 @@
             <div id="heatmap-bars" class="heatmap__grid" role="list"></div>
         </section>
         <div id="spotlight" class="spotlight" role="status" aria-live="polite" hidden></div>
-        <section id="events" class="grid"></section>
+        <section class="events-shell" aria-label="Browse events">
+            <header class="events-shell__header">
+                <div class="events-shell__titles">
+                    <p class="events-shell__eyebrow">Browse</p>
+                    <h2 class="events-shell__title">This week</h2>
+                </div>
+                <p class="events-shell__meta">Fresh drops from Bergen’s independent venues, updated throughout the day.</p>
+            </header>
+            <section id="events" class="grid" role="list"></section>
+        </section>
         <section class="about" id="about">
             <h2>About SPONTIS</h2>
             <p class="about__text">SPONTIS is a lightweight, zero-login guide to what’s happening in Bergen right now. We collect public schedules from trusted organisers, normalise timezones, validate the schema and remove past events automatically so the list stays fresh.</p>
