@@ -1,16 +1,17 @@
 from datetime import datetime
-import requests
-from bs4 import BeautifulSoup
+
 import dateparser
+from bs4 import BeautifulSoup
+
 from scraper.normalize import TZ, build_event, to_weekday_label
+from scraper.http import get as http_get
 
 HEADERS = {"User-Agent":"SpontisBot/0.1 (+https://spontis-app.github.io)","Accept-Language":"en,nb;q=0.7"}
 BASE = "https://ra.co"
 CITY_URL = f"{BASE}/events/no/bergen"
 
 def fetch() -> list[dict]:
-    r = requests.get(CITY_URL, headers=HEADERS, timeout=20)
-    r.raise_for_status()
+    r = http_get(CITY_URL, headers=HEADERS, timeout=20)
     soup = BeautifulSoup(r.text, "html.parser")
 
     items = []

@@ -7,10 +7,10 @@ from typing import Iterable, Optional, Tuple
 from urllib.parse import urljoin
 
 import dateparser
-import requests
 from bs4 import BeautifulSoup, Tag
 
 from scraper.normalize import build_event, to_weekday_label
+from scraper.http import get as http_get
 
 EVENT_URLS = [
     "https://www.kunsthall.no/en/events/",
@@ -55,8 +55,7 @@ def _extract_datetime(node: Tag) -> Optional[datetime]:
 
 def _fetch(url: str) -> Optional[BeautifulSoup]:
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-        resp.raise_for_status()
+        resp = http_get(url, headers=HEADERS, timeout=TIMEOUT)
     except Exception:
         return None
     return BeautifulSoup(resp.text, "html.parser")

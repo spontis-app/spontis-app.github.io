@@ -1,18 +1,23 @@
-# scraper/run.py
+"""SPONTIS scraper entry point with validation and view generation."""
 from __future__ import annotations
 
+import argparse
 import json
+import logging
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Callable, Iterable, List, Optional, Tuple
 
+from scraper.normalize import DEFAULT_CITY, TZ as NORMALIZE_TZ
 from scraper.sources import bergen_kino, ostre
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "events.json"
+SAMPLE_PATH = ROOT / "data" / "events.sample.json"
+TZ = NORMALIZE_TZ
 
 USE_RA = os.getenv("SCRAPE_RA", "0") == "1"
 USE_OSTRE = os.getenv("SCRAPE_OSTRE", "1") != "0"
@@ -20,6 +25,15 @@ USE_USF = os.getenv("ENABLE_USF", "1") != "0"
 USE_BERGEN_KJOTT = os.getenv("ENABLE_BERGEN_KJOTT", "1") != "0"
 USE_KUNSTHALL = os.getenv("ENABLE_KUNSTHALL", "1") != "0"
 USE_KENNEL = os.getenv("ENABLE_IG_KENNEL", "0") == "1"
+OFFLINE_MODE = os.getenv("SPONTIS_OFFLINE", "0") == "1"
+DEFAULT_RETENTION_HOURS = int(os.getenv("SPONTIS_EVENT_RETENTION_HOURS", "6"))
+
+LOG_LEVEL = os.getenv("SPONTIS_LOG_LEVEL", "INFO").upper()
+logging.basicConfig(
+    level=getattr(logging, LOG_LEVEL, logging.INFO),
+    format="%(asctime)s %(levelname)s %(name)s - %(message)s",
+)
+LOGGER = logging.getLogger("spontis.scraper")
 
 if USE_RA:
     from scraper.sources import resident_advisor
@@ -38,6 +52,49 @@ if USE_KENNEL:
 
 
 Source = Tuple[str, Callable[[], Iterable[dict]]]
+REQUIRED_FIELDS = ("source", "title", "url")
+STRING_FIELDS = {
+    "venue",
+    "city",
+    "when",
+    "where",
+    "description",
+    "summary",
+    "image",
+    "price",
+    "timezone",
+    "category",
+    "series",
+    "region",
+    "url_original",
+    "ticket_url",
+}
+INTEGER_FIELDS = {"url_status"}
+BOOLEAN_FIELDS = {"free"}
+IDENTIFIER_FIELDS = {"urlHash", "url_hash"}
+SOURCE_LINK_KEYS = {"sourceLinks", "source_links"}
+
+CATEGORY_PATTERNS = {
+    "techno": re.compile(
+        r"\b(dj|club|techno|rave|house|electro|afterparty|warehouse|disco)\b",
+        re.IGNORECASE,
+    ),
+    "jazz": re.compile(r"\bjazz\b", re.IGNORECASE),
+    "lecture": re.compile(
+        r"\b(lecture|talk|seminar|conference|panel|debate|foredrag|samtale)\b",
+        re.IGNORECASE,
+    ),
+    "festival": re.compile(r"\b(festival|weekender)\b", re.IGNORECASE),
+    "underground": re.compile(r"\b(underground|basement|secret|warehouse)\b", re.IGNORECASE),
+    "family": re.compile(r"\b(family|familie|kids|children|barn|ungdom)\b", re.IGNORECASE),
+    "culture": re.compile(
+        r"\b(art|kunsthall|museum|culture|utstilling|performance|kunst|lecture|talk|seminar|conference|panel|debate|foredrag|samtale)\b",
+        re.IGNORECASE,
+    ),
+}
+LATE_NIGHT_KEYWORDS = re.compile(
+    r"\b(late night|afterparty|after-hours|night session)\b", re.IGNORECASE
+)
 
 
 def _sources() -> List[Source]:
@@ -57,14 +114,208 @@ def _sources() -> List[Source]:
     return sources
 
 
+def _load_sample_events() -> List[dict]:
+    if not SAMPLE_PATH.exists():
+        LOGGER.warning("Sample data file %s is missing", SAMPLE_PATH)
+        return []
+
+    try:
+        data = json.loads(SAMPLE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        LOGGER.error("Failed to parse sample events: %s", exc)
+        return []
+
+    hydrated: List[dict] = []
+    for raw in data:
+        if not isinstance(raw, dict):
+            continue
+        sample = dict(raw)
+        sample.setdefault("source", "Sample")
+        sample.setdefault("city", DEFAULT_CITY)
+        sample.setdefault("url", sample.get("url") or "https://spontis-app.github.io/")
+        hydrated.append(sample)
+    return hydrated
+
+
 def _run_source(name: str, fetch: Callable[[], Iterable[dict]]) -> List[dict]:
+    LOGGER.info("Fetching %s", name)
     try:
         events = list(fetch())
-        print(f"{name}: {len(events)} events")
+        LOGGER.info("%s: %d events", name, len(events))
         return events
-    except Exception as exc:
-        print(f"{name} failed: {exc}")
+    except Exception:
+        LOGGER.exception("%s failed", name)
         return []
+
+
+def _append_unique(values: List[str], new_value: Optional[str]) -> None:
+    if not new_value:
+        return
+    if new_value not in values:
+        values.append(new_value)
+
+
+def _normalize_tags(tags: Iterable[str]) -> List[str]:
+    cleaned = sorted({tag.strip() for tag in tags if tag and str(tag).strip()})
+    return cleaned
+
+
+def _coerce_datetime(value: object, field: str, index: int) -> Optional[datetime]:
+    if value is None:
+        return None
+    if isinstance(value, datetime):
+        dt = value
+    elif isinstance(value, str):
+        try:
+            dt = datetime.fromisoformat(value)
+        except ValueError:
+            LOGGER.warning("Event %s has invalid %s: %r", index, field, value)
+            return None
+    else:
+        LOGGER.warning("Event %s has unsupported %s type: %r", index, field, type(value))
+        return None
+
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=TZ)
+    return dt.astimezone(TZ)
+
+
+def _clean_string(value: object) -> Optional[str]:
+    if value is None:
+        return None
+    if isinstance(value, (int, float)) and not isinstance(value, bool):
+        value = str(value)
+    if isinstance(value, bool):
+        value = "true" if value else "false"
+    if not isinstance(value, str):
+        return None
+    cleaned = value.strip()
+    return cleaned or None
+
+
+def _coerce_int(value: object) -> Optional[int]:
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return int(value)
+    if isinstance(value, (int, float)):
+        return int(value)
+    if isinstance(value, str) and value.strip():
+        try:
+            return int(float(value))
+        except ValueError:
+            return None
+    return None
+
+
+def _coerce_bool(value: object) -> Optional[bool]:
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return bool(value)
+    if isinstance(value, str):
+        lowered = value.strip().lower()
+        if lowered in {"true", "yes", "1"}:
+            return True
+        if lowered in {"false", "no", "0"}:
+            return False
+    return None
+
+
+def _sanitize_source_links(event: dict, target: dict) -> None:
+    for key in SOURCE_LINK_KEYS:
+        links = event.get(key)
+        if not isinstance(links, Iterable):
+            continue
+        cleaned_links = []
+        for entry in links:
+            if not isinstance(entry, dict):
+                continue
+            url = _clean_string(entry.get("url"))
+            if not url:
+                continue
+            label = _clean_string(entry.get("source") or entry.get("label"))
+            payload = {"url": url}
+            if label:
+                payload["source"] = label
+            cleaned_links.append(payload)
+        if cleaned_links:
+            target["sourceLinks"] = cleaned_links
+            break
+
+
+def _sanitize_event(raw: dict, index: int) -> Optional[dict]:
+    if not isinstance(raw, dict):
+        LOGGER.warning("Event %s is not a mapping: %r", index, type(raw))
+        return None
+
+    event = dict(raw)
+    cleaned: dict = {}
+
+    for field in REQUIRED_FIELDS:
+        value = _clean_string(event.get(field))
+        if not value:
+            LOGGER.warning("Event %s missing required field %s", index, field)
+            return None
+        cleaned[field] = value
+
+    city = _clean_string(event.get("city")) or DEFAULT_CITY
+    cleaned["city"] = city
+
+    for field in STRING_FIELDS:
+        value = _clean_string(event.get(field))
+        if value:
+            cleaned[field] = value
+
+    for field in IDENTIFIER_FIELDS:
+        value = _clean_string(event.get(field))
+        if value:
+            cleaned[field] = value
+
+    for field in INTEGER_FIELDS:
+        value = _coerce_int(event.get(field))
+        if value is not None:
+            cleaned[field] = value
+
+    for field in BOOLEAN_FIELDS:
+        value = _coerce_bool(event.get(field))
+        if value is not None:
+            cleaned[field] = value
+
+    tags = event.get("tags")
+    if isinstance(tags, Iterable) and not isinstance(tags, (str, bytes)):
+        cleaned_tags = _normalize_tags(str(tag) for tag in tags)
+        if cleaned_tags:
+            cleaned["tags"] = cleaned_tags
+
+    sources: List[str] = []
+    raw_sources = event.get("sources")
+    if isinstance(raw_sources, Iterable) and not isinstance(raw_sources, (str, bytes)):
+        for label in raw_sources:
+            cleaned_label = _clean_string(label)
+            if cleaned_label:
+                _append_unique(sources, cleaned_label)
+
+    _append_unique(sources, cleaned.get("source"))
+    if sources:
+        cleaned["sources"] = sources
+
+    _sanitize_source_links(event, cleaned)
+
+    for field in ("starts_at", "ends_at"):
+        dt = _coerce_datetime(event.get(field), field, index)
+        if dt:
+            cleaned[field] = dt.replace(microsecond=0).isoformat()
+
+    # Remove empty entries explicitly set to falsy values
+    for key in list(cleaned.keys()):
+        value = cleaned[key]
+        if value in ("", [], {}, None):
+            cleaned.pop(key)
+
+    return cleaned
 
 
 def _dedupe_key(event: dict) -> Optional[tuple]:
@@ -119,8 +370,12 @@ def _dedupe(events: Iterable[dict]) -> List[dict]:
         seen.add(key)
         deduped.append(event)
 
-    kept = len(deduped)
-    print(f"Deduped events: merged {merged}, kept {kept}, skipped-key {skipped}")
+    LOGGER.info(
+        "Deduped events: merged %d, kept %d, skipped-key %d",
+        merged,
+        len(deduped),
+        skipped,
+    )
     return deduped
 
 
@@ -137,40 +392,6 @@ def _sort(events: List[dict]) -> List[dict]:
         return (1, when, title, url_hash)
 
     return sorted(events, key=sort_key)
-
-
-CATEGORY_PATTERNS = {
-    "techno": re.compile(
-        r"\b(dj|club|techno|rave|house|electro|afterparty|warehouse|disco)\b",
-        re.IGNORECASE,
-    ),
-    "jazz": re.compile(r"\bjazz\b", re.IGNORECASE),
-    "lecture": re.compile(
-        r"\b(lecture|talk|seminar|conference|panel|debate|foredrag|samtale)\b",
-        re.IGNORECASE,
-    ),
-    "festival": re.compile(r"\b(festival|weekender)\b", re.IGNORECASE),
-    "underground": re.compile(r"\b(underground|basement|secret|warehouse)\b", re.IGNORECASE),
-    "family": re.compile(r"\b(family|familie|kids|children|barn|ungdom)\b", re.IGNORECASE),
-    "culture": re.compile(
-        r"\b(art|kunsthall|museum|culture|utstilling|performance|kunst|lecture|talk|seminar|conference|panel|debate|foredrag|samtale)\b",
-        re.IGNORECASE,
-    ),
-}
-
-LATE_NIGHT_KEYWORDS = re.compile(
-    r"\b(late night|afterparty|after-hours|night session)\b", re.IGNORECASE
-)
-
-
-def _append_unique(values: List[str], new_value: str) -> None:
-    if new_value and new_value not in values:
-        values.append(new_value)
-
-
-def _normalize_tags(tags: Iterable[str]) -> List[str]:
-    cleaned = sorted({tag.strip() for tag in tags if tag and tag.strip()})
-    return cleaned
 
 
 def _infer_tags(event: dict) -> None:
@@ -241,6 +462,12 @@ def _merge_into(existing: dict, incoming: dict) -> None:
         if not existing.get(key) and incoming.get(key):
             existing[key] = incoming[key]
 
+    if incoming.get("sourceLinks"):
+        existing_links = existing.setdefault("sourceLinks", [])
+        for link in incoming["sourceLinks"]:
+            if link not in existing_links:
+                existing_links.append(link)
+
 
 def _merge_related(events: List[dict]) -> Tuple[List[dict], int]:
     merged: List[dict] = []
@@ -273,18 +500,153 @@ def _merge_related(events: List[dict]) -> Tuple[List[dict], int]:
     return merged, merges
 
 
-def main():
+def _parse_now(value: Optional[str]) -> datetime:
+    if not value:
+        return datetime.now(TZ)
+    try:
+        parsed = datetime.fromisoformat(value)
+    except ValueError as exc:
+        raise SystemExit(f"Invalid --now value: {value}") from exc
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=TZ)
+    return parsed.astimezone(TZ)
+
+
+def _filter_stale(events: List[dict], now: datetime, retention_hours: int) -> List[dict]:
+    if retention_hours <= 0:
+        return events
+
+    threshold = now - timedelta(hours=retention_hours)
+    kept: List[dict] = []
+    dropped = 0
+
+    for event in events:
+        start_dt = None
+        end_dt = None
+        if event.get("starts_at"):
+            try:
+                start_dt = datetime.fromisoformat(event["starts_at"])
+            except ValueError:
+                start_dt = None
+        if event.get("ends_at"):
+            try:
+                end_dt = datetime.fromisoformat(event["ends_at"])
+            except ValueError:
+                end_dt = None
+
+        remove = False
+        if end_dt and end_dt < threshold:
+            remove = True
+        elif start_dt and start_dt < threshold:
+            remove = True
+
+        if remove:
+            dropped += 1
+            continue
+        kept.append(event)
+
+    if dropped:
+        LOGGER.info("Filtered %d stale events older than %dh", dropped, retention_hours)
+    return kept
+
+
+def _refresh_views(events: List[dict], output_path: Path, now: datetime) -> None:
+    try:
+        from scripts import build_views
+    except ImportError as exc:
+        LOGGER.warning("Unable to import view builder: %s", exc)
+        return
+
+    event_objects = [build_views.Event.from_raw(event) for event in events]
+    today = build_views.build_today(event_objects, now)
+    tonight = build_views.build_tonight(event_objects, now)
+    heatmap = build_views.build_heatmap(event_objects)
+
+    data_dir = output_path.parent
+    build_views.write_json(data_dir / "today.json", today)
+    build_views.write_json(data_dir / "tonight.json", tonight)
+    build_views.write_json(data_dir / "heatmap.json", heatmap)
+    LOGGER.info("Updated derived views")
+
+
+def _collect_events(offline: bool) -> List[dict]:
+    if offline:
+        LOGGER.info("Offline mode enabled – using sample events only")
+        return _load_sample_events()
+
     collected: List[dict] = []
     for name, fetch in _sources():
         collected.extend(_run_source(name, fetch))
 
-    events = _sort(_dedupe(collected))
-    events, merges = _merge_related(events)
+    if not collected:
+        LOGGER.warning("No events collected from live sources; falling back to samples")
+        collected.extend(_load_sample_events())
+    return collected
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Merged related events: {merges}")
-    print(f"Wrote {len(events)} events → {OUT}")
+
+def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Collect and normalise SPONTIS events")
+    parser.add_argument("--output", type=Path, default=OUT, help="Destination for events.json")
+    parser.add_argument(
+        "--retention-hours",
+        type=int,
+        default=DEFAULT_RETENTION_HOURS,
+        help="How many hours past an event start to keep it in the feed",
+    )
+    parser.add_argument(
+        "--offline",
+        action="store_true",
+        default=OFFLINE_MODE,
+        help="Skip network calls and rely on sample data",
+    )
+    parser.add_argument(
+        "--no-update-views",
+        dest="update_views",
+        action="store_false",
+        help="Do not rebuild today/tonight/heatmap files",
+    )
+    parser.add_argument(
+        "--update-views",
+        dest="update_views",
+        action="store_true",
+        help="Force rebuilding of derived view files",
+    )
+    parser.set_defaults(update_views=os.getenv("SPONTIS_UPDATE_VIEWS", "1") != "0")
+    parser.add_argument(
+        "--now",
+        help="Override the current datetime (ISO8601)",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: Optional[List[str]] = None) -> None:
+    args = parse_args(argv)
+    now = _parse_now(args.now)
+    collected = _collect_events(args.offline)
+    LOGGER.info("Collected %d raw events", len(collected))
+
+    validated = []
+    for idx, raw in enumerate(collected, start=1):
+        sanitized = _sanitize_event(raw, idx)
+        if sanitized is not None:
+            validated.append(sanitized)
+    dropped = len(collected) - len(validated)
+    if dropped:
+        LOGGER.info("Discarded %d invalid events during validation", dropped)
+
+    events = _sort(_dedupe(validated))
+    events, merges = _merge_related(events)
+    LOGGER.info("Merged related events: %d", merges)
+
+    events = _filter_stale(events, now=now, retention_hours=args.retention_hours)
+
+    output_path = Path(args.output)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(events, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    LOGGER.info("Wrote %d events → %s", len(events), output_path)
+
+    if args.update_views:
+        _refresh_views(events, output_path, now)
 
 
 if __name__ == "__main__":

@@ -9,14 +9,25 @@
         content="Spontis: concerts, quiz nights, cinema, workshops and spontaneous fun — right now." />
     <meta property="og:title" content="SPONTIS" />
     <meta property="og:description" content="What’s on. Right now." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://spontis-app.github.io/" />
+    <meta property="og:site_name" content="SPONTIS" />
     <meta property="og:image" content="/assets/og-image.png" />
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css?v=1">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SPONTIS — What’s on. Right now." />
+    <meta name="twitter:description" content="Discover concerts, cinema, workshops and late-night fun in Bergen right now." />
+    <meta name="twitter:image" content="/assets/og-image.png" />
+    <meta name="application-name" content="SPONTIS" />
+    <meta name="apple-mobile-web-app-title" content="SPONTIS" />
+    <meta name="author" content="SPONTIS" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    <link rel="canonical" href="https://spontis-app.github.io/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css?v=1">
     <meta name="theme-color" content="#F8F6F2" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
 </head>
@@ -27,10 +38,16 @@
             <h1 class="logo">SPONTIS</h1>
             <p class="tagline">What’s on. Right now.</p>
         </div>
+        <p class="hero__lede">Spontis keeps an eye on Bergen’s independent culture scene – concerts, cinema, club nights, workshops and more – refreshed automatically throughout the day.</p>
+        <div class="hero__meta" aria-label="System status">
+            <span>Timezone: Europe/Oslo</span>
+            <span>Validated listings with automatic clean-up</span>
+            <span>Dark mode by default</span>
+        </div>
     </header>
 
     <div class="container filter-shell">
-        <nav id="filter-chips" class="filters" aria-label="Sticky filter chips"></nav>
+        <nav id="filter-chips" class="filters" aria-label="Event filters"></nav>
     </div>
 
     <main class="container">
@@ -42,10 +59,19 @@
         </section>
         <div id="spotlight" class="spotlight" role="status" aria-live="polite" hidden></div>
         <section id="events" class="grid"></section>
+        <section class="about" id="about">
+            <h2>About SPONTIS</h2>
+            <p class="about__text">SPONTIS is a lightweight, zero-login guide to what’s happening in Bergen right now. We collect public schedules from trusted organisers, normalise timezones, validate the schema and remove past events automatically so the list stays fresh.</p>
+            <p class="about__text">Everything runs as open data on GitHub Pages. Filters are fast, mobile-friendly and tuned for dark mode. Tap any listing to jump to the original organiser for tickets or details.</p>
+            <h3 class="about__sources-title">Live sources</h3>
+            <p class="about__hint">We always credit where the information comes from – the list below updates whenever the scraper runs.</p>
+            <ul id="source-rollup" class="sources__list" aria-live="polite"></ul>
+            <p class="about__cta">Want to contribute a new source or fix a bug? <a href="https://github.com/spontis-app/spontis-app.github.io" target="_blank" rel="noopener noreferrer">Open a pull request on GitHub</a>.</p>
+        </section>
     </main>
 
     <footer class="container footer">
-        <p>© <span id="year"></span> Spontis. Bergen at your fingertips.</p>
+        <p>© <span id="year"></span> SPONTIS — built in Bergen and maintained with care.</p>
     </footer>
 
     <script src="/js/app.js" defer></script>

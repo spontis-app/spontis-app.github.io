@@ -1,12 +1,15 @@
 # scraper/sources/bergen_kino.py
 import re
+from collections import defaultdict
 from datetime import datetime
 from urllib.parse import urljoin
-import requests
-from bs4 import BeautifulSoup
+
 import dateparser
-from collections import defaultdict
-from scraper.normalize import TZ, build_event, format_showtimes
+from bs4 import BeautifulSoup
+from requests import HTTPError
+
+from scraper.http import get as http_get
+from scraper.normalize import build_event, format_showtimes
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -27,9 +30,7 @@ CANDIDATES = [
 TIME_RX = re.compile(r"\b([01]?\d|2[0-3]):[0-5]\d\b")
 
 def _get(url):
-    r = requests.get(url, headers=HEADERS, timeout=25)
-    r.raise_for_status()
-    return r
+    return http_get(url, headers=HEADERS)
 
 def _discover_program_url():
     # prøv kandidatstier
@@ -37,7 +38,7 @@ def _discover_program_url():
         url = urljoin(BASE, path)
         try:
             r = _get(url)
-        except requests.HTTPError:
+        except HTTPError:
             continue
         # hvis siden inneholder tider, er vi sannsynligvis på riktig “program”-side
         if TIME_RX.search(r.text):
@@ -53,7 +54,7 @@ def _discover_program_url():
                     r2 = _get(pu)
                     if TIME_RX.search(r2.text):
                         return pu, r2.text
-                except requests.HTTPError:
+                except HTTPError:
                     pass
     # siste utvei: bruk forsiden
     r = _get(BASE + "/")

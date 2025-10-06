@@ -7,9 +7,9 @@ from datetime import datetime
 from typing import List, Optional
 
 import dateparser
-import requests
 
 from scraper.normalize import build_event, to_weekday_label
+from scraper.http import get as http_get
 
 PROFILE_URL = "https://www.instagram.com/kennelvinylbar/"
 HEADERS = {
@@ -34,8 +34,7 @@ def _parse_datetime(value: Optional[str]) -> Optional[datetime]:
 
 def _fetch_profile_html() -> Optional[str]:
     try:
-        resp = requests.get(PROFILE_URL, headers=HEADERS, timeout=TIMEOUT)
-        resp.raise_for_status()
+        resp = http_get(PROFILE_URL, headers=HEADERS, timeout=TIMEOUT)
     except Exception:
         return None
     return resp.text
