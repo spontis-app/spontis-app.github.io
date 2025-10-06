@@ -1,7 +1,7 @@
 const $ = selector => document.querySelector(selector);
 
 const eventsEl = $('#events');
-const filterBar = $('#filters');
+const filterBar = $('#filters') || document.querySelector('.filters');
 const spotlightEl = $('#spotlight');
 const clusterDeckEl = $('#cluster-deck');
 const densityEl = $('#density-map');
