@@ -128,11 +128,83 @@ const WEEK = [
     { index: 0, short: 'Sun', full: 'Sunday' }
 ];
 
+const FALLBACK_HOST_RESOLVERS = {
+    'bergenkjott.org': createBergenKjottLink,
+    'bergenkjott.no': createBergenKjottLink
+};
+
+const FALLBACK_SOURCE_RESOLVERS = {
+    'Bergen Kjøtt': createBergenKjottLink
+};
+
 const datasets = { all: [], today: [], tonight: [] };
 let currentList = [];
 let currentFilter = null;
 let highlightTimer;
 let activeDatasetKey = 'all';
+
+function safeParseUrl(value) {
+    if (!value) return null;
+    try {
+        return new URL(value);
+    } catch (error) {
+        return null; // ignore malformed URLs
+    }
+}
+
+function slugifyTitle(text = '') {
+    return text
+        .toString()
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/&/g, ' og ')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/-{2,}/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
+
+function createBergenKjottLink(event) {
+    const slug = slugifyTitle(event?.title || '');
+    if (slug) {
+        return `https://www.bergenkjott.org/events/${slug}`;
+    }
+    return 'https://www.bergenkjott.org/program';
+}
+
+function resolveEventUrl(event) {
+    if (!event) return null;
+    const rawUrl = typeof event.url === 'string' ? event.url.trim() : '';
+    const parsed = safeParseUrl(rawUrl);
+    const searchTerms = [event.title, event.venue, event.source].filter(Boolean).join(' ');
+
+    if (parsed && parsed.pathname && parsed.pathname !== '/' && parsed.pathname !== '') {
+        return rawUrl;
+    }
+
+    const hostKey = parsed?.hostname?.replace(/^www\./i, '');
+    if (hostKey && FALLBACK_HOST_RESOLVERS[hostKey]) {
+        return FALLBACK_HOST_RESOLVERS[hostKey](event, parsed);
+    }
+
+    if (event.source && FALLBACK_SOURCE_RESOLVERS[event.source]) {
+        return FALLBACK_SOURCE_RESOLVERS[event.source](event, parsed);
+    }
+
+    if (parsed && (!parsed.pathname || parsed.pathname === '/') && !parsed.search && !parsed.hash) {
+        if (searchTerms) {
+            return `https://www.google.com/search?q=${encodeURIComponent(searchTerms)}`;
+        }
+    }
+
+    if (rawUrl) return rawUrl;
+
+    if (searchTerms) {
+        return `https://www.google.com/search?q=${encodeURIComponent(searchTerms)}`;
+    }
+
+    return null;
+}
 
 function normalizeTagValue(tag) {
     if (!tag && tag !== 0) return null;
@@ -520,6 +592,10 @@ function paint(list) {
                 const classes = ['badge'];
                 if (TAG_STYLE[tag]) classes.push(TAG_STYLE[tag]);
                 badge.className = classes.join(' ');
+                badge.classList.add('tag');
+                if (typeof tag === 'string' && tag) {
+                    badge.classList.add(`tag-${tag}`);
+                }
                 badge.textContent = tag;
                 meta.appendChild(badge);
             });
@@ -560,12 +636,17 @@ function paint(list) {
             article.appendChild(sourceEl);
         }
 
-        if (event.url) {
+        const resolvedUrl = resolveEventUrl(event);
+        if (resolvedUrl) {
             const link = document.createElement('a');
-            link.href = event.url;
+            link.href = resolvedUrl;
             link.target = '_blank';
-            link.rel = 'noopener noreferrer';
-            link.textContent = 'View event';
+            link.rel = 'noopener noreferrer external';
+            link.className = 'btn-primary';
+            link.textContent = 'Open event';
+            if (event.title) {
+                link.setAttribute('aria-label', `Open event: ${event.title}`);
+            }
             article.appendChild(link);
         }
 
