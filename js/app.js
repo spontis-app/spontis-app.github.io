@@ -43,19 +43,19 @@ const TAG_STYLE = {
 
 const TAG_LABELS = {
     all: 'All',
-    bar: 'Bar night 🍸',
-    culture: 'Culture 🎭',
-    date: 'Date night ❤️',
-    dj: 'DJ set 🎧',
-    festival: 'Festival 🌟',
-    girls: "Girls' night 🍷",
-    jazz: 'Jazz 🎷',
-    lecture: 'Talks 🎤',
-    live: 'Live 🎸',
-    opening: 'Opening ✨',
-    quiz: 'Quiz 🍻',
-    cinema: 'Cinema 🎥',
-    rave: 'Rave 🔊'
+    bar: 'Bar night',
+    culture: 'Culture',
+    date: 'Date night',
+    dj: 'DJ set',
+    festival: 'Festival',
+    girls: "Girls' night",
+    jazz: 'Jazz',
+    lecture: 'Talks',
+    live: 'Live music',
+    opening: 'Opening',
+    quiz: 'Quiz night',
+    cinema: 'Cinema',
+    rave: 'Rave'
 };
 
 const SMART_TAG_RULES = [
