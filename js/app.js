@@ -12,19 +12,59 @@ let currentList = [];
 let highlightTimer;
 
 function paint(list) {
+    eventsEl.innerHTML = '';
+
     if (!list.length) {
-        eventsEl.innerHTML = `<p style="opacity:.7">No events yet. Try another filter or check back later.</p>`;
+        const emptyState = document.createElement('p');
+        emptyState.style.opacity = '.7';
+        emptyState.textContent = 'No events yet. Try another filter or check back later.';
+        eventsEl.appendChild(emptyState);
         return;
     }
-    eventsEl.innerHTML = list.map((e, idx) => {
-        const tags = (e.tags || []).map(t => `<span class="badge ${TAG_STYLE[t] || ''}">${t}</span>`).join('');
-        return `<article class="card" data-index="${idx}">
-      <span class="meta">${tags}</span>
-      <h3>${e.title}</h3>
-      <p>${e.when} • ${e.where}</p>
-      <a href="${e.url}" target="_blank" rel="noopener">Open</a>
-    </article>`;
-    }).join('');
+
+    const fragment = document.createDocumentFragment();
+
+    list.forEach((event, idx) => {
+        const article = document.createElement('article');
+        article.className = 'card';
+        article.dataset.index = String(idx);
+
+        const meta = document.createElement('span');
+        meta.className = 'meta';
+        (event.tags || []).forEach(tag => {
+            const badge = document.createElement('span');
+            const classes = ['badge'];
+            if (TAG_STYLE[tag]) classes.push(TAG_STYLE[tag]);
+            badge.className = classes.join(' ');
+            badge.textContent = tag;
+            meta.appendChild(badge);
+        });
+        article.appendChild(meta);
+
+        const title = document.createElement('h3');
+        title.textContent = event.title || 'Untitled event';
+        article.appendChild(title);
+
+        const details = [event.when, event.where].filter(Boolean).join(' • ');
+        if (details) {
+            const detailEl = document.createElement('p');
+            detailEl.textContent = details;
+            article.appendChild(detailEl);
+        }
+
+        if (event.url) {
+            const link = document.createElement('a');
+            link.href = event.url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = 'Open';
+            article.appendChild(link);
+        }
+
+        fragment.appendChild(article);
+    });
+
+    eventsEl.appendChild(fragment);
 }
 
 function setActive(tag) {
@@ -56,14 +96,36 @@ function applyFilter(tag) {
 
 function showSpotlight(event) {
     if (!spotlightEl) return;
+
+    spotlightEl.replaceChildren();
+
+    const intro = document.createElement('strong');
+    intro.textContent = 'Inspire me';
+    spotlightEl.appendChild(intro);
+
+    const title = document.createElement('div');
+    title.className = 'spotlight__title';
+    title.textContent = event.title || 'Untitled event';
+    spotlightEl.appendChild(title);
+
     const whenWhere = [event.when, event.where].filter(Boolean).join(' • ');
-    const link = event.url ? `<a class="spotlight__link" href="${event.url}" target="_blank" rel="noopener">Open event</a>` : '';
-    const metaHtml = whenWhere ? `<div class="spotlight__meta">${whenWhere}</div>` : '';
-    const html = `<strong>Inspire me</strong>
-    <div class="spotlight__title">${event.title}</div>
-    ${metaHtml}
-    ${link}`;
-    spotlightEl.innerHTML = html.trim();
+    if (whenWhere) {
+        const meta = document.createElement('div');
+        meta.className = 'spotlight__meta';
+        meta.textContent = whenWhere;
+        spotlightEl.appendChild(meta);
+    }
+
+    if (event.url) {
+        const link = document.createElement('a');
+        link.className = 'spotlight__link';
+        link.href = event.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = 'Open event';
+        spotlightEl.appendChild(link);
+    }
+
     spotlightEl.hidden = false;
     spotlightEl.classList.add('spotlight--visible');
 }
