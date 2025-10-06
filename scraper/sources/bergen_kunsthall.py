@@ -17,6 +17,28 @@ EVENT_URLS = [
     "https://www.kunsthall.no/en/events/",
     "https://www.kunsthall.no/en/whats-on/",
 ]
+SKIP_TITLES = (
+    "become a member",
+    "cookie",
+    "cookies",
+    "privacy",
+    "about the café",
+    "openings",
+    "press",
+    "newsletter",
+    "shop",
+    "gift card",
+)
+SKIP_HREF_PARTS = (
+    "/cookies",
+    "/cookie",
+    "/privacy",
+    "/press",
+    "/shop",
+    "/about",
+    "/member",
+    "/newsletter",
+)
 HEADERS = {
     "User-Agent": "SpontisBot/0.2 (+https://spontis-app.github.io)",
     "Accept-Language": "nb,en;q=0.8",
@@ -117,6 +139,12 @@ def fetch() -> list[dict]:
 
             title = link.get_text(" ", strip=True)
             if not title:
+                continue
+
+            title_lower = title.strip().lower()
+            if any(keyword in title_lower for keyword in SKIP_TITLES):
+                continue
+            if any(part in absolute_url for part in SKIP_HREF_PARTS):
                 continue
 
             key = (title, absolute_url)

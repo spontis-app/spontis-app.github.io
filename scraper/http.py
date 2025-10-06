@@ -63,5 +63,11 @@ def get(
         request_headers = session.headers
     response = session.get(url, timeout=timeout or DEFAULT_TIMEOUT, headers=request_headers, **kwargs)
     response.raise_for_status()
+    if not response.encoding or response.encoding.lower() == 'iso-8859-1':
+        if response.apparent_encoding:
+            response.encoding = response.apparent_encoding
+        else:
+            response.encoding = 'utf-8'
+    elif response.apparent_encoding and response.apparent_encoding.lower() not in {response.encoding.lower(), 'ascii'}:
+        response.encoding = response.apparent_encoding
     return response
-
