@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Iterable, Optional, Tuple
 from urllib.parse import urljoin
+import re
 
 import dateparser
 from bs4 import BeautifulSoup, Tag
@@ -50,6 +51,18 @@ def _extract_datetime(node: Tag) -> Optional[datetime]:
         dt = _parse_datetime(text)
         if dt:
             return dt
+    return None
+
+
+def _extract_time_hint(text: str) -> Optional[Tuple[int, int]]:
+    if not text:
+        return None
+    match = re.search(r"\b(\d{1,2})[:.](\d{2})\b", text)
+    if not match:
+        return None
+    hour, minute = int(match.group(1)), int(match.group(2))
+    if 0 <= hour < 24 and 0 <= minute < 60:
+        return hour, minute
     return None
 
 
@@ -111,11 +124,24 @@ def fetch() -> list[dict]:
                 continue
             seen.add(key)
 
+            detail_soup: Optional[BeautifulSoup] = None
             starts_at = _extract_datetime(card)
             if not starts_at:
-                starts_at = _detail_datetime(absolute_url)
-
+                detail_soup = _fetch(absolute_url)
+                if detail_soup:
+                    starts_at = _extract_datetime(detail_soup)
             text_block = " ".join(card.stripped_strings)
+            time_hint = _extract_time_hint(text_block)
+            if starts_at and (starts_at.hour == 0 and starts_at.minute == 0):
+                if not time_hint:
+                    if detail_soup is None:
+                        detail_soup = _fetch(absolute_url)
+                    if detail_soup:
+                        time_hint = _extract_time_hint(detail_soup.get_text(" ", strip=True))
+                if time_hint:
+                    hour, minute = time_hint
+                    starts_at = starts_at.replace(hour=hour, minute=minute)
+
             venue = "Landmark" if "Landmark" in text_block else "Bergen Kunsthall"
 
             extra = {"where": venue}

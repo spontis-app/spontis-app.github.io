@@ -606,7 +606,9 @@ function detectVibe(event, combinedText) {
 function enrichEvents(events) {
     const deduped = dedupeEvents(events);
 
-    const enriched = deduped.map(event => {
+    const active = deduped.filter(event => (event.source || '').trim().toLowerCase() !== 'sample');
+
+    const enriched = active.map(event => {
         const combinedText = [
             event.title,
             event.description,
