@@ -91,5 +91,68 @@
       "live",
       "dj"
     ]
+  },
+  {
+    "source": "Carte Blanche",
+    "title": "Contemporary Moves",
+    "url": "https://www.carteblanche.no/forestilling/contemporary-moves",
+    "city": "Bergen",
+    "starts_at": "2024-05-21T19:00:00+02:00",
+    "venue": "Carte Blanche",
+    "tags": ["culture"]
+  },
+  {
+    "source": "Bergen Live",
+    "title": "Koengen Summer Night",
+    "url": "https://bergenlive.no/konserter/koengen-summer-night",
+    "city": "Bergen",
+    "starts_at": "2024-06-15T18:30:00+02:00",
+    "venue": "Bergenhus Festning – Koengen",
+    "tags": ["live", "festival"]
+  },
+  {
+    "source": "Nattjazz",
+    "title": "Late Night Improv",
+    "url": "https://www.nattjazz.no/program/late-night-improv",
+    "city": "Bergen",
+    "starts_at": "2024-05-29T23:30:00+02:00",
+    "venue": "USF Verftet",
+    "tags": ["jazz", "live", "dj"]
+  },
+  {
+    "source": "Hordaland Kunstsenter",
+    "title": "Isotop Residency Showcase",
+    "url": "https://kunstsenter.no/program/isotop-residency-showcase",
+    "city": "Bergen",
+    "starts_at": "2024-05-27T18:00:00+02:00",
+    "venue": "Hordaland Kunstsenter",
+    "tags": ["culture"]
+  },
+  {
+    "source": "Aerial Bergen",
+    "title": "Contemporary Circus Workshop",
+    "url": "https://aerialbergen.com/classes/contemporary-circus",
+    "city": "Bergen",
+    "starts_at": "2024-05-18T14:00:00+02:00",
+    "venue": "Aerial Bergen",
+    "tags": ["culture", "workshop"]
+  },
+  {
+    "source": "Zip Collective",
+    "title": "Performance Lab",
+    "url": "https://zipcollective.com/events/performance-lab",
+    "city": "Bergen",
+    "starts_at": "2024-05-24T20:00:00+02:00",
+    "venue": "Zip Collective",
+    "tags": ["culture", "community"]
+  },
+  {
+    "source": "Den Nationale Scene",
+    "title": "Premiere: New Nordic Drama",
+    "url": "https://www.dns.no/forestillinger/new-nordic-drama",
+    "city": "Bergen",
+    "starts_at": "2024-05-30T19:00:00+02:00",
+    "venue": "Den Nationale Scene",
+    "tags": ["culture", "opening"]
   }
 ]
