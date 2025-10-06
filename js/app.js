@@ -6,30 +6,11 @@ const legacyFilterBar = document.querySelector('#filters.filters--legacy') || do
 const filterBar = stickyFilterBar || legacyFilterBar || document.querySelector('.filters');
 const filterContainers = [stickyFilterBar, legacyFilterBar].filter(Boolean);
 const spotlightEl = $('#spotlight');
-const clusterDeckEl = $('#cluster-deck');
-const densityEl = $('#density-map');
+const heatmapEl = $('#heatmap');
+const heatmapGrid = $('#heatmap-bars');
 
-const FALLBACK_DEFAULT_FILTERS = ['all', 'date', 'girls', 'quiz', 'cinema', 'rave', 'live', 'dj', 'jazz', 'culture', 'bar'];
-
-const seedFilterBar = legacyFilterBar || filterBar;
-
-const derivedFilterOrder = seedFilterBar
-    ? Array.from(seedFilterBar.querySelectorAll('[data-filter]'))
-        .map(button => button.dataset.filter)
-        .filter(Boolean)
-        .filter(tag => tag !== 'surprise')
-    : [];
-
-const BASE_FILTERS = (derivedFilterOrder.length
-    ? Array.from(new Set([...derivedFilterOrder, ...FALLBACK_DEFAULT_FILTERS]))
-    : FALLBACK_DEFAULT_FILTERS).reduce((acc, tag) => {
-        if (tag === 'all') {
-            if (!acc.includes(tag)) acc.unshift(tag);
-        } else if (!acc.includes(tag)) {
-            acc.push(tag);
-        }
-        return acc;
-    }, []);
+const DATASET_FILTERS = new Set(['all', 'today', 'tonight']);
+const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 const TAG_STYLE = {
     date: 'badge--date',
@@ -163,6 +144,7 @@ const WEEK = [
 let currentList = [];
 let currentFilter = 'all';
 let highlightTimer;
+let activeDatasetKey = 'all';
 
 function normalizeText(text = '') {
     return text.toLowerCase().replace(/[^a-z0-9æøåäöüß ]+/gi, ' ').replace(/\s+/g, ' ').trim();
@@ -510,42 +492,73 @@ function enrichEvents(events) {
 }
 
 function paint(list) {
-    if (!eventsEl) return;
+    eventsEl.innerHTML = '';
 
     if (!list.length) {
-        eventsEl.innerHTML = `<p style="opacity:.7">No events yet. Try another filter or check back later.</p>`;
+        const emptyState = document.createElement('p');
+        emptyState.style.opacity = '.7';
+        emptyState.textContent = 'No events yet. Try another filter or check back later.';
+        eventsEl.appendChild(emptyState);
         return;
     }
 
-    eventsEl.innerHTML = list.map((event, idx) => {
-        const tags = sortTags(event.tags || []);
-        const tagHtml = tags.map(tag => `<span class="badge ${TAG_STYLE[tag] || ''}">${labelForTag(tag)}</span>`).join('');
-        const sourceLine = event.sources && event.sources.length > 1
-            ? `<div class="card__sources">Kilder: ${event.sources.join(' + ')}</div>`
-            : '';
-        const whenWhere = [event.when, event.where].filter(Boolean).join(' • ');
-        const linkMeta = getEventLinkMeta(event);
-        const link = linkMeta
-            ? `<a href="${linkMeta.href}" target="_blank" rel="noopener">${linkMeta.label}</a>`
-            : '';
+    const fragment = document.createDocumentFragment();
 
-        return `<article class="card" data-index="${idx}">
-      <span class="meta">${tagHtml}</span>
-      <h3>${event.title}</h3>
-      <p>${whenWhere}</p>
-      ${sourceLine}
-      ${link}
-    </article>`;
-    }).join('');
+    list.forEach((event, idx) => {
+        const article = document.createElement('article');
+        article.className = 'card';
+        article.dataset.index = String(idx);
+
+        const meta = document.createElement('span');
+        meta.className = 'meta';
+        (event.tags || []).forEach(tag => {
+            const badge = document.createElement('span');
+            const classes = ['badge'];
+            if (TAG_STYLE[tag]) classes.push(TAG_STYLE[tag]);
+            badge.className = classes.join(' ');
+            badge.textContent = tag;
+            meta.appendChild(badge);
+        });
+        article.appendChild(meta);
+
+        const title = document.createElement('h3');
+        title.textContent = event.title || 'Untitled event';
+        article.appendChild(title);
+
+        const details = [event.when, event.where].filter(Boolean).join(' • ');
+        if (details) {
+            const detailEl = document.createElement('p');
+            detailEl.textContent = details;
+            article.appendChild(detailEl);
+        }
+
+        if (event.url) {
+            const link = document.createElement('a');
+            link.href = event.url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = 'Open';
+            article.appendChild(link);
+        }
+
+        fragment.appendChild(article);
+    });
+
+    eventsEl.appendChild(fragment);
 }
 
-function setActive(tag) {
-    if (!filterContainers.length) return;
-    filterContainers.forEach(container => {
-        container.querySelectorAll('.chip').forEach(button => {
-            button.classList.toggle('chip--active', button.dataset.filter === tag);
-        });
+function setActive(value, scope) {
+    const selector = scope ? `.filters [data-scope="${scope}"]` : '.filters [data-filter]';
+    document.querySelectorAll(selector).forEach((btn) => {
+        const isActive = value !== null && btn.dataset.filter === value;
+        btn.classList.toggle('chip--active', isActive);
     });
+}
+
+function getDataset(key) {
+    if (key === 'today') return window.__TODAY || [];
+    if (key === 'tonight') return window.__TONIGHT || [];
+    return window.__ALL || [];
 }
 
 function clearSpotlight() {
@@ -561,11 +574,22 @@ function clearSpotlight() {
 }
 
 function applyFilter(tag) {
-    const all = window.__ALL || [];
-    const filtered = tag === 'all' ? all : all.filter(event => (event.tags || []).includes(tag));
-    const data = sortByEventTime(filtered);
+    if (DATASET_FILTERS.has(tag)) {
+        activeDatasetKey = tag;
+        const data = getDataset(tag);
+        paint(data);
+        setActive(activeDatasetKey, 'dataset');
+        setActive(null, 'tag');
+        currentList = data;
+        clearSpotlight();
+        return;
+    }
+
+    const source = getDataset(activeDatasetKey);
+    const data = source.filter(e => (e.tags || []).includes(tag));
     paint(data);
-    setActive(tag);
+    setActive(activeDatasetKey, 'dataset');
+    setActive(tag, 'tag');
     currentList = data;
     currentFilter = tag;
     clearSpotlight();
@@ -573,17 +597,36 @@ function applyFilter(tag) {
 
 function showSpotlight(event) {
     if (!spotlightEl) return;
+
+    spotlightEl.replaceChildren();
+
+    const intro = document.createElement('strong');
+    intro.textContent = 'Inspire me';
+    spotlightEl.appendChild(intro);
+
+    const title = document.createElement('div');
+    title.className = 'spotlight__title';
+    title.textContent = event.title || 'Untitled event';
+    spotlightEl.appendChild(title);
+
     const whenWhere = [event.when, event.where].filter(Boolean).join(' • ');
-    const linkMeta = getEventLinkMeta(event);
-    const link = linkMeta
-        ? `<a class="spotlight__link" href="${linkMeta.href}" target="_blank" rel="noopener">${linkMeta.isCalendarFallback ? 'Se kalender' : 'Open event'}</a>`
-        : '';
-    const metaHtml = whenWhere ? `<div class="spotlight__meta">${whenWhere}</div>` : '';
-    const html = `<strong>Inspire me</strong>
-    <div class="spotlight__title">${event.title}</div>
-    ${metaHtml}
-    ${link}`;
-    spotlightEl.innerHTML = html.trim();
+    if (whenWhere) {
+        const meta = document.createElement('div');
+        meta.className = 'spotlight__meta';
+        meta.textContent = whenWhere;
+        spotlightEl.appendChild(meta);
+    }
+
+    if (event.url) {
+        const link = document.createElement('a');
+        link.className = 'spotlight__link';
+        link.href = event.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = 'Open event';
+        spotlightEl.appendChild(link);
+    }
+
     spotlightEl.hidden = false;
     spotlightEl.classList.add('spotlight--visible');
 }
@@ -719,14 +762,9 @@ async function loadEvents() {
         './data/events.json',
         './data/events.sample.json'
     ];
-    const cacheBust = `v=${Date.now()}`;
-
     for (const url of sources) {
-        const separator = url.includes('?') ? '&' : '?';
         try {
-            const response = await fetch(`${url}${separator}${cacheBust}`);
-            if (!response.ok) throw new Error(response.statusText);
-            const data = await response.json();
+            const data = await fetchJson(url);
             if (Array.isArray(data) && data.length) return data;
         } catch (err) {
             console.warn(`Failed to load ${url}`, err);
@@ -766,7 +804,100 @@ async function loadEvents() {
     ];
 }
 
-function handleSurprise() {
+async function fetchJson(url) {
+    const cacheBust = `v=${Date.now()}`;
+    const separator = url.includes('?') ? '&' : '?';
+    const response = await fetch(`${url}${separator}${cacheBust}`);
+    if (!response.ok) throw new Error(response.statusText);
+    return response.json();
+}
+
+async function loadSupplemental(url) {
+    try {
+        const data = await fetchJson(url);
+        return data;
+    } catch (err) {
+        console.warn(`Failed to load ${url}`, err);
+        return null;
+    }
+}
+
+function renderHeatmap(map) {
+    if (!heatmapEl || !heatmapGrid) return;
+    if (!map) {
+        heatmapEl.hidden = true;
+        heatmapGrid.innerHTML = '';
+        return;
+    }
+
+    const values = WEEKDAYS.map(day => {
+        const value = Number(map[day] ?? 0);
+        return Number.isFinite(value) ? value : 0;
+    });
+    const max = Math.max(...values, 1);
+
+    heatmapGrid.replaceChildren();
+
+    WEEKDAYS.forEach((day, index) => {
+        const value = values[index];
+        const item = document.createElement('div');
+        item.className = 'heatmap__item';
+        item.setAttribute('role', 'listitem');
+
+        const bar = document.createElement('div');
+        bar.className = 'heatmap__bar';
+        bar.dataset.empty = value === 0 ? 'true' : 'false';
+        const height = value === 0 ? 6 : 6 + Math.round((value / max) * 46);
+        bar.style.height = `${height}px`;
+        bar.title = `${day}: ${value} event${value === 1 ? '' : 's'}`;
+        item.appendChild(bar);
+
+        const count = document.createElement('span');
+        count.className = 'heatmap__count';
+        count.textContent = String(value);
+        item.appendChild(count);
+
+        const label = document.createElement('span');
+        label.className = 'heatmap__day';
+        label.textContent = day;
+        item.appendChild(label);
+
+        heatmapGrid.appendChild(item);
+    });
+
+    heatmapEl.hidden = false;
+}
+
+async function boot() {
+    const [all, today, tonight, heatmap] = await Promise.all([
+        loadEvents(),
+        loadSupplemental('./data/today.json'),
+        loadSupplemental('./data/tonight.json'),
+        loadSupplemental('./data/heatmap.json')
+    ]);
+
+    window.__ALL = all;
+    window.__TODAY = Array.isArray(today) ? today : [];
+    window.__TONIGHT = Array.isArray(tonight) ? tonight : [];
+
+    if (heatmap && typeof heatmap === 'object' && !Array.isArray(heatmap)) {
+        renderHeatmap(heatmap);
+    } else {
+        renderHeatmap(null);
+    }
+
+    activeDatasetKey = 'all';
+    applyFilter('all');
+}
+boot();
+
+filterBar.addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-filter]');
+    if (!btn) return;
+    applyFilter(btn.dataset.filter);
+});
+
+$('#surprise')?.addEventListener('click', () => {
     const list = currentList.length ? currentList : (window.__ALL || []);
     if (!list.length) return;
     const idx = Math.floor(Math.random() * list.length);

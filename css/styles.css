@@ -107,6 +107,10 @@ body {
     transform: translateY(1px);
 }
 
+.filters [data-scope="dataset"] {
+    font-weight: 600;
+}
+
 .chip--active {
     border-color: var(--navy);
     color: #fff;
@@ -233,6 +237,61 @@ body {
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     margin-top: 1rem;
+}
+
+.heatmap {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.heatmap__title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #475569;
+}
+
+.heatmap__grid {
+    margin-top: .75rem;
+    display: flex;
+    gap: .75rem;
+    align-items: flex-end;
+}
+
+.heatmap__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .35rem;
+}
+
+.heatmap__bar {
+    width: 100%;
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(13, 27, 42, .85), rgba(13, 27, 42, .55));
+    min-height: 6px;
+}
+
+.heatmap__bar[data-empty="true"] {
+    opacity: .35;
+}
+
+.heatmap__day {
+    font-size: .75rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #64748b;
+}
+
+.heatmap__count {
+    font-size: .75rem;
+    color: #0f172a;
 }
 
 .spotlight {
@@ -419,5 +478,26 @@ body {
         background: #1e293b;
         color: #f8fafc;
         box-shadow: 0 18px 36px rgba(8, 15, 26, .45);
+    }
+
+    .heatmap {
+        background: #0f172a;
+        border-color: #1f2937;
+    }
+
+    .heatmap__title {
+        color: #cbd5e1;
+    }
+
+    .heatmap__bar {
+        background: linear-gradient(180deg, rgba(248, 250, 252, .85), rgba(226, 232, 240, .55));
+    }
+
+    .heatmap__day {
+        color: #94a3b8;
+    }
+
+    .heatmap__count {
+        color: #e2e8f0;
     }
 }

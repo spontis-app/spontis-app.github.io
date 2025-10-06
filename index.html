@@ -27,15 +27,6 @@
             <h1 class="logo">SPONTIS</h1>
             <p class="tagline">What’s on. Right now.</p>
         </div>
-        <nav id="filters" class="filters filters--legacy" aria-label="Filter events">
-            <button data-filter="all" class="chip chip--active">All</button>
-            <button data-filter="date" class="chip">Date night ❤️</button>
-            <button data-filter="girls" class="chip">Girls' night 🍷</button>
-            <button data-filter="quiz" class="chip">Quiz 🍻</button>
-            <button data-filter="cinema" class="chip">Cinema 🎥</button>
-            <button data-filter="rave" class="chip">Rave 🔊</button>
-            <button id="surprise" class="chip chip--accent">Inspire me</button>
-        </nav>
     </header>
 
     <div class="container filter-shell">
@@ -45,6 +36,10 @@
     <main class="container">
         <section id="cluster-deck" class="cluster-deck" aria-label="Event vibes"></section>
         <section id="density-map" class="density" aria-label="Weekly pulse"></section>
+        <section id="heatmap" class="heatmap" aria-label="Event density this week" hidden>
+            <h2 class="heatmap__title">This week</h2>
+            <div id="heatmap-bars" class="heatmap__grid" role="list"></div>
+        </section>
         <div id="spotlight" class="spotlight" role="status" aria-live="polite" hidden></div>
         <section id="events" class="grid"></section>
     </main>

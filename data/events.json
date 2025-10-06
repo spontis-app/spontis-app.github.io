@@ -1,1 +1,120 @@
-[]
+[
+  {
+    "source": "Bergen Kino",
+    "title": "Kinovisning: Sci-Fi Classics",
+    "url": "https://www.bergenkino.no/film/sci-fi-classics",
+    "city": "Bergen",
+    "starts_at": "2024-05-17T20:00:00+02:00",
+    "venue": "Bergen Kino",
+    "tags": [
+      "cinema",
+      "date"
+    ],
+    "when": "Fri 20:00",
+    "where": "Bergen Kino",
+    "sources": [
+      "Bergen Kino"
+    ]
+  },
+  {
+    "source": "USF Verftet",
+    "title": "Jazzkveld på USF",
+    "url": "https://usf.no/program/jazzkveld",
+    "city": "Bergen",
+    "starts_at": "2024-05-18T19:30:00+02:00",
+    "venue": "USF Verftet",
+    "tags": [
+      "culture",
+      "jazz"
+    ],
+    "when": "Sat 19:30",
+    "where": "USF Verftet",
+    "sources": [
+      "USF Verftet"
+    ]
+  },
+  {
+    "source": "Bergen Kjøtt",
+    "title": "Music Tech Conference Bergen",
+    "url": "https://www.bergenkjott.org/events/music-tech-conference",
+    "city": "Bergen",
+    "starts_at": "2024-05-18T21:00:00+02:00",
+    "venue": "Bergen Kjøtt",
+    "tags": [
+      "culture",
+      "lecture"
+    ],
+    "when": "Sat 21:00",
+    "where": "Bergen Kjøtt",
+    "sources": [
+      "Bergen Kjøtt"
+    ]
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Landmark Live: Night Session",
+    "url": "https://www.kunsthall.no/en/events/landmark-night-session",
+    "city": "Bergen",
+    "starts_at": "2024-05-19T21:00:00+02:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night"
+    ],
+    "when": "Sun 21:00",
+    "where": "Landmark",
+    "sources": [
+      "Bergen Kunsthall"
+    ]
+  },
+  {
+    "source": "Resident Advisor",
+    "title": "Det Gode Disco",
+    "url": "https://ra.co/events/1928374",
+    "city": "Bergen",
+    "starts_at": "2024-05-19T23:00:00+02:00",
+    "venue": "Bergen",
+    "tags": [
+      "late-night",
+      "rave",
+      "techno"
+    ],
+    "when": "Sun 23:00",
+    "where": "Bergen",
+    "sources": [
+      "Resident Advisor"
+    ]
+  },
+  {
+    "source": "Østre",
+    "title": "Modular Nights",
+    "url": "https://www.ekko.no/ostre/modular-nights",
+    "city": "Bergen",
+    "starts_at": "2024-05-20T22:00:00+02:00",
+    "venue": "Østre",
+    "tags": [
+      "culture",
+      "late-night"
+    ],
+    "when": "Mon 22:00",
+    "where": "Østre",
+    "sources": [
+      "Østre"
+    ]
+  },
+  {
+    "source": "Kennel Vinylbar",
+    "title": "Kennel Vinylbar Weekender",
+    "url": "https://www.instagram.com/kennelvinylbar/",
+    "city": "Bergen",
+    "venue": "Kennel Vinylbar",
+    "tags": [
+      "bar",
+      "festival"
+    ],
+    "where": "Kennel Vinylbar",
+    "sources": [
+      "Kennel Vinylbar"
+    ]
+  }
+]
