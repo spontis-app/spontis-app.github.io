@@ -27,58 +27,70 @@
     <link rel="canonical" href="https://spontis-app.github.io/">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css?v=1">
-    <link rel="stylesheet" href="./css/theme.cool.css">
+    <link rel="stylesheet" href="./css/styles.css?v=2">
     <meta name="theme-color" content="#F8F6F2" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
 </head>
 
 <body>
     <div class="page">
-    <header class="container hero">
-        <div class="brand">
-            <h1 class="logo">SPONTIS</h1>
-            <p class="tagline">What’s on. Right now.</p>
-        </div>
-        <p class="hero__lede">Spontis keeps an eye on Bergen’s independent culture scene – concerts, cinema, club nights, workshops and more – refreshed automatically throughout the day.</p>
-        <div class="hero__meta" aria-label="System status">
-            <span>Timezone: Europe/Oslo</span>
-            <span>Validated listings with automatic clean-up</span>
-            <span>Dark mode by default</span>
+    <header class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="brand">
+                    <h1 class="logo">SPONTIS</h1>
+                    <p class="tagline">What’s on. Right now.</p>
+                </div>
+                <p class="hero__lede">Spontis keeps an eye on Bergen’s independent culture scene – concerts, cinema, club nights, workshops and more – refreshed automatically throughout the day.</p>
+                <div class="hero__meta" aria-label="System status">
+                    <span>Timezone: Europe/Oslo</span>
+                    <span>Validated listings with automatic clean-up</span>
+                    <span>Fast filters tuned for mobile</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="container filter-shell">
-        <nav id="filter-chips" class="filters" aria-label="Event filters"></nav>
-    </div>
+    <main class="main">
+        <div class="container layout">
+            <div class="layout__primary">
+                <section class="browse" aria-label="Event filters">
+                    <header class="browse__header">
+                        <div>
+                            <p class="browse__eyebrow">Browse</p>
+                            <h2 class="browse__title">This week</h2>
+                        </div>
+                        <p class="browse__meta">Fresh drops from Bergen’s independent venues, updated throughout the day.</p>
+                    </header>
+                    <nav id="filter-chips" class="filters" aria-label="Event filters"></nav>
+                </section>
 
-    <main class="container">
-        <section id="cluster-deck" class="cluster-deck" aria-label="Event vibes"></section>
-        <section id="density-map" class="density" aria-label="Weekly pulse"></section>
-        <section id="heatmap" class="heatmap" aria-label="Event density this week" hidden>
-            <h2 class="heatmap__title">This week</h2>
-            <div id="heatmap-bars" class="heatmap__grid" role="list"></div>
-        </section>
-        <div id="spotlight" class="spotlight" role="status" aria-live="polite" hidden></div>
-        <section class="events-shell" aria-label="Browse events">
-            <header class="events-shell__header">
-                <div class="events-shell__titles">
-                    <p class="events-shell__eyebrow">Browse</p>
-                    <h2 class="events-shell__title">This week</h2>
-                </div>
-                <p class="events-shell__meta">Fresh drops from Bergen’s independent venues, updated throughout the day.</p>
-            </header>
-            <section id="events" class="grid" role="list"></section>
-        </section>
-        <section class="about" id="about">
-            <h2>About SPONTIS</h2>
-            <p class="about__text">SPONTIS is a lightweight, zero-login guide to what’s happening in Bergen right now. We collect public schedules from trusted organisers, normalise timezones, validate the schema and remove past events automatically so the list stays fresh.</p>
-            <p class="about__text">Everything runs as open data on GitHub Pages. Filters are fast, mobile-friendly and tuned for dark mode. Tap any listing to jump to the original organiser for tickets or details.</p>
-            <h3 class="about__sources-title">Live sources</h3>
-            <p class="about__hint">We always credit where the information comes from – the list below updates whenever the scraper runs.</p>
-            <ul id="source-rollup" class="sources__list" aria-live="polite"></ul>
-            <p class="about__cta">Want to contribute a new source or fix a bug? <a href="https://github.com/spontis-app/spontis-app.github.io" target="_blank" rel="noopener noreferrer">Open a pull request on GitHub</a>.</p>
-        </section>
+                <section id="cluster-deck" class="cluster-deck" aria-label="Event vibes"></section>
+                <section id="density-map" class="density" aria-label="Weekly pulse"></section>
+                <section id="heatmap" class="heatmap" aria-label="Event density this week" hidden>
+                    <h2 class="heatmap__title">This week</h2>
+                    <div id="heatmap-bars" class="heatmap__grid" role="list"></div>
+                </section>
+
+                <div id="spotlight" class="spotlight" role="status" aria-live="polite" hidden></div>
+
+                <section class="events-shell" aria-label="Browse events">
+                    <section id="events" class="grid" role="list"></section>
+                </section>
+            </div>
+
+            <aside class="layout__aside">
+                <section class="about" id="about">
+                    <h2 class="about__title">About SPONTIS</h2>
+                    <p class="about__text">SPONTIS is a simple weekly snapshot of what’s on in Bergen. We collect public schedules from trusted organisers, normalise timezones and remove duplicates so the feed above stays focused on what’s next.</p>
+                    <p class="about__text">Everything runs as open data on GitHub Pages. Tap any listing to jump straight to the organiser for tickets or more details.</p>
+                    <h3 class="about__sources-title">Live sources</h3>
+                    <p class="about__hint">The sources update automatically whenever the scraper runs.</p>
+                    <ul id="source-rollup" class="sources__list" aria-live="polite"></ul>
+                    <p class="about__cta">Want to contribute a new source or fix a bug? <a href="https://github.com/spontis-app/spontis-app.github.io" target="_blank" rel="noopener noreferrer">Open a pull request on GitHub</a>.</p>
+                </section>
+            </aside>
+        </div>
     </main>
 
     <footer class="container footer">
