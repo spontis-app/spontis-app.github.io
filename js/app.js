@@ -147,15 +147,100 @@ function getDayInfo(event) {
     }
 
     if (event.when) {
-        const match = event.when.match(/^(mon|tue|wed|thu|fri|sat|sun)/i);
-        if (match) {
-            const dayKey = match[1].slice(0, 3).toLowerCase();
+        const dayMatch = event.when.match(/\b(mon|tue|wed|thu|fri|sat|sun)\b/i);
+        if (dayMatch) {
+            const dayKey = dayMatch[1].slice(0, 3).toLowerCase();
             const info = WEEK.find(day => day.short.toLowerCase() === dayKey);
+            if (info) return info;
+        }
+
+        const relative = inferRelativeDayIndex(event.when);
+        if (typeof relative === 'number') {
+            const info = WEEK.find(day => day.index === relative);
             if (info) return info;
         }
     }
 
     return null;
+}
+
+function inferRelativeDayIndex(text) {
+    if (!text) return null;
+    const normalized = text.toLowerCase();
+    const today = new Date();
+
+    if (/\b(today|tonight)\b/.test(normalized)) {
+        return today.getDay();
+    }
+
+    if (/\btomorrow\b/.test(normalized)) {
+        return (today.getDay() + 1) % 7;
+    }
+
+    return null;
+}
+
+function parseTimeFromText(text) {
+    if (!text) return null;
+    const match = text.match(/(\d{1,2})(?::(\d{2}))?/);
+    if (!match) return null;
+    let hours = Number.parseInt(match[1], 10);
+    if (Number.isNaN(hours)) return null;
+    let minutes = match[2] ? Number.parseInt(match[2], 10) : 0;
+    if (Number.isNaN(minutes)) minutes = 0;
+    hours = Math.max(0, Math.min(23, hours));
+    minutes = Math.max(0, Math.min(59, minutes));
+    return hours * 60 + minutes;
+}
+
+const RELATIVE_DAY_WEIGHT = 10000;
+const RELATIVE_NO_TIME_WEIGHT = 9000;
+const RELATIVE_NO_INFO_WEIGHT = 11000;
+
+function getEventSortKey(event) {
+    if (event.starts_at) {
+        const parsed = new Date(event.starts_at);
+        if (!Number.isNaN(parsed.getTime())) {
+            return { type: 'absolute', value: parsed.getTime() };
+        }
+    }
+
+    let dayIndex = typeof event.dayIndex === 'number' ? event.dayIndex : null;
+    if (dayIndex == null) {
+        const relative = inferRelativeDayIndex(event.when);
+        if (typeof relative === 'number') {
+            dayIndex = relative;
+        }
+    }
+
+    const normalizedDay = dayIndex == null ? 8 : (dayIndex === 0 ? 7 : dayIndex);
+    const minutes = parseTimeFromText(event.when);
+    const minuteWeight = minutes != null
+        ? minutes
+        : (dayIndex == null ? RELATIVE_NO_INFO_WEIGHT : RELATIVE_NO_TIME_WEIGHT);
+
+    return {
+        type: 'relative',
+        value: normalizedDay * RELATIVE_DAY_WEIGHT + minuteWeight
+    };
+}
+
+function compareEvents(a, b) {
+    const aKey = getEventSortKey(a);
+    const bKey = getEventSortKey(b);
+
+    if (aKey.type === 'absolute' && bKey.type === 'absolute') {
+        return aKey.value - bKey.value;
+    }
+
+    if (aKey.type === 'absolute') return -1;
+    if (bKey.type === 'absolute') return 1;
+
+    return aKey.value - bKey.value;
+}
+
+function sortByEventTime(events) {
+    return events.slice().sort(compareEvents);
 }
 
 function dedupeEvents(events) {
@@ -304,13 +389,16 @@ function paint(list) {
             ? `<div class="card__sources">Kilder: ${event.sources.join(' + ')}</div>`
             : '';
         const whenWhere = [event.when, event.where].filter(Boolean).join(' • ');
+        const link = event.url
+            ? `<a href="${event.url}" target="_blank" rel="noopener">Open</a>`
+            : '';
 
         return `<article class="card" data-index="${idx}">
       <span class="meta">${tagHtml}</span>
       <h3>${event.title}</h3>
       <p>${whenWhere}</p>
       ${sourceLine}
-      <a href="${event.url}" target="_blank" rel="noopener">Open</a>
+      ${link}
     </article>`;
     }).join('');
 }
@@ -337,11 +425,7 @@ function clearSpotlight() {
 function applyFilter(tag) {
     const all = window.__ALL || [];
     const filtered = tag === 'all' ? all : all.filter(event => (event.tags || []).includes(tag));
-    const data = filtered.slice().sort((a, b) => {
-        const aTime = a.starts_at ? new Date(a.starts_at).getTime() : Infinity;
-        const bTime = b.starts_at ? new Date(b.starts_at).getTime() : Infinity;
-        return aTime - bTime;
-    });
+    const data = sortByEventTime(filtered);
     paint(data);
     setActive(tag);
     currentList = data;
@@ -472,11 +556,7 @@ function renderClusters(events) {
     const cards = VIBE_PROFILES
         .filter(profile => groups.has(profile.id))
         .map(profile => {
-            const list = groups.get(profile.id).slice().sort((a, b) => {
-                const aTime = a.starts_at ? new Date(a.starts_at).getTime() : Infinity;
-                const bTime = b.starts_at ? new Date(b.starts_at).getTime() : Infinity;
-                return aTime - bTime;
-            });
+            const list = sortByEventTime(groups.get(profile.id));
             const sample = list[0];
             const count = list.length;
             const suffix = count === 1 ? 'event' : 'events';
