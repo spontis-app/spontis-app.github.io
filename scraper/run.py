@@ -7,7 +7,7 @@ import re
 from datetime import datetime
 from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Callable, Iterable, List, Tuple
+from typing import Callable, Iterable, List, Optional, Tuple
 
 from scraper.sources import bergen_kino, ostre
 
@@ -67,29 +67,74 @@ def _run_source(name: str, fetch: Callable[[], Iterable[dict]]) -> List[dict]:
         return []
 
 
+def _dedupe_key(event: dict) -> Optional[tuple]:
+    title = (event.get("title") or "").strip().lower()
+    venue = (event.get("venue") or event.get("where") or "").strip().lower()
+    starts_at = event.get("starts_at")
+    when = event.get("when")
+    url_hash = event.get("urlHash") or event.get("url_hash")
+    url = event.get("url")
+
+    if not starts_at and not when and not url_hash and not url:
+        return None
+
+    date_key: Optional[str] = None
+    if starts_at:
+        start_str = str(starts_at).strip()
+        if start_str:
+            date_key = start_str[:10]
+
+    if date_key:
+        return ("starts", title, date_key, venue, url_hash or url)
+
+    normalized_when = (when or "").strip().lower() or None
+    if normalized_when:
+        if url_hash or url:
+            return ("when", title, normalized_when, venue, url_hash or url)
+        return ("when", title, normalized_when, venue)
+
+    if url_hash or url:
+        return ("url", title, venue, url_hash or url)
+
+    return None
+
+
 def _dedupe(events: Iterable[dict]) -> List[dict]:
-    seen = set()
+    seen: set = set()
     deduped: List[dict] = []
+    merged = 0
+    skipped = 0
+
     for event in events:
-        key = (
-            event.get("title"),
-            event.get("starts_at"),
-            event.get("url"),
-        )
-        if key in seen:
+        key = _dedupe_key(event)
+        if key is None:
+            skipped += 1
+            deduped.append(event)
             continue
+
+        if key in seen:
+            merged += 1
+            continue
+
         seen.add(key)
         deduped.append(event)
+
+    kept = len(deduped)
+    print(f"Deduped events: merged {merged}, kept {kept}, skipped-key {skipped}")
     return deduped
 
 
 def _sort(events: List[dict]) -> List[dict]:
     def sort_key(ev: dict):
         starts_at = ev.get("starts_at")
-        title = (ev.get("title") or "").lower()
+        title = (ev.get("title") or "").strip().lower()
+        url_hash = ev.get("urlHash") or ev.get("url_hash") or ev.get("url") or ""
+        when = (ev.get("when") or "").strip().lower()
+
         if starts_at:
-            return (0, starts_at, title)
-        return (1, title)
+            return (0, starts_at, title, url_hash)
+
+        return (1, when, title, url_hash)
 
     return sorted(events, key=sort_key)
 
