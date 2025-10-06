@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 import dateparser
 from collections import defaultdict
-from scraper.normalize import event, TZ, format_showtimes
+from scraper.normalize import TZ, build_event, format_showtimes
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -107,17 +107,22 @@ def fetch() -> list[dict]:
     items: list[dict] = []
     for (title, film_url), times in grouped.items():
         ordered = sorted(times)
-        primary = ordered[0]
-        entry = event(
-            title=title,
-            dt=primary,
-            where="Bergen Kino",
-            tags=_infer_tags(title),
-            url=film_url
-        )
+        starts_at = ordered[0] if ordered else None
         label = format_showtimes(ordered)
+        extra = {"where": "Bergen Kino"}
         if label:
-            entry["when"] = label
-        items.append(entry)
+            extra["when"] = label
+
+        items.append(
+            build_event(
+                source="Bergen Kino",
+                title=title,
+                url=film_url,
+                starts_at=starts_at,
+                venue="Bergen Kino",
+                tags=_infer_tags(title),
+                extra=extra,
+            )
+        )
 
     return items

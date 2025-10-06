@@ -1,0 +1,10 @@
+# Editor and environment directories
+.vscode/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

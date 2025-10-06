@@ -2,7 +2,7 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 import dateparser
-from scraper.normalize import event, TZ  # <-- absolute
+from scraper.normalize import TZ, build_event, to_weekday_label
 
 HEADERS = {"User-Agent":"SpontisBot/0.1 (+https://spontis-app.github.io)","Accept-Language":"en,nb;q=0.7"}
 BASE = "https://ra.co"
@@ -32,5 +32,20 @@ def fetch() -> list[dict]:
                 where = text.split(sep)[-1].strip()
                 break
 
-        items.append(event(title=title, dt=dt, where=where, tags=["rave"], url=url))
+        extra = {"where": where}
+        label = to_weekday_label(dt)
+        if label:
+            extra["when"] = label
+
+        items.append(
+            build_event(
+                source="Resident Advisor",
+                title=title,
+                url=url,
+                starts_at=dt,
+                venue=where,
+                tags=["rave"],
+                extra=extra,
+            )
+        )
     return items
