@@ -54,14 +54,27 @@ body {
 }
 
 body {
+    position: relative;
     background: var(--page-bg);
     color: var(--page-text);
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.55;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 12% 18%, rgba(222, 182, 140, 0.28), transparent 55%),
+        radial-gradient(circle at 80% 12%, rgba(88, 70, 55, 0.22), transparent 52%),
+        radial-gradient(circle at 50% 85%, rgba(226, 202, 173, 0.18), transparent 60%);
+    mix-blend-mode: soft-light;
+    z-index: -1;
 }
 
 a {
@@ -87,7 +100,9 @@ a:focus-visible {
 }
 
 .hero {
-    padding-block: clamp(3rem, 6vw, 4.5rem);
+    padding-block: clamp(3.2rem, 6vw, 4.75rem);
+    border-bottom: 1px solid var(--page-border);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.95));
 }
 
 .hero__inner {
@@ -103,11 +118,12 @@ a:focus-visible {
 
 .brand .logo {
     margin: 0;
-    font-size: clamp(2.6rem, 7vw, 3.6rem);
-    letter-spacing: 0.08em;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-size: clamp(2.8rem, 7vw, 3.8rem);
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--page-accent);
-    font-weight: 800;
+    color: var(--page-text);
+    font-weight: 600;
 }
 
 .tagline {
@@ -287,7 +303,7 @@ a:focus-visible {
 .chip--accent,
 #surprise {
     background: var(--page-text);
-    color: var(--page-bg);
+    color: #ffffff;
     border-color: var(--page-text);
 }
 
@@ -420,6 +436,13 @@ a:focus-visible {
     transition: opacity 180ms ease;
 }
 
+.spotlight strong {
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    color: var(--page-muted);
+}
+
 .spotlight__title {
     font-size: 1.15rem;
     font-weight: 700;
@@ -434,6 +457,24 @@ a:focus-visible {
 
 .spotlight__link {
     justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 600;
+    color: var(--page-text);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.15rem;
+    text-decoration: none;
+}
+
+.spotlight__link::after {
+    content: '↗';
+    font-size: 0.85rem;
+}
+
+.spotlight__link:hover,
+.spotlight__link:focus-visible {
+    color: var(--page-accent);
 }
 
 .events-shell {
@@ -512,7 +553,8 @@ a:focus-visible {
     border-radius: var(--page-radius-pill);
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     background: var(--badge-bg);
     color: var(--badge-text);
 }

@@ -118,6 +118,76 @@ const VIBE_PROFILES = [
 
 const VIBE_LOOKUP = Object.fromEntries(VIBE_PROFILES.map(profile => [profile.id, profile]));
 
+const DATE_FORMAT_WITH_TIME = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Oslo',
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+    hour: '2-digit',
+    minute: '2-digit'
+});
+
+const DATE_FORMAT_DAY_ONLY = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Oslo',
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short'
+});
+
+function hasClockComponent(value) {
+    return typeof value === 'string' && !/T0{2}:0{2}(?::0{2})?(?:\.0+)?(?:Z|[+-]0{2}:?0{2})?$/.test(value);
+}
+
+function computeScheduleLabel(event) {
+    if (event.when && String(event.when).trim()) {
+        return String(event.when).trim();
+    }
+    if (!event.starts_at) {
+        return '';
+    }
+    const date = new Date(event.starts_at);
+    if (Number.isNaN(date.getTime())) {
+        return '';
+    }
+    const formatter = hasClockComponent(event.starts_at) ? DATE_FORMAT_WITH_TIME : DATE_FORMAT_DAY_ONLY;
+    return formatter.format(date).replace(',', '');
+}
+
+function deriveLocation(event) {
+    return event.where || event.venue || event.city || '';
+}
+
+function buildEventHeadline(event) {
+    const parts = [];
+    const schedule = computeScheduleLabel(event);
+    if (schedule) parts.push(schedule);
+    const location = deriveLocation(event);
+    if (location) parts.push(location);
+    return parts.join(' • ');
+}
+
+function parseStartsAtValue(value) {
+    if (!value) return Number.NaN;
+    const date = new Date(value);
+    return Number.isNaN(date.getTime()) ? Number.NaN : date.getTime();
+}
+
+function sortEventsChronologically(list) {
+    return [...list].sort((a, b) => {
+        const aTime = parseStartsAtValue(a.starts_at);
+        const bTime = parseStartsAtValue(b.starts_at);
+        const aHasTime = !Number.isNaN(aTime);
+        const bHasTime = !Number.isNaN(bTime);
+        if (aHasTime && bHasTime) return aTime - bTime;
+        if (aHasTime) return -1;
+        if (bHasTime) return 1;
+        const aWhen = (a.when || '').toLowerCase();
+        const bWhen = (b.when || '').toLowerCase();
+        if (aWhen && bWhen && aWhen !== bWhen) return aWhen.localeCompare(bWhen);
+        return (a.title || '').localeCompare(b.title || '');
+    });
+}
+
 const WEEK = [
     { index: 1, short: 'Mon', full: 'Monday' },
     { index: 2, short: 'Tue', full: 'Tuesday' },
@@ -536,7 +606,7 @@ function detectVibe(event, combinedText) {
 function enrichEvents(events) {
     const deduped = dedupeEvents(events);
 
-    return deduped.map(event => {
+    const enriched = deduped.map(event => {
         const combinedText = [
             event.title,
             event.description,
@@ -556,12 +626,26 @@ function enrichEvents(events) {
         event.dayName = dayInfo?.full ?? null;
         event.dayShort = dayInfo?.short ?? null;
 
+        const scheduleLabel = computeScheduleLabel(event);
+        if (scheduleLabel && !event.when) {
+            event.when = scheduleLabel;
+        }
+
+        const location = deriveLocation(event);
+        if (location && !event.where) {
+            event.where = location;
+        }
+
+        event.displayHeadline = buildEventHeadline(event);
+
         if (!event.sources || !event.sources.length) {
             event.sources = event.source ? [event.source] : [];
         }
 
         return event;
     });
+
+    return sortEventsChronologically(enriched);
 }
 
 function paint(list) {
@@ -584,21 +668,27 @@ function paint(list) {
         article.dataset.index = String(idx);
         article.setAttribute('role', 'listitem');
 
-        if (event.tags?.length) {
-            const meta = document.createElement('div');
-            meta.className = 'meta';
-            event.tags.forEach(tag => {
-                const badge = document.createElement('span');
-                const classes = ['badge'];
-                if (TAG_STYLE[tag]) classes.push(TAG_STYLE[tag]);
-                badge.className = classes.join(' ');
-                badge.classList.add('tag');
-                if (typeof tag === 'string' && tag) {
-                    badge.classList.add(`tag-${tag}`);
-                }
-                badge.textContent = tag;
-                meta.appendChild(badge);
-            });
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+
+        (event.tags || []).forEach(tag => {
+            const badge = document.createElement('span');
+            const classes = ['badge'];
+            if (TAG_STYLE[tag]) classes.push(TAG_STYLE[tag]);
+            badge.className = classes.join(' ');
+            badge.textContent = labelForTag(tag);
+            meta.appendChild(badge);
+        });
+
+        const organiserLabel = event.sources?.length ? event.sources[0] : event.source;
+        if (organiserLabel) {
+            const sourceBadge = document.createElement('span');
+            sourceBadge.className = 'badge badge--source';
+            sourceBadge.textContent = organiserLabel;
+            meta.appendChild(sourceBadge);
+        }
+
+        if (meta.children.length) {
             article.appendChild(meta);
         }
 
@@ -606,15 +696,11 @@ function paint(list) {
         title.textContent = event.title || 'Untitled event';
         article.appendChild(title);
 
-        const detailParts = [];
-        if (event.dayName) detailParts.push(event.dayName);
-        if (event.when) detailParts.push(event.when);
-        if (event.where) detailParts.push(event.where);
-
-        if (detailParts.length) {
+        const headline = event.displayHeadline || buildEventHeadline(event);
+        if (headline) {
             const detailEl = document.createElement('p');
             detailEl.className = 'card__details';
-            detailEl.textContent = detailParts.join(' • ');
+            detailEl.textContent = headline;
             article.appendChild(detailEl);
         }
 
@@ -632,7 +718,7 @@ function paint(list) {
         if (sourceNames) {
             const sourceEl = document.createElement('p');
             sourceEl.className = 'card__sources';
-            sourceEl.textContent = `Source: ${sourceNames}`;
+            sourceEl.textContent = `Organiser: ${sourceNames}`;
             article.appendChild(sourceEl);
         }
 
@@ -712,7 +798,7 @@ function showSpotlight(event) {
     spotlightEl.replaceChildren();
 
     const intro = document.createElement('strong');
-    intro.textContent = 'Spotlight';
+    intro.textContent = 'Curated pick';
     spotlightEl.appendChild(intro);
 
     const title = document.createElement('div');
@@ -720,11 +806,11 @@ function showSpotlight(event) {
     title.textContent = event.title || 'Untitled event';
     spotlightEl.appendChild(title);
 
-    const whenWhere = [event.when, event.where].filter(Boolean).join(' • ');
-    if (whenWhere) {
+    const headline = event.displayHeadline || buildEventHeadline(event);
+    if (headline) {
         const meta = document.createElement('div');
         meta.className = 'spotlight__meta';
-        meta.textContent = whenWhere;
+        meta.textContent = headline;
         spotlightEl.appendChild(meta);
     }
 
