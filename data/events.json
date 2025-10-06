@@ -11,7 +11,10 @@
       "date"
     ],
     "when": "Fri 20:00",
-    "where": "Bergen Kino"
+    "where": "Bergen Kino",
+    "sources": [
+      "Bergen Kino"
+    ]
   },
   {
     "source": "USF Verftet",
@@ -21,10 +24,14 @@
     "starts_at": "2024-05-18T19:30:00+02:00",
     "venue": "USF Verftet",
     "tags": [
-      "culture"
+      "culture",
+      "jazz"
     ],
     "when": "Sat 19:30",
-    "where": "USF Verftet"
+    "where": "USF Verftet",
+    "sources": [
+      "USF Verftet"
+    ]
   },
   {
     "source": "Bergen Kjøtt",
@@ -34,10 +41,14 @@
     "starts_at": "2024-05-18T21:00:00+02:00",
     "venue": "Bergen Kjøtt",
     "tags": [
-      "culture"
+      "culture",
+      "lecture"
     ],
     "when": "Sat 21:00",
-    "where": "Bergen Kjøtt"
+    "where": "Bergen Kjøtt",
+    "sources": [
+      "Bergen Kjøtt"
+    ]
   },
   {
     "source": "Bergen Kunsthall",
@@ -47,10 +58,14 @@
     "starts_at": "2024-05-19T21:00:00+02:00",
     "venue": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "late-night"
     ],
     "when": "Sun 21:00",
-    "where": "Landmark"
+    "where": "Landmark",
+    "sources": [
+      "Bergen Kunsthall"
+    ]
   },
   {
     "source": "Resident Advisor",
@@ -60,10 +75,15 @@
     "starts_at": "2024-05-19T23:00:00+02:00",
     "venue": "Bergen",
     "tags": [
-      "rave"
+      "late-night",
+      "rave",
+      "techno"
     ],
     "when": "Sun 23:00",
-    "where": "Bergen"
+    "where": "Bergen",
+    "sources": [
+      "Resident Advisor"
+    ]
   },
   {
     "source": "Østre",
@@ -73,10 +93,14 @@
     "starts_at": "2024-05-20T22:00:00+02:00",
     "venue": "Østre",
     "tags": [
-      "culture"
+      "culture",
+      "late-night"
     ],
     "when": "Mon 22:00",
-    "where": "Østre"
+    "where": "Østre",
+    "sources": [
+      "Østre"
+    ]
   },
   {
     "source": "Kennel Vinylbar",
@@ -85,8 +109,12 @@
     "city": "Bergen",
     "venue": "Kennel Vinylbar",
     "tags": [
-      "bar"
+      "bar",
+      "festival"
     ],
-    "where": "Kennel Vinylbar"
+    "where": "Kennel Vinylbar",
+    "sources": [
+      "Kennel Vinylbar"
+    ]
   }
 ]
