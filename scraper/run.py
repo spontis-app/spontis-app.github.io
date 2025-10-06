@@ -1,18 +1,28 @@
-# scraper/run.py
+"""Run all SPONTIS scrapers, validate output and persist to disk."""
 from __future__ import annotations
 
+import argparse
 import json
+import logging
 import os
 import re
-from datetime import datetime
+from collections import Counter
+from collections.abc import Iterable as IterableCollection
+from datetime import datetime, timedelta
 from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Callable, Iterable, List, Tuple
+from typing import Callable, Iterable, List, Sequence, Tuple
+from zoneinfo import ZoneInfo
 
+from scraper.normalize import DEFAULT_CITY, WEEKDAYS
+from scraper.schema import validate_events
 from scraper.sources import bergen_kino, ostre
 
+LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
+TZ = ZoneInfo("Europe/Oslo")
+
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "data" / "events.json"
+DEFAULT_OUT = ROOT / "data" / "events.json"
 
 USE_RA = os.getenv("SCRAPE_RA", "0") == "1"
 USE_OSTRE = os.getenv("SCRAPE_OSTRE", "1") != "0"
@@ -37,7 +47,41 @@ if USE_KENNEL:
     from scraper.sources import kennel_vinylbar
 
 
+logger = logging.getLogger("spontis.scraper")
+
 Source = Tuple[str, Callable[[], Iterable[dict]]]
+
+
+def configure_logging(level: str) -> None:
+    logging.basicConfig(level=level, format=LOG_FORMAT)
+
+
+def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--out",
+        default=str(DEFAULT_OUT),
+        help="Destination path for events JSON (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--log-level",
+        default=os.getenv("SCRAPER_LOG_LEVEL", "INFO"),
+        help="Logging level (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--grace-hours",
+        type=int,
+        default=int(os.getenv("SCRAPER_GRACE_HOURS", "4")),
+        help=(
+            "How many hours after an event has started we continue to keep it in "
+            "the dataset (default: %(default)s)"
+        ),
+    )
+    parser.add_argument(
+        "--now",
+        help="Override the current time (ISO 8601, defaults to now in Europe/Oslo)",
+    )
+    return parser.parse_args(argv)
 
 
 def _sources() -> List[Source]:
@@ -60,11 +104,12 @@ def _sources() -> List[Source]:
 def _run_source(name: str, fetch: Callable[[], Iterable[dict]]) -> List[dict]:
     try:
         events = list(fetch())
-        print(f"{name}: {len(events)} events")
-        return events
-    except Exception as exc:
-        print(f"{name} failed: {exc}")
+    except Exception:
+        logger.exception("%s failed", name)
         return []
+
+    logger.info("%s: %d events", name, len(events))
+    return events
 
 
 def _dedupe(events: Iterable[dict]) -> List[dict]:
@@ -118,7 +163,7 @@ LATE_NIGHT_KEYWORDS = re.compile(
 )
 
 
-def _append_unique(values: List[str], new_value: str) -> None:
+def _append_unique(values: List[str], new_value: str | None) -> None:
     if new_value and new_value not in values:
         values.append(new_value)
 
@@ -216,7 +261,7 @@ def _merge_related(events: List[dict]) -> Tuple[List[dict], int]:
 
         if not matched:
             new_event = dict(event)
-            sources = []
+            sources: List[str] = []
             _append_unique(sources, new_event.get("source"))
             new_event["sources"] = sources
             merged.append(new_event)
@@ -228,19 +273,169 @@ def _merge_related(events: List[dict]) -> Tuple[List[dict], int]:
     return merged, merges
 
 
-def main():
+def _normalize_time(value: str | None) -> str | None:
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(value)
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=TZ)
+    dt = dt.astimezone(TZ).replace(microsecond=0)
+    return dt.isoformat()
+
+
+def _human_when(value: str | None) -> str | None:
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(value)
+    except ValueError:
+        return None
+    weekday = WEEKDAYS[dt.weekday()]
+    return f"{weekday} {dt:%H:%M}"
+
+
+def _normalize_event(event: dict) -> dict | None:
+    """Clean up a single event payload before validation."""
+
+    cleaned = dict(event)
+    cleaned["source"] = (cleaned.get("source") or "").strip()
+    cleaned["title"] = (cleaned.get("title") or "").strip()
+    cleaned["url"] = (cleaned.get("url") or "").strip()
+    cleaned["city"] = (cleaned.get("city") or DEFAULT_CITY).strip()
+
+    starts = _normalize_time(cleaned.get("starts_at"))
+    if starts:
+        cleaned["starts_at"] = starts
+        cleaned.setdefault("when", _human_when(starts))
+    else:
+        cleaned.pop("starts_at", None)
+
+    ends = _normalize_time(cleaned.get("ends_at"))
+    if ends:
+        cleaned["ends_at"] = ends
+    else:
+        cleaned.pop("ends_at", None)
+
+    if cleaned.get("venue"):
+        cleaned["venue"] = cleaned["venue"].strip()
+        cleaned.setdefault("where", cleaned["venue"])
+
+    tags = cleaned.get("tags")
+    if isinstance(tags, IterableCollection) and not isinstance(tags, (str, bytes)):
+        cleaned["tags"] = _normalize_tags(tags)
+
+    sources = cleaned.get("sources")
+    if isinstance(sources, IterableCollection) and not isinstance(sources, (str, bytes)):
+        cleaned["sources"] = _normalize_tags(sources)
+
+    if not cleaned["source"] or not cleaned["title"] or not cleaned["url"]:
+        return None
+
+    return cleaned
+
+
+def _normalize_events(events: Iterable[dict]) -> List[dict]:
+    normalized: List[dict] = []
+    dropped = 0
+    for event in events:
+        normalized_event = _normalize_event(event)
+        if normalized_event is None:
+            dropped += 1
+            continue
+        normalized.append(normalized_event)
+
+    if dropped:
+        logger.warning("Dropped %d events missing required fields", dropped)
+    return normalized
+
+
+def _drop_past_events(events: Iterable[dict], now: datetime, grace_hours: int) -> List[dict]:
+    cutoff = now - timedelta(hours=grace_hours)
+    kept: List[dict] = []
+    dropped = 0
+
+    for event in events:
+        starts_at = event.get("starts_at")
+        if not starts_at:
+            kept.append(event)
+            continue
+
+        try:
+            dt = datetime.fromisoformat(starts_at)
+        except ValueError:
+            logger.debug("Invalid starts_at format after normalization: %s", starts_at)
+            kept.append(event)
+            continue
+
+        if dt < cutoff:
+            dropped += 1
+            continue
+
+        kept.append(event)
+
+    if dropped:
+        logger.info("Removed %d past events (cutoff %s)", dropped, cutoff.isoformat())
+
+    return kept
+
+
+def _summarize(events: Iterable[dict]) -> Counter:
+    counts: Counter[str] = Counter()
+    for event in events:
+        for source in event.get("sources") or [event.get("source")]:
+            if source:
+                counts[source] += 1
+    return counts
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    args = parse_args(argv)
+    configure_logging(args.log_level.upper())
+
+    out_path = Path(args.out)
+    now = datetime.now(TZ)
+    if args.now:
+        try:
+            parsed = datetime.fromisoformat(args.now)
+        except ValueError as exc:
+            logger.error("Invalid --now value %s", args.now)
+            raise SystemExit(2) from exc
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=TZ)
+        now = parsed.astimezone(TZ)
+
     collected: List[dict] = []
     for name, fetch in _sources():
         collected.extend(_run_source(name, fetch))
 
-    events = _sort(_dedupe(collected))
-    events, merges = _merge_related(events)
+    logger.info("Collected %d raw events", len(collected))
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Merged related events: {merges}")
-    print(f"Wrote {len(events)} events → {OUT}")
+    normalized = _normalize_events(collected)
+    valid, invalid = validate_events(normalized)
+
+    for payload, errors in invalid:
+        logger.warning("Dropping invalid event '%s': %s", payload.get("title"), "; ".join(errors))
+
+    events = _sort(_dedupe(valid))
+    events, merges = _merge_related(events)
+    events = _drop_past_events(events, now, args.grace_hours)
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(events, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    counts = _summarize(events)
+    for source, total in counts.most_common():
+        logger.info("%s → %d events", source, total)
+
+    logger.info("Merged related events: %d", merges)
+    logger.info("Wrote %d events → %s", len(events), out_path)
+
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
+

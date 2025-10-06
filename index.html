@@ -4,21 +4,33 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>SPONTIS — What’s on. Right now.</title>
+    <title>SPONTIS — Bergen events right now</title>
     <meta name="description"
-        content="Spontis: concerts, quiz nights, cinema, workshops and spontaneous fun — right now." />
-    <meta property="og:title" content="SPONTIS" />
-    <meta property="og:description" content="What’s on. Right now." />
+        content="SPONTIS curates concerts, club nights, cinema, quizzes and culture happening in Bergen right now." />
+    <meta name="author" content="SPONTIS" />
+    <meta name="keywords" content="Bergen events, concerts, nightlife, quiz, cinema, culture, things to do" />
+    <link rel="canonical" href="https://spontis.app/" />
+    <meta property="og:title" content="SPONTIS — What’s on. Right now." />
+    <meta property="og:description"
+        content="Daily-updated guide to spontaneous things to do in Bergen." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://spontis.app/" />
     <meta property="og:image" content="/assets/og-image.png" />
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css?v=1">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="SPONTIS" />
+    <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#F8F6F2" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+    <meta name="twitter:title" content="SPONTIS — What’s on. Right now." />
+    <meta name="twitter:description"
+        content="Daily-updated guide to spontaneous things to do in Bergen." />
+    <meta name="twitter:image" content="/assets/og-image.png" />
+    <meta name="theme-color" content="#050b18">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css?v=2">
 </head>
 
 <body>
@@ -27,30 +39,78 @@
             <h1 class="logo">SPONTIS</h1>
             <p class="tagline">What’s on. Right now.</p>
         </div>
-        <nav class="filters">
-            <button data-filter="all" data-scope="dataset" class="chip chip--active">All</button>
-            <button data-filter="today" data-scope="dataset" class="chip">Today 🌞</button>
-            <button data-filter="tonight" data-scope="dataset" class="chip">Tonight 🌙</button>
-            <button data-filter="date" data-scope="tag" class="chip">Date night ❤️</button>
-            <button data-filter="girls" data-scope="tag" class="chip">Girls' night 🍷</button>
-            <button data-filter="quiz" data-scope="tag" class="chip">Quiz 🍻</button>
-            <button data-filter="cinema" data-scope="tag" class="chip">Cinema 🎥</button>
-            <button data-filter="rave" data-scope="tag" class="chip">Rave 🔊</button>
-            <button id="surprise" class="chip chip--accent">Inspire me</button>
+        <nav class="filters" aria-label="Event filters">
+            <div class="filters__groups">
+                <div class="filters__heading">
+                    <span class="filters__label">Browse</span>
+                </div>
+                <div class="filters__rail" role="group" aria-label="By time">
+                    <button data-filter="all" data-scope="dataset" class="chip chip--primary chip--active">All</button>
+                    <button data-filter="today" data-scope="dataset" class="chip chip--primary">Today 🌞</button>
+                    <button data-filter="tonight" data-scope="dataset" class="chip chip--primary">Tonight 🌙</button>
+                </div>
+                <div class="filters__rail" role="group" aria-label="By vibe">
+                    <button data-filter="date" data-scope="tag" class="chip">Date night ❤️</button>
+                    <button data-filter="girls" data-scope="tag" class="chip">Girls' night 🍷</button>
+                    <button data-filter="quiz" data-scope="tag" class="chip">Quiz 🍻</button>
+                    <button data-filter="cinema" data-scope="tag" class="chip">Cinema 🎥</button>
+                    <button data-filter="rave" data-scope="tag" class="chip">Rave 🔊</button>
+                    <button data-filter="late-night" data-scope="tag" class="chip">Late night 🌙</button>
+                    <button data-filter="culture" data-scope="tag" class="chip">Culture 🖼️</button>
+                </div>
+            </div>
+            <div class="filters__actions">
+                <button id="surprise" class="chip chip--accent">Inspire me</button>
+            </div>
         </nav>
     </header>
 
     <main class="container">
-        <section id="heatmap" class="heatmap" aria-label="Event density this week" hidden>
-            <h2 class="heatmap__title">This week</h2>
-            <div id="heatmap-bars" class="heatmap__grid" role="list"></div>
-        </section>
-        <div id="spotlight" class="spotlight" role="status" aria-live="polite" hidden></div>
-        <section id="events" class="grid"></section>
+        <div class="main-content">
+            <section id="heatmap" class="heatmap" aria-label="Event density this week" hidden>
+                <h2 class="heatmap__title">This week</h2>
+                <div id="heatmap-bars" class="heatmap__grid" role="list"></div>
+            </section>
+
+            <div class="layout-split">
+                <div class="layout-split__primary">
+                    <div id="spotlight" class="spotlight" role="status" aria-live="polite" hidden></div>
+                    <section id="events" class="grid" aria-live="polite" aria-busy="false"></section>
+                </div>
+                <aside class="layout-split__secondary" aria-labelledby="about-title">
+                    <section class="about" id="about">
+                        <h2 id="about-title">About SPONTIS</h2>
+                        <p>SPONTIS is a living guide to Bergen’s culture and nightlife. We scrape trusted venues every day, normalise
+                            timezones and clean duplicates so you can simply pick something fun.</p>
+                        <ul>
+                            <li>Filters tuned for spontaneous plans on mobile or desktop.</li>
+                            <li>Time-aware curation that hides events once they are over.</li>
+                            <li>Open data — follow along on <a href="https://github.com/spontis-app/spontis-app.github.io">GitHub</a>.</li>
+                        </ul>
+                    </section>
+                    <section class="sources" aria-labelledby="sources-title">
+                        <h2 id="sources-title">Event sources</h2>
+                        <ul class="sources__list">
+                            <li><a href="https://www.bergenkino.no/" rel="noopener noreferrer">Bergen Kino</a></li>
+                            <li><a href="https://usf.no/" rel="noopener noreferrer">USF Verftet</a></li>
+                            <li><a href="https://www.ostre.no/" rel="noopener noreferrer">Østre</a></li>
+                            <li><a href="https://www.bergenkjott.org/" rel="noopener noreferrer">Bergen Kjøtt</a></li>
+                            <li><a href="https://www.kunsthall.no/" rel="noopener noreferrer">Bergen Kunsthall</a></li>
+                            <li><a href="https://ra.co/" rel="noopener noreferrer">Resident Advisor</a></li>
+                        </ul>
+                        <p>Missing a venue? <a href="mailto:hei@spontis.app">Tip us</a> and we’ll take a look.</p>
+                    </section>
+                </aside>
+            </div>
+        </div>
     </main>
 
     <footer class="container footer">
-        <p>© <span id="year"></span> Spontis. Bergen at your fingertips.</p>
+        <div class="footer__inner">
+            <p class="footer__legal">© <span id="year"></span> SPONTIS. Built in Bergen for spontaneous explorers.</p>
+            <p>Data updates daily with timezone-aware scrapers. We strive for accuracy, yet always double-check with the
+                organiser before you head out.</p>
+        </div>
     </footer>
 
     <script src="/js/app.js" defer></script>

@@ -6,7 +6,11 @@
         "tags": [
             "quiz"
         ],
-        "url": "https://kvarteret.no/"
+        "url": "https://kvarteret.no/",
+        "source": "Sample",
+        "sources": [
+            "Sample data"
+        ]
     },
     {
         "title": "Midnight Rave",
@@ -15,7 +19,11 @@
         "tags": [
             "rave"
         ],
-        "url": "https://ra.co/"
+        "url": "https://ra.co/",
+        "source": "Sample",
+        "sources": [
+            "Sample data"
+        ]
     },
     {
         "title": "Paint n’ Sip",
@@ -25,7 +33,11 @@
             "girls",
             "date"
         ],
-        "url": "https://ticketco.events/"
+        "url": "https://ticketco.events/",
+        "source": "Sample",
+        "sources": [
+            "Sample data"
+        ]
     },
     {
         "title": "Cinema: Sci-Fi Classics",
@@ -35,6 +47,10 @@
             "cinema",
             "date"
         ],
-        "url": "https://bergenkino.no/"
+        "url": "https://bergenkino.no/",
+        "source": "Sample",
+        "sources": [
+            "Sample data"
+        ]
     }
 ]

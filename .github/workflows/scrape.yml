@@ -33,16 +33,20 @@ jobs:
 
       - name: Run scraper
         run: |
-          python -m scraper.run
+          python -m scraper.run --log-level INFO
+
+      - name: Build derived views
+        run: |
+          python scripts/build_views.py --log-level INFO
 
       - name: Commit & push if data changed
         run: |
-          if [[ -n "$(git status --porcelain data/events.json)" ]]; then
+          if [[ -n "$(git status --porcelain data/)" ]]; then
             git config user.name "spontis-bot"
             git config user.email "bot@users.noreply.github.com"
-            git add data/events.json
-            git commit -m "chore(data): update events.json [skip ci]"
+            git add data/events.json data/today.json data/tonight.json data/heatmap.json
+            git commit -m "chore(data): refresh events [skip ci]"
             git push
           else
-            echo "No changes to data/events.json"
+            echo "No changes to data files"
           fi
