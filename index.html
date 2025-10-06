@@ -28,17 +28,23 @@
             <p class="tagline">What’s on. Right now.</p>
         </div>
         <nav class="filters">
-            <button data-filter="all" class="chip chip--active">All</button>
-            <button data-filter="date">Date night ❤️</button>
-            <button data-filter="girls">Girls' night 🍷</button>
-            <button data-filter="quiz">Quiz 🍻</button>
-            <button data-filter="cinema">Cinema 🎥</button>
-            <button data-filter="rave">Rave 🔊</button>
+            <button data-filter="all" data-scope="dataset" class="chip chip--active">All</button>
+            <button data-filter="today" data-scope="dataset" class="chip">Today 🌞</button>
+            <button data-filter="tonight" data-scope="dataset" class="chip">Tonight 🌙</button>
+            <button data-filter="date" data-scope="tag" class="chip">Date night ❤️</button>
+            <button data-filter="girls" data-scope="tag" class="chip">Girls' night 🍷</button>
+            <button data-filter="quiz" data-scope="tag" class="chip">Quiz 🍻</button>
+            <button data-filter="cinema" data-scope="tag" class="chip">Cinema 🎥</button>
+            <button data-filter="rave" data-scope="tag" class="chip">Rave 🔊</button>
             <button id="surprise" class="chip chip--accent">Inspire me</button>
         </nav>
     </header>
 
     <main class="container">
+        <section id="heatmap" class="heatmap" aria-label="Event density this week" hidden>
+            <h2 class="heatmap__title">This week</h2>
+            <div id="heatmap-bars" class="heatmap__grid" role="list"></div>
+        </section>
         <div id="spotlight" class="spotlight" role="status" aria-live="polite" hidden></div>
         <section id="events" class="grid"></section>
     </main>

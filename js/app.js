@@ -2,6 +2,11 @@ const $ = s => document.querySelector(s);
 const eventsEl = $('#events');
 const filterBar = document.querySelector('.filters');
 const spotlightEl = $('#spotlight');
+const heatmapEl = $('#heatmap');
+const heatmapGrid = $('#heatmap-bars');
+
+const DATASET_FILTERS = new Set(['all', 'today', 'tonight']);
+const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 const TAG_STYLE = {
     date: 'badge--date', girls: 'badge--girls', quiz: 'badge--quiz',
@@ -10,6 +15,7 @@ const TAG_STYLE = {
 
 let currentList = [];
 let highlightTimer;
+let activeDatasetKey = 'all';
 
 function paint(list) {
     eventsEl.innerHTML = '';
@@ -67,10 +73,18 @@ function paint(list) {
     eventsEl.appendChild(fragment);
 }
 
-function setActive(tag) {
-    document.querySelectorAll('.filters .chip').forEach(b =>
-        b.classList.toggle('chip--active', b.dataset.filter === tag)
-    );
+function setActive(value, scope) {
+    const selector = scope ? `.filters [data-scope="${scope}"]` : '.filters [data-filter]';
+    document.querySelectorAll(selector).forEach((btn) => {
+        const isActive = value !== null && btn.dataset.filter === value;
+        btn.classList.toggle('chip--active', isActive);
+    });
+}
+
+function getDataset(key) {
+    if (key === 'today') return window.__TODAY || [];
+    if (key === 'tonight') return window.__TONIGHT || [];
+    return window.__ALL || [];
 }
 
 function clearSpotlight() {
@@ -86,10 +100,22 @@ function clearSpotlight() {
 }
 
 function applyFilter(tag) {
-    const all = window.__ALL || [];
-    const data = tag === 'all' ? all : all.filter(e => (e.tags || []).includes(tag));
+    if (DATASET_FILTERS.has(tag)) {
+        activeDatasetKey = tag;
+        const data = getDataset(tag);
+        paint(data);
+        setActive(activeDatasetKey, 'dataset');
+        setActive(null, 'tag');
+        currentList = data;
+        clearSpotlight();
+        return;
+    }
+
+    const source = getDataset(activeDatasetKey);
+    const data = source.filter(e => (e.tags || []).includes(tag));
     paint(data);
-    setActive(tag);
+    setActive(activeDatasetKey, 'dataset');
+    setActive(tag, 'tag');
     currentList = data;
     clearSpotlight();
 }
@@ -148,14 +174,9 @@ async function loadEvents() {
         './data/events.json',
         './data/events.sample.json'
     ];
-    const cacheBust = `v=${Date.now()}`;
-
     for (const url of sources) {
-        const separator = url.includes('?') ? '&' : '?';
         try {
-            const response = await fetch(`${url}${separator}${cacheBust}`);
-            if (!response.ok) throw new Error(response.statusText);
-            const data = await response.json();
+            const data = await fetchJson(url);
             if (Array.isArray(data) && data.length) return data;
         } catch (err) {
             console.warn(`Failed to load ${url}`, err);
@@ -171,8 +192,89 @@ async function loadEvents() {
     ];
 }
 
+async function fetchJson(url) {
+    const cacheBust = `v=${Date.now()}`;
+    const separator = url.includes('?') ? '&' : '?';
+    const response = await fetch(`${url}${separator}${cacheBust}`);
+    if (!response.ok) throw new Error(response.statusText);
+    return response.json();
+}
+
+async function loadSupplemental(url) {
+    try {
+        const data = await fetchJson(url);
+        return data;
+    } catch (err) {
+        console.warn(`Failed to load ${url}`, err);
+        return null;
+    }
+}
+
+function renderHeatmap(map) {
+    if (!heatmapEl || !heatmapGrid) return;
+    if (!map) {
+        heatmapEl.hidden = true;
+        heatmapGrid.innerHTML = '';
+        return;
+    }
+
+    const values = WEEKDAYS.map(day => {
+        const value = Number(map[day] ?? 0);
+        return Number.isFinite(value) ? value : 0;
+    });
+    const max = Math.max(...values, 1);
+
+    heatmapGrid.replaceChildren();
+
+    WEEKDAYS.forEach((day, index) => {
+        const value = values[index];
+        const item = document.createElement('div');
+        item.className = 'heatmap__item';
+        item.setAttribute('role', 'listitem');
+
+        const bar = document.createElement('div');
+        bar.className = 'heatmap__bar';
+        bar.dataset.empty = value === 0 ? 'true' : 'false';
+        const height = value === 0 ? 6 : 6 + Math.round((value / max) * 46);
+        bar.style.height = `${height}px`;
+        bar.title = `${day}: ${value} event${value === 1 ? '' : 's'}`;
+        item.appendChild(bar);
+
+        const count = document.createElement('span');
+        count.className = 'heatmap__count';
+        count.textContent = String(value);
+        item.appendChild(count);
+
+        const label = document.createElement('span');
+        label.className = 'heatmap__day';
+        label.textContent = day;
+        item.appendChild(label);
+
+        heatmapGrid.appendChild(item);
+    });
+
+    heatmapEl.hidden = false;
+}
+
 async function boot() {
-    window.__ALL = await loadEvents();
+    const [all, today, tonight, heatmap] = await Promise.all([
+        loadEvents(),
+        loadSupplemental('./data/today.json'),
+        loadSupplemental('./data/tonight.json'),
+        loadSupplemental('./data/heatmap.json')
+    ]);
+
+    window.__ALL = all;
+    window.__TODAY = Array.isArray(today) ? today : [];
+    window.__TONIGHT = Array.isArray(tonight) ? tonight : [];
+
+    if (heatmap && typeof heatmap === 'object' && !Array.isArray(heatmap)) {
+        renderHeatmap(heatmap);
+    } else {
+        renderHeatmap(null);
+    }
+
+    activeDatasetKey = 'all';
     applyFilter('all');
 }
 boot();
