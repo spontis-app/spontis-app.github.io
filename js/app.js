@@ -900,7 +900,7 @@ async function fetchJson(url) {
 
 async function loadEvents() {
     const sources = [
-        './data/events.json',
+        'data/events.json',
         './data/events.sample.json'
     ];
     for (const url of sources) {
@@ -1072,7 +1072,10 @@ if (filterBar) {
     filterBar.classList.add('filters--ready');
 }
 
-$('#year')?.textContent = new Date().getFullYear();
+const yearEl = $('#year');
+if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+}
 
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
