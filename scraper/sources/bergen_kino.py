@@ -5,7 +5,8 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 import dateparser
-from scraper.normalize import event, TZ
+from collections import defaultdict
+from scraper.normalize import event, TZ, format_showtimes
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -58,10 +59,22 @@ def _discover_program_url():
     r = _get(BASE + "/")
     return BASE + "/", r.text
 
+def _infer_tags(title: str) -> list[str]:
+    base = {"cinema", "date"}
+    lower = title.lower()
+    if any(word in lower for word in ("barn", "familie", "kids", "junior")):
+        base.add("family")
+    if any(word in lower for word in ("premiere", "festival")):
+        base.add("culture")
+    if any(word in lower for word in ("horror", "skrekk", "thriller")):
+        base.add("late-night")
+    return sorted(base)
+
+
 def fetch() -> list[dict]:
     url, html = _discover_program_url()
     soup = BeautifulSoup(html, "html.parser")
-    items = []
+    grouped: dict[tuple[str, str], set[datetime]] = defaultdict(set)
 
     # grep filmkort som lenker til detaljer
     for card in soup.select("a[href*='/film/'], a[href*='/kino/']"):
@@ -81,20 +94,30 @@ def fetch() -> list[dict]:
             dt = dateparser.parse(f"{the_date:%Y-%m-%d} {t}", settings={"TIMEZONE": "Europe/Oslo"})
             if not dt:
                 continue
-            items.append(event(
-                title=title,
-                dt=dt,
-                where="Bergen Kino",
-                tags=["cinema", "date"],
-                url=film_url
-            ))
+            grouped[(title, film_url)].add(dt)
 
     # ekstrem fallback: plukk tider hvor som helst på siden
-    if not items:
+    if not grouped:
         for m in TIME_RX.finditer(soup.get_text(" ", strip=True)):
             t = m.group(0)
             dt = dateparser.parse(f"today {t}", settings={"TIMEZONE":"Europe/Oslo"})
             if dt:
-                items.append(event("Kinovisning", dt, "Bergen Kino", ["cinema","date"], url))
+                grouped[("Kinovisning", url)].add(dt)
+
+    items: list[dict] = []
+    for (title, film_url), times in grouped.items():
+        ordered = sorted(times)
+        primary = ordered[0]
+        entry = event(
+            title=title,
+            dt=primary,
+            where="Bergen Kino",
+            tags=_infer_tags(title),
+            url=film_url
+        )
+        label = format_showtimes(ordered)
+        if label:
+            entry["when"] = label
+        items.append(entry)
 
     return items

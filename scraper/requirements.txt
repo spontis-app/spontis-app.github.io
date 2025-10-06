@@ -1,5 +1,4 @@
 requests
 beautifulsoup4
 dateparser
-pytz
 python-dateutil
