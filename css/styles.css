@@ -540,6 +540,13 @@ a:focus-visible {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    line-height: 1.5;
+}
+
+.card__details,
+.card__summary {
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .card__sources {
@@ -595,12 +602,19 @@ a:focus-visible {
     font-weight: 600;
     transition: transform 160ms ease, box-shadow 160ms ease;
     border: none;
+    min-height: 44px;
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
     transform: translateY(-2px);
     box-shadow: var(--page-shadow-lift);
+}
+
+@media (max-width: 540px) {
+    .btn-primary {
+        width: 100%;
+    }
 }
 
 .about {
