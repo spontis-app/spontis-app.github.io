@@ -173,4 +173,3 @@ def test_dns_filters_navigation(monkeypatch):
 
     events = den_nationale_scene.fetch()
     assert [event['title'] for event in events] == ['Dronningen']
-*** End Patch
