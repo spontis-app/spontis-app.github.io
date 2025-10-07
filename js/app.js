@@ -35,6 +35,58 @@ const datasetButtons = Array.from(document.querySelectorAll('.dataset-chip'));
 let topicButtons = new Map();
 let pendingTag = null;
 
+function openTopicDrawer() {
+    if (!topicDrawer) return;
+    pendingTag = currentFilter;
+    updatePendingSelection();
+    topicDrawer.hidden = false;
+    openTopicsBtn?.setAttribute('aria-expanded', 'true');
+    if (topicPanel) {
+        if (!topicPanel.hasAttribute('tabindex')) {
+            topicPanel.setAttribute('tabindex', '-1');
+        }
+        topicPanel.focus({ preventScroll: true });
+    }
+}
+
+function closeTopicDrawer() {
+    if (!topicDrawer || topicDrawer.hidden) return;
+    topicDrawer.hidden = true;
+    openTopicsBtn?.setAttribute('aria-expanded', 'false');
+    pendingTag = null;
+    updatePendingSelection();
+    updateTopicButtons(currentFilter);
+    openTopicsBtn?.focus({ preventScroll: true });
+}
+
+function applyPendingTopic() {
+    if (pendingTag) {
+        applyFilter(pendingTag);
+    } else {
+        applyFilter(activeDatasetKey || 'all');
+    }
+    pendingTag = currentFilter;
+    updatePendingSelection();
+    closeTopicDrawer();
+}
+
+function clearPendingTopic() {
+    pendingTag = null;
+    updatePendingSelection();
+    applyFilter(activeDatasetKey || 'all');
+}
+
+function handleDatasetButtonClick(event) {
+    const button = event.currentTarget;
+    const key = button?.dataset?.dataset;
+    if (!key || !DATASET_FILTERS.has(key) || key === activeDatasetKey) return;
+    pendingTag = null;
+    applyFilter(key);
+    if (!topicDrawer?.hidden) {
+        closeTopicDrawer();
+    }
+}
+
 function updateDatasetButtons() {
     datasetButtons.forEach(button => {
         const isActive = button.dataset.dataset === activeDatasetKey;
@@ -1408,6 +1460,23 @@ if (filterBar) {
     filterBar.classList.add('filters--ready');
 }
 
+datasetButtons.forEach(button => {
+    button.addEventListener('click', handleDatasetButtonClick);
+});
+
+openTopicsBtn?.addEventListener('click', () => {
+    if (topicDrawer?.hidden) {
+        openTopicDrawer();
+    } else {
+        closeTopicDrawer();
+    }
+});
+
+topicApplyBtn?.addEventListener('click', applyPendingTopic);
+topicClearBtn?.addEventListener('click', clearPendingTopic);
+topicCloseBtn?.addEventListener('click', closeTopicDrawer);
+topicBackdrop?.addEventListener('click', closeTopicDrawer);
+
 const yearEl = $('#year');
 if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
@@ -1415,6 +1484,11 @@ if (yearEl) {
 
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
+        if (!topicDrawer?.hidden) {
+            event.preventDefault();
+            closeTopicDrawer();
+            return;
+        }
         if (!detailLayer?.hidden) {
             event.preventDefault();
             closeDetail();
