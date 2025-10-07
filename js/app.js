@@ -119,7 +119,7 @@ const VIBE_PROFILES = [
     },
     {
         id: 'performance',
-        label: 'Performance',
+        label: 'Stage & Screen',
         keywords: ['konsert', 'concert', 'performance', 'show', 'theatre', 'theater', 'dance', 'ballet', 'cinema', 'screening'],
         tagHints: ['cinema', 'date', 'girls', 'live', 'culture'],
         sourceHints: ['kultur', 'teater', 'theatre', 'bergen kino']
@@ -344,6 +344,25 @@ function slugifyTitle(text = '') {
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/-{2,}/g, '-')
         .replace(/^-+|-+$/g, '');
+}
+
+function uniqueByTitle(events) {
+    const seen = new Map();
+    events.forEach(event => {
+        const key = (event.title || '').trim().toLowerCase();
+        if (!key) return;
+        if (!seen.has(key)) {
+            seen.set(key, event);
+        } else {
+            const existing = seen.get(key);
+            const currentTime = parseStartsAtValue(event.starts_at);
+            const existingTime = parseStartsAtValue(existing?.starts_at);
+            if (!Number.isNaN(currentTime) && (Number.isNaN(existingTime) || currentTime < existingTime)) {
+                seen.set(key, event);
+            }
+        }
+    });
+    return Array.from(seen.values());
 }
 
 function createBergenKjottLink(event) {
@@ -1091,15 +1110,18 @@ function renderClusters(events) {
     const cards = VIBE_PROFILES
         .filter(profile => groups.has(profile.id))
         .map(profile => {
-            const list = sortByEventTime(groups.get(profile.id));
+            const rawList = groups.get(profile.id);
+            const unique = uniqueByTitle(rawList);
+            const list = sortByEventTime(unique);
             const sample = list[0];
             const count = list.length;
             const suffix = count === 1 ? 'event' : 'events';
+            const countLabel = count > 20 ? '20+ events' : `${count} ${suffix}`;
             const sampleWhen = [sample?.when, sample?.where].filter(Boolean).join(' • ');
             const sampleLine = sample ? `${sample.title}${sampleWhen ? ` — ${sampleWhen}` : ''}` : '';
             return `<article class="cluster-card" data-vibe="${profile.id}">
                 <span class="cluster-card__title">${profile.label}</span>
-                <span class="cluster-card__count">${count} ${suffix}</span>
+                <span class="cluster-card__count">${countLabel}</span>
                 <span class="cluster-card__sample">${sampleLine}</span>
             </article>`;
         }).join('');
