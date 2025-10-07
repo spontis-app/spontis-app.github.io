@@ -60,10 +60,18 @@
                         <div>
                             <p class="browse__eyebrow">Browse</p>
                             <h2 class="browse__title">This week</h2>
+                            <p class="browse__tone">Ut? Nå? Regn? Vi har deg.</p>
                         </div>
-                        <p class="browse__meta">Fresh drops from Bergen’s independent venues, updated throughout the day.</p>
+                        <div class="browse__actions">
+                            <button type="button" class="dataset-chip" data-dataset="all" aria-pressed="true">All events</button>
+                            <button type="button" class="dataset-chip" data-dataset="today" aria-pressed="false">Today</button>
+                            <button type="button" class="dataset-chip" data-dataset="tonight" aria-pressed="false">Tonight</button>
+                            <button type="button" id="open-topics" class="btn-secondary btn-secondary--with-icon" aria-haspopup="true" aria-expanded="false">
+                                <img src="./assets/icons/icon-filter.svg" alt="" aria-hidden="true">
+                                <span class="drawer-trigger__label">Topics</span>
+                            </button>
+                        </div>
                     </header>
-                    <nav id="filter-chips" class="filters" aria-label="Event filters"></nav>
                 </section>
 
                 <section class="events-shell" aria-label="Browse events">
@@ -98,6 +106,21 @@
         <p>© <span id="year"></span> SPONTIS — built in Bergen and maintained with care.</p>
     </footer>
 
+    </div>
+
+    <div id="topic-drawer" class="topic-drawer" hidden>
+        <div class="topic-drawer__backdrop" role="presentation"></div>
+        <div class="topic-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="topic-drawer-title">
+            <header class="topic-drawer__header">
+                <h2 id="topic-drawer-title">Choose topics</h2>
+                <button type="button" id="topic-drawer-close" class="detail-close" aria-label="Close topics">×</button>
+            </header>
+            <div id="topic-drawer-body" class="topic-drawer__body" role="list"></div>
+            <footer class="topic-drawer__actions">
+                <button type="button" id="topic-clear" class="btn-secondary">Clear</button>
+                <button type="button" id="topic-apply" class="btn-primary">Apply</button>
+            </footer>
+        </div>
     </div>
 
     <div id="detail-layer" class="detail-layer" hidden>

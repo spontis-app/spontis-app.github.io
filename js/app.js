@@ -23,6 +23,55 @@ const detailOrganiserEl = $('#detail-organiser');
 const detailSourcesEl = $('#detail-sources');
 const detailOpenLink = $('#detail-open');
 const detailBackdrop = detailLayer ? detailLayer.querySelector('.detail-layer__backdrop') : null;
+const topicDrawer = $('#topic-drawer');
+const topicBackdrop = topicDrawer ? topicDrawer.querySelector('.topic-drawer__backdrop') : null;
+const topicPanel = topicDrawer ? topicDrawer.querySelector('.topic-drawer__panel') : null;
+const topicCloseBtn = $('#topic-drawer-close');
+const topicApplyBtn = $('#topic-apply');
+const topicClearBtn = $('#topic-clear');
+const topicBody = $('#topic-drawer-body');
+const openTopicsBtn = $('#open-topics');
+const datasetButtons = Array.from(document.querySelectorAll('.dataset-chip'));
+let topicButtons = new Map();
+let pendingTag = null;
+
+function updateDatasetButtons() {
+    datasetButtons.forEach(button => {
+        const isActive = button.dataset.dataset === activeDatasetKey;
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        button.classList.toggle('dataset-chip--active', Boolean(isActive));
+    });
+}
+
+function updateTopicsTriggerLabel(selectedTag = currentFilter) {
+    if (!openTopicsBtn) return;
+    const labelEl = openTopicsBtn.querySelector('.drawer-trigger__label');
+    if (labelEl) {
+        labelEl.textContent = selectedTag ? labelForTag(selectedTag) : 'Topics';
+    }
+    openTopicsBtn.setAttribute('data-selected-tag', selectedTag || '');
+}
+
+function updateTopicButtons(selectedTag) {
+    topicButtons.forEach((button, tag) => {
+        const isActive = Boolean(selectedTag && tag === selectedTag);
+        button.classList.toggle('topic-chip--active', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+    updateTopicsTriggerLabel(selectedTag || null);
+}
+
+function updatePendingSelection() {
+    topicButtons.forEach((button, tag) => {
+        const isSelected = Boolean(pendingTag && tag === pendingTag);
+        button.classList.toggle('topic-chip--selected', isSelected);
+    });
+}
+
+function toggleTopicSelection(tag) {
+    pendingTag = pendingTag === tag ? null : tag;
+    updatePendingSelection();
+}
 
 const detailElements = {
     layer: detailLayer,
@@ -910,12 +959,14 @@ function paint(list) {
 }
 
 function setActive(value, scope) {
-    const selector = scope ? `.filters [data-scope="${scope}"]` : '.filters [data-filter]';
-    document.querySelectorAll(selector).forEach(btn => {
-        const isActive = value !== null && value !== undefined && btn.dataset.filter === value;
-        btn.classList.toggle('chip--active', isActive);
-        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-    });
+    if (scope === 'dataset') {
+        updateDatasetButtons();
+        return;
+    }
+    if (scope === 'tag') {
+        updateTopicButtons(value);
+        return;
+    }
 }
 
 function getDataset(key) {
@@ -1022,7 +1073,7 @@ function highlightCard(index) {
 }
 
 function renderFilters(events) {
-    if (!filterBar) return;
+    if (!topicBody) return;
 
     const available = new Set();
     events.forEach(event => (event.tags || []).forEach(tag => available.add(tag)));
@@ -1034,29 +1085,35 @@ function renderFilters(events) {
 
     const unique = ordered.filter((tag, index) => ordered.indexOf(tag) === index);
 
-    const datasetButtons = DATASET_OPTIONS.map(option => {
-        const classes = ['chip', 'chip--dataset'];
-        if (option.key === activeDatasetKey) classes.push('chip--active');
-        return `<button type="button" class="${classes.join(' ')}" data-scope="dataset" data-filter="${option.key}" aria-pressed="${option.key === activeDatasetKey}">${option.label}</button>`;
-    }).join('');
+    topicButtons = new Map();
+    topicBody.innerHTML = '';
+    const fragment = document.createDocumentFragment();
 
-    const tagButtons = unique.map(tag => {
+    unique.forEach(tag => {
         const label = labelForTag(tag);
-        const classes = ['chip'];
-        if (tag === currentFilter) classes.push('chip--active');
-        return `<button type="button" class="${classes.join(' ')}" data-scope="tag" data-filter="${tag}" aria-pressed="${tag === currentFilter}">${label}</button>`;
-    }).join('');
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'topic-chip';
+        button.dataset.filter = tag;
+        button.setAttribute('aria-pressed', tag === currentFilter ? 'true' : 'false');
 
-    const surpriseButton = '<button type="button" id="surprise" class="chip chip--accent">Inspire me</button>';
+        const iconPath = TAG_ICON[tag];
+        if (iconPath) {
+            const img = document.createElement('img');
+            img.src = iconPath;
+            img.alt = '';
+            img.setAttribute('aria-hidden', 'true');
+            button.appendChild(img);
+        }
 
-    filterBar.innerHTML = `
-        <div class="filters__row filters__row--datasets">${datasetButtons}</div>
-        <div class="filters__row filters__row--tags">${tagButtons}${surpriseButton}</div>
-    `;
-    setActive(activeDatasetKey, 'dataset');
-    if (currentFilter) {
-        setActive(currentFilter, 'tag');
-    }
+        button.appendChild(document.createTextNode(label));
+        button.addEventListener('click', () => toggleTopicSelection(tag));
+        fragment.appendChild(button);
+        topicButtons.set(tag, button);
+    });
+
+    topicBody.appendChild(fragment);
+    updateTopicButtons(currentFilter);
 }
 
 function heatColor(ratio, alpha = .2) {
