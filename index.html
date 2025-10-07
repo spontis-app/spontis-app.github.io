@@ -62,11 +62,11 @@
                             <h2 class="browse__title">This week</h2>
                             <p class="browse__tone">Ut? Nå? Regn? Vi har deg.</p>
                         </div>
-                        <div class="browse__actions">
-                            <button type="button" class="dataset-chip" data-dataset="all" aria-pressed="true">All events</button>
-                            <button type="button" class="dataset-chip" data-dataset="today" aria-pressed="false">Today</button>
-                            <button type="button" class="dataset-chip" data-dataset="tonight" aria-pressed="false">Tonight</button>
-                            <button type="button" id="open-topics" class="btn-secondary btn-secondary--with-icon" aria-haspopup="true" aria-expanded="false">
+                        <div class="browse__actions" role="group" aria-label="Filter events by time or topic">
+                            <button type="button" class="dataset-chip" data-dataset="all" aria-pressed="true" aria-label="Show all events">All events</button>
+                            <button type="button" class="dataset-chip" data-dataset="today" aria-pressed="false" aria-label="Show today’s events">Today</button>
+                            <button type="button" class="dataset-chip" data-dataset="tonight" aria-pressed="false" aria-label="Show tonight’s events">Tonight</button>
+                            <button type="button" id="open-topics" class="btn-secondary btn-secondary--with-icon" aria-haspopup="true" aria-expanded="false" aria-controls="topic-drawer">
                                 <img src="./assets/icons/icon-filter.svg" alt="" aria-hidden="true">
                                 <span class="drawer-trigger__label">Topics</span>
                             </button>

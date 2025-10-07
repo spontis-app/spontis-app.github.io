@@ -41,6 +41,7 @@ function openTopicDrawer() {
     updatePendingSelection();
     topicDrawer.hidden = false;
     openTopicsBtn?.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
     if (topicPanel) {
         if (!topicPanel.hasAttribute('tabindex')) {
             topicPanel.setAttribute('tabindex', '-1');
@@ -53,6 +54,7 @@ function closeTopicDrawer() {
     if (!topicDrawer || topicDrawer.hidden) return;
     topicDrawer.hidden = true;
     openTopicsBtn?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
     pendingTag = null;
     updatePendingSelection();
     updateTopicButtons(currentFilter);
@@ -74,6 +76,7 @@ function clearPendingTopic() {
     pendingTag = null;
     updatePendingSelection();
     applyFilter(activeDatasetKey || 'all');
+    closeTopicDrawer();
 }
 
 function handleDatasetButtonClick(event) {
@@ -118,6 +121,11 @@ function updatePendingSelection() {
         const isSelected = Boolean(pendingTag && tag === pendingTag);
         button.classList.toggle('topic-chip--selected', isSelected);
     });
+    if (topicClearBtn) {
+        const hasSelection = Boolean(pendingTag);
+        topicClearBtn.disabled = !hasSelection;
+        topicClearBtn.setAttribute('aria-disabled', hasSelection ? 'false' : 'true');
+    }
 }
 
 function toggleTopicSelection(tag) {
