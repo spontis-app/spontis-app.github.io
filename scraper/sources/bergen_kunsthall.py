@@ -30,7 +30,6 @@ SKIP_TITLES = (
     'shop',
     'gift card',
     'visit us',
-    'video',
     'editions',
     'publications',
     'guardianship',
