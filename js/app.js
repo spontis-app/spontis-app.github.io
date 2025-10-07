@@ -12,6 +12,30 @@ const heatmapGrid = $('#heatmap-bars');
 const clusterDeckEl = $('#cluster-deck');
 const densityEl = $('#density-map');
 const sourceRollupEl = $('#source-rollup');
+const detailLayer = $('#detail-layer');
+const detailDialog = $('#detail-dialog');
+const detailCloseBtn = $('#detail-close');
+const detailTagsEl = $('#detail-tags');
+const detailTitleEl = $('#detail-title');
+const detailHeadlineEl = $('#detail-headline');
+const detailDescriptionEl = $('#detail-description');
+const detailOrganiserEl = $('#detail-organiser');
+const detailSourcesEl = $('#detail-sources');
+const detailOpenLink = $('#detail-open');
+const detailBackdrop = detailLayer ? detailLayer.querySelector('.detail-layer__backdrop') : null;
+
+const detailElements = {
+    layer: detailLayer,
+    dialog: detailDialog,
+    close: detailCloseBtn,
+    tags: detailTagsEl,
+    title: detailTitleEl,
+    headline: detailHeadlineEl,
+    description: detailDescriptionEl,
+    organiser: detailOrganiserEl,
+    sources: detailSourcesEl,
+    link: detailOpenLink,
+};
 
 const DATASET_OPTIONS = [
     { key: 'all', label: 'All events' },
@@ -134,6 +158,25 @@ const DATE_FORMAT_DAY_ONLY = new Intl.DateTimeFormat('en-GB', {
     month: 'short'
 });
 
+function updateUrlFilters() {
+    const params = new URLSearchParams(window.location.search);
+    if (activeDatasetKey && activeDatasetKey !== 'all') {
+        params.set('dataset', activeDatasetKey);
+    } else {
+        params.delete('dataset');
+    }
+
+    if (currentFilter) {
+        params.set('tag', currentFilter);
+    } else {
+        params.delete('tag');
+    }
+
+    const query = params.toString();
+    const newUrl = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
+    window.history.replaceState({}, '', newUrl);
+}
+
 function hasClockComponent(value) {
     return typeof value === 'string' && !/T0{2}:0{2}(?::0{2})?(?:\.0+)?(?:Z|[+-]0{2}:?0{2})?$/.test(value);
 }
@@ -164,6 +207,75 @@ function buildEventHeadline(event) {
     const location = deriveLocation(event);
     if (location) parts.push(location);
     return parts.join(' • ');
+}
+
+function renderDetailSources(event) {
+    detailSourcesEl.innerHTML = '';
+    const links = event.sourceLinks || [];
+    if (!links.length) {
+        detailSourcesEl.hidden = true;
+        return;
+    }
+    const fragment = document.createDocumentFragment();
+    links.forEach(entry => {
+        if (!entry?.url) return;
+        const li = document.createElement('li');
+        const anchor = document.createElement('a');
+        anchor.href = entry.url;
+        anchor.target = '_blank';
+        anchor.rel = 'noopener noreferrer';
+        anchor.textContent = entry.source || entry.url.replace(/^https?:\/\//i, '');
+        li.appendChild(anchor);
+        fragment.appendChild(li);
+    });
+    detailSourcesEl.appendChild(fragment);
+    detailSourcesEl.hidden = false;
+}
+
+let lastFocusedElement = null;
+
+function openDetail(event) {
+    if (!detailLayer || !detailDialog) return;
+    lastFocusedElement = document.activeElement;
+
+    detailTagsEl.textContent = (event.tags || []).map(labelForTag).join(' • ');
+    detailTitleEl.textContent = event.title || 'Untitled event';
+    const headline = event.displayHeadline || buildEventHeadline(event);
+    detailHeadlineEl.textContent = headline;
+    detailHeadlineEl.hidden = !headline;
+
+    const description = event.description || event.summary || '';
+    detailDescriptionEl.textContent = description;
+    detailDescriptionEl.hidden = !description;
+
+    const organiser = event.sources?.length ? event.sources.join(' · ') : event.source;
+    detailOrganiserEl.textContent = organiser ? `Organiser: ${organiser}` : '';
+    detailOrganiserEl.hidden = !organiser;
+
+    renderDetailSources(event);
+    const resolvedUrl = resolveEventUrl(event);
+    if (resolvedUrl) {
+        detailOpenLink.href = resolvedUrl;
+        detailOpenLink.classList.remove('is-disabled');
+    } else {
+        detailOpenLink.href = '#';
+        detailOpenLink.classList.add('is-disabled');
+    }
+
+    detailLayer.hidden = false;
+    detailLayer.classList.add('detail-layer--open');
+    document.body.style.overflow = 'hidden';
+    detailDialog.focus();
+}
+
+function closeDetail() {
+    if (!detailLayer || detailLayer.hidden) return;
+    detailLayer.hidden = true;
+    detailLayer.classList.remove('detail-layer--open');
+    document.body.style.overflow = '';
+    if (lastFocusedElement?.focus) {
+        lastFocusedElement.focus();
+    }
 }
 
 function parseStartsAtValue(value) {
@@ -724,6 +836,20 @@ function paint(list) {
             article.appendChild(sourceEl);
         }
 
+        const actionRow = document.createElement('div');
+        actionRow.className = 'card__actions';
+
+        const detailButton = document.createElement('button');
+        detailButton.type = 'button';
+        detailButton.className = 'btn-secondary';
+        detailButton.textContent = 'Details';
+        detailButton.addEventListener('click', (ev) => {
+            ev.preventDefault();
+            ev.stopPropagation();
+            openDetail(event);
+        });
+        actionRow.appendChild(detailButton);
+
         const resolvedUrl = resolveEventUrl(event);
         if (resolvedUrl) {
             const link = document.createElement('a');
@@ -735,8 +861,10 @@ function paint(list) {
             if (event.title) {
                 link.setAttribute('aria-label', `Open event: ${event.title}`);
             }
-            article.appendChild(link);
+            actionRow.appendChild(link);
         }
+
+        article.appendChild(actionRow);
 
         fragment.appendChild(article);
     });
@@ -781,6 +909,7 @@ function applyFilter(tag) {
         setActive(activeDatasetKey, 'dataset');
         setActive(null, 'tag');
         clearSpotlight();
+        updateUrlFilters();
         return;
     }
 
@@ -792,6 +921,7 @@ function applyFilter(tag) {
     setActive(activeDatasetKey, 'dataset');
     setActive(tag, 'tag');
     clearSpotlight();
+    updateUrlFilters();
 }
 
 function showSpotlight(event) {
@@ -1136,6 +1266,16 @@ async function boot() {
     datasets.today = enrichEvents(Array.isArray(todayRaw) ? todayRaw : []);
     datasets.tonight = enrichEvents(Array.isArray(tonightRaw) ? tonightRaw : []);
 
+    const params = new URLSearchParams(window.location.search);
+    const datasetParam = params.get('dataset');
+    if (datasetParam && DATASET_FILTERS.has(datasetParam)) {
+        activeDatasetKey = datasetParam;
+    }
+    const tagParam = params.get('tag');
+    if (tagParam) {
+        currentFilter = tagParam;
+    }
+
     currentList = datasets.all;
 
     renderFilters(datasets.all);
@@ -1149,7 +1289,18 @@ async function boot() {
         renderHeatmap(null);
     }
 
-    applyFilter('all');
+    const availableTags = new Set(datasets.all.flatMap(event => event.tags || []));
+    if (currentFilter && !availableTags.has(currentFilter)) {
+        currentFilter = null;
+    }
+
+    if (currentFilter) {
+        applyFilter(currentFilter);
+    } else if (activeDatasetKey && activeDatasetKey !== 'all') {
+        applyFilter(activeDatasetKey);
+    } else {
+        applyFilter('all');
+    }
 }
 
 filterContainers.forEach(container => {
@@ -1167,8 +1318,21 @@ if (yearEl) {
 
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
+        if (!detailLayer?.hidden) {
+            event.preventDefault();
+            closeDetail();
+            return;
+        }
         clearSpotlight();
     }
+});
+
+detailCloseBtn?.addEventListener('click', () => {
+    closeDetail();
+});
+
+detailBackdrop?.addEventListener('click', () => {
+    closeDetail();
 });
 
 boot();

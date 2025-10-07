@@ -100,6 +100,26 @@
 
     </div>
 
+    <div id="detail-layer" class="detail-layer" hidden>
+        <div class="detail-layer__backdrop" role="presentation"></div>
+        <div id="detail-dialog" class="detail-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title" tabindex="-1">
+            <button type="button" id="detail-close" class="detail-close" aria-label="Close details">×</button>
+            <div class="detail-dialog__header">
+                <p id="detail-tags" class="detail-tags" aria-label="Event tags"></p>
+                <h2 id="detail-title" class="detail-title"></h2>
+                <p id="detail-headline" class="detail-headline"></p>
+            </div>
+            <div class="detail-dialog__body">
+                <p id="detail-description" class="detail-description"></p>
+                <p id="detail-organiser" class="detail-organiser"></p>
+                <ul id="detail-sources" class="detail-source-links"></ul>
+            </div>
+            <div class="detail-dialog__actions">
+                <a id="detail-open" class="btn-primary" href="#" target="_blank" rel="noopener noreferrer">Open event</a>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/app.js" defer></script>
 </body>
 
