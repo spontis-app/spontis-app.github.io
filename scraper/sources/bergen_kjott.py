@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Optional, Tuple
 from urllib.parse import urljoin
+import re
 
 import dateparser
 from bs4 import BeautifulSoup, Tag
@@ -13,6 +14,22 @@ from scraper.normalize import build_event, to_weekday_label
 from scraper.http import get as http_get
 
 PROGRAM_URL = "https://www.bergenkjott.org/kalendar"
+EVENT_PATH_PATTERN = re.compile(r"/events/[^/]+/?$|/program/[^/]+/?$", re.IGNORECASE)
+SKIP_TITLES = (
+    'what´s on',
+    'what`s on',
+    'what’s on',
+    'kontakt',
+    'contact',
+    'leie',
+    'om bergen kjøtt',
+    'om bergen kjott',
+    'studioer',
+    'bilder',
+    'opplæring',
+    'training',
+    'bar nights',
+)
 HEADERS = {
     "User-Agent": "SpontisBot/0.2 (+https://spontis-app.github.io)",
     "Accept-Language": "nb,en;q=0.8",
@@ -96,8 +113,15 @@ def fetch() -> list[dict]:
         if not absolute_url.startswith("https://www.bergenkjott.org"):
             continue
 
+        url_path = absolute_url.split('?')[0]
+        if not EVENT_PATH_PATTERN.search(url_path):
+            continue
+
         title = link.get_text(" ", strip=True)
         if not title:
+            continue
+
+        if any(keyword in title.strip().lower() for keyword in SKIP_TITLES):
             continue
 
         key = (title, absolute_url)
