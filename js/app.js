@@ -65,6 +65,15 @@ const TAG_STYLE = {
     source: 'badge--source'
 };
 
+const TAG_ICON = {
+    culture: './assets/icons/tag-culture.svg',
+    live: './assets/icons/tag-live.svg',
+    jazz: './assets/icons/tag-jazz.svg',
+    cinema: './assets/icons/tag-cinema.svg',
+    dj: './assets/icons/tag-dj.svg',
+    quiz: './assets/icons/tag-quiz.svg',
+};
+
 const TAG_LABELS = {
     all: 'All',
     bar: 'Bar night',
@@ -809,7 +818,16 @@ function paint(list) {
             const classes = ['badge'];
             if (TAG_STYLE[tag]) classes.push(TAG_STYLE[tag]);
             badge.className = classes.join(' ');
-            badge.textContent = labelForTag(tag);
+            const iconPath = TAG_ICON[tag];
+            if (iconPath) {
+                const icon = document.createElement('img');
+                icon.src = iconPath;
+                icon.alt = '';
+                icon.className = 'badge__icon';
+                icon.setAttribute('aria-hidden', 'true');
+                badge.appendChild(icon);
+            }
+            badge.appendChild(document.createTextNode(labelForTag(tag)));
             meta.appendChild(badge);
         });
 

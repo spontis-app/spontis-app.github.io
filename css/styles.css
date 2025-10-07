@@ -578,6 +578,7 @@ a:focus-visible {
     text-transform: uppercase;
     background: var(--badge-bg);
     color: var(--badge-text);
+    gap: 0.35rem;
 }
 
 .badge--date { --badge-bg: #fde6d8; --badge-text: #d85a46; }
@@ -594,6 +595,12 @@ a:focus-visible {
 .badge--lecture { --badge-bg: #e7edf7; --badge-text: #25496d; }
 .badge--festival { --badge-bg: #fde1e1; --badge-text: #b44949; }
 .badge--source { --badge-bg: var(--page-surface-muted); --badge-text: var(--page-muted-strong); }
+
+.badge__icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
 
 .btn-primary {
     display: inline-flex;
