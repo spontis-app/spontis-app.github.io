@@ -75,6 +75,10 @@ def fetch() -> list[dict]:
         if not absolute_url.startswith("https://grieghallen.no"):
             continue
 
+        url_path = absolute_url.split('?')[0]
+        if '/arrangement/' not in url_path:
+            continue
+
         title = link.get_text(" ", strip=True)
         if not title:
             continue
@@ -88,6 +92,8 @@ def fetch() -> list[dict]:
         starts_at = _extract_datetime(card)
         if not starts_at and detail:
             starts_at = _extract_datetime(detail)
+        if not starts_at:
+            continue
 
         venue = "Grieghallen"
         description = None

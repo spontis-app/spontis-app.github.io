@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Optional, Tuple
 from urllib.parse import urljoin
+import re
 
 import dateparser
 import requests
@@ -24,6 +25,21 @@ SETTINGS = {
     "RETURN_AS_TIMEZONE_AWARE": False,
 }
 TIMEOUT = 25
+EVENT_PATH_PATTERN = re.compile(r"/program/[^/]+/?$")
+SKIP_TITLES = (
+    'åpenhetsloven',
+    'årsberetninger',
+    'administrasjonen',
+    'abonnement',
+    'organisasjon',
+    'om oss',
+    'personvern',
+    'what’s on',
+    'tickets',
+    'subscriptions',
+    'press',
+    'om-harmonien',
+)
 
 
 def _parse_datetime(value: Optional[str]) -> Optional[datetime]:
@@ -75,8 +91,15 @@ def fetch() -> list[dict]:
         if not absolute_url.startswith("https://harmonien.no"):
             continue
 
+        url_path = absolute_url.split('?')[0]
+        if not EVENT_PATH_PATTERN.search(url_path):
+            continue
+
         title = link.get_text(" ", strip=True)
         if not title:
+            continue
+
+        if any(keyword in title.strip().lower() for keyword in SKIP_TITLES):
             continue
 
         key = (title, absolute_url)

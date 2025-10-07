@@ -17,27 +17,48 @@ EVENT_URLS = [
     "https://www.kunsthall.no/en/events/",
     "https://www.kunsthall.no/en/whats-on/",
 ]
+EVENT_PATH_PATTERN = re.compile(r"/events/\d{4}-")
 SKIP_TITLES = (
-    "become a member",
-    "cookie",
-    "cookies",
-    "privacy",
-    "about the café",
-    "openings",
-    "press",
-    "newsletter",
-    "shop",
-    "gift card",
+    'become a member',
+    'member',
+    'cookie',
+    'privacy',
+    'about the café',
+    'openings',
+    'press',
+    'newsletter',
+    'shop',
+    'gift card',
+    'visit us',
+    'video',
+    'editions',
+    'publications',
+    'guardianship',
+    'contact',
+    'search',
+    'more',
+    'no',
+    'program',
+    'what’s on',
+    'events',
+    'exhibitions',
 )
 SKIP_HREF_PARTS = (
-    "/cookies",
-    "/cookie",
-    "/privacy",
-    "/press",
-    "/shop",
-    "/about",
-    "/member",
-    "/newsletter",
+    '/cookies',
+    '/cookie',
+    '/privacy',
+    '/press',
+    '/shop',
+    '/about',
+    '/member',
+    '/newsletter',
+    '/visit-us',
+    '/video',
+    '/editions',
+    '/publications',
+    '/landmark-kafe',
+    '/the-festival-exhibition',
+    '/whats-on/#',
 )
 HEADERS = {
     "User-Agent": "SpontisBot/0.2 (+https://spontis-app.github.io)",
@@ -137,6 +158,10 @@ def fetch() -> list[dict]:
             if not absolute_url.startswith("https://www.kunsthall.no"):
                 continue
 
+            url_path = absolute_url.split('?')[0]
+            if not EVENT_PATH_PATTERN.search(url_path):
+                continue
+
             title = link.get_text(" ", strip=True)
             if not title:
                 continue
@@ -158,6 +183,8 @@ def fetch() -> list[dict]:
                 detail_soup = _fetch(absolute_url)
                 if detail_soup:
                     starts_at = _extract_datetime(detail_soup)
+            if not starts_at:
+                continue
             text_block = " ".join(card.stripped_strings)
             time_hint = _extract_time_hint(text_block)
             if starts_at and (starts_at.hour == 0 and starts_at.minute == 0):

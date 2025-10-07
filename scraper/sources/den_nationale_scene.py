@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Optional, Tuple
 from urllib.parse import urljoin
+import re
 
 import dateparser
 import requests
@@ -24,6 +25,19 @@ SETTINGS = {
     "RETURN_AS_TIMEZONE_AWARE": False,
 }
 TIMEOUT = 25
+EVENT_PATH_PATTERN = re.compile(r"/forestillinger/[^/]+/?$")
+SKIP_TITLES = (
+    'annet',
+    'abonnement',
+    'administrasjonen',
+    'om dns',
+    'medlem',
+    'gavekort',
+    'kontakt',
+    'billetter',
+    'informasjon',
+    'presse',
+)
 
 
 def _parse_datetime(value: Optional[str]) -> Optional[datetime]:
@@ -75,8 +89,15 @@ def fetch() -> list[dict]:
         if not absolute_url.startswith("https://www.dns.no"):
             continue
 
+        url_path = absolute_url.split('?')[0]
+        if not EVENT_PATH_PATTERN.search(url_path):
+            continue
+
         title = link.get_text(" ", strip=True)
         if not title:
+            continue
+
+        if any(keyword in title.strip().lower() for keyword in SKIP_TITLES):
             continue
 
         key = (title, absolute_url)
@@ -88,6 +109,8 @@ def fetch() -> list[dict]:
         starts_at = _extract_datetime(card)
         if not starts_at and detail:
             starts_at = _extract_datetime(detail)
+        if not starts_at:
+            continue
 
         venue = "Den Nationale Scene"
         description = None
