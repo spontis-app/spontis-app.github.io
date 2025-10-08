@@ -35,6 +35,7 @@ const datasetButtons = Array.from(document.querySelectorAll('.dataset-chip'));
 let topicButtons = new Map();
 let pendingTag = null;
 let lastTopicTrigger = null;
+let currentVibe = null;
 
 function openTopicDrawer(trigger) {
     if (!topicDrawer) return;
@@ -121,6 +122,20 @@ function updateTopicButtons(selectedTag) {
         button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
     updateTopicsTriggerLabel(selectedTag || null);
+}
+
+function updateVibeCards() {
+    if (!clusterDeckEl) return;
+    const cards = clusterDeckEl.querySelectorAll('.cluster-card');
+    cards.forEach(card => {
+        const vibeId = card.dataset.vibe;
+        const isActive = Boolean(currentVibe && vibeId === currentVibe);
+        card.classList.toggle('cluster-card--active', isActive);
+        card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        if (!card.hasAttribute('tabindex')) {
+            card.tabIndex = 0;
+        }
+    });
 }
 
 function updatePendingSelection() {
@@ -295,6 +310,12 @@ function updateUrlFilters() {
         params.set('tag', currentFilter);
     } else {
         params.delete('tag');
+    }
+
+    if (currentVibe) {
+        params.set('vibe', currentVibe);
+    } else {
+        params.delete('vibe');
     }
 
     const query = params.toString();
@@ -1060,9 +1081,11 @@ function applyFilter(tag) {
         const data = getDataset(tag);
         currentList = data;
         currentFilter = null;
+        currentVibe = null;
         paint(data);
         setActive(activeDatasetKey, 'dataset');
         setActive(null, 'tag');
+        updateVibeCards();
         clearSpotlight();
         updateUrlFilters();
         return;
@@ -1072,11 +1095,33 @@ function applyFilter(tag) {
     const data = source.filter(e => (e.tags || []).includes(tag));
     currentList = data;
     currentFilter = tag;
+    currentVibe = null;
     paint(data);
     setActive(activeDatasetKey, 'dataset');
     setActive(tag, 'tag');
+    updateVibeCards();
     clearSpotlight();
     updateUrlFilters();
+}
+
+function applyVibeFilter(vibeId) {
+    if (!vibeId) return;
+    const source = getDataset(activeDatasetKey);
+    const data = source.filter(event => (event.vibe || 'performance') === vibeId);
+    currentVibe = vibeId;
+    currentFilter = null;
+    pendingTag = null;
+    currentList = data;
+    paint(data);
+    setActive(activeDatasetKey, 'dataset');
+    setActive(null, 'tag');
+    updateVibeCards();
+    updatePendingSelection();
+    clearSpotlight();
+    updateUrlFilters();
+    if (eventsEl) {
+        eventsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
 
 function showSpotlight(event) {
@@ -1261,7 +1306,7 @@ function renderClusters(events) {
             const countLabel = count > 20 ? '20+ events' : `${count} ${suffix}`;
             const sampleWhen = [sample?.when, sample?.where].filter(Boolean).join(' • ');
             const sampleLine = sample ? `${sample.title}${sampleWhen ? ` — ${sampleWhen}` : ''}` : '';
-            return `<article class="cluster-card" data-vibe="${profile.id}">
+            return `<article class="cluster-card" data-vibe="${profile.id}" role="button" tabindex="0" aria-pressed="false">
                 <span class="cluster-card__title">${profile.label}</span>
                 <span class="cluster-card__count">${countLabel}</span>
                 <span class="cluster-card__sample">${sampleLine}</span>
@@ -1270,6 +1315,7 @@ function renderClusters(events) {
 
     clusterDeckEl.innerHTML = cards;
     clusterDeckEl.hidden = !cards.length;
+    updateVibeCards();
 }
 
 async function fetchJson(url) {
@@ -1439,6 +1485,10 @@ async function boot() {
     if (tagParam) {
         currentFilter = tagParam;
     }
+    const vibeParam = params.get('vibe');
+    if (vibeParam && VIBE_LOOKUP[vibeParam]) {
+        currentVibe = vibeParam;
+    }
 
     currentList = datasets.all;
 
@@ -1458,8 +1508,17 @@ async function boot() {
         currentFilter = null;
     }
 
+    if (currentVibe) {
+        const hasVibe = datasets.all.some(event => (event.vibe || 'performance') === currentVibe);
+        if (!hasVibe) {
+            currentVibe = null;
+        }
+    }
+
     if (currentFilter) {
         applyFilter(currentFilter);
+    } else if (currentVibe) {
+        applyVibeFilter(currentVibe);
     } else if (activeDatasetKey && activeDatasetKey !== 'all') {
         applyFilter(activeDatasetKey);
     } else {
@@ -1477,6 +1536,29 @@ if (filterBar) {
 
 datasetButtons.forEach(button => {
     button.addEventListener('click', handleDatasetButtonClick);
+});
+
+function handleClusterActivation(card) {
+    if (!card) return;
+    const vibeId = card.dataset.vibe;
+    if (!vibeId) return;
+    applyVibeFilter(vibeId);
+}
+
+clusterDeckEl?.addEventListener('click', event => {
+    const card = event.target.closest('.cluster-card');
+    if (!card) return;
+    event.preventDefault();
+    handleClusterActivation(card);
+});
+
+clusterDeckEl?.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+        const card = event.target.closest('.cluster-card');
+        if (!card) return;
+        event.preventDefault();
+        handleClusterActivation(card);
+    }
 });
 
 topicTriggers.forEach(trigger => {

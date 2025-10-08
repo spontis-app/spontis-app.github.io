@@ -453,6 +453,8 @@ a:focus-visible {
     box-shadow: var(--page-shadow-soft);
     display: grid;
     gap: 0.4rem;
+    cursor: pointer;
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
 .cluster-card__title {
@@ -471,6 +473,18 @@ a:focus-visible {
 .cluster-card__sample {
     font-size: 0.92rem;
     color: var(--page-muted);
+}
+
+.cluster-card:hover,
+.cluster-card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.18);
+    border-color: rgba(255, 137, 110, 0.4);
+}
+
+.cluster-card--active {
+    border-color: var(--page-accent);
+    box-shadow: 0 18px 36px rgba(255, 137, 110, 0.25);
 }
 
 .density {
