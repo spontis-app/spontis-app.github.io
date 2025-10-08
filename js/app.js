@@ -471,6 +471,8 @@ let currentFilter = null;
 let highlightTimer;
 let activeDatasetKey = 'all';
 
+const UPCOMING_WINDOW_DAYS = 14;
+
 function safeParseUrl(value) {
     if (!value) return null;
     try {
@@ -834,6 +836,41 @@ function dedupeEvents(events) {
     return deduped;
 }
 
+function filterUpcomingEvents(events, daysAhead = UPCOMING_WINDOW_DAYS) {
+    const start = new Date();
+    start.setHours(0, 0, 0, 0);
+    const startMs = start.getTime();
+    const endMs = startMs + (daysAhead + 1) * 24 * 60 * 60 * 1000;
+    const todayIndex = start.getDay();
+
+    return events.filter(event => {
+        if (event?.starts_at) {
+            const parsed = new Date(event.starts_at);
+            if (!Number.isNaN(parsed.getTime())) {
+                const time = parsed.getTime();
+                if (time < startMs || time >= endMs) {
+                    return false;
+                }
+                return true;
+            }
+        }
+
+        if (typeof event?.dayIndex === 'number') {
+            let delta = event.dayIndex - todayIndex;
+            if (delta < 0) delta += 7;
+            return delta <= daysAhead;
+        }
+
+        if (event?.when) {
+            const normalized = event.when.toLowerCase();
+            if (/\b(today|tonight)\b/.test(normalized)) return true;
+            if (/\btomorrow\b/.test(normalized) && daysAhead >= 1) return true;
+        }
+
+        return true;
+    });
+}
+
 function applySmartTags(event, combinedText) {
     const tags = new Set(event.tags || []);
     for (const rule of SMART_TAG_RULES) {
@@ -883,7 +920,9 @@ function detectVibe(event, combinedText) {
 function enrichEvents(events) {
     const deduped = dedupeEvents(events);
 
-    const active = deduped.filter(event => (event.source || '').trim().toLowerCase() !== 'sample');
+    const upcoming = filterUpcomingEvents(deduped);
+
+    const active = upcoming.filter(event => (event.source || '').trim().toLowerCase() !== 'sample');
 
     const enriched = active.map(event => {
         const combinedText = [
