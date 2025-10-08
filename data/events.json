@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Tue 10:30 • 11:00 • 11:15 (+90 later)",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
+    "when": "Wed 10:15 • 10:30 • 11:00 (+93 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,160 +14,32 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-07T10:30:00+02:00"
+    "starts_at": "2025-10-08T10:15:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Bergen Kunsthall",
-    "url": "https://www.kunsthall.no/",
+    "title": "2025 8 Oct Playdate: I LIKE TO SLEEP Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3182-2025-10-08/",
     "city": "Bergen",
-    "when": "Tue 11:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-07T11:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2025",
-    "url": "https://www.kunsthall.no/en/events/",
-    "city": "Bergen",
-    "when": "Tue 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-07T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2025 7 Oct VOLT: Filipa Ramos Landmark Conversation",
-    "url": "https://www.kunsthall.no/en/events/3184-2025-10-07/",
-    "city": "Bergen",
-    "when": "Tue 19:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Wed 20:00",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-10-07T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Conversation VOLT: Filipa Ramos Tue 7 Oct 19:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3184-2025-10-07/",
-    "city": "Bergen",
-    "when": "Tue 19:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-07T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Events",
-    "url": "https://www.kunsthall.no/en/events/",
-    "city": "Bergen",
-    "when": "Tue 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-07T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Membership",
-    "url": "https://www.kunsthall.no/en/become-a-member/",
-    "city": "Bergen",
-    "when": "Tue 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-07T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "More",
-    "url": "https://www.kunsthall.no/en/events/",
-    "city": "Bergen",
-    "when": "Tue 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-07T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "no",
-    "url": "https://www.kunsthall.no/no/arrangementer/",
-    "city": "Bergen",
-    "when": "Tue 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-07T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Search",
-    "url": "https://www.kunsthall.no/en/events/#search",
-    "city": "Bergen",
-    "when": "Tue 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-07T19:00:00+02:00"
+    "starts_at": "2025-10-08T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Playdate: I LIKE TO SLEEP Wed 8 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3182-2025-10-08/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Wed 20:00",
     "tags": [
       "culture"
     ],
@@ -181,9 +53,9 @@
     "title": "Concert Twisted Days presents: BURNING Fri 10 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3188-2025-10-10/",
     "city": "Bergen",
-    "when": "Fri 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
@@ -197,9 +69,9 @@
     "title": "Club Landmark x Hastverk: Fochs Koshka Sat 11 Oct 22:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3183-2025-10-11/",
     "city": "Bergen",
-    "when": "Sat 22:30",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Sat 22:30",
     "tags": [
       "culture",
       "late-night",
@@ -212,28 +84,12 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided tours",
-    "url": "https://www.kunsthall.no/en/guided-tours/",
-    "city": "Bergen",
-    "when": "Sun 13:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-12T13:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
     "title": "Guided Tours Sunday guided tours Sun 12 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-12",
     "city": "Bergen",
-    "when": "Sun 13:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "when": "Sun 13:00",
     "tags": [
       "culture"
     ],
@@ -241,33 +97,15 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2025-10-12T13:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "GRIP x PRØVEROMMET: Introduction course in light engineering! (english)",
-    "url": "https://www.bergenkjott.org/kalendar/griplights14okt",
-    "city": "Bergen",
-    "when": "Tue 00:00",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ],
-    "starts_at": "2025-10-14T00:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Molly Lewis (US) Wed 15 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3153-2025-10-15/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Wed 20:00",
     "tags": [
       "culture"
     ],
@@ -277,31 +115,13 @@
     "starts_at": "2025-10-15T20:00:00+02:00"
   },
   {
-    "source": "Bergen Kjøtt",
-    "title": "OCTOBER VIBE: Drink & Draw at Bergen Kjøtt!",
-    "url": "https://www.bergenkjott.org/kalendar/drinkdraw17okt",
-    "city": "Bergen",
-    "when": "Fri 00:00",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ],
-    "starts_at": "2025-10-17T00:00:00+02:00"
-  },
-  {
     "source": "Bergen Kunsthall",
     "title": "Concert GiFU + special guests: Date Of Birth Fri 17 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
     "city": "Bergen",
-    "when": "Fri 20:30",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Fri 20:30",
     "tags": [
       "culture"
     ],
@@ -311,50 +131,13 @@
     "starts_at": "2025-10-17T20:30:00+02:00"
   },
   {
-    "source": "Bergen Kjøtt",
-    "title": "Bloxham Tapes: Sly & the Family Drone (uk) + Mire/Marsh/Fen (no)",
-    "url": "https://www.bergenkjott.org/kalendar/slydrone18okt",
-    "city": "Bergen",
-    "when": "Sat 00:00",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture",
-      "family",
-      "late-night"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ],
-    "starts_at": "2025-10-18T00:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "GRIP x PRØVEROMMET: Introduksjonskurs i lysteknikk (norsk)",
-    "url": "https://www.bergenkjott.org/kalendar/griplights19okt",
-    "city": "Bergen",
-    "when": "Sun 00:00",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ],
-    "starts_at": "2025-10-19T00:00:00+02:00"
-  },
-  {
     "source": "Bergen Kunsthall",
     "title": "Guided Tours Sunday guided tours Sun 19 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-19",
     "city": "Bergen",
-    "when": "Sun 13:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "when": "Sun 13:00",
     "tags": [
       "culture"
     ],
@@ -364,81 +147,13 @@
     "starts_at": "2025-10-19T13:00:00+02:00"
   },
   {
-    "source": "Bergen Kjøtt",
-    "title": "Bar Nights: Moen",
-    "url": "https://www.bergenkjott.org/kalendar/huligans23okt",
-    "city": "Bergen",
-    "when": "Thu 00:00",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ],
-    "starts_at": "2025-10-23T00:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Ida Stein (NO) Thu 23 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3189-2025-10-23/",
-    "city": "Bergen",
-    "when": "Thu 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-23T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "Bar Nights: PURE MOODS DJs! Luke Drozd + King Knut",
-    "url": "https://www.bergenkjott.org/kalendar/puremoods24okt",
-    "city": "Bergen",
-    "when": "Fri 00:00",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ],
-    "starts_at": "2025-10-24T00:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: nonne (NO) — Album Release Concert Fri 24 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3191-2025-10-24/",
-    "city": "Bergen",
-    "when": "Fri 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-24T20:00:00+02:00"
-  },
-  {
     "source": "Bergen Kunsthall",
     "title": "Club Heisen: HEISEN Vol. 3: Moe, CMS, Uncle K, Mira and Visuals by Even Greve Sat 25 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
     "city": "Bergen",
-    "when": "Sat 23:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
       "culture",
       "late-night",
@@ -454,9 +169,9 @@
     "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
     "city": "Bergen",
-    "when": "Sun 13:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "when": "Sun 13:00",
     "tags": [
       "culture"
     ],
@@ -466,31 +181,13 @@
     "starts_at": "2025-10-26T13:00:00+01:00"
   },
   {
-    "source": "Bergen Kjøtt",
-    "title": "Bar Nights: Ingri Jordal",
-    "url": "https://www.bergenkjott.org/kalendar/ingrijordal29okt",
-    "city": "Bergen",
-    "when": "Wed 00:00",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ],
-    "starts_at": "2025-10-29T00:00:00+01:00"
-  },
-  {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Wed 20:00",
     "tags": [
       "culture"
     ],
@@ -498,197 +195,6 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2025-10-29T20:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "Kjøtt Festival",
-    "url": "https://www.bergenkjott.org/kalendar/kjottfestival31okt",
-    "city": "Bergen",
-    "when": "Fri 00:00",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture",
-      "festival",
-      "late-night"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ],
-    "starts_at": "2025-10-31T00:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Sunday guided tours Sun 2 Nov 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-11-02",
-    "city": "Bergen",
-    "when": "Sun 13:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-11-02T13:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Sunday guided tours Sun 9 Nov 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-11-09",
-    "city": "Bergen",
-    "when": "Sun 13:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-11-09T13:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Exhibitions",
-    "url": "https://www.kunsthall.no/en/exhibitions/",
-    "city": "Bergen",
-    "when": "Sun 17:01",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-11-09T17:01:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Bergen Assembly 2025 across, with, nearby 11 September — 9 November 2025 , Gallery I-V",
-    "url": "https://www.kunsthall.no/en/exhibitions/bergen-assembly-2025/",
-    "city": "Bergen",
-    "when": "Sun 19:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-11-09T19:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "More",
-    "url": "https://www.kunsthall.no/en/whats-on/",
-    "city": "Bergen",
-    "when": "Sun 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-11-09T19:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "no",
-    "url": "https://www.kunsthall.no/no/hva-skjer/",
-    "city": "Bergen",
-    "when": "Sun 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-11-09T19:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Search",
-    "url": "https://www.kunsthall.no/en/whats-on/#search",
-    "city": "Bergen",
-    "when": "Sun 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-11-09T19:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "What's On",
-    "url": "https://www.kunsthall.no/en/whats-on/",
-    "city": "Bergen",
-    "when": "Sun 19:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-11-09T19:00:00+01:00"
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Abonnement",
-    "url": "https://harmonien.no/abonnement/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Administrasjonen",
-    "url": "https://harmonien.no/personer/administrasjonen/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Den Nationale Scene",
-    "title": "Annet",
-    "url": "https://www.dns.no/forestillinger",
-    "city": "Bergen",
-    "venue": "Den Nationale Scene",
-    "where": "Den Nationale Scene",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Den Nationale Scene"
-    ]
   },
   {
     "source": "BIT Teatergarasjen",
@@ -733,52 +239,6 @@
     ]
   },
   {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Bergen Filharmoniske Kor",
-    "url": "https://harmonien.no/koret/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Bergen Filharmoniske Orkester",
-    "url": "https://harmonien.no/orkesteret/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "BFUng",
-    "url": "https://harmonien.no/ungdomsorkesteret/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "description": "Bergen Filharmoniske Ungdomsorkester (BFUng) har etablert seg som en av landets viktigste og mest suksessrike satsinger på talentutvikling innen klassisk musikk og ensemblespill.",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Bildegalleri",
     "url": "https://www.kulturhusetibergen.no/gallery/",
@@ -790,21 +250,6 @@
     ],
     "sources": [
       "Kulturhuset i Bergen"
-    ]
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "Bilder",
-    "url": "https://www.bergenkjott.org/bergen-kjtt-portfolio",
-    "city": "Bergen",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
     ]
   },
   {
@@ -875,20 +320,6 @@
     ],
     "sources": [
       "Zip Collective"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Course: Art Histories",
-    "url": "https://www.kunsthall.no/en/course-art-histories/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
     ]
   },
   {
@@ -991,7 +422,7 @@
   },
   {
     "source": "Østre",
-    "title": "Dato lørdag 18.10. 18:00 Tittel Tedans nr. 32 Kjøp billetter",
+    "title": "Dato lørdag 18.10. 18:00 Arrangør Tedans x Østre Tittel Tedans nr. 32 Artister Bjorå/Osgood/Gjerstad Kjøp billetter",
     "url": "https://www.ekko.no/ostre/tedans-nr-32",
     "city": "Bergen",
     "venue": "Østre",
@@ -1018,34 +449,6 @@
     ]
   },
   {
-    "source": "Østre",
-    "title": "Dato tirsdag 7.10. 18:00 Tittel Feedback vol. 4 Artister Ola Lysgaard (VJ) Kjøp billetter",
-    "url": "https://www.ekko.no/ostre/feedback-vol-4",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Den Nationale Scene",
-    "title": "Den Nationale Scene",
-    "url": "https://www.dns.no/forestillinger",
-    "city": "Bergen",
-    "venue": "Den Nationale Scene",
-    "where": "Den Nationale Scene",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Den Nationale Scene"
-    ]
-  },
-  {
     "source": "BIT Teatergarasjen",
     "title": "Ditt besøk",
     "url": "https://bit-teatergarasjen.no/ditt-besok/",
@@ -1060,35 +463,6 @@
     ]
   },
   {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Ditt konsertbesøk",
-    "url": "https://harmonien.no/artikler/ny-pa-konsert/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Editions",
-    "url": "https://www.kunsthall.no/en/editions/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ]
-  },
-  {
     "source": "BIT Teatergarasjen",
     "title": "English",
     "url": "https://bit-teatergarasjen.no/en/program/",
@@ -1100,21 +474,6 @@
     ],
     "sources": [
       "BIT Teatergarasjen"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "English",
-    "url": "https://harmonien.no/en/programme/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
     ]
   },
   {
@@ -1143,22 +502,6 @@
     ],
     "sources": [
       "BIT Teatergarasjen"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Formidling, barn og unge",
-    "url": "https://harmonien.no/ung/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "family",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
     ]
   },
   {
@@ -1201,50 +544,6 @@
     ],
     "sources": [
       "BIT Teatergarasjen"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Gruppe og bedrift",
-    "url": "https://harmonien.no/artikler/gruppe-og-bedrift/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guardianship",
-    "url": "https://www.kunsthall.no/en/landmark-kafe/adult-accompany/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Harmoniens Venner",
-    "url": "https://harmonien.no/om-oss/harmoniens-venner/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
     ]
   },
   {
@@ -1318,36 +617,6 @@
     ]
   },
   {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Karsten Andersen-programmet for unge dirigenter",
-    "url": "https://harmonien.no/artikler/karsten-andersen-programmet-for-unge-dirigenter/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Konsertpakker",
-    "url": "https://harmonien.no/konsertpakke/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "BIT Teatergarasjen",
     "title": "Kontakt",
     "url": "https://bit-teatergarasjen.no/ditt-besok/kontakt/",
@@ -1362,21 +631,6 @@
     ]
   },
   {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Kontakt",
-    "url": "https://harmonien.no/kontakt/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Kontakt",
     "url": "https://www.kulturhusetibergen.no/kontakt/",
@@ -1388,65 +642,6 @@
     ],
     "sources": [
       "Kulturhuset i Bergen"
-    ]
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "Kontakt + Tilgjengelighet",
-    "url": "https://www.bergenkjott.org/kontakt",
-    "city": "Bergen",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Korsangerne",
-    "url": "https://harmonien.no/personer/koret/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "Leie?",
-    "url": "https://www.bergenkjott.org/leie",
-    "city": "Bergen",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Live Studio",
-    "url": "https://www.kunsthall.no/en/live-studio/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
     ]
   },
   {
@@ -1521,21 +716,6 @@
     ]
   },
   {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Miljøfyrtårn",
-    "url": "https://harmonien.no/om-oss/miljofyrtarn/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "Festspillene i Bergen",
     "title": "Min side",
     "url": "https://www.fib.no/min-profil",
@@ -1550,51 +730,6 @@
     ]
   },
   {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Musikere",
-    "url": "https://harmonien.no/orkesteret/musikerne/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Musikkbutikk",
-    "url": "https://harmonien.no/musikkbutikk/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Musikkselskapet Harmonien",
-    "url": "https://harmonien.no/orkesteret/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "BIT Teatergarasjen",
     "title": "Nettverk",
     "url": "https://bit-teatergarasjen.no/innsikt/nettverk/",
@@ -1606,20 +741,6 @@
     ],
     "sources": [
       "BIT Teatergarasjen"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "News",
-    "url": "https://www.kunsthall.no/en/news/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
     ]
   },
   {
@@ -1648,22 +769,6 @@
     ],
     "sources": [
       "BIT Teatergarasjen"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Nyheter",
-    "url": "https://harmonien.no/nyheter/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "description": "Torbjørn Eide avrunder sine førti år i Harmonien med en komponist han er svært glad i, Anton Bruckner. – Det er ingenting som gir meg mer enn de store romantikerne, sier Torbjørn – det er fint at jeg får gå av med Bruckner.",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
     ]
   },
   {
@@ -1709,36 +814,6 @@
     ]
   },
   {
-    "source": "Bergen Kjøtt",
-    "title": "Om Bergen Kjøtt",
-    "url": "https://www.bergenkjott.org/omoss",
-    "city": "Bergen",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Om Harmonien",
-    "url": "https://harmonien.no/om-oss/om-bergen-filharmoniske-orkester/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "BIT Teatergarasjen",
     "title": "Om oss",
     "url": "https://bit-teatergarasjen.no/om-oss/",
@@ -1750,22 +825,6 @@
     ],
     "sources": [
       "BIT Teatergarasjen"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Om oss",
-    "url": "https://harmonien.no/om-oss/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "description": "Bergen Filharmoniske Orkester har status som nasjonalorkester og kan som et av verdens eldste orkestre føre sin historie helt tilbake til 1765.",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
     ]
   },
   {
@@ -1794,35 +853,6 @@
     ],
     "sources": [
       "BIT Teatergarasjen"
-    ]
-  },
-  {
-    "source": "Den Nationale Scene",
-    "title": "Opplev mer",
-    "url": "https://www.dns.no/forestillinger",
-    "city": "Bergen",
-    "venue": "Den Nationale Scene",
-    "where": "Den Nationale Scene",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Den Nationale Scene"
-    ]
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "Opplæring",
-    "url": "https://www.bergenkjott.org/opplaering",
-    "city": "Bergen",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
     ]
   },
   {
@@ -1865,20 +895,6 @@
     ],
     "sources": [
       "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Den Nationale Scene",
-    "title": "Planlegg besøket",
-    "url": "https://www.dns.no/forestillinger",
-    "city": "Bergen",
-    "venue": "Den Nationale Scene",
-    "where": "Den Nationale Scene",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Den Nationale Scene"
     ]
   },
   {
@@ -1952,21 +968,6 @@
     ]
   },
   {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Program og billetter",
-    "url": "https://harmonien.no/program/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "BIT Teatergarasjen",
     "title": "Prøverommet",
     "url": "https://bit-teatergarasjen.no/proverommet/",
@@ -1978,20 +979,6 @@
     ],
     "sources": [
       "BIT Teatergarasjen"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Publications",
-    "url": "https://www.kunsthall.no/en/publications/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
     ]
   },
   {
@@ -2051,21 +1038,6 @@
     ]
   },
   {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Sponsorer",
-    "url": "https://harmonien.no/om-oss/sponsorer/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Spørsmål",
     "url": "https://www.kulturhusetibergen.no/faq/",
@@ -2077,52 +1049,6 @@
     ],
     "sources": [
       "Kulturhuset i Bergen"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Stillinger og prøvespill",
-    "url": "https://harmonien.no/stillinger-og-provespill/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "description": "Søknadsfrist : 1. desember Prøvespill: 9. januar Tiltredelse: etter avtale",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "Studioer",
-    "url": "https://www.bergenkjott.org/studioer",
-    "city": "Bergen",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Styret",
-    "url": "https://harmonien.no/om-oss/styret/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
     ]
   },
   {
@@ -2151,49 +1077,6 @@
     ],
     "sources": [
       "Østre"
-    ]
-  },
-  {
-    "source": "Den Nationale Scene",
-    "title": "Teaterglede",
-    "url": "https://www.dns.no/forestillinger",
-    "city": "Bergen",
-    "venue": "Den Nationale Scene",
-    "where": "Den Nationale Scene",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Den Nationale Scene"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Technical",
-    "url": "https://www.kunsthall.no/en/landmark-kafe/technical/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "The Festival Exhibition",
-    "url": "https://www.kunsthall.no/en/the-festival-exhibition/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
     ]
   },
   {
@@ -2282,8 +1165,8 @@
   },
   {
     "source": "Østre",
-    "title": "Uke 39 - Runekode, Klubb Diaspora og danseworkshop Les mer...",
-    "url": "https://www.ekko.no/ostre/news/uke-39-runekode-klubb-diaspora-og-danseworkshop",
+    "title": "Uke 41 - Visuelle eksperimenter, skrangledisco og latin-spesial Les mer...",
+    "url": "https://www.ekko.no/ostre/news/uke-41-visuelle-eksperimenter-skrangledisco-og-latin-spesial",
     "city": "Bergen",
     "venue": "Østre",
     "where": "Østre",
@@ -2292,34 +1175,6 @@
     ],
     "sources": [
       "Østre"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Vacancy",
-    "url": "https://www.kunsthall.no/en/vacancy/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Video",
-    "url": "https://www.kunsthall.no/en/video/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
     ]
   },
   {
@@ -2351,64 +1206,6 @@
     ]
   },
   {
-    "source": "Bergen Kunsthall",
-    "title": "Visit Us",
-    "url": "https://www.kunsthall.no/en/visit-us/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ]
-  },
-  {
-    "source": "Bergen Kjøtt",
-    "title": "What´s on",
-    "url": "https://www.bergenkjott.org/kalendar",
-    "city": "Bergen",
-    "venue": "Bergen Kjøtt",
-    "where": "Bergen Kjøtt",
-    "url_status": 200,
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kjøtt"
-    ]
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Young Art Connoisseurs",
-    "url": "https://www.kunsthall.no/en/young-art-connoisseurs/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Åpenhetsloven",
-    "url": "https://harmonien.no/om-oss/apenhetsloven/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
-    ]
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Åpningstider",
     "url": "https://www.kulturhusetibergen.no/apningstider/",
@@ -2420,21 +1217,6 @@
     ],
     "sources": [
       "Kulturhuset i Bergen"
-    ]
-  },
-  {
-    "source": "Bergen Filharmoniske Orkester",
-    "title": "Årsberetninger",
-    "url": "https://harmonien.no/om-oss/arsberetninger/",
-    "city": "Bergen",
-    "venue": "Grieghallen",
-    "where": "Grieghallen",
-    "tags": [
-      "culture",
-      "live"
-    ],
-    "sources": [
-      "Bergen Filharmoniske Orkester"
     ]
   }
 ]
