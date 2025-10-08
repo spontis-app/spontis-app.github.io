@@ -30,17 +30,21 @@ const topicCloseBtn = $('#topic-drawer-close');
 const topicApplyBtn = $('#topic-apply');
 const topicClearBtn = $('#topic-clear');
 const topicBody = $('#topic-drawer-body');
-const openTopicsBtn = $('#open-topics');
+const topicTriggers = Array.from(document.querySelectorAll('[data-topics-trigger]'));
 const datasetButtons = Array.from(document.querySelectorAll('.dataset-chip'));
 let topicButtons = new Map();
 let pendingTag = null;
+let lastTopicTrigger = null;
 
-function openTopicDrawer() {
+function openTopicDrawer(trigger) {
     if (!topicDrawer) return;
+    if (trigger) {
+        lastTopicTrigger = trigger;
+    }
     pendingTag = currentFilter;
     updatePendingSelection();
     topicDrawer.hidden = false;
-    openTopicsBtn?.setAttribute('aria-expanded', 'true');
+    topicTriggers.forEach(btn => btn.setAttribute('aria-expanded', 'true'));
     document.body.style.overflow = 'hidden';
     if (topicPanel) {
         if (!topicPanel.hasAttribute('tabindex')) {
@@ -53,12 +57,14 @@ function openTopicDrawer() {
 function closeTopicDrawer() {
     if (!topicDrawer || topicDrawer.hidden) return;
     topicDrawer.hidden = true;
-    openTopicsBtn?.setAttribute('aria-expanded', 'false');
+    topicTriggers.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
     document.body.style.overflow = '';
     pendingTag = null;
     updatePendingSelection();
     updateTopicButtons(currentFilter);
-    openTopicsBtn?.focus({ preventScroll: true });
+    const focusTarget = lastTopicTrigger || topicTriggers[0];
+    focusTarget?.focus({ preventScroll: true });
+    lastTopicTrigger = null;
 }
 
 function applyPendingTopic() {
@@ -99,12 +105,13 @@ function updateDatasetButtons() {
 }
 
 function updateTopicsTriggerLabel(selectedTag = currentFilter) {
-    if (!openTopicsBtn) return;
-    const labelEl = openTopicsBtn.querySelector('.drawer-trigger__label');
-    if (labelEl) {
-        labelEl.textContent = selectedTag ? labelForTag(selectedTag) : 'Topics';
-    }
-    openTopicsBtn.setAttribute('data-selected-tag', selectedTag || '');
+    topicTriggers.forEach(trigger => {
+        const labelEl = trigger.querySelector('.drawer-trigger__label');
+        if (labelEl) {
+            labelEl.textContent = selectedTag ? labelForTag(selectedTag) : 'Topics';
+        }
+        trigger.setAttribute('data-selected-tag', selectedTag || '');
+    });
 }
 
 function updateTopicButtons(selectedTag) {
@@ -1472,12 +1479,15 @@ datasetButtons.forEach(button => {
     button.addEventListener('click', handleDatasetButtonClick);
 });
 
-openTopicsBtn?.addEventListener('click', () => {
-    if (topicDrawer?.hidden) {
-        openTopicDrawer();
-    } else {
-        closeTopicDrawer();
-    }
+topicTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        if (topicDrawer?.hidden) {
+            openTopicDrawer(trigger);
+        } else {
+            lastTopicTrigger = trigger;
+            closeTopicDrawer();
+        }
+    });
 });
 
 topicApplyBtn?.addEventListener('click', applyPendingTopic);

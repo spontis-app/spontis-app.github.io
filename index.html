@@ -36,6 +36,9 @@
 <body>
     <div class="page">
     <header class="hero">
+        <div class="hero__skyline" aria-hidden="true">
+            <img src="./assets/illustrations/bergen-skyline.svg" alt="" loading="lazy">
+        </div>
         <div class="container hero__inner">
             <div class="hero__content">
                 <div class="brand">
@@ -66,7 +69,7 @@
                             <button type="button" class="dataset-chip" data-dataset="all" aria-pressed="true" aria-label="Show all events">All events</button>
                             <button type="button" class="dataset-chip" data-dataset="today" aria-pressed="false" aria-label="Show today’s events">Today</button>
                             <button type="button" class="dataset-chip" data-dataset="tonight" aria-pressed="false" aria-label="Show tonight’s events">Tonight</button>
-                            <button type="button" id="open-topics" class="btn-secondary btn-secondary--with-icon" aria-haspopup="true" aria-expanded="false" aria-controls="topic-drawer">
+                            <button type="button" id="open-topics" class="btn-secondary btn-secondary--with-icon" aria-haspopup="true" aria-expanded="false" aria-controls="topic-drawer" data-topics-trigger>
                                 <img src="./assets/icons/icon-filter.svg" alt="" aria-hidden="true">
                                 <span class="drawer-trigger__label">Topics</span>
                             </button>
@@ -107,6 +110,18 @@
     </footer>
 
     </div>
+
+    <nav class="mobile-dock" aria-label="Quick filters">
+        <div class="mobile-dock__inner" role="group" aria-label="Filter events by time or topic">
+            <button type="button" class="dataset-chip" data-dataset="all" aria-pressed="true" aria-label="Show all events">All</button>
+            <button type="button" class="dataset-chip" data-dataset="today" aria-pressed="false" aria-label="Show today’s events">Today</button>
+            <button type="button" class="dataset-chip" data-dataset="tonight" aria-pressed="false" aria-label="Show tonight’s events">Tonight</button>
+            <button type="button" class="btn-secondary btn-secondary--with-icon mobile-dock__topics" aria-haspopup="true" aria-expanded="false" aria-controls="topic-drawer" data-topics-trigger>
+                <img src="./assets/icons/icon-filter.svg" alt="" aria-hidden="true">
+                <span class="drawer-trigger__label">Topics</span>
+            </button>
+        </div>
+    </nav>
 
     <div id="topic-drawer" class="topic-drawer" hidden>
         <div class="topic-drawer__backdrop" role="presentation"></div>
