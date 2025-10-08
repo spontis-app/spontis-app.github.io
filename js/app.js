@@ -1500,6 +1500,21 @@ if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
 }
 
+const timezoneChip = document.getElementById('timezone-chip');
+if (timezoneChip) {
+    try {
+        const formatter = new Intl.DateTimeFormat('en-GB', {
+            timeZone: 'Europe/Oslo',
+            timeZoneName: 'short'
+        });
+        const zonePart = formatter.formatToParts(new Date()).find(part => part.type === 'timeZoneName');
+        const label = zonePart?.value || 'CEST';
+        timezoneChip.textContent = `Timezone: Bergen (${label})`;
+    } catch (error) {
+        timezoneChip.textContent = 'Timezone: Bergen (CEST)';
+    }
+}
+
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
         if (!topicDrawer?.hidden) {
