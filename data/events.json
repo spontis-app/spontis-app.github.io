@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
     "where": "Bergen Kino",
-    "when": "Sat 10:15 • 10:30 • 10:45 (+92 later)",
+    "venue": "Bergen Kino",
+    "when": "Sun 10:15 • 10:30 • 10:45 (+93 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,51 +14,31 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-11T10:15:00+02:00"
+    "starts_at": "2025-10-12T10:15:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2025 11 Oct Landmark x Hastverk: Fochs Koshka Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3183-2025-10-11/",
+    "title": "2025 12 Oct Sunday guided tours Gallery I-V Guided Tours",
+    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Sat 22:30",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "when": "Sun 13:00",
     "tags": [
-      "culture",
-      "late-night",
-      "techno"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-10-11T22:30:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Landmark x Hastverk: Fochs Koshka Sat 11 Oct 22:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3183-2025-10-11/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Sat 22:30",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-11T22:30:00+02:00"
+    "starts_at": "2025-10-12T13:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Guided Tours Sunday guided tours Sun 12 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-12",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
+    "where": "Landmark",
+    "venue": "Landmark",
     "when": "Sun 13:00",
     "tags": [
       "culture"
@@ -73,8 +53,8 @@
     "title": "Concert Perfect Sounds Forever: Molly Lewis (US) Wed 15 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3153-2025-10-15/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "when": "Wed 20:00",
     "tags": [
       "culture"
@@ -89,8 +69,8 @@
     "title": "Concert GiFU + special guests: Date Of Birth Fri 17 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "when": "Fri 20:30",
     "tags": [
       "culture"
@@ -105,8 +85,8 @@
     "title": "Guided Tours Sunday guided tours Sun 19 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-19",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "when": "Sun 13:00",
     "tags": [
       "culture"
@@ -121,8 +101,8 @@
     "title": "Club Heisen: HEISEN Vol. 3: Moe, CMS, Uncle K, Mira and Visuals by Even Greve Sat 25 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "when": "Sat 23:00",
     "tags": [
       "culture",
@@ -139,8 +119,8 @@
     "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "when": "Sun 13:00",
     "tags": [
       "culture"
@@ -155,8 +135,8 @@
     "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "when": "Wed 20:00",
     "tags": [
       "culture"
@@ -171,8 +151,8 @@
     "title": "Ansatte & styre",
     "url": "https://bit-teatergarasjen.no/om-oss/ansatte/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -185,8 +165,8 @@
     "title": "Arenaer",
     "url": "https://bit-teatergarasjen.no/ditt-besok/arenaer/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -199,8 +179,8 @@
     "title": "Arrangementer",
     "url": "https://usf.no/arrangementer",
     "city": "Bergen",
-    "venue": "USF Verftet",
     "where": "USF Verftet",
+    "venue": "USF Verftet",
     "tags": [
       "culture"
     ],
@@ -213,8 +193,8 @@
     "title": "Bildegalleri",
     "url": "https://www.kulturhusetibergen.no/gallery/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture"
     ],
@@ -227,8 +207,8 @@
     "title": "Bilder",
     "url": "https://www.ekko.no/ostre#bilder",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -241,8 +221,8 @@
     "title": "Billetter",
     "url": "https://bit-teatergarasjen.no/ditt-besok/billetter/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -255,8 +235,8 @@
     "title": "Book project space",
     "url": "https://zipcollective.com/the-space/#project-space",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -269,8 +249,8 @@
     "title": "Booking",
     "url": "https://www.kulturhusetibergen.no/booke-kulturhuset/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture"
     ],
@@ -283,8 +263,8 @@
     "title": "Contact",
     "url": "https://zipcollective.com/contact/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -297,8 +277,8 @@
     "title": "Dans – en fest! 2026",
     "url": "https://bit-teatergarasjen.no/festivaler/dans-en-fest2026/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -311,8 +291,8 @@
     "title": "Dato fredag 17.10. 22:30 Tittel Keep it freaky vol. 5 Kjøp billetter",
     "url": "https://www.ekko.no/ostre/keep-it-freaky",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -325,8 +305,8 @@
     "title": "Dato fredag 31.10. - lørdag 1.11. Tittel «For Mechanical Brass & Magnetic Strings» Artister «For Mechanical Brass & Magnetic Strings» (lydinstallasjon) Simonsen / Lysne / Ambarchi (konsert) «For Mechanical Brass & Magnetic Strings» (lydinstallasjon) Simonsen / Lysne / Taxt (konsert) Kjøp billetter",
     "url": "https://www.ekko.no/ostre/jo-david-meyer-lysne-og-peder-simonsen-for-mechanical-brass-magnetic-strings",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -339,8 +319,8 @@
     "title": "Dato fredag 7.11. - søndag 9.11. Tittel Vill Vill Vest 2025 Kjøp billetter",
     "url": "https://www.ekko.no/ostre/vill-vill-vest-2025",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -353,22 +333,8 @@
     "title": "Dato lørdag 1.11. - fredag 31.10. Tittel EKKO XXII Artister plus44Kaligula Yara Asmar Shida Shahabi Kelly Moran Smerz Holy Tongue Charlemagne, Ambarchi, O’Sullivan Lasse Marhaug solo James Holden & Wacław Zimpel D. Tiffany Om Unit: «Acid Dub Studies» Mad Miran Malibu Marhaug og Apeland Hüma Utku Raimund Wong & Suren Seneviratne Jules Reidy Anja Lauvdal Kristoffer Lislegaard Human Exp Hildisvíni Ekko-djs Toddy & søtabete Etterfest med Ekko djs Nadda Noor & Little Miss Lucifer Teservering «For Mechanical Brass & Magnetic Strings» Kjøp billetter",
     "url": "https://www.ekko.no/festival/ekko-xxii",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Dato lørdag 11.10. 23:00 Tittel Bjørn Torske i fri flyt hele natten lang Artister Bjørn Torske Kjøp billetter",
-    "url": "https://www.ekko.no/ostre/bjorn-torske-i-fri-flyt",
-    "city": "Bergen",
     "venue": "Østre",
-    "where": "Østre",
     "tags": [
       "culture"
     ],
@@ -381,8 +347,8 @@
     "title": "Dato lørdag 18.10. 18:00 Arrangør Tedans x Østre Tittel Tedans nr. 32 Artister Bjorå/Osgood/Gjerstad Kjøp billetter",
     "url": "https://www.ekko.no/ostre/tedans-nr-32",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -395,8 +361,8 @@
     "title": "Dato lørdag 18.10. 22:00 Arrangør Månen x Østre Tittel Månen Artister Thomas Urv Kjøp billetter",
     "url": "https://www.ekko.no/ostre/manen-3",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -409,8 +375,8 @@
     "title": "Ditt besøk",
     "url": "https://bit-teatergarasjen.no/ditt-besok/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -423,8 +389,8 @@
     "title": "English",
     "url": "https://bit-teatergarasjen.no/en/program/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -437,8 +403,8 @@
     "title": "Events",
     "url": "https://zipcollective.com/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -451,8 +417,8 @@
     "title": "Festivaler",
     "url": "https://bit-teatergarasjen.no/festivaler/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -465,8 +431,8 @@
     "title": "Frivillig",
     "url": "https://bit-teatergarasjen.no/om-oss/frivillig/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -493,8 +459,8 @@
     "title": "Gjestekunstnere",
     "url": "https://bit-teatergarasjen.no/innsikt/gjestekunstneropphold/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -521,8 +487,8 @@
     "title": "Home",
     "url": "https://usf.no/",
     "city": "Bergen",
-    "venue": "USF Verftet",
     "where": "USF Verftet",
+    "venue": "USF Verftet",
     "tags": [
       "culture"
     ],
@@ -535,8 +501,8 @@
     "title": "Info",
     "url": "https://www.ekko.no/ostre#info",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -549,8 +515,8 @@
     "title": "Innsikt",
     "url": "https://bit-teatergarasjen.no/innsikt/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -563,8 +529,8 @@
     "title": "Kalender",
     "url": "https://www.ekko.no/ostre#kalender",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -577,8 +543,8 @@
     "title": "Kontakt",
     "url": "https://bit-teatergarasjen.no/ditt-besok/kontakt/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -591,8 +557,8 @@
     "title": "Kontakt",
     "url": "https://www.kulturhusetibergen.no/kontakt/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture"
     ],
@@ -605,8 +571,8 @@
     "title": "Load more events",
     "url": "https://zipcollective.com/events",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "community",
       "culture"
@@ -620,8 +586,8 @@
     "title": "Manifesto",
     "url": "https://zipcollective.com/manifesto/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -634,8 +600,8 @@
     "title": "Members",
     "url": "https://zipcollective.com/members/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -648,8 +614,8 @@
     "title": "METEOR 2025",
     "url": "https://bit-teatergarasjen.no/festivaler/meteor2025/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -690,8 +656,8 @@
     "title": "Nettverk",
     "url": "https://bit-teatergarasjen.no/innsikt/nettverk/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -704,8 +670,8 @@
     "title": "Norsk bokmål",
     "url": "https://bit-teatergarasjen.no/program/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -718,8 +684,8 @@
     "title": "Nyheter",
     "url": "https://bit-teatergarasjen.no/innsikt/nyheter/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -732,8 +698,8 @@
     "title": "Nyheter",
     "url": "https://www.ekko.no/ostre#nyheter",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -746,8 +712,8 @@
     "title": "Oktober 2025 på Østre Les mer...",
     "url": "https://www.ekko.no/ostre/news/oktober-2025-pa-ostre",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -760,8 +726,8 @@
     "title": "OKTOBERDANS 2024",
     "url": "https://bit-teatergarasjen.no/festivaler/oktoberdans2024/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -774,8 +740,8 @@
     "title": "Om oss",
     "url": "https://bit-teatergarasjen.no/om-oss/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -788,8 +754,8 @@
     "title": "Om oss",
     "url": "https://www.kulturhusetibergen.no/om-oss/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture"
     ],
@@ -802,8 +768,8 @@
     "title": "Opphavsrett",
     "url": "https://bit-teatergarasjen.no/opphavsrett/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -816,8 +782,8 @@
     "title": "Personvernerklæring",
     "url": "https://bit-teatergarasjen.no/personvern/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -830,8 +796,8 @@
     "title": "Personvernerklæring",
     "url": "https://usf.no/om-usf-verftet",
     "city": "Bergen",
-    "venue": "USF Verftet",
     "where": "USF Verftet",
+    "venue": "USF Verftet",
     "tags": [
       "culture"
     ],
@@ -858,8 +824,8 @@
     "title": "Presse",
     "url": "https://bit-teatergarasjen.no/presse/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -886,8 +852,8 @@
     "title": "Program",
     "url": "https://bit-teatergarasjen.no/program/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -914,8 +880,8 @@
     "title": "Program",
     "url": "https://www.kulturhusetibergen.no/program/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture"
     ],
@@ -928,8 +894,8 @@
     "title": "Prøverommet",
     "url": "https://bit-teatergarasjen.no/proverommet/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -942,8 +908,8 @@
     "title": "Restaurant",
     "url": "https://www.kulturhusetibergen.no/mat/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture"
     ],
@@ -956,8 +922,8 @@
     "title": "Sentralbadet",
     "url": "https://bit-teatergarasjen.no/om-oss/sentralbadet/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -970,8 +936,8 @@
     "title": "Skip to content",
     "url": "https://zipcollective.com/events#main",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -984,8 +950,8 @@
     "title": "Space",
     "url": "https://zipcollective.com/the-space/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -998,8 +964,8 @@
     "title": "Spørsmål",
     "url": "https://www.kulturhusetibergen.no/faq/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture"
     ],
@@ -1026,8 +992,8 @@
     "title": "Søk",
     "url": "https://www.ekko.no/ostre/search",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -1040,8 +1006,8 @@
     "title": "Tidligere arrangementer",
     "url": "https://bit-teatergarasjen.no/tidligere-arrangementer/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -1054,8 +1020,8 @@
     "title": "Tidligere arrangementer",
     "url": "https://www.ekko.no/ostre#arkiv",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -1068,8 +1034,8 @@
     "title": "Tilgjengelighet",
     "url": "https://bit-teatergarasjen.no/ditt-besok/tilgjengelighet/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -1082,8 +1048,8 @@
     "title": "Tilgjengelighet",
     "url": "https://www.ekko.no/ostre#tilgjengelighet",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -1110,8 +1076,8 @@
     "title": "Tilgjengelighetsærklæring",
     "url": "https://bit-teatergarasjen.no/tilgjengelighetsaerklaering/",
     "city": "Bergen",
-    "venue": "BIT Teatergarasjen",
     "where": "BIT Teatergarasjen",
+    "venue": "BIT Teatergarasjen",
     "tags": [
       "culture"
     ],
@@ -1124,8 +1090,8 @@
     "title": "Uke 41 - Visuelle eksperimenter, skrangledisco og latin-spesial Les mer...",
     "url": "https://www.ekko.no/ostre/news/uke-41-visuelle-eksperimenter-skrangledisco-og-latin-spesial",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -1138,8 +1104,8 @@
     "title": "Vis alt",
     "url": "https://www.ekko.no/ostre/news",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -1152,8 +1118,8 @@
     "title": "Vis fullt arkiv",
     "url": "https://www.ekko.no/ostre/archive",
     "city": "Bergen",
-    "venue": "Østre",
     "where": "Østre",
+    "venue": "Østre",
     "tags": [
       "culture"
     ],
@@ -1166,8 +1132,8 @@
     "title": "Åpningstider",
     "url": "https://www.kulturhusetibergen.no/apningstider/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture"
     ],
