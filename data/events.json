@@ -6,7 +6,7 @@
     "city": "Bergen",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
-    "when": "Tue 10:15 • 10:30 • 11:45 (+77 later)",
+    "when": "Wed 10:45 • 11:00 • 11:45 (+70 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,123 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-14T10:15:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Molly Lewis (US) Wed 15 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3153-2025-10-15/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Wed 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-15T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert GiFU + special guests: Date Of Birth Fri 17 Oct 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Fri 20:30",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-17T20:30:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Klubb Diaspora: MultiTati, Love Pump, Moikana Sat 18 Oct 22:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3193-2025-10-18/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Sat 22:00",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-18T22:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Sunday guided tours Sun 19 Oct 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-19",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "when": "Sun 13:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-19T13:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Heisen: HEISEN Vol. 3: Moe, CMS, Uncle K, Mira and Visuals by Even Greve Sat 25 Oct 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Sat 23:00",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-25T23:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "when": "Sun 13:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-26T13:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Wed 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-29T20:00:00+01:00"
+    "starts_at": "2025-10-15T10:45:00+02:00"
   },
   {
     "source": "USF Verftet",
@@ -484,20 +368,6 @@
     ]
   },
   {
-    "source": "Østre",
-    "title": "Oktober 2025 på Østre Les mer...",
-    "url": "https://www.ekko.no/ostre/news/oktober-2025-pa-ostre",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Om oss",
     "url": "https://www.kulturhusetibergen.no/om-oss/",
@@ -711,6 +581,20 @@
     "source": "Østre",
     "title": "Uke 41 - Visuelle eksperimenter, skrangledisco og latin-spesial Les mer...",
     "url": "https://www.ekko.no/ostre/news/uke-41-visuelle-eksperimenter-skrangledisco-og-latin-spesial",
+    "city": "Bergen",
+    "venue": "Østre",
+    "where": "Østre",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Østre"
+    ]
+  },
+  {
+    "source": "Østre",
+    "title": "Uke 42 - Tedans, Keep It Freaky og Månen Les mer...",
+    "url": "https://www.ekko.no/ostre/news/uke-42-tedans-keep-it-freaky-og-manen",
     "city": "Bergen",
     "venue": "Østre",
     "where": "Østre",
