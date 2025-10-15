@@ -31,17 +31,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scraper/requirements.txt
 
-      - name: Run scraper
+      - name: Run auto scraper
         run: |
-          python -m scraper.run
+          python auto_scraper.py
 
       - name: Commit & push if data changed
         run: |
-          if [[ -n "$(git status --porcelain data/events.json)" ]]; then
+          if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "spontis-bot"
             git config user.email "bot@users.noreply.github.com"
-            git add data/events.json
-            git commit -m "chore(data): update events.json [skip ci]"
+            git add data/events.json data/generated docs/discovery scraper/generated || true
+            git commit -m "[auto-update] refreshed sources" || true
             git push
           else
             echo "No changes to data/events.json"

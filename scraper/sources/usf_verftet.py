@@ -102,6 +102,8 @@ def fetch() -> list[dict]:
         starts_at = _extract_datetime(link)
         if not starts_at:
             starts_at = _detail_datetime(absolute_url)
+        if not starts_at:
+            continue
 
         extra = {"where": "USF Verftet"}
         label = to_weekday_label(starts_at)

@@ -9,6 +9,7 @@ Static site (GitHub Pages) · Vanilla JS/CSS · Data i `/data/events.sample.json
 ## Scraper
 
 - Kjør lokalt med `python -m scraper.run`. Output lander i `data/events.json` og følger et lite schema: `source`, `title`, `url`, valgfri `starts_at`/`ends_at` (ISO8601), `venue`, `city` (default Bergen), `tags`.
+- `python auto_scraper.py` kjører alle registrerte + genererte scrapers, oppdaterer `data/events.json` og regenererer `data/generated/*.json`. Bruk `--discover` for å liste nye kandidater eller `--generate URL` for å lage en scaffold.
 - Kilder som er aktivert som standard: Bergen Kino, Østre (via Ekko.no), USF Verftet, Bergen Kjøtt, Bergen Kunsthall/Landmark, BIT Teatergarasjen, Litteraturhuset, Kulturhuset i Bergen, Carte Blanche, Bergen Live, Nattjazz, Hordaland Kunstsenter, Aerial Bergen, Zip Collective, Festspillene i Bergen, Bergen Filharmoniske Orkester, Grieghallen og Den Nationale Scene (Resident Advisor dekker klubbkonsertene).
 - Kennel Vinylbar henter “best effort” fra Instagram og er slått av som default.
 - Feature-flagg (environment vars, «1» = på, «0» = av):

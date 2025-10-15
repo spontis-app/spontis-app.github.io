@@ -86,6 +86,9 @@ def fetch() -> list[dict]:
         seen.add(key)
 
         starts_at = _extract_datetime(link)
+        if not starts_at:
+            continue
+
         extra = {"where": "Østre"}
         label = to_weekday_label(starts_at)
         if label:

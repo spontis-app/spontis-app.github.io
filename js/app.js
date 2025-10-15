@@ -17,6 +17,12 @@ import {
     collectTags,
     hasVibe
 } from './modules/datasets.js';
+import {
+    createBalancedFeed,
+    formatRelativeStart,
+    selectUpcomingEvents
+} from './feed.js';
+import { defaultDatasetKey } from './date-filters.js';
 
 const $ = selector => document.querySelector(selector);
 
@@ -63,10 +69,6 @@ let topicButtons = new Map();
 let smartFilterButtons = new Map();
 let pendingTag = null;
 let lastTopicTrigger = null;
-
-const NOW_WINDOW_MS = 4 * 60 * 60 * 1000; // 4 hours
-const TONIGHT_WINDOW_MS = 14 * 60 * 60 * 1000; // rest of evening
-const ALLOWED_PAST_MS = 45 * 60 * 1000; // keep items that just started
 
 
 function openTopicDrawer(trigger) {
@@ -214,77 +216,20 @@ function updateVibeCards() {
     });
 }
 
-function rebalanceBySource(events, perSourceLimit = 3) {
-    if (!Array.isArray(events) || events.length <= 1) {
-        return Array.isArray(events) ? [...events] : [];
+function showEvents(list, { updateMeta = false } = {}) {
+    const base = Array.isArray(list) ? list : [];
+    const { feed, upcoming } = createBalancedFeed(base, { now: new Date() });
+    setCurrentList(feed);
+    paint(feed);
+    renderNowDeck(base, upcoming);
+    if (updateMeta) {
+        updateHeroMeta(lastMeta, base);
     }
-    const counts = new Map();
-    const primary = [];
-    const overflow = [];
-
-    events.forEach(event => {
-        const source = (event?.source || event?.sources?.[0] || '').toLowerCase();
-        if (!source) {
-            primary.push(event);
-            return;
-        }
-        const count = counts.get(source) || 0;
-        if (count < perSourceLimit) {
-            primary.push(event);
-            counts.set(source, count + 1);
-        } else {
-            overflow.push(event);
-        }
-    });
-
-    return primary.concat(overflow);
 }
 
-function showEvents(list, perSourceLimit = 3) {
-    const balanced = rebalanceBySource(Array.isArray(list) ? list : [], perSourceLimit);
-    setCurrentList(balanced);
-    paint(balanced);
-}
-
-function selectUpcomingEvents(events, limit = 6) {
-    if (!Array.isArray(events) || !events.length) return [];
-    const now = Date.now();
-    const bucketed = { upcoming: [], tonight: [] };
-
-    events.forEach(event => {
-        const timestamp = parseStartsAtValue(event?.starts_at);
-        if (Number.isNaN(timestamp)) return;
-        if (timestamp + ALLOWED_PAST_MS < now) return;
-        const diff = timestamp - now;
-        if (diff <= NOW_WINDOW_MS) {
-            bucketed.upcoming.push({ event, timestamp });
-        } else if (diff <= TONIGHT_WINDOW_MS) {
-            bucketed.tonight.push({ event, timestamp });
-        }
-    });
-
-    const ordered = bucketed.upcoming.sort((a, b) => a.timestamp - b.timestamp)
-        .concat(bucketed.tonight.sort((a, b) => a.timestamp - b.timestamp))
-        .map(entry => entry.event);
-
-    return rebalanceBySource(ordered, 1).slice(0, limit);
-}
-
-function formatRelativeStart(timestamp) {
-    if (!Number.isFinite(timestamp)) return '';
-    const now = Date.now();
-    const diff = timestamp - now;
-    if (Math.abs(diff) < 5 * 60 * 1000) return 'Starter nå';
-    if (diff < 0) return 'Startet nylig';
-    const minutes = Math.round(diff / 60000);
-    if (minutes < 60) return `Om ${minutes} min`;
-    const hours = Math.round(diff / 3600000);
-    return `Om ${hours} t`;
-}
-
-function renderNowDeck(events) {
+function renderNowDeck(events, upcomingOverride) {
     if (!nowDeckEl || !nowDeckBody) return;
-    const upcoming = selectUpcomingEvents(events);
+    const upcoming = Array.isArray(upcomingOverride) ? upcomingOverride : selectUpcomingEvents(events, { now: new Date() });
     nowDeckBody.innerHTML = '';
     if (!upcoming.length) {
         nowDeckEl.hidden = true;
@@ -294,7 +239,7 @@ function renderNowDeck(events) {
     const fragment = document.createDocumentFragment();
     upcoming.forEach(event => {
         const timestamp = parseStartsAtValue(event.starts_at);
-        const relative = formatRelativeStart(timestamp);
+        const relative = formatRelativeStart(timestamp, Date.now());
         const schedule = computeScheduleLabel(event);
 
         const card = document.createElement('article');
@@ -347,14 +292,6 @@ function renderNowDeck(events) {
 
     nowDeckBody.appendChild(fragment);
     nowDeckEl.hidden = false;
-}
-
-function updateContextualSections(baseEvents) {
-    const base = Array.isArray(baseEvents) ? baseEvents : [];
-    renderSmartFilters(base);
-    updateSmartFilterButtons(getCurrentSmartFilter());
-    renderNowDeck(base);
-    updateHeroMeta(lastMeta, base);
 }
 
 function updatePendingSelection() {
@@ -1451,16 +1388,16 @@ function applyFilter(tag) {
         setCurrentVibe(null);
         setCurrentSmartFilter(null);
         pendingTag = null;
-        updateContextualSections(data);
+        renderSmartFilters(data);
         renderClusters(data);
         renderDensityMap(data);
         renderSourceRollup(data);
-        showEvents(data);
+        showEvents(data, { updateMeta: true });
         setActive(tag, 'dataset');
         setActive(null, 'tag');
         updatePendingSelection();
-        clearSpotlight();
         updateUrlFilters();
+        clearSpotlight();
         return;
     }
 
@@ -1471,14 +1408,12 @@ function applyFilter(tag) {
     setCurrentVibe(null);
     setCurrentSmartFilter(null);
     pendingTag = null;
-    showEvents(data);
+    showEvents(data, { updateMeta: true });
     setActive(activeDatasetKey, 'dataset');
     setActive(tag, 'tag');
     updateSmartFilterButtons(null);
     updateVibeCards();
     updatePendingSelection();
-    renderNowDeck(data);
-    updateHeroMeta(lastMeta, data);
     clearSpotlight();
     updateUrlFilters();
 }
@@ -1492,14 +1427,12 @@ function applyVibeFilter(vibeId) {
     setCurrentFilter(null);
     setCurrentSmartFilter(null);
     pendingTag = null;
-    showEvents(data);
+    showEvents(data, { updateMeta: true });
     setActive(activeDatasetKey, 'dataset');
     setActive(null, 'tag');
     updateVibeCards();
     updatePendingSelection();
     updateSmartFilterButtons(null);
-    renderNowDeck(data);
-    updateHeroMeta(lastMeta, data);
     clearSpotlight();
     updateUrlFilters();
     if (eventsEl) {
@@ -1887,6 +1820,8 @@ async function boot() {
     const datasetParam = params.get('dataset');
     if (datasetParam && DATASET_FILTERS.has(datasetParam)) {
         setActiveDatasetKey(datasetParam);
+    } else {
+        setActiveDatasetKey(defaultDatasetKey());
     }
     const tagParam = params.get('tag');
     if (tagParam) {
@@ -1905,7 +1840,7 @@ async function boot() {
     lastMeta = meta || {};
 
     const baseDataset = getDataset(getActiveDatasetKey());
-    updateContextualSections(baseDataset);
+    renderSmartFilters(baseDataset);
     renderClusters(baseDataset);
     renderDensityMap(baseDataset);
     renderSourceRollup(baseDataset);

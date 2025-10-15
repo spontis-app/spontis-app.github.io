@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Kvarteret",
+    "url": "https://www.kvarteret.no/program",
+    "source": "manual",
+    "status": "pending",
+    "note": "TicketCo slug needs verification"
+  },
+  {
+    "name": "Hulen",
+    "url": "https://hulen.no/",
+    "source": "manual",
+    "status": "pending"
+  },
+  {
+    "name": "Forum Scene",
+    "url": "https://www.forumscene.no/program",
+    "source": "manual",
+    "status": "pending"
+  }
+]

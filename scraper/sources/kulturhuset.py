@@ -87,6 +87,8 @@ def fetch() -> list[dict]:
         starts_at = _extract_datetime(card)
         if not starts_at and detail:
             starts_at = _extract_datetime(detail)
+        if not starts_at:
+            continue
 
         extra = {"where": "Kulturhuset i Bergen"}
         label = to_weekday_label(starts_at)

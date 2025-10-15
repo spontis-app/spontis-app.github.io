@@ -73,3 +73,4 @@
 - **Manuell logging:** VS Code-snippet og task kan brukes for hurtig innfylling. Snippet ligger i `.vscode/codex.code-snippets`, tasken i `.vscode/tasks.json`, og begge kaller `scripts/dev/append_codex_log.py`.
 - **Agent-rollene:** ChatGPT (planer), VS Code Codex (lokal kontekst), Codex CLI (script/CI) og Codex Web (PR/review) – se README-seksjonen “AI-arbeidsflyt” for oversikt.
 - **Kildeoppdagelse:** Automatiske jobber (ByVenn, VisitBergen, Proff) skriver til `docs/discovery/` og varsler roadmapen når nye kandidater skal prioriteres.
+- **UI-redesign backlog:** Dokumentert i `docs/design/ui-redesign.md` – ta opp igjen når auto-scraper og feedbalanse er stabile.
