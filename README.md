@@ -34,3 +34,18 @@ Static site (GitHub Pages) · Vanilla JS/CSS · Data i `/data/events.sample.json
   - `SCRAPE_RA` må være aktivert for RA, de andre fungerer uavhengig.
 - Runneren deduper på (`title`, `starts_at`, `url`), logger antall per kilde og feiler ikke om én kilde skulle falle igjennom — du får alltid gyldig JSON (tom liste om det ikke finnes events).
 - Offline test? Kjør `python -m scraper.run --offline --no-update-views` for å skrive sample-data lokalt uten nettverkskall.
+- Genererte visninger (`today.json`, `tonight.json`, `heatmap.json`) ligger i `data/generated/` etter kjøring.
+- Hurtigsjekk lokalt? Kjør `./scripts/checks.sh` for offline scraping, regenerering av visninger og (dersom tilgjengelig) pytest.
+
+## 🤖 AI-arbeidsflyt
+
+Spontis bruker et GPT‑5 Codex-oppsett der flere agenter samarbeider:
+
+| Nivå | Verktøy | Bruksområde |
+|------|---------|-------------|
+| 💬 | ChatGPT (Web) | Planer, idéutvikling, spesifikasjoner |
+| 🧠 | VS Code Codex | Lokal koding med rike prosjektdata |
+| ⚙️ | Codex CLI | Automatisering, skript og CI-vennlige oppgaver |
+| ☁️ | Codex Web | PR-forslag, code reviews og skyfeatures |
+
+Alle økter loggføres i [`docs/codex_log.md`](docs/codex_log.md). Se `docs/spontis-roadmap.md` for detaljer og rutiner (automatisk post-commit-logg, VS Code-snippets m.m.).

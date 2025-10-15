@@ -102,6 +102,7 @@ def build_heatmap(events: Iterable[Event]) -> dict[str, int]:
 
 
 def write_json(path: Path, payload) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
@@ -124,14 +125,20 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
+        "--events",
+        help="Path to events.json (defaults to data/events.json)",
+    )
+    parser.add_argument(
         "--now",
         help="ISO formatted datetime override used for generating the views",
     )
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parent.parent
+    default_events = repo_root / "data" / "events.json"
+    events_path = Path(args.events).expanduser().resolve() if args.events else default_events
     data_dir = repo_root / "data"
-    events_path = data_dir / "events.json"
+    generated_dir = data_dir / "generated"
 
     events = load_events(events_path)
     now = parse_now(args.now)
@@ -140,9 +147,9 @@ def main() -> None:
     tonight = build_tonight(events, now)
     heatmap = build_heatmap(events)
 
-    write_json(data_dir / "today.json", today)
-    write_json(data_dir / "tonight.json", tonight)
-    write_json(data_dir / "heatmap.json", heatmap)
+    write_json(generated_dir / "today.json", today)
+    write_json(generated_dir / "tonight.json", tonight)
+    write_json(generated_dir / "heatmap.json", heatmap)
 
 
 if __name__ == "__main__":

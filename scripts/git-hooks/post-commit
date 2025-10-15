@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+LOG_FILE="$REPO_ROOT/docs/codex_log.md"
+
+# Nothing to do if log file is missing (e.g., fresh clone)
+if [[ ! -f "$LOG_FILE" ]]; then
+    exit 0
+fi
+
+MSG="$(git log -1 --pretty=%s)"
+if [[ "$MSG" != codex:* ]]; then
+    exit 0
+fi
+
+HASH="$(git rev-parse --short HEAD)"
+BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+DATE="$(date +%F)"
+AGENT="${CODEX_AGENT:-VS Code Codex}"
+PROMPT="${MSG#codex: }"
+RESULT_BODY="$(git log -1 --pretty=%b)"
+
+if [[ -n "${RESULT_BODY// }" ]]; then
+    RESULT_LINE="Se commit-melding nedenfor."
+else
+    RESULT_LINE="Endringer committed på branch \`$BRANCH\`."
+fi
+
+{
+    echo ""
+    echo "### $DATE — $AGENT"
+    echo "**Agent:** $AGENT"
+    echo "**Prompt:** $PROMPT"
+    echo "**Resultat:** $RESULT_LINE"
+    echo "**Commit:** \`$HASH\`"
+    echo "**Neste steg:**"
+    if [[ -n "${RESULT_BODY// }" ]]; then
+        echo ""
+        # Prefix body with two spaces to keep markdown formatting tidy
+        while IFS= read -r line; do
+            echo "  ${line}"
+        done <<<"$RESULT_BODY"
+    fi
+} >> "$LOG_FILE"

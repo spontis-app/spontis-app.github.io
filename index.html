@@ -43,13 +43,19 @@
             <div class="hero__content">
                 <div class="brand">
                     <h1 class="logo">SPONTIS</h1>
-                    <p class="tagline">What’s on. Right now.</p>
+                    <p class="tagline">Hva skjer i Bergen akkurat nå.</p>
                 </div>
-                <p class="hero__lede">Spontis tracks the pulse of Bergen between fjell and fjord – concerts, cinema, club nights, workshops and more – refreshed automatically throughout the day.</p>
-                <div class="hero__meta" aria-label="System status">
-                    <span id="timezone-chip">Timezone: Bergen</span>
-                    <span>Validated listings with automatic clean-up</span>
-                    <span>Fast filters tuned for mobile</span>
+                <p class="hero__lede">Spontis kuraterer konserter, klubbkvelder, quiz, kino og workshops fra hele byen – oppdatert flere ganger om dagen.</p>
+                <div class="hero__cta">
+                    <a class="btn-primary" href="#events">Se dagens høydepunkter</a>
+                    <p class="hero__cta-note">Vi rydder i programmet og sender deg rett til arrangøren for billetter.</p>
+                </div>
+                <div class="hero__meta" aria-label="Tjenesteinfo">
+                    <span id="timezone-chip">Tidssone: Bergen</span>
+                    <span id="updated-chip">Oppdatert nylig</span>
+                    <span id="source-count-chip">Kilder: –</span>
+                    <span id="event-count-chip">Eventer i feeden: –</span>
+                    <span>Filtre optimalisert for mobil</span>
                 </div>
             </div>
         </div>
@@ -58,6 +64,14 @@
     <main class="main">
         <div class="container layout">
             <div class="layout__primary">
+                <section id="now-deck" class="now-deck" aria-label="Starter snart" hidden>
+                    <header class="now-deck__header">
+                        <h2>Rett rundt hjørnet</h2>
+                        <p>Eventer som starter de neste timene.</p>
+                    </header>
+                    <div id="now-deck-body" class="now-deck__grid" role="list"></div>
+                </section>
+
                 <section class="browse" aria-label="Event filters">
                     <header class="browse__header">
                         <div>
@@ -74,6 +88,7 @@
                                 <span class="drawer-trigger__label">Topics</span>
                             </button>
                         </div>
+                        <div class="smart-filters" role="group" aria-label="Smartsøk" hidden></div>
                     </header>
                 </section>
 
@@ -158,7 +173,7 @@
         </div>
     </div>
 
-    <script src="./js/app.js" defer></script>
+    <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>

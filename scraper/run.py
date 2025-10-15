@@ -12,32 +12,20 @@ from pathlib import Path
 from typing import Callable, Iterable, List, Optional, Tuple
 
 from scraper.normalize import DEFAULT_CITY, TZ as NORMALIZE_TZ
-from scraper.sources import bergen_kino, ostre
+from scraper.schema import (
+    BOOLEAN_FIELDS,
+    IDENTIFIER_FIELDS,
+    INTEGER_FIELDS,
+    REQUIRED_FIELDS,
+    SOURCE_LINK_KEYS,
+    STRING_FIELDS,
+)
+from scraper.source_registry import SOURCE_CONFIGS
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "events.json"
 SAMPLE_PATH = ROOT / "data" / "events.sample.json"
 TZ = NORMALIZE_TZ
-
-USE_RA = os.getenv("SCRAPE_RA", "0") == "1"
-USE_OSTRE = os.getenv("SCRAPE_OSTRE", "1") != "0"
-USE_USF = os.getenv("ENABLE_USF", "1") != "0"
-USE_BERGEN_KJOTT = os.getenv("ENABLE_BERGEN_KJOTT", "1") != "0"
-USE_KUNSTHALL = os.getenv("ENABLE_KUNSTHALL", "1") != "0"
-USE_KENNEL = os.getenv("ENABLE_IG_KENNEL", "0") == "1"
-USE_BIT = os.getenv("ENABLE_BIT", "1") != "0"
-USE_LITTERATURHUSET = os.getenv("ENABLE_LITTERATURHUSET", "1") != "0"
-USE_KULTURHUSET = os.getenv("ENABLE_KULTURHUSET", "1") != "0"
-USE_CARTE_BLANCHE = os.getenv("ENABLE_CARTE_BLANCHE", "1") != "0"
-USE_BERGEN_LIVE = os.getenv("ENABLE_BERGEN_LIVE", "1") != "0"
-USE_NATTJAZZ = os.getenv("ENABLE_NATTJAZZ", "1") != "0"
-USE_HKS = os.getenv("ENABLE_HKS", "1") != "0"
-USE_AERIAL = os.getenv("ENABLE_AERIAL_BERGEN", "1") != "0"
-USE_ZIP = os.getenv("ENABLE_ZIP_COLLECTIVE", "1") != "0"
-USE_FESTSPILLENE = os.getenv("ENABLE_FESTSPILLENE", "1") != "0"
-USE_BERGEN_PHIL = os.getenv("ENABLE_BERGEN_PHILHARMONIC", "1") != "0"
-USE_GRIEGHALLEN = os.getenv("ENABLE_GRIEGHALLEN", "1") != "0"
-USE_DNS = os.getenv("ENABLE_DNS", "1") != "0"
 OFFLINE_MODE = os.getenv("SPONTIS_OFFLINE", "0") == "1"
 DEFAULT_RETENTION_HOURS = int(os.getenv("SPONTIS_EVENT_RETENTION_HOURS", "6"))
 
@@ -48,83 +36,8 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger("spontis.scraper")
 
-if USE_RA:
-    from scraper.sources import resident_advisor
-
-if USE_USF:
-    from scraper.sources import usf_verftet
-
-if USE_BERGEN_KJOTT:
-    from scraper.sources import bergen_kjott
-
-if USE_KUNSTHALL:
-    from scraper.sources import bergen_kunsthall
-
-if USE_KENNEL:
-    from scraper.sources import kennel_vinylbar
-
-if USE_BIT:
-    from scraper.sources import bit_teatergarasjen
-
-if USE_LITTERATURHUSET:
-    from scraper.sources import litteraturhuset
-
-if USE_KULTURHUSET:
-    from scraper.sources import kulturhuset
-
-if USE_CARTE_BLANCHE:
-    from scraper.sources import carte_blanche
-
-if USE_BERGEN_LIVE:
-    from scraper.sources import bergen_live
-
-if USE_NATTJAZZ:
-    from scraper.sources import nattjazz
-
-if USE_HKS:
-    from scraper.sources import hordaland_kunstsenter
-
-if USE_AERIAL:
-    from scraper.sources import aerial_bergen
-
-if USE_ZIP:
-    from scraper.sources import zip_collective
-
-if USE_FESTSPILLENE:
-    from scraper.sources import festspillene
-
-if USE_BERGEN_PHIL:
-    from scraper.sources import bergen_philharmonic
-
-if USE_GRIEGHALLEN:
-    from scraper.sources import grieghallen
-
-if USE_DNS:
-    from scraper.sources import den_nationale_scene
-
 
 Source = Tuple[str, Callable[[], Iterable[dict]]]
-REQUIRED_FIELDS = ("source", "title", "url")
-STRING_FIELDS = {
-    "venue",
-    "city",
-    "when",
-    "where",
-    "description",
-    "summary",
-    "image",
-    "price",
-    "timezone",
-    "category",
-    "series",
-    "region",
-    "url_original",
-    "ticket_url",
-}
-INTEGER_FIELDS = {"url_status"}
-BOOLEAN_FIELDS = {"free"}
-IDENTIFIER_FIELDS = {"urlHash", "url_hash"}
-SOURCE_LINK_KEYS = {"sourceLinks", "source_links"}
 
 CATEGORY_PATTERNS = {
     "techno": re.compile(
@@ -150,45 +63,16 @@ LATE_NIGHT_KEYWORDS = re.compile(
 
 
 def _sources() -> List[Source]:
-    sources: List[Source] = [("Bergen Kino", bergen_kino.fetch)]
-    if USE_OSTRE:
-        sources.append(("Østre", ostre.fetch))
-    if USE_USF:
-        sources.append(("USF Verftet", usf_verftet.fetch))
-    if USE_BERGEN_KJOTT:
-        sources.append(("Bergen Kjøtt", bergen_kjott.fetch))
-    if USE_KUNSTHALL:
-        sources.append(("Bergen Kunsthall", bergen_kunsthall.fetch))
-    if USE_BIT:
-        sources.append(("BIT Teatergarasjen", bit_teatergarasjen.fetch))
-    if USE_LITTERATURHUSET:
-        sources.append(("Litteraturhuset", litteraturhuset.fetch))
-    if USE_KULTURHUSET:
-        sources.append(("Kulturhuset i Bergen", kulturhuset.fetch))
-    if USE_CARTE_BLANCHE:
-        sources.append(("Carte Blanche", carte_blanche.fetch))
-    if USE_BERGEN_LIVE:
-        sources.append(("Bergen Live", bergen_live.fetch))
-    if USE_NATTJAZZ:
-        sources.append(("Nattjazz", nattjazz.fetch))
-    if USE_HKS:
-        sources.append(("Hordaland Kunstsenter", hordaland_kunstsenter.fetch))
-    if USE_AERIAL:
-        sources.append(("Aerial Bergen", aerial_bergen.fetch))
-    if USE_ZIP:
-        sources.append(("Zip Collective", zip_collective.fetch))
-    if USE_FESTSPILLENE:
-        sources.append(("Festspillene i Bergen", festspillene.fetch))
-    if USE_BERGEN_PHIL:
-        sources.append(("Bergen Filharmoniske Orkester", bergen_philharmonic.fetch))
-    if USE_GRIEGHALLEN:
-        sources.append(("Grieghallen", grieghallen.fetch))
-    if USE_DNS:
-        sources.append(("Den Nationale Scene", den_nationale_scene.fetch))
-    if USE_RA:
-        sources.append(("Resident Advisor", resident_advisor.fetch))
-    if USE_KENNEL:
-        sources.append(("Kennel Vinylbar", kennel_vinylbar.fetch))
+    sources: List[Source] = []
+    for config in SOURCE_CONFIGS:
+        if not config.is_enabled(os.environ):
+            continue
+        try:
+            fetcher = config.resolve()
+        except Exception as exc:  # noqa: BLE001 - we want to keep scraper running
+            LOGGER.warning("Skipping %s: %s", config.name, exc)
+            continue
+        sources.append((config.name, fetcher))
     return sources
 
 
@@ -641,10 +525,31 @@ def _refresh_views(events: List[dict], output_path: Path, now: datetime) -> None
     heatmap = build_views.build_heatmap(event_objects)
 
     data_dir = output_path.parent
-    build_views.write_json(data_dir / "today.json", today)
-    build_views.write_json(data_dir / "tonight.json", tonight)
-    build_views.write_json(data_dir / "heatmap.json", heatmap)
+    generated_dir = data_dir / "generated"
+    build_views.write_json(generated_dir / "today.json", today)
+    build_views.write_json(generated_dir / "tonight.json", tonight)
+    build_views.write_json(generated_dir / "heatmap.json", heatmap)
     LOGGER.info("Updated derived views")
+
+
+def _write_metadata(events: List[dict], output_path: Path, now: datetime) -> None:
+    data_dir = output_path.parent
+    generated_dir = data_dir / "generated"
+    generated_dir.mkdir(parents=True, exist_ok=True)
+    sources = sorted({
+        str(event.get("source")).strip()
+        for event in events
+        if event.get("source")
+    })
+    payload = {
+        "last_updated": now.replace(microsecond=0).isoformat(),
+        "total_events": len(events),
+        "source_count": len(sources),
+    }
+    if sources:
+        payload["sources"] = sources
+    meta_path = generated_dir / "meta.json"
+    meta_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def _collect_events(offline: bool) -> List[dict]:
@@ -722,6 +627,8 @@ def main(argv: Optional[List[str]] = None) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(events, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     LOGGER.info("Wrote %d events → %s", len(events), output_path)
+
+    _write_metadata(events, output_path, now)
 
     if args.update_views:
         _refresh_views(events, output_path, now)

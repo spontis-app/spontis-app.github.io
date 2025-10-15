@@ -1,3 +1,23 @@
+import {
+    getActiveDatasetKey,
+    setActiveDatasetKey,
+    getCurrentFilter,
+    setCurrentFilter,
+    getCurrentList,
+    setCurrentList,
+    getCurrentVibe,
+    setCurrentVibe,
+    resetState,
+    getCurrentSmartFilter,
+    setCurrentSmartFilter
+} from './modules/state.js';
+import {
+    setDatasets,
+    getDataset,
+    collectTags,
+    hasVibe
+} from './modules/datasets.js';
+
 const $ = selector => document.querySelector(selector);
 
 const eventsEl = $('#events');
@@ -32,17 +52,29 @@ const topicClearBtn = $('#topic-clear');
 const topicBody = $('#topic-drawer-body');
 const topicTriggers = Array.from(document.querySelectorAll('[data-topics-trigger]'));
 const datasetButtons = Array.from(document.querySelectorAll('.dataset-chip'));
+const updatedChip = $('#updated-chip');
+const sourceCountChip = $('#source-count-chip');
+const eventCountChip = $('#event-count-chip');
+const smartFiltersContainer = document.querySelector('.smart-filters');
+const nowDeckEl = $('#now-deck');
+const nowDeckBody = $('#now-deck-body');
+let lastMeta = {};
 let topicButtons = new Map();
+let smartFilterButtons = new Map();
 let pendingTag = null;
 let lastTopicTrigger = null;
-let currentVibe = null;
+
+const NOW_WINDOW_MS = 4 * 60 * 60 * 1000; // 4 hours
+const TONIGHT_WINDOW_MS = 14 * 60 * 60 * 1000; // rest of evening
+const ALLOWED_PAST_MS = 45 * 60 * 1000; // keep items that just started
+
 
 function openTopicDrawer(trigger) {
     if (!topicDrawer) return;
     if (trigger) {
         lastTopicTrigger = trigger;
     }
-    pendingTag = currentFilter;
+    pendingTag = getCurrentFilter();
     updatePendingSelection();
     topicDrawer.hidden = false;
     topicTriggers.forEach(btn => btn.setAttribute('aria-expanded', 'true'));
@@ -62,7 +94,7 @@ function closeTopicDrawer() {
     document.body.style.overflow = '';
     pendingTag = null;
     updatePendingSelection();
-    updateTopicButtons(currentFilter);
+    updateTopicButtons(getCurrentFilter());
     const focusTarget = lastTopicTrigger || topicTriggers[0];
     focusTarget?.focus({ preventScroll: true });
     lastTopicTrigger = null;
@@ -72,9 +104,9 @@ function applyPendingTopic() {
     if (pendingTag) {
         applyFilter(pendingTag);
     } else {
-        applyFilter(activeDatasetKey || 'all');
+        applyFilter(getActiveDatasetKey() || 'all');
     }
-    pendingTag = currentFilter;
+    pendingTag = getCurrentFilter();
     updatePendingSelection();
     closeTopicDrawer();
 }
@@ -82,14 +114,15 @@ function applyPendingTopic() {
 function clearPendingTopic() {
     pendingTag = null;
     updatePendingSelection();
-    applyFilter(activeDatasetKey || 'all');
+    applyFilter(getActiveDatasetKey() || 'all');
     closeTopicDrawer();
 }
 
 function handleDatasetButtonClick(event) {
     const button = event.currentTarget;
     const key = button?.dataset?.dataset;
-    if (!key || !DATASET_FILTERS.has(key) || key === activeDatasetKey) return;
+    const activeKey = getActiveDatasetKey();
+    if (!key || !DATASET_FILTERS.has(key) || key === activeKey) return;
     pendingTag = null;
     applyFilter(key);
     if (!topicDrawer?.hidden) {
@@ -99,13 +132,55 @@ function handleDatasetButtonClick(event) {
 
 function updateDatasetButtons() {
     datasetButtons.forEach(button => {
-        const isActive = button.dataset.dataset === activeDatasetKey;
+        const isActive = button.dataset.dataset === getActiveDatasetKey();
         button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
         button.classList.toggle('dataset-chip--active', Boolean(isActive));
     });
 }
 
-function updateTopicsTriggerLabel(selectedTag = currentFilter) {
+function formatUpdatedLabel(isoString) {
+    if (!isoString) return null;
+    const date = new Date(isoString);
+    if (Number.isNaN(date.getTime())) return null;
+    const formatter = new Intl.DateTimeFormat('nb-NO', {
+        weekday: 'short',
+        day: 'numeric',
+        month: 'short',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+    return formatter.format(date);
+}
+
+function updateHeroMeta(meta, events) {
+    const list = Array.isArray(events) ? events : [];
+    if (eventCountChip) {
+        const count = list.length;
+        eventCountChip.textContent = count > 0 ? `Eventer i feeden: ${count}` : 'Eventer i feeden: –';
+    }
+
+    const uniqueSources = new Set();
+    list.forEach(event => {
+        const source = event?.source;
+        if (source) uniqueSources.add(source);
+    });
+
+    if (sourceCountChip) {
+        const datasetKey = getActiveDatasetKey();
+        const metaCount = typeof meta?.source_count === 'number' ? meta.source_count : null;
+        const count = datasetKey === 'all'
+            ? (metaCount ?? uniqueSources.size)
+            : uniqueSources.size;
+        sourceCountChip.textContent = count > 0 ? `Kilder: ${count}` : 'Kilder: –';
+    }
+
+    if (updatedChip) {
+        const formatted = formatUpdatedLabel(meta?.last_updated);
+        updatedChip.textContent = formatted ? `Oppdatert: ${formatted}` : 'Oppdatert nylig';
+    }
+}
+
+function updateTopicsTriggerLabel(selectedTag = getCurrentFilter()) {
     topicTriggers.forEach(trigger => {
         const labelEl = trigger.querySelector('.drawer-trigger__label');
         if (labelEl) {
@@ -126,16 +201,160 @@ function updateTopicButtons(selectedTag) {
 
 function updateVibeCards() {
     if (!clusterDeckEl) return;
+    const activeVibe = getCurrentVibe();
     const cards = clusterDeckEl.querySelectorAll('.cluster-card');
     cards.forEach(card => {
         const vibeId = card.dataset.vibe;
-        const isActive = Boolean(currentVibe && vibeId === currentVibe);
+        const isActive = Boolean(activeVibe && vibeId === activeVibe);
         card.classList.toggle('cluster-card--active', isActive);
         card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
         if (!card.hasAttribute('tabindex')) {
             card.tabIndex = 0;
         }
     });
+}
+
+function rebalanceBySource(events, perSourceLimit = 3) {
+    if (!Array.isArray(events) || events.length <= 1) {
+        return Array.isArray(events) ? [...events] : [];
+    }
+    const counts = new Map();
+    const primary = [];
+    const overflow = [];
+
+    events.forEach(event => {
+        const source = (event?.source || event?.sources?.[0] || '').toLowerCase();
+        if (!source) {
+            primary.push(event);
+            return;
+        }
+        const count = counts.get(source) || 0;
+        if (count < perSourceLimit) {
+            primary.push(event);
+            counts.set(source, count + 1);
+        } else {
+            overflow.push(event);
+        }
+    });
+
+    return primary.concat(overflow);
+}
+
+function showEvents(list, perSourceLimit = 3) {
+    const balanced = rebalanceBySource(Array.isArray(list) ? list : [], perSourceLimit);
+    setCurrentList(balanced);
+    paint(balanced);
+}
+
+function selectUpcomingEvents(events, limit = 6) {
+    if (!Array.isArray(events) || !events.length) return [];
+    const now = Date.now();
+    const bucketed = { upcoming: [], tonight: [] };
+
+    events.forEach(event => {
+        const timestamp = parseStartsAtValue(event?.starts_at);
+        if (Number.isNaN(timestamp)) return;
+        if (timestamp + ALLOWED_PAST_MS < now) return;
+        const diff = timestamp - now;
+        if (diff <= NOW_WINDOW_MS) {
+            bucketed.upcoming.push({ event, timestamp });
+        } else if (diff <= TONIGHT_WINDOW_MS) {
+            bucketed.tonight.push({ event, timestamp });
+        }
+    });
+
+    const ordered = bucketed.upcoming.sort((a, b) => a.timestamp - b.timestamp)
+        .concat(bucketed.tonight.sort((a, b) => a.timestamp - b.timestamp))
+        .map(entry => entry.event);
+
+    return rebalanceBySource(ordered, 1).slice(0, limit);
+}
+
+function formatRelativeStart(timestamp) {
+    if (!Number.isFinite(timestamp)) return '';
+    const now = Date.now();
+    const diff = timestamp - now;
+    if (Math.abs(diff) < 5 * 60 * 1000) return 'Starter nå';
+    if (diff < 0) return 'Startet nylig';
+    const minutes = Math.round(diff / 60000);
+    if (minutes < 60) return `Om ${minutes} min`;
+    const hours = Math.round(diff / 3600000);
+    return `Om ${hours} t`;
+}
+
+function renderNowDeck(events) {
+    if (!nowDeckEl || !nowDeckBody) return;
+    const upcoming = selectUpcomingEvents(events);
+    nowDeckBody.innerHTML = '';
+    if (!upcoming.length) {
+        nowDeckEl.hidden = true;
+        return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    upcoming.forEach(event => {
+        const timestamp = parseStartsAtValue(event.starts_at);
+        const relative = formatRelativeStart(timestamp);
+        const schedule = computeScheduleLabel(event);
+
+        const card = document.createElement('article');
+        card.className = 'now-card';
+        card.setAttribute('role', 'listitem');
+
+        const timeEl = document.createElement('p');
+        timeEl.className = 'now-card__time';
+        timeEl.textContent = relative || schedule || 'I kveld';
+        card.appendChild(timeEl);
+
+        const titleEl = document.createElement('h3');
+        titleEl.className = 'now-card__title';
+        titleEl.textContent = event.title || 'Untitled event';
+        card.appendChild(titleEl);
+
+        const venue = deriveLocation(event);
+        if (venue) {
+            const venueEl = document.createElement('p');
+            venueEl.className = 'now-card__venue';
+            venueEl.textContent = venue;
+            card.appendChild(venueEl);
+        }
+
+        const footer = document.createElement('div');
+        footer.className = 'now-card__actions';
+
+        const detailBtn = document.createElement('button');
+        detailBtn.type = 'button';
+        detailBtn.className = 'btn-secondary btn-secondary--compact';
+        detailBtn.textContent = 'Detaljer';
+        detailBtn.addEventListener('click', () => openDetail(event));
+        footer.appendChild(detailBtn);
+
+        const link = document.createElement('a');
+        link.className = 'btn-primary btn-primary--compact';
+        link.href = resolveEventUrl(event) || '#';
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = 'Billetter';
+        link.setAttribute('aria-label', `Åpne ${event.title || 'event'} hos arrangør`);
+        if (!event.url && !event.ticket_url) {
+            link.classList.add('is-disabled');
+        }
+        footer.appendChild(link);
+
+        card.appendChild(footer);
+        fragment.appendChild(card);
+    });
+
+    nowDeckBody.appendChild(fragment);
+    nowDeckEl.hidden = false;
+}
+
+function updateContextualSections(baseEvents) {
+    const base = Array.isArray(baseEvents) ? baseEvents : [];
+    renderSmartFilters(base);
+    updateSmartFilterButtons(getCurrentSmartFilter());
+    renderNowDeck(base);
+    updateHeroMeta(lastMeta, base);
 }
 
 function updatePendingSelection() {
@@ -242,6 +461,49 @@ const TAG_ALLOW_LIST = new Set([
     ...SMART_TAG_RULES.map(rule => rule.tag)
 ]);
 
+const SMART_FILTERS = [
+    {
+        id: 'free',
+        label: 'Gratis',
+        predicate: event => {
+            if (event?.free === true) return true;
+            const price = typeof event?.price === 'string' ? event.price.trim().toLowerCase() : '';
+            if (price === 'gratis' || price === 'free') return true;
+            const tags = event?.tags || [];
+            return tags.includes('free');
+        }
+    },
+    {
+        id: 'family',
+        label: 'Familie',
+        predicate: event => {
+            const tags = event?.tags || [];
+            return tags.some(tag => ['family', 'kids', 'barn', 'ungdom'].includes(tag));
+        }
+    },
+    {
+        id: 'music',
+        label: 'Live & DJ',
+        predicate: event => {
+            const tags = event?.tags || [];
+            return tags.some(tag => ['live', 'dj', 'jazz', 'festival'].includes(tag));
+        }
+    },
+    {
+        id: 'late',
+        label: 'Sen kveld',
+        predicate: event => {
+            const value = parseStartsAtValue(event?.starts_at);
+            if (Number.isNaN(value)) return false;
+            const date = new Date(value);
+            const hours = date.getHours();
+            return hours >= 21 || hours < 4;
+        }
+    }
+];
+
+const SMART_FILTER_MAP = new Map(SMART_FILTERS.map(filter => [filter.id, filter]));
+
 const VIBE_PROFILES = [
     {
         id: 'techno',
@@ -299,6 +561,10 @@ const DATE_FORMAT_DAY_ONLY = new Intl.DateTimeFormat('en-GB', {
 });
 
 function updateUrlFilters() {
+    const activeDatasetKey = getActiveDatasetKey();
+    const currentFilter = getCurrentFilter();
+    const currentVibe = getCurrentVibe();
+    const currentSmart = getCurrentSmartFilter();
     const params = new URLSearchParams(window.location.search);
     if (activeDatasetKey && activeDatasetKey !== 'all') {
         params.set('dataset', activeDatasetKey);
@@ -316,6 +582,12 @@ function updateUrlFilters() {
         params.set('vibe', currentVibe);
     } else {
         params.delete('vibe');
+    }
+
+    if (currentSmart) {
+        params.set('smart', currentSmart);
+    } else {
+        params.delete('smart');
     }
 
     const query = params.toString();
@@ -465,11 +737,7 @@ const FALLBACK_SOURCE_RESOLVERS = {
     'Bergen Kjøtt': createBergenKjottLink
 };
 
-const datasets = { all: [], today: [], tonight: [] };
-let currentList = [];
-let currentFilter = null;
 let highlightTimer;
-let activeDatasetKey = 'all';
 
 const UPCOMING_WINDOW_DAYS = 14;
 
@@ -1096,10 +1364,71 @@ function setActive(value, scope) {
     }
 }
 
-function getDataset(key) {
-    if (key === 'today') return datasets.today || [];
-    if (key === 'tonight') return datasets.tonight || [];
-    return datasets.all || [];
+function renderSmartFilters(events) {
+    if (!smartFiltersContainer) return;
+    smartFilterButtons = new Map();
+    smartFiltersContainer.replaceChildren();
+    const fragment = document.createDocumentFragment();
+    let availableCount = 0;
+
+    SMART_FILTERS.forEach(filter => {
+        const count = events.filter(filter.predicate).length;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'smart-filter-chip';
+        button.dataset.smart = filter.id;
+        button.textContent = count > 0 ? `${filter.label} (${count})` : filter.label;
+        button.setAttribute('aria-pressed', 'false');
+        button.disabled = count === 0;
+        button.setAttribute('aria-disabled', count === 0 ? 'true' : 'false');
+        fragment.appendChild(button);
+        smartFilterButtons.set(filter.id, button);
+        if (count > 0) availableCount += 1;
+    });
+
+    smartFiltersContainer.appendChild(fragment);
+    smartFiltersContainer.hidden = availableCount === 0;
+    updateSmartFilterButtons(getCurrentSmartFilter());
+}
+
+function updateSmartFilterButtons(selectedId = getCurrentSmartFilter()) {
+    smartFilterButtons.forEach((button, id) => {
+        const isActive = Boolean(selectedId && id === selectedId);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        button.classList.toggle('smart-filter-chip--active', isActive);
+    });
+}
+
+function applySmartFilter(filterId) {
+    const definition = SMART_FILTER_MAP.get(filterId);
+    if (!definition) return;
+    const activeDatasetKey = getActiveDatasetKey();
+    const source = getDataset(activeDatasetKey);
+    const data = source.filter(event => {
+        try {
+            return definition.predicate(event);
+        } catch (error) {
+            console.warn('Smart filter predicate failed', error);
+            return false;
+        }
+    });
+    setCurrentSmartFilter(filterId);
+    setCurrentFilter(null);
+    setCurrentVibe(null);
+    pendingTag = null;
+    showEvents(data, 2);
+    setActive(activeDatasetKey, 'dataset');
+    setActive(null, 'tag');
+    updateSmartFilterButtons(filterId);
+    updateVibeCards();
+    updatePendingSelection();
+    renderNowDeck(data);
+    updateHeroMeta(lastMeta, data);
+    clearSpotlight();
+    updateUrlFilters();
+    if (eventsEl) {
+        eventsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
 
 function clearSpotlight() {
@@ -1116,46 +1445,61 @@ function clearSpotlight() {
 
 function applyFilter(tag) {
     if (DATASET_FILTERS.has(tag)) {
-        activeDatasetKey = tag;
+        setActiveDatasetKey(tag);
         const data = getDataset(tag);
-        currentList = data;
-        currentFilter = null;
-        currentVibe = null;
-        paint(data);
-        setActive(activeDatasetKey, 'dataset');
+        setCurrentFilter(null);
+        setCurrentVibe(null);
+        setCurrentSmartFilter(null);
+        pendingTag = null;
+        updateContextualSections(data);
+        renderClusters(data);
+        renderDensityMap(data);
+        renderSourceRollup(data);
+        showEvents(data);
+        setActive(tag, 'dataset');
         setActive(null, 'tag');
-        updateVibeCards();
+        updatePendingSelection();
         clearSpotlight();
         updateUrlFilters();
         return;
     }
 
+    const activeDatasetKey = getActiveDatasetKey();
     const source = getDataset(activeDatasetKey);
     const data = source.filter(e => (e.tags || []).includes(tag));
-    currentList = data;
-    currentFilter = tag;
-    currentVibe = null;
-    paint(data);
+    setCurrentFilter(tag);
+    setCurrentVibe(null);
+    setCurrentSmartFilter(null);
+    pendingTag = null;
+    showEvents(data);
     setActive(activeDatasetKey, 'dataset');
     setActive(tag, 'tag');
+    updateSmartFilterButtons(null);
     updateVibeCards();
+    updatePendingSelection();
+    renderNowDeck(data);
+    updateHeroMeta(lastMeta, data);
     clearSpotlight();
     updateUrlFilters();
 }
 
 function applyVibeFilter(vibeId) {
     if (!vibeId) return;
+    const activeDatasetKey = getActiveDatasetKey();
     const source = getDataset(activeDatasetKey);
     const data = source.filter(event => (event.vibe || 'performance') === vibeId);
-    currentVibe = vibeId;
-    currentFilter = null;
+    setCurrentVibe(vibeId);
+    setCurrentFilter(null);
+    setCurrentSmartFilter(null);
     pendingTag = null;
-    currentList = data;
-    paint(data);
+    showEvents(data);
     setActive(activeDatasetKey, 'dataset');
     setActive(null, 'tag');
     updateVibeCards();
     updatePendingSelection();
+    updateSmartFilterButtons(null);
+    renderNowDeck(data);
+    updateHeroMeta(lastMeta, data);
     clearSpotlight();
     updateUrlFilters();
     if (eventsEl) {
@@ -1226,6 +1570,7 @@ function highlightCard(index) {
 function renderFilters(events) {
     if (!topicBody) return;
 
+    const activeFilter = getCurrentFilter();
     const available = new Set();
     events.forEach(event => (event.tags || []).forEach(tag => available.add(tag)));
 
@@ -1246,7 +1591,7 @@ function renderFilters(events) {
         button.type = 'button';
         button.className = 'topic-chip';
         button.dataset.filter = tag;
-        button.setAttribute('aria-pressed', tag === currentFilter ? 'true' : 'false');
+        button.setAttribute('aria-pressed', tag === activeFilter ? 'true' : 'false');
 
         const iconPath = TAG_ICON[tag];
         if (iconPath) {
@@ -1264,7 +1609,7 @@ function renderFilters(events) {
     });
 
     topicBody.appendChild(fragment);
-    updateTopicButtons(currentFilter);
+    updateTopicButtons(activeFilter);
 }
 
 function heatColor(ratio, alpha = .2) {
@@ -1483,6 +1828,8 @@ function renderSourceRollup(events) {
 }
 
 function handleSurprise() {
+    const currentList = getCurrentList();
+    const activeDatasetKey = getActiveDatasetKey();
     const list = currentList.length ? currentList : getDataset(activeDatasetKey);
     if (!list.length) return;
     const idx = Math.floor(Math.random() * list.length);
@@ -1503,38 +1850,65 @@ function handleFilterClick(e) {
     }
 }
 
+function handleSmartFilterClick(event) {
+    const button = event.target.closest('button[data-smart]');
+    if (!button || button.disabled) return;
+    const id = button.dataset.smart;
+    const activeId = getCurrentSmartFilter();
+    if (activeId === id) {
+        setCurrentSmartFilter(null);
+        applyFilter(getActiveDatasetKey() || 'all');
+        return;
+    }
+    applySmartFilter(id);
+}
+
 async function boot() {
-    const [allRaw, todayRaw, tonightRaw, heatmap] = await Promise.all([
+    const [allRaw, todayRaw, tonightRaw, heatmap, meta] = await Promise.all([
         loadEvents(),
-        loadSupplemental('./data/today.json'),
-        loadSupplemental('./data/tonight.json'),
-        loadSupplemental('./data/heatmap.json')
+        loadSupplemental('./data/generated/today.json'),
+        loadSupplemental('./data/generated/tonight.json'),
+        loadSupplemental('./data/generated/heatmap.json'),
+        loadSupplemental('./data/generated/meta.json')
     ]);
 
-    datasets.all = enrichEvents(Array.isArray(allRaw) ? allRaw : []);
-    datasets.today = enrichEvents(Array.isArray(todayRaw) ? todayRaw : []);
-    datasets.tonight = enrichEvents(Array.isArray(tonightRaw) ? tonightRaw : []);
+    const allEvents = enrichEvents(Array.isArray(allRaw) ? allRaw : []);
+    const todayEvents = enrichEvents(Array.isArray(todayRaw) ? todayRaw : []);
+    const tonightEvents = enrichEvents(Array.isArray(tonightRaw) ? tonightRaw : []);
+    setDatasets({
+        all: allEvents,
+        today: todayEvents,
+        tonight: tonightEvents
+    });
+
+    resetState();
 
     const params = new URLSearchParams(window.location.search);
     const datasetParam = params.get('dataset');
     if (datasetParam && DATASET_FILTERS.has(datasetParam)) {
-        activeDatasetKey = datasetParam;
+        setActiveDatasetKey(datasetParam);
     }
     const tagParam = params.get('tag');
     if (tagParam) {
-        currentFilter = tagParam;
+        setCurrentFilter(tagParam);
     }
     const vibeParam = params.get('vibe');
     if (vibeParam && VIBE_LOOKUP[vibeParam]) {
-        currentVibe = vibeParam;
+        setCurrentVibe(vibeParam);
+    }
+    const smartParam = params.get('smart');
+    if (smartParam && SMART_FILTER_MAP.has(smartParam)) {
+        setCurrentSmartFilter(smartParam);
     }
 
-    currentList = datasets.all;
+    renderFilters(allEvents);
+    lastMeta = meta || {};
 
-    renderFilters(datasets.all);
-    renderClusters(datasets.all);
-    renderDensityMap(datasets.all);
-    renderSourceRollup(datasets.all);
+    const baseDataset = getDataset(getActiveDatasetKey());
+    updateContextualSections(baseDataset);
+    renderClusters(baseDataset);
+    renderDensityMap(baseDataset);
+    renderSourceRollup(baseDataset);
 
     if (heatmap && typeof heatmap === 'object' && !Array.isArray(heatmap)) {
         renderHeatmap(heatmap);
@@ -1542,22 +1916,36 @@ async function boot() {
         renderHeatmap(null);
     }
 
-    const availableTags = new Set(datasets.all.flatMap(event => event.tags || []));
+    const availableTags = collectTags();
+    const currentFilter = getCurrentFilter();
     if (currentFilter && !availableTags.has(currentFilter)) {
-        currentFilter = null;
+        setCurrentFilter(null);
     }
 
-    if (currentVibe) {
-        const hasVibe = datasets.all.some(event => (event.vibe || 'performance') === currentVibe);
-        if (!hasVibe) {
-            currentVibe = null;
+    const currentVibe = getCurrentVibe();
+    if (currentVibe && !hasVibe(currentVibe)) {
+        setCurrentVibe(null);
+    }
+
+    const currentSmart = getCurrentSmartFilter();
+    if (currentSmart) {
+        const definition = SMART_FILTER_MAP.get(currentSmart);
+        if (!definition || !allEvents.some(event => definition.predicate(event))) {
+            setCurrentSmartFilter(null);
         }
     }
 
-    if (currentFilter) {
-        applyFilter(currentFilter);
-    } else if (currentVibe) {
-        applyVibeFilter(currentVibe);
+    const activeDatasetKey = getActiveDatasetKey();
+    const activeFilter = getCurrentFilter();
+    const activeVibe = getCurrentVibe();
+    const activeSmart = getCurrentSmartFilter();
+
+    if (activeFilter) {
+        applyFilter(activeFilter);
+    } else if (activeVibe) {
+        applyVibeFilter(activeVibe);
+    } else if (activeSmart) {
+        applySmartFilter(activeSmart);
     } else if (activeDatasetKey && activeDatasetKey !== 'all') {
         applyFilter(activeDatasetKey);
     } else {
@@ -1576,6 +1964,8 @@ if (filterBar) {
 datasetButtons.forEach(button => {
     button.addEventListener('click', handleDatasetButtonClick);
 });
+
+smartFiltersContainer?.addEventListener('click', handleSmartFilterClick);
 
 function handleClusterActivation(card) {
     if (!card) return;
@@ -1630,9 +2020,9 @@ if (timezoneChip) {
         });
         const zonePart = formatter.formatToParts(new Date()).find(part => part.type === 'timeZoneName');
         const label = zonePart?.value || 'CEST';
-        timezoneChip.textContent = `Timezone: Bergen (${label})`;
+        timezoneChip.textContent = `Tidssone: Bergen (${label})`;
     } catch (error) {
-        timezoneChip.textContent = 'Timezone: Bergen (CEST)';
+        timezoneChip.textContent = 'Tidssone: Bergen (CEST)';
     }
 }
 

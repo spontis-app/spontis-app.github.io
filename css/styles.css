@@ -158,6 +158,20 @@ a:focus-visible {
     max-width: 60ch;
 }
 
+.hero__cta {
+    display: grid;
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: start;
+}
+
+.hero__cta-note {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.92rem;
+    max-width: 52ch;
+}
+
 .hero__meta {
     display: flex;
     flex-wrap: wrap;
@@ -277,6 +291,109 @@ a:focus-visible {
     flex-wrap: wrap;
     gap: 0.6rem;
     align-items: center;
+}
+
+.smart-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.smart-filter-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    border: 1px dashed var(--page-border-strong, var(--page-border));
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--page-text);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 160ms ease, color 160ms ease, border 160ms ease;
+}
+
+.smart-filter-chip--active,
+.smart-filter-chip:not([aria-disabled="true"]):hover,
+.smart-filter-chip:not([aria-disabled="true"]):focus-visible {
+    background: var(--page-accent);
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.smart-filter-chip[aria-disabled="true"] {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.now-deck {
+    margin-top: clamp(1.2rem, 3vw, 1.8rem);
+    padding: clamp(1rem, 3vw, 1.4rem);
+    border-radius: var(--page-radius-lg);
+    border: 1px solid var(--page-border);
+    background: var(--page-surface);
+    box-shadow: var(--page-shadow-soft);
+    display: grid;
+    gap: 0.8rem;
+}
+
+.now-deck__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.now-deck__header h2 {
+    margin: 0;
+    font-size: 1.35rem;
+}
+
+.now-deck__header p {
+    margin: 0;
+    color: var(--page-muted);
+}
+
+.now-deck__grid {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.now-card {
+    border: 1px solid var(--page-border);
+    border-radius: var(--page-radius-md);
+    padding: 0.85rem;
+    background: var(--page-surface-muted);
+    display: grid;
+    gap: 0.55rem;
+}
+
+.now-card__time {
+    margin: 0;
+    font-weight: 600;
+    color: var(--page-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.78rem;
+}
+
+.now-card__title {
+    margin: 0;
+    font-size: 1.08rem;
+}
+
+.now-card__venue {
+    margin: 0;
+    color: var(--page-muted);
+    font-size: 0.9rem;
+}
+
+.now-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .dataset-chip {
@@ -791,6 +908,18 @@ a:focus-visible {
 .btn-primary.is-disabled {
     pointer-events: none;
     opacity: 0.5;
+}
+
+.btn-primary--compact {
+    padding: 0.45rem 0.9rem;
+    min-height: 0;
+    font-size: 0.85rem;
+}
+
+.btn-secondary--compact {
+    padding: 0.42rem 0.9rem;
+    min-height: 0;
+    font-size: 0.85rem;
 }
 
 @media (max-width: 540px) {
