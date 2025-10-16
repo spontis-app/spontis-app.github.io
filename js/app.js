@@ -61,6 +61,9 @@ const datasetButtons = Array.from(document.querySelectorAll('.dataset-chip'));
 const updatedChip = $('#updated-chip');
 const sourceCountChip = $('#source-count-chip');
 const eventCountChip = $('#event-count-chip');
+const metaAlert = $('#meta-alert');
+const metaAlertSummary = $('#meta-alert-summary');
+const metaAlertList = $('#meta-alert-list');
 const smartFiltersContainer = document.querySelector('.smart-filters');
 const nowDeckEl = $('#now-deck');
 const nowDeckBody = $('#now-deck-body');
@@ -169,11 +172,44 @@ function updateHeroMeta(meta, events) {
 
     if (sourceCountChip) {
         const datasetKey = getActiveDatasetKey();
-        const metaCount = typeof meta?.source_count === 'number' ? meta.source_count : null;
-        const count = datasetKey === 'all'
+        const stats = Array.isArray(meta?.source_stats) ? meta.source_stats : [];
+        const metaCount = typeof meta?.source_count === 'number' ? meta.source_count : stats.length || null;
+        const activeCount = stats.length
+            ? stats.filter(entry => (entry?.events ?? 0) > 0).length
+            : uniqueSources.size;
+        const failing = stats.filter(entry => {
+            const status = typeof entry?.status === 'string' ? entry.status.toLowerCase() : '';
+            return status === 'error' || status === 'fallback' || status === 'offline';
+        });
+
+        const fallbackCount = datasetKey === 'all'
             ? (metaCount ?? uniqueSources.size)
             : uniqueSources.size;
-        sourceCountChip.textContent = count > 0 ? `Kilder: ${count}` : 'Kilder: –';
+        const displayCount = activeCount || fallbackCount;
+
+        let label = displayCount > 0 ? `Kilder: ${displayCount}` : 'Kilder: –';
+        if (metaCount && metaCount > displayCount) {
+            label = `Kilder: ${displayCount}/${metaCount}`;
+        }
+        if (failing.length) {
+            label += ' ⚠';
+        }
+
+        sourceCountChip.textContent = label;
+
+        const tooltipLines = stats.length
+            ? stats.map(entry => {
+                const status = String(entry?.status || 'ok').toLowerCase();
+                const events = entry?.events ?? 0;
+                if (status === 'error') return `${entry?.name || 'Ukjent'} — feil (${events})`;
+                if (status === 'fallback') return `${entry?.name || 'Fallback'} — sample-data`;
+                if (status === 'offline') return `${entry?.name || 'Offline'} — offline`;
+                if (events === 0) return `${entry?.name || 'Ukjent'} — ingen events`;
+                return `${entry?.name || 'Ukjent'} — ok (${events})`;
+            })
+            : [...uniqueSources].map(name => `${name} — aktiv`);
+        sourceCountChip.title = tooltipLines.join('\n');
+        sourceCountChip.classList.toggle('hero__meta-chip--alert', failing.length > 0);
     }
 
     if (updatedChip) {
@@ -221,10 +257,11 @@ function showEvents(list, { updateMeta = false } = {}) {
     const { feed, upcoming } = createBalancedFeed(base, { now: new Date() });
     setCurrentList(feed);
     paint(feed);
-    renderNowDeck(base, upcoming);
-    if (updateMeta) {
-        updateHeroMeta(lastMeta, base);
-    }
+   renderNowDeck(base, upcoming);
+   if (updateMeta) {
+       updateHeroMeta(lastMeta, base);
+        renderMetaAlert(lastMeta);
+   }
 }
 
 function renderNowDeck(events, upcomingOverride) {
@@ -1760,6 +1797,76 @@ function renderSourceRollup(events) {
         : '<li>Sources will appear once events are loaded.</li>';
 }
 
+function renderMetaAlert(meta) {
+    if (!metaAlert || !metaAlertSummary || !metaAlertList) return;
+    const stats = Array.isArray(meta?.source_stats) ? meta.source_stats : [];
+    const relevantStatuses = new Set(['error', 'fallback', 'offline']);
+    const issues = stats.filter(entry => {
+        const status = typeof entry?.status === 'string' ? entry.status.toLowerCase() : '';
+        return relevantStatuses.has(status);
+    });
+
+    if (issues.length === 0) {
+        metaAlert.hidden = true;
+        metaAlertSummary.textContent = '';
+        metaAlertList.replaceChildren();
+        return;
+    }
+
+    const hasFallback = issues.some(issue => (issue.status || '').toLowerCase() === 'fallback');
+    const hasError = issues.some(issue => (issue.status || '').toLowerCase() === 'error');
+    const offlineOnly = issues.every(issue => (issue.status || '').toLowerCase() === 'offline');
+
+    let summary;
+    if (offlineOnly) {
+        summary = 'Scraperen ble kjørt uten nett – data vises fra sample-filen.';
+    } else if (hasFallback) {
+        summary = 'Vi viser sample-data mens vi venter på frisk feed.';
+    } else if (hasError) {
+        summary = 'Noen kilder er utilgjengelige. Vi følger med og oppdaterer så snart de svarer.';
+    } else {
+        summary = 'Noen kilder er midlertidig utilgjengelige.';
+    }
+    metaAlertSummary.textContent = summary;
+
+    const fragment = document.createDocumentFragment();
+    issues.slice(0, 8).forEach(issue => {
+        const status = typeof issue?.status === 'string' ? issue.status.toLowerCase() : '';
+        let label = issue?.name || 'Ukjent kilde';
+        if (status === 'fallback') {
+            label = 'Fallback-feed';
+        } else if (status === 'offline' && (!issue?.name || issue.name.toLowerCase() === 'sample')) {
+            label = 'Offline-modus';
+        }
+
+        let detail;
+        if (status === 'error') {
+            detail = issue?.error || 'klarte ikke hente data.';
+        } else if (status === 'fallback') {
+            detail = 'viser midlertidige sample-eventer.';
+        } else if (status === 'offline') {
+            detail = 'scraperen ble kjørt uten nettverk.';
+        } else if (issue?.error) {
+            detail = issue.error;
+        } else {
+            detail = 'er midlertidig utilgjengelig.';
+        }
+
+        const item = document.createElement('li');
+        item.textContent = `${label}: ${detail}`;
+        fragment.appendChild(item);
+    });
+
+    if (issues.length > 8) {
+        const extraNotice = document.createElement('li');
+        extraNotice.textContent = `…og ${issues.length - 8} flere kilder venter på svar.`;
+        fragment.appendChild(extraNotice);
+    }
+
+    metaAlertList.replaceChildren(fragment);
+    metaAlert.hidden = false;
+}
+
 function handleSurprise() {
     const currentList = getCurrentList();
     const activeDatasetKey = getActiveDatasetKey();
@@ -1838,6 +1945,7 @@ async function boot() {
 
     renderFilters(allEvents);
     lastMeta = meta || {};
+    renderMetaAlert(lastMeta);
 
     const baseDataset = getDataset(getActiveDatasetKey());
     renderSmartFilters(baseDataset);

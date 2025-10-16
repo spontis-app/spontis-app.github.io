@@ -62,6 +62,15 @@
     </header>
 
     <main class="main">
+        <div class="container">
+            <section id="meta-alert" class="meta-alert" role="status" aria-live="polite" hidden>
+                <span class="meta-alert__icon" aria-hidden="true">!</span>
+                <div class="meta-alert__body">
+                    <p id="meta-alert-summary" class="meta-alert__summary"></p>
+                    <ul id="meta-alert-list" class="meta-alert__list"></ul>
+                </div>
+            </section>
+        </div>
         <div class="container layout">
             <div class="layout__primary">
                 <section id="now-deck" class="now-deck" aria-label="Starter snart" hidden>

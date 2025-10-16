@@ -37,6 +37,7 @@ Static site (GitHub Pages) · Vanilla JS/CSS · Data i `/data/events.sample.json
 - Offline test? Kjør `python -m scraper.run --offline --no-update-views` for å skrive sample-data lokalt uten nettverkskall.
 - Genererte visninger (`today.json`, `tonight.json`, `heatmap.json`) ligger i `data/generated/` etter kjøring.
 - Hurtigsjekk lokalt? Kjør `./scripts/checks.sh` for offline scraping, regenerering av visninger og (dersom tilgjengelig) pytest.
+- Nettsiden viser et varsel hvis `data/generated/meta.json` inneholder kilde-feil (`source_stats` → status `error/fallback/offline`). Da ser publikum et banner over feeden og hero-chipen viser ⚠.
 
 ## 🤖 AI-arbeidsflyt
 

@@ -46,7 +46,7 @@
 - Legg inn instrumentering for filterklikk og CTA i Plausible.
 
 ### Uke 4
-- Evaluer datafra notebook + brukerinndata og bestem neste automatisering.
+- Evaluer data fra notebook + brukerinndata og bestem neste automatisering.
 - Pilot “jeg skal”/sosial funksjon på utvalgte events (kan være enkel lenke til midlertidig chat).
 - Gjennomgå KPI-er (trafikk, delinger, nyhetsbrev-påmeldinger) og planlegg neste iterasjon.
 
@@ -62,9 +62,9 @@
 - Antall brukerbidrag (foreslåtte events, chat-join) og godkjenningsrate.
 
 ## Neste umiddelbare steg
-1. Kjør scraper + verifiser output (første prioritet for datakvalitet).
-2. Legg inn “sist oppdatert” + kilde-teller i UI for å understøtte nye hero-budskap.
-3. Velg første smartfilter-sett og planlegg implementasjon i `js/app.js`.
+1. Kjør `scripts/dev/run_stack.sh` (scraper + auto-scraper + targeted pytest) og verifiser at meta-alert/hero-chip rapporterer riktig status før publisering.
+2. Publiser admin-snapshot (`docs/status/sources.html`) enten som GitHub Pages underside eller CI-artifact slik at feilede kilder er synlige i sanntid.
+3. Drive discovery-pipelinen videre: fyll `docs/discovery/candidates.json` med ByVenn/VisitBergen-funn og bruk rapporten til å planlegge nye kilder.
 4. Start notebook-prototype for embeddings slik at ideene i notatet kan valideres tidlig.
 
 ## AI-arbeidsflyt og loggføring
@@ -74,3 +74,4 @@
 - **Agent-rollene:** ChatGPT (planer), VS Code Codex (lokal kontekst), Codex CLI (script/CI) og Codex Web (PR/review) – se README-seksjonen “AI-arbeidsflyt” for oversikt.
 - **Kildeoppdagelse:** Automatiske jobber (ByVenn, VisitBergen, Proff) skriver til `docs/discovery/` og varsler roadmapen når nye kandidater skal prioriteres.
 - **UI-redesign backlog:** Dokumentert i `docs/design/ui-redesign.md` – ta opp igjen når auto-scraper og feedbalanse er stabile.
+*** End Patch
