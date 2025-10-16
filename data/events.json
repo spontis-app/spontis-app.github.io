@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
+    "when": "Thu 10:15 • 10:30 • 11:00 (+56 later)",
     "where": "Bergen Kino",
-    "when": "Wed 10:45 • 11:00 • 11:45 (+70 later)",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,76 +14,120 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-15T10:45:00+02:00"
+    "starts_at": "2025-10-16T10:15:00+02:00"
   },
   {
-    "source": "USF Verftet",
-    "title": "Arrangementer",
-    "url": "https://usf.no/arrangementer",
+    "source": "Bergen Kunsthall",
+    "title": "Concert GiFU + special guests: Date Of Birth Fri 17 Oct 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
     "city": "Bergen",
-    "venue": "USF Verftet",
-    "where": "USF Verftet",
+    "when": "Fri 20:30",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
     "sources": [
-      "USF Verftet"
-    ]
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-17T20:30:00+02:00"
   },
   {
-    "source": "Kulturhuset i Bergen",
-    "title": "Bildegalleri",
-    "url": "https://www.kulturhusetibergen.no/gallery/",
+    "source": "Bergen Kunsthall",
+    "title": "Club Klubb Diaspora: MultiTati, Love Pump, Moikana Sat 18 Oct 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3193-2025-10-18/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
+    "when": "Sat 23:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-18T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Sunday guided tours Sun 19 Oct 13:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-19",
+    "city": "Bergen",
+    "when": "Sun 13:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
     "sources": [
-      "Kulturhuset i Bergen"
-    ]
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-19T13:00:00+02:00"
   },
   {
-    "source": "Østre",
-    "title": "Bilder",
-    "url": "https://www.ekko.no/ostre#bilder",
+    "source": "Bergen Kunsthall",
+    "title": "Club Heisen: HEISEN Vol. 3: Moe, CMS, Uncle K, Mira and Visuals by Even Greve Sat 25 Oct 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
     "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
+    "when": "Sat 23:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-25T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
+    "city": "Bergen",
+    "when": "Sun 13:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
     "sources": [
-      "Østre"
-    ]
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-26T13:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
+    "city": "Bergen",
+    "when": "Wed 20:30",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-29T20:30:00+01:00"
   },
   {
     "source": "Zip Collective",
     "title": "Book project space",
     "url": "https://zipcollective.com/the-space/#project-space",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
     "sources": [
       "Zip Collective"
-    ]
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Booking",
-    "url": "https://www.kulturhusetibergen.no/booke-kulturhuset/",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
     ]
   },
   {
@@ -91,8 +135,8 @@
     "title": "Contact",
     "url": "https://zipcollective.com/contact/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -101,96 +145,12 @@
     ]
   },
   {
-    "source": "Østre",
-    "title": "Dato fredag 17.10. 22:30 Tittel Keep it freaky vol. 5 Kjøp billetter",
-    "url": "https://www.ekko.no/ostre/keep-it-freaky",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Dato fredag 31.10. - lørdag 1.11. Tittel «For Mechanical Brass & Magnetic Strings» Artister «For Mechanical Brass & Magnetic Strings» (lydinstallasjon) Simonsen / Lysne / Ambarchi (konsert) «For Mechanical Brass & Magnetic Strings» (lydinstallasjon) Simonsen / Lysne / Taxt (konsert) Kjøp billetter",
-    "url": "https://www.ekko.no/ostre/jo-david-meyer-lysne-og-peder-simonsen-for-mechanical-brass-magnetic-strings",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Dato fredag 7.11. - søndag 9.11. Tittel Vill Vill Vest 2025 Kjøp billetter",
-    "url": "https://www.ekko.no/ostre/vill-vill-vest-2025",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Dato lørdag 1.11. - fredag 31.10. Tittel EKKO XXII Artister plus44Kaligula Yara Asmar Shida Shahabi Kelly Moran Smerz Holy Tongue Charlemagne, Ambarchi, O’Sullivan Lasse Marhaug solo James Holden & Wacław Zimpel D. Tiffany Om Unit: «Acid Dub Studies» Mad Miran Malibu Marhaug og Apeland Hüma Utku Raimund Wong & Suren Seneviratne Jules Reidy Anja Lauvdal Kristoffer Lislegaard Human Exp Hildisvíni Ekko-djs Toddy & søtabete Etterfest med Ekko djs Nadda Noor & Little Miss Lucifer Teservering «For Mechanical Brass & Magnetic Strings» Kjøp billetter",
-    "url": "https://www.ekko.no/festival/ekko-xxii",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Dato lørdag 18.10. 18:00 Arrangør Tedans x Østre Tittel Tedans nr. 32 Artister Bjorå/Osgood/Gjerstad Sarah Jane-Summers Kjøp billetter",
-    "url": "https://www.ekko.no/ostre/tedans-nr-32",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Dato lørdag 18.10. 22:00 Arrangør Månen x Østre Tittel Månen Artister Thomas Urv Kjøp billetter",
-    "url": "https://www.ekko.no/ostre/manen-3",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
     "source": "Zip Collective",
     "title": "Events",
     "url": "https://zipcollective.com/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -227,68 +187,12 @@
     ]
   },
   {
-    "source": "USF Verftet",
-    "title": "Home",
-    "url": "https://usf.no/",
-    "city": "Bergen",
-    "venue": "USF Verftet",
-    "where": "USF Verftet",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "USF Verftet"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Info",
-    "url": "https://www.ekko.no/ostre#info",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Kalender",
-    "url": "https://www.ekko.no/ostre#kalender",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Kontakt",
-    "url": "https://www.kulturhusetibergen.no/kontakt/",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ]
-  },
-  {
     "source": "Zip Collective",
     "title": "Load more events",
     "url": "https://zipcollective.com/events",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "community",
       "culture"
@@ -302,8 +206,8 @@
     "title": "Manifesto",
     "url": "https://zipcollective.com/manifesto/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -316,8 +220,8 @@
     "title": "Members",
     "url": "https://zipcollective.com/members/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -351,48 +255,6 @@
     ],
     "sources": [
       "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Nyheter",
-    "url": "https://www.ekko.no/ostre#nyheter",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Om oss",
-    "url": "https://www.kulturhusetibergen.no/om-oss/",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ]
-  },
-  {
-    "source": "USF Verftet",
-    "title": "Personvernerklæring",
-    "url": "https://usf.no/om-usf-verftet",
-    "city": "Bergen",
-    "venue": "USF Verftet",
-    "where": "USF Verftet",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "USF Verftet"
     ]
   },
   {
@@ -438,40 +300,12 @@
     ]
   },
   {
-    "source": "Kulturhuset i Bergen",
-    "title": "Program",
-    "url": "https://www.kulturhusetibergen.no/program/",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ]
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Restaurant",
-    "url": "https://www.kulturhusetibergen.no/mat/",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ]
-  },
-  {
     "source": "Zip Collective",
     "title": "Skip to content",
     "url": "https://zipcollective.com/events#main",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -484,27 +318,13 @@
     "title": "Space",
     "url": "https://zipcollective.com/the-space/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
     "sources": [
       "Zip Collective"
-    ]
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Spørsmål",
-    "url": "https://www.kulturhusetibergen.no/faq/",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
     ]
   },
   {
@@ -522,48 +342,6 @@
     ]
   },
   {
-    "source": "Østre",
-    "title": "Søk",
-    "url": "https://www.ekko.no/ostre/search",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Tidligere arrangementer",
-    "url": "https://www.ekko.no/ostre#arkiv",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Tilgjengelighet",
-    "url": "https://www.ekko.no/ostre#tilgjengelighet",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
     "source": "Festspillene i Bergen",
     "title": "Tilgjengelighet",
     "url": "https://www.fib.no/praktisk-info/tilgjengelighet",
@@ -575,76 +353,6 @@
     ],
     "sources": [
       "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Uke 41 - Visuelle eksperimenter, skrangledisco og latin-spesial Les mer...",
-    "url": "https://www.ekko.no/ostre/news/uke-41-visuelle-eksperimenter-skrangledisco-og-latin-spesial",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Uke 42 - Tedans, Keep It Freaky og Månen Les mer...",
-    "url": "https://www.ekko.no/ostre/news/uke-42-tedans-keep-it-freaky-og-manen",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Vis alt",
-    "url": "https://www.ekko.no/ostre/news",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Østre",
-    "title": "Vis fullt arkiv",
-    "url": "https://www.ekko.no/ostre/archive",
-    "city": "Bergen",
-    "venue": "Østre",
-    "where": "Østre",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Østre"
-    ]
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Åpningstider",
-    "url": "https://www.kulturhusetibergen.no/apningstider/",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
     ]
   }
 ]

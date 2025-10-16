@@ -1,34 +1,19 @@
 [
   {
-    "source": "Bergen Kunsthall",
-    "title": "2025 15 Oct Perfect Sounds Forever: Molly Lewis (US) Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3153-2025-10-15/",
+    "source": "Bergen Kino",
+    "title": "Kinovisning",
+    "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Wed 20:00",
+    "when": "Thu 10:15 • 10:30 • 11:00 (+56 later)",
+    "where": "Bergen Kino",
+    "venue": "Bergen Kino",
     "tags": [
-      "culture"
+      "cinema",
+      "date"
     ],
     "sources": [
-      "Bergen Kunsthall"
+      "Bergen Kino"
     ],
-    "starts_at": "2025-10-15T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Molly Lewis (US) Wed 15 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3153-2025-10-15/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Wed 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-15T20:00:00+02:00"
+    "starts_at": "2025-10-16T10:15:00+02:00"
   }
 ]
