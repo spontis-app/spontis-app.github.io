@@ -1055,6 +1055,19 @@ a:focus-visible {
     font-size: 0.9rem;
 }
 
+.footer__links {
+    display: inline-flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+    justify-content: center;
+}
+
+.footer__links a {
+    color: var(--page-accent-strong);
+    font-weight: 600;
+}
+
 .empty-state {
     margin: 0;
     padding: 1.2rem 1.4rem;
