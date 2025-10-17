@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Thu 10:15 • 10:30 • 11:00 (+56 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
+    "when": "Fri 10:15 • 10:30 • 11:00 (+56 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,32 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-16T10:15:00+02:00"
+    "starts_at": "2025-10-17T10:15:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 17 Oct GiFU + special guests: Date Of Birth Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Fri 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-17T20:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert GiFU + special guests: Date Of Birth Fri 17 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
     "city": "Bergen",
-    "when": "Fri 20:30",
     "where": "Landmark",
     "venue": "Landmark",
+    "when": "Fri 20:30",
     "tags": [
       "culture"
     ],
@@ -37,9 +53,9 @@
     "title": "Club Klubb Diaspora: MultiTati, Love Pump, Moikana Sat 18 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3193-2025-10-18/",
     "city": "Bergen",
-    "when": "Sat 23:00",
     "where": "Landmark",
     "venue": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
       "culture",
       "late-night",
@@ -55,9 +71,9 @@
     "title": "Guided Tours Sunday guided tours Sun 19 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-19",
     "city": "Bergen",
-    "when": "Sun 13:00",
     "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "when": "Sun 13:00",
     "tags": [
       "culture"
     ],
@@ -71,9 +87,9 @@
     "title": "Club Heisen: HEISEN Vol. 3: Moe, CMS, Uncle K, Mira and Visuals by Even Greve Sat 25 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
     "city": "Bergen",
-    "when": "Sat 23:00",
     "where": "Landmark",
     "venue": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
       "culture",
       "late-night",
@@ -89,9 +105,9 @@
     "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
     "city": "Bergen",
-    "when": "Sun 13:00",
     "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "when": "Sun 13:00",
     "tags": [
       "culture"
     ],
@@ -105,9 +121,9 @@
     "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
-    "when": "Wed 20:30",
     "where": "Landmark",
     "venue": "Landmark",
+    "when": "Wed 20:30",
     "tags": [
       "culture"
     ],
