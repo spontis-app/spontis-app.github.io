@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
     "venue": "Bergen Kino",
-    "when": "Fri 10:15 • 10:30 • 11:00 (+56 later)",
+    "where": "Bergen Kino",
+    "when": "Sat 10:15 • 10:30 • 10:45 (+61 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,47 +14,33 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-17T10:15:00+02:00"
+    "starts_at": "2025-10-18T10:15:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2025 17 Oct GiFU + special guests: Date Of Birth Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
+    "title": "2025 18 Oct Klubb Diaspora: MultiTati, Love Pump, Moikana Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3193-2025-10-18/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
-    "when": "Fri 20:30",
+    "where": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-10-17T20:30:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert GiFU + special guests: Date Of Birth Fri 17 Oct 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Fri 20:30",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-17T20:30:00+02:00"
+    "starts_at": "2025-10-18T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Club Klubb Diaspora: MultiTati, Love Pump, Moikana Sat 18 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3193-2025-10-18/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Sat 23:00",
     "tags": [
       "culture",
@@ -71,8 +57,8 @@
     "title": "Guided Tours Sunday guided tours Sun 19 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-19",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "when": "Sun 13:00",
     "tags": [
       "culture"
@@ -87,8 +73,8 @@
     "title": "Club Heisen: HEISEN Vol. 3: Moe, CMS, Uncle K, Mira and Visuals by Even Greve Sat 25 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Sat 23:00",
     "tags": [
       "culture",
@@ -105,8 +91,8 @@
     "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "when": "Sun 13:00",
     "tags": [
       "culture"
@@ -121,8 +107,8 @@
     "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Wed 20:30",
     "tags": [
       "culture"
@@ -137,8 +123,8 @@
     "title": "Book project space",
     "url": "https://zipcollective.com/the-space/#project-space",
     "city": "Bergen",
-    "where": "Zip Collective",
     "venue": "Zip Collective",
+    "where": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -151,8 +137,8 @@
     "title": "Contact",
     "url": "https://zipcollective.com/contact/",
     "city": "Bergen",
-    "where": "Zip Collective",
     "venue": "Zip Collective",
+    "where": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -165,8 +151,8 @@
     "title": "Events",
     "url": "https://zipcollective.com/",
     "city": "Bergen",
-    "where": "Zip Collective",
     "venue": "Zip Collective",
+    "where": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -207,8 +193,8 @@
     "title": "Load more events",
     "url": "https://zipcollective.com/events",
     "city": "Bergen",
-    "where": "Zip Collective",
     "venue": "Zip Collective",
+    "where": "Zip Collective",
     "tags": [
       "community",
       "culture"
@@ -222,8 +208,8 @@
     "title": "Manifesto",
     "url": "https://zipcollective.com/manifesto/",
     "city": "Bergen",
-    "where": "Zip Collective",
     "venue": "Zip Collective",
+    "where": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -236,8 +222,8 @@
     "title": "Members",
     "url": "https://zipcollective.com/members/",
     "city": "Bergen",
-    "where": "Zip Collective",
     "venue": "Zip Collective",
+    "where": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -320,8 +306,8 @@
     "title": "Skip to content",
     "url": "https://zipcollective.com/events#main",
     "city": "Bergen",
-    "where": "Zip Collective",
     "venue": "Zip Collective",
+    "where": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -334,8 +320,8 @@
     "title": "Space",
     "url": "https://zipcollective.com/the-space/",
     "city": "Bergen",
-    "where": "Zip Collective",
     "venue": "Zip Collective",
+    "where": "Zip Collective",
     "tags": [
       "culture"
     ],

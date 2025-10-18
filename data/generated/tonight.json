@@ -1,34 +1,38 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2025 17 Oct GiFU + special guests: Date Of Birth Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
+    "title": "2025 18 Oct Klubb Diaspora: MultiTati, Love Pump, Moikana Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3193-2025-10-18/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
-    "when": "Fri 20:30",
+    "where": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-10-17T20:30:00+02:00"
+    "starts_at": "2025-10-18T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert GiFU + special guests: Date Of Birth Fri 17 Oct 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3190-2025-10-17/",
+    "title": "Club Klubb Diaspora: MultiTati, Love Pump, Moikana Sat 18 Oct 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3193-2025-10-18/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
-    "when": "Fri 20:30",
+    "where": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-10-17T20:30:00+02:00"
+    "starts_at": "2025-10-18T23:00:00+02:00"
   }
 ]
