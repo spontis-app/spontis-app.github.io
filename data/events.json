@@ -4,8 +4,8 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
+    "when": "Mon 10:15 • 10:45 • 11:00 (+54 later)",
     "where": "Bergen Kino",
-    "when": "Sun 10:15 • 10:30 • 11:00 (+57 later)",
     "venue": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,47 +14,15 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-19T10:15:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2025 19 Oct Sunday guided tours Gallery I-V Guided Tours",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/",
-    "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "when": "Sun 13:00",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-19T13:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Sunday guided tours Sun 19 Oct 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-19",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sun 13:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-19T13:00:00+02:00"
+    "starts_at": "2025-10-20T10:15:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Club Heisen: HEISEN Vol. 3: Moe, CMS, Uncle K, Mira and Visuals by Even Greve Sat 25 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 23:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture",
@@ -71,8 +39,8 @@
     "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "when": "Sun 13:00",
+    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -87,8 +55,8 @@
     "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Wed 20:30",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
