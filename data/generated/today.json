@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Mon 10:15 • 10:45 • 11:00 (+54 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
+    "when": "Tue 10:00 • 10:30 • 10:45 (+54 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,6 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-20T10:15:00+02:00"
+    "starts_at": "2025-10-21T10:00:00+02:00"
   }
 ]
