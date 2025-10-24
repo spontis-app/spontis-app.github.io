@@ -2,8 +2,8 @@
   "Mon": 0,
   "Tue": 0,
   "Wed": 1,
-  "Thu": 1,
-  "Fri": 1,
+  "Thu": 0,
+  "Fri": 2,
   "Sat": 1,
   "Sun": 1
 }
