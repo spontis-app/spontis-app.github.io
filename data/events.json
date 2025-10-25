@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
-    "when": "Fri 10:00 • 10:15 • 11:00 (+80 later)",
     "venue": "Bergen Kino",
+    "when": "Sat 10:00 • 10:15 • 10:45 (+95 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-24T10:00:00+02:00"
+    "starts_at": "2025-10-25T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Club Heisen: HEISEN Vol. 3: Moe, CMS, Uncle J, Mira and Visuals by Even Greve Sat 25 Oct 23:00, Landmark",
+    "title": "2025 25 Oct Heisen: HEISEN Vol. 3: Moe, CMS, Uncle J, Mira and Visuals by Even Greve Landmark Club",
     "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Sat 23:00",
     "venue": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
       "culture",
       "late-night",
@@ -40,8 +40,8 @@
     "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "when": "Sun 13:00",
     "venue": "Bergen Kunsthall",
+    "when": "Sun 13:00",
     "tags": [
       "culture"
     ],
@@ -56,8 +56,8 @@
     "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Wed 20:30",
     "venue": "Landmark",
+    "when": "Wed 20:30",
     "tags": [
       "culture"
     ],
@@ -72,8 +72,8 @@
     "url": "https://www.kunsthall.no/en/events/3195-2025-10-31/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Fri 20:30",
     "venue": "Landmark",
+    "when": "Fri 20:30",
     "tags": [
       "culture"
     ],
