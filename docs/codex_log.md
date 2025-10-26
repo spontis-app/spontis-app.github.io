@@ -12,3 +12,9 @@ Et delt loggarkiv for AI-assisterte arbeidsøkter i Spontis-prosjektet.
 ---
 
 *(Første reelle logginnslag kommer her.)*
+
+## 2025-10-25 — Codex CLI (økt 6)
+- **Agent:** Codex CLI
+- **Prompt:** «Vi fortsetter med spontis … se etter bugs i scraping … mange baller i luften.»
+- **Resultat:** Forbedret feedbalansen (kildetak i `js/feed.js`), renset skriptere som tok med navigasjon (`scraper/sources/zip_collective.py`, `scraper/sources/festspillene.py`), opprettet discovery-kandidater (Isotop, KMD, KODE) og planla sprint 25.–31. okt.
+- **Neste steg:** Verifiser ny scraping-run og logg kildefordeling, fyll `docs/discovery/candidates.json` videre (ByVenn/VisitBergen), og start instrumentering for CTA/åpningstider.

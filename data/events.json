@@ -1,290 +1,68 @@
 [
   {
-    "source": "Bergen Kino",
-    "title": "Kinovisning",
-    "url": "https://www.bergenkino.no/",
-    "city": "Bergen",
-    "where": "Bergen Kino",
-    "when": "Fri 10:30 • 10:45 • 11:00 (+74 later)",
-    "venue": "Bergen Kino",
-    "tags": [
-      "cinema",
-      "date"
-    ],
-    "sources": [
-      "Bergen Kino"
-    ],
-    "starts_at": "2025-11-07T10:30:00+01:00"
-  },
-  {
     "source": "Bergen Kunsthall",
-    "title": "Concert Softcore untd. Fri 5 Dec 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3203-2025-12-05/",
+    "title": "2025 25 Oct Heisen: HEISEN Vol. 3: Moe, CMS, Uncle J, Mira and Visuals by Even Greve Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 23:00",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-12-05T20:00:00+01:00"
+    "starts_at": "2025-10-25T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Performance Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Fri 12 Dec — 14 Dec 15:30, Gallery V",
-    "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
+    "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "when": "Fri 15:30",
+    "when": "Sun 13:00",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-12-12T15:30:00+01:00"
+    "starts_at": "2025-10-26T13:00:00+01:00"
   },
   {
-    "source": "Zip Collective",
-    "title": "Book project space",
-    "url": "https://zipcollective.com/the-space/#project-space",
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
-    "where": "Zip Collective",
-    "venue": "Zip Collective",
+    "when": "Wed 20:30",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
     "sources": [
-      "Zip Collective"
-    ]
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-29T20:30:00+01:00"
   },
   {
-    "source": "Zip Collective",
-    "title": "Contact",
-    "url": "https://zipcollective.com/contact/",
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Tramhaus (NL) + support: Hounding Fri 31 Oct 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3195-2025-10-31/",
     "city": "Bergen",
-    "where": "Zip Collective",
-    "venue": "Zip Collective",
+    "when": "Fri 20:30",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
     "sources": [
-      "Zip Collective"
-    ]
-  },
-  {
-    "source": "Zip Collective",
-    "title": "Events",
-    "url": "https://zipcollective.com/",
-    "city": "Bergen",
-    "where": "Zip Collective",
-    "venue": "Zip Collective",
-    "tags": [
-      "culture"
+      "Bergen Kunsthall"
     ],
-    "sources": [
-      "Zip Collective"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Frivillige",
-    "url": "https://www.fib.no/frivillig/",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Hjem",
-    "url": "https://www.fib.no/no",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Zip Collective",
-    "title": "Load more events",
-    "url": "https://zipcollective.com/events",
-    "city": "Bergen",
-    "where": "Zip Collective",
-    "venue": "Zip Collective",
-    "tags": [
-      "community",
-      "culture"
-    ],
-    "sources": [
-      "Zip Collective"
-    ]
-  },
-  {
-    "source": "Zip Collective",
-    "title": "Manifesto",
-    "url": "https://zipcollective.com/manifesto/",
-    "city": "Bergen",
-    "where": "Zip Collective",
-    "venue": "Zip Collective",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Zip Collective"
-    ]
-  },
-  {
-    "source": "Zip Collective",
-    "title": "Members",
-    "url": "https://zipcollective.com/members/",
-    "city": "Bergen",
-    "where": "Zip Collective",
-    "venue": "Zip Collective",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Zip Collective"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Miljø",
-    "url": "https://www.fib.no/om-festspillene/samfunnsansvar/miljo",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Min side",
-    "url": "https://www.fib.no/min-profil",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Personvernerklæring",
-    "url": "https://www.fib.no/personvernerklaering/",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Presse",
-    "url": "https://www.fib.no/presse/",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Program",
-    "url": "https://www.fib.no/program/",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Zip Collective",
-    "title": "Skip to content",
-    "url": "https://zipcollective.com/events#main",
-    "city": "Bergen",
-    "where": "Zip Collective",
-    "venue": "Zip Collective",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Zip Collective"
-    ]
-  },
-  {
-    "source": "Zip Collective",
-    "title": "Space",
-    "url": "https://zipcollective.com/the-space/",
-    "city": "Bergen",
-    "where": "Zip Collective",
-    "venue": "Zip Collective",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Zip Collective"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Støttespillere",
-    "url": "https://www.fib.no/stottespillere/",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
-  },
-  {
-    "source": "Festspillene i Bergen",
-    "title": "Tilgjengelighet",
-    "url": "https://www.fib.no/praktisk-info/tilgjengelighet",
-    "city": "Bergen",
-    "venue": "Festspillene i Bergen",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Festspillene i Bergen"
-    ]
+    "starts_at": "2025-10-31T20:30:00+01:00"
   }
 ]

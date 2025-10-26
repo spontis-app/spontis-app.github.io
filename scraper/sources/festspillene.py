@@ -74,6 +74,8 @@ def fetch() -> list[dict]:
         absolute_url = urljoin(PROGRAM_URL, href)
         if not absolute_url.startswith("https://www.fib.no"):
             continue
+        if "/program/" not in absolute_url:
+            continue
 
         title = link.get_text(" ", strip=True)
         if not title:
@@ -88,6 +90,10 @@ def fetch() -> list[dict]:
         starts_at = _extract_datetime(card)
         if not starts_at and detail:
             starts_at = _extract_datetime(detail)
+
+        if not starts_at:
+            # Ignore navigation pages and static info without a scheduled event.
+            continue
 
         venue = None
         description = None

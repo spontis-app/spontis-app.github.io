@@ -27,6 +27,10 @@ import { defaultDatasetKey } from './date-filters.js';
 const $ = selector => document.querySelector(selector);
 
 const eventsEl = $('#events');
+const lowFeedEl = $('#low-feed');
+const lowFeedTitleEl = lowFeedEl ? lowFeedEl.querySelector('.low-feed__title') : null;
+const lowFeedLedeEl = lowFeedEl ? lowFeedEl.querySelector('.low-feed__lede') : null;
+const lowFeedTipsEl = lowFeedEl ? lowFeedEl.querySelector('.low-feed__tips') : null;
 const filterShell = document.querySelector('.filters');
 const stickyFilterBar = $('#filter-chips');
 const legacyFilterBar = document.querySelector('#filters.filters--legacy') || document.querySelector('.filters.filters--legacy');
@@ -72,6 +76,30 @@ let topicButtons = new Map();
 let smartFilterButtons = new Map();
 let pendingTag = null;
 let lastTopicTrigger = null;
+
+const LOW_EVENT_THRESHOLD = 3;
+const FALLBACK_SUGGESTIONS = [
+    {
+        title: 'Steppeulven',
+        url: 'https://www.facebook.com/steppeulvenbergen/',
+        description: 'Vinylbar på Engen med solid platesamling, lave skuldre og bartender som gjerne tipser om kveldens lydspor.'
+    },
+    {
+        title: 'Kennel Vinylbar',
+        url: 'https://www.instagram.com/kennelvinylbar/',
+        description: 'Intim bar i Skostredet med djs på rotasjon, naturvin og klassisk bergensstemning til langt på natt.'
+    },
+    {
+        title: 'Café Legal',
+        url: 'https://www.instagram.com/cafelegalbergen/',
+        description: 'Kaffe om dagen, cocktails om kvelden – to etasjer med gode vibber midt i Vågsbunnen.'
+    },
+    {
+        title: 'KODE Nattåpent',
+        url: 'https://www.kodebergen.no/',
+        description: 'Museene i Rasmus Meyers allé holder ofte kveldsåpent med utstillinger, samtaler og familieopplegg.'
+    }
+];
 
 
 function openTopicDrawer(trigger) {
@@ -157,6 +185,19 @@ function formatUpdatedLabel(isoString) {
     return formatter.format(date);
 }
 
+function formatShare(value) {
+    if (typeof value !== 'number' || !Number.isFinite(value) || value <= 0) {
+        return null;
+    }
+    const clamped = Math.max(0, Math.min(value, 1));
+    const digits = clamped < 0.1 ? 1 : 0;
+    return new Intl.NumberFormat('nb-NO', {
+        style: 'percent',
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits
+    }).format(clamped);
+}
+
 function updateHeroMeta(meta, events) {
     const list = Array.isArray(events) ? events : [];
     if (eventCountChip) {
@@ -171,6 +212,10 @@ function updateHeroMeta(meta, events) {
     });
 
     if (sourceCountChip) {
+        const distribution = Array.isArray(meta?.source_distribution) ? meta.source_distribution : [];
+        const topShare = typeof meta?.top_source_share === 'number'
+            ? meta.top_source_share
+            : (distribution[0]?.share ?? null);
         const datasetKey = getActiveDatasetKey();
         const stats = Array.isArray(meta?.source_stats) ? meta.source_stats : [];
         const metaCount = typeof meta?.source_count === 'number' ? meta.source_count : stats.length || null;
@@ -191,23 +236,79 @@ function updateHeroMeta(meta, events) {
         if (metaCount && metaCount > displayCount) {
             label = `Kilder: ${displayCount}/${metaCount}`;
         }
+        if (typeof topShare === 'number' && topShare > 0.35) {
+            label += ' ⚖';
+        }
         if (failing.length) {
             label += ' ⚠';
         }
 
         sourceCountChip.textContent = label;
 
-        const tooltipLines = stats.length
-            ? stats.map(entry => {
+        const statsByName = new Map(
+            stats
+                .filter(entry => entry?.name)
+                .map(entry => [String(entry.name).toLowerCase(), entry])
+        );
+        const tooltipLines = [];
+
+        if (distribution.length) {
+            distribution.forEach(entry => {
+                const name = entry?.name || 'Ukjent';
+                const normalized = name.toLowerCase();
+                const stat = statsByName.get(normalized);
+                const shareLabel = formatShare(entry?.share);
+                const eventsCount = entry?.events ?? stat?.events ?? 0;
+                const status = String(stat?.status || '').toLowerCase();
+                let statusLabel = '';
+                if (status === 'error') statusLabel = ' · feil';
+                else if (status === 'fallback') statusLabel = ' · fallback';
+                else if (status === 'offline') statusLabel = ' · offline';
+                else if (eventsCount === 0) statusLabel = ' · ingen events';
+                const shareText = shareLabel ? ` (${shareLabel})` : '';
+                tooltipLines.push(`${name} — ${eventsCount}${shareText}${statusLabel}`);
+                if (normalized) {
+                    statsByName.delete(normalized);
+                }
+            });
+        }
+
+        if (!tooltipLines.length && stats.length) {
+            stats.forEach(entry => {
                 const status = String(entry?.status || 'ok').toLowerCase();
                 const events = entry?.events ?? 0;
-                if (status === 'error') return `${entry?.name || 'Ukjent'} — feil (${events})`;
-                if (status === 'fallback') return `${entry?.name || 'Fallback'} — sample-data`;
-                if (status === 'offline') return `${entry?.name || 'Offline'} — offline`;
-                if (events === 0) return `${entry?.name || 'Ukjent'} — ingen events`;
-                return `${entry?.name || 'Ukjent'} — ok (${events})`;
-            })
-            : [...uniqueSources].map(name => `${name} — aktiv`);
+                if (status === 'error') {
+                    tooltipLines.push(`${entry?.name || 'Ukjent'} — feil (${events})`);
+                } else if (status === 'fallback') {
+                    tooltipLines.push(`${entry?.name || 'Fallback'} — sample-data`);
+                } else if (status === 'offline') {
+                    tooltipLines.push(`${entry?.name || 'Offline'} — offline`);
+                } else if (events === 0) {
+                    tooltipLines.push(`${entry?.name || 'Ukjent'} — ingen events`);
+                } else {
+                    tooltipLines.push(`${entry?.name || 'Ukjent'} — ok (${events})`);
+                }
+            });
+        } else {
+            statsByName.forEach(entry => {
+                const status = String(entry?.status || 'ok').toLowerCase();
+                const events = entry?.events ?? 0;
+                if (status === 'error') {
+                    tooltipLines.push(`${entry?.name || 'Ukjent'} — feil (${events})`);
+                } else if (status === 'fallback') {
+                    tooltipLines.push(`${entry?.name || 'Fallback'} — sample-data`);
+                } else if (status === 'offline') {
+                    tooltipLines.push(`${entry?.name || 'Offline'} — offline`);
+                } else if (events === 0) {
+                    tooltipLines.push(`${entry?.name || 'Ukjent'} — ingen events`);
+                }
+            });
+        }
+
+        if (!tooltipLines.length) {
+            tooltipLines.push(...[...uniqueSources].map(name => `${name} — aktiv`));
+        }
+
         sourceCountChip.title = tooltipLines.join('\n');
         sourceCountChip.classList.toggle('hero__meta-chip--alert', failing.length > 0);
     }
@@ -257,11 +358,18 @@ function showEvents(list, { updateMeta = false } = {}) {
     const { feed, upcoming } = createBalancedFeed(base, { now: new Date() });
     setCurrentList(feed);
     paint(feed);
-   renderNowDeck(base, upcoming);
-   if (updateMeta) {
-       updateHeroMeta(lastMeta, base);
+    if (lastMeta && typeof lastMeta === 'object') {
+        const summary = summariseSources(feed);
+        lastMeta.display_distribution = summary.summary;
+        lastMeta.display_total_events = summary.total;
+    }
+    renderSourceRollup(feed);
+    renderNowDeck(base, upcoming);
+    renderLowFeedState(feed, upcoming);
+    if (updateMeta) {
+        updateHeroMeta(lastMeta, base);
         renderMetaAlert(lastMeta);
-   }
+    }
 }
 
 function renderNowDeck(events, upcomingOverride) {
@@ -329,6 +437,118 @@ function renderNowDeck(events, upcomingOverride) {
 
     nowDeckBody.appendChild(fragment);
     nowDeckEl.hidden = false;
+}
+
+function renderLowFeedState(events, upcoming) {
+    if (!lowFeedEl || !lowFeedTipsEl) return;
+    const total = Array.isArray(events) ? events.length : 0;
+    const upcomingCount = Array.isArray(upcoming) ? upcoming.length : 0;
+    const showFallback = total < LOW_EVENT_THRESHOLD;
+
+    if (!showFallback) {
+        lowFeedEl.hidden = true;
+        lowFeedTipsEl.replaceChildren();
+        return;
+    }
+
+    const title =
+        total === 0
+            ? 'Rolig i programmet akkurat nå'
+            : total === 1
+                ? 'Kun ett arrangement på blokka'
+                : `Bare ${total} arrangementer i feeden`;
+    if (lowFeedTitleEl) {
+        lowFeedTitleEl.textContent = title;
+    }
+
+    if (lowFeedLedeEl) {
+        const nextLine = upcomingCount > 0
+            ? 'Vi har noen få som starter snart – og flere venues publiserer utover kvelden.'
+            : 'Vi venter på nye slipp fra arrangørene – i mellomtiden kan du sjekke ut disse stedene for en spontantur.';
+        lowFeedLedeEl.textContent = nextLine;
+    }
+
+    const fragment = document.createDocumentFragment();
+    const suggestions = FALLBACK_SUGGESTIONS.length
+        ? FALLBACK_SUGGESTIONS.slice()
+        : [];
+    if (suggestions.length) {
+        const now = new Date();
+        const offset = (now.getDate() + now.getDay()) % suggestions.length;
+        const ordered = [];
+        for (let idx = 0; idx < suggestions.length; idx += 1) {
+            ordered.push(suggestions[(offset + idx) % suggestions.length]);
+        }
+        ordered.slice(0, Math.min(3, ordered.length)).forEach(suggestion => {
+            const card = document.createElement('article');
+            card.className = 'card card--tip';
+            card.setAttribute('role', 'listitem');
+
+            const titleEl = document.createElement('h4');
+            titleEl.className = 'card__title';
+            titleEl.textContent = suggestion.title;
+            card.appendChild(titleEl);
+
+            if (suggestion.description) {
+                const desc = document.createElement('p');
+                desc.className = 'card__summary';
+                desc.textContent = suggestion.description;
+                card.appendChild(desc);
+            }
+
+            if (suggestion.url) {
+                const actions = document.createElement('div');
+                actions.className = 'card__actions';
+                const link = document.createElement('a');
+                link.className = 'btn-secondary';
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer external';
+                link.href = suggestion.url;
+                link.textContent = 'Se mer';
+                link.setAttribute('aria-label', `Åpne ${suggestion.title} i ny fane`);
+                actions.appendChild(link);
+                card.appendChild(actions);
+            }
+
+            fragment.appendChild(card);
+        });
+    }
+
+    if (!fragment.childNodes.length) {
+        const card = document.createElement('article');
+        card.className = 'card card--tip';
+        card.setAttribute('role', 'listitem');
+        const message = document.createElement('p');
+        message.className = 'card__summary';
+        message.textContent = 'Tips oss om steder du savner – vi oppdaterer så snart nye programmer slippes.';
+        card.appendChild(message);
+        fragment.appendChild(card);
+    }
+
+    lowFeedTipsEl.replaceChildren(fragment);
+    lowFeedEl.hidden = false;
+}
+
+function summariseSources(events) {
+    const safeEvents = Array.isArray(events) ? events : [];
+    const counts = new Map();
+    safeEvents.forEach(event => {
+        const source = typeof event?.source === 'string' ? event.source.trim() : '';
+        if (!source) return;
+        counts.set(source, (counts.get(source) || 0) + 1);
+    });
+    const total = safeEvents.length;
+    const summary = Array.from(counts.entries())
+        .map(([name, count]) => ({
+            name,
+            events: count,
+            share: total ? count / total : 0
+        }))
+        .sort((a, b) => {
+            if (b.events !== a.events) return b.events - a.events;
+            return a.name.localeCompare(b.name);
+        });
+    return { summary, total };
 }
 
 function updatePendingSelection() {
@@ -1215,7 +1435,7 @@ function paint(list) {
     if (!list.length) {
         const emptyState = document.createElement('p');
         emptyState.className = 'empty-state';
-        emptyState.textContent = 'No events yet. Try another filter or check back later.';
+        emptyState.textContent = 'Ingen events akkurat nå – vi fyller programmet fortløpende.';
         eventsEl.appendChild(emptyState);
         return;
     }
@@ -1428,7 +1648,6 @@ function applyFilter(tag) {
         renderSmartFilters(data);
         renderClusters(data);
         renderDensityMap(data);
-        renderSourceRollup(data);
         showEvents(data, { updateMeta: true });
         setActive(tag, 'dataset');
         setActive(null, 'tag');
@@ -1785,16 +2004,33 @@ function renderHeatmap(map) {
 
 function renderSourceRollup(events) {
     if (!sourceRollupEl) return;
-    const sources = new Set();
-    events.forEach(event => {
-        (event.sources || [event.source]).forEach(source => {
-            if (source) sources.add(source);
-        });
+    const { summary, total } = summariseSources(events);
+    if (lastMeta && typeof lastMeta === 'object') {
+        lastMeta.runtime_distribution = summary;
+        lastMeta.runtime_total_events = total;
+    }
+    if (!total) {
+        sourceRollupEl.innerHTML = '<li>Ingen events tilgjengelig.</li>';
+        return;
+    }
+    const fragment = document.createDocumentFragment();
+    const maxItems = 8;
+    summary.slice(0, maxItems).forEach(entry => {
+        const item = document.createElement('li');
+        const shareLabel = formatShare(entry.share);
+        item.textContent = shareLabel
+            ? `${entry.name} — ${entry.events} (${shareLabel})`
+            : `${entry.name} — ${entry.events}`;
+        item.dataset.share = entry.share != null ? String(entry.share) : '';
+        fragment.appendChild(item);
     });
-    const sorted = [...sources].sort((a, b) => a.localeCompare(b));
-    sourceRollupEl.innerHTML = sorted.length
-        ? sorted.map(source => `<li>${source}</li>`).join('')
-        : '<li>Sources will appear once events are loaded.</li>';
+    if (summary.length > maxItems) {
+        const remainder = summary.length - maxItems;
+        const item = document.createElement('li');
+        item.textContent = `…og ${remainder} flere kilder`;
+        fragment.appendChild(item);
+    }
+    sourceRollupEl.replaceChildren(fragment);
 }
 
 function renderMetaAlert(meta) {
@@ -1951,7 +2187,6 @@ async function boot() {
     renderSmartFilters(baseDataset);
     renderClusters(baseDataset);
     renderDensityMap(baseDataset);
-    renderSourceRollup(baseDataset);
 
     if (heatmap && typeof heatmap === 'object' && !Array.isArray(heatmap)) {
         renderHeatmap(heatmap);

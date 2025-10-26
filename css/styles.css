@@ -893,6 +893,21 @@ a:focus-visible {
     text-transform: uppercase;
 }
 
+.card__title {
+    margin: 0;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: var(--page-text);
+}
+
+.card--tip {
+    background: var(--page-surface-muted);
+}
+
+.card--tip .card__summary {
+    -webkit-line-clamp: 4;
+}
+
 .meta {
     display: flex;
     flex-wrap: wrap;
@@ -1074,6 +1089,40 @@ a:focus-visible {
     border-radius: var(--page-radius);
     background: var(--page-surface-muted);
     color: var(--page-muted);
+}
+
+.low-feed {
+    margin-top: clamp(1.8rem, 5vw, 2.6rem);
+    padding: clamp(1.5rem, 5vw, 2.25rem);
+    border-radius: var(--page-radius-lg);
+    background: var(--page-surface);
+    box-shadow: var(--page-shadow-soft);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.1rem, 3vw, 1.6rem);
+}
+
+.low-feed__title {
+    margin: 0;
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    font-weight: 600;
+    color: var(--page-muted-strong);
+}
+
+.low-feed__lede,
+.low-feed__footnote {
+    margin: 0;
+    color: var(--page-muted);
+}
+
+.low-feed__tips {
+    display: grid;
+    gap: clamp(1rem, 3vw, 1.4rem);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.low-feed__footnote a {
+    font-weight: 600;
 }
 
 .card--highlight {

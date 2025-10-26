@@ -110,6 +110,10 @@ def fetch() -> list[dict]:
         if not starts_at and detail:
             starts_at = _extract_datetime(detail)
 
+        if not starts_at:
+            # Skip links that do not expose an event time (navigation, booking forms, etc.)
+            continue
+
         venue = "Zip Collective"
         description = None
         if detail:

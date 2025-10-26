@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import json
 import logging
 import os
@@ -548,6 +549,34 @@ def _write_metadata(events: List[dict], output_path: Path, now: datetime) -> Non
     }
     if sources:
         payload["sources"] = sources
+
+    if events:
+        counts = Counter()
+        for event in events:
+            source = str(event.get("source") or "").strip()
+            if not source:
+                continue
+            counts[source] += 1
+
+        if counts:
+            total = len(events)
+            distribution = []
+            for name, count in counts.most_common():
+                entry = {
+                    "name": name,
+                    "events": count,
+                }
+                if total:
+                    entry["share"] = round(count / total, 4)
+                distribution.append(entry)
+
+            if distribution:
+                payload["source_distribution"] = distribution
+                payload["top_source"] = distribution[0]["name"]
+                payload["top_source_share"] = distribution[0].get("share")
+                top_share = distribution[0].get("share") or 0.0
+                payload["diversity_index"] = round(max(0.0, 1.0 - top_share), 4)
+
     meta_path = generated_dir / "meta.json"
     meta_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 

@@ -1,21 +1,37 @@
 [
   {
-    "name": "Kvarteret",
-    "url": "https://www.kvarteret.no/program",
+    "name": "Isotop Fellesatelier",
+    "category": [
+      "kunst",
+      "utstilling"
+    ],
     "source": "manual",
-    "status": "pending",
-    "note": "TicketCo slug needs verification"
+    "status": "new",
+    "confidence": 0.6,
+    "notes": "Galleri/atelier på Møhlenpris med hyppige vernissasjer; krever sannsynligvis manuell kalender eller SoMe-scraping."
   },
   {
-    "name": "Hulen",
-    "url": "https://hulen.no/",
+    "name": "KMD – Masterutstillinger",
+    "category": [
+      "kunst",
+      "utstilling",
+      "student"
+    ],
     "source": "manual",
-    "status": "pending"
+    "status": "new",
+    "confidence": 0.5,
+    "notes": "Kunst-, musikk- og designfakultetet arrangerer master- og semestervisninger; sjekk KMD.no og UiB event-kalender for feed/ics."
   },
   {
-    "name": "Forum Scene",
-    "url": "https://www.forumscene.no/program",
-    "source": "manual",
-    "status": "pending"
+    "name": "KODE Kunstmuseer",
+    "category": [
+      "museum",
+      "kunst",
+      "familie"
+    ],
+    "source": "visitbergen",
+    "status": "new",
+    "confidence": 0.7,
+    "notes": "KODE 1–4 har konserter, familieverksteder og kveldsarrangement; vurder TicketCo/Tix integrasjon og museumsprogram som kilde."
   }
 ]

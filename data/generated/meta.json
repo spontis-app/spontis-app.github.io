@@ -1,8 +1,18 @@
 {
-  "last_updated": "2025-10-15T22:30:32+02:00",
+  "last_updated": "2025-10-25T16:32:50+02:00",
   "total_events": 4,
   "source_count": 1,
   "sources": [
-    "Sample"
-  ]
+    "Bergen Kunsthall"
+  ],
+  "source_distribution": [
+    {
+      "name": "Bergen Kunsthall",
+      "events": 4,
+      "share": 1.0
+    }
+  ],
+  "top_source": "Bergen Kunsthall",
+  "top_source_share": 1.0,
+  "diversity_index": 0.0
 }
