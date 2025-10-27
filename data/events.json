@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sun 10:00 • 10:15 • 10:45 (+95 later)",
-    "venue": "Bergen Kino",
+    "when": "Mon 10:00 • 10:15 • 10:45 (+80 later)",
     "where": "Bergen Kino",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,39 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-26T10:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2025 26 Oct Sunday guided tours Gallery I-V Guided Tours",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/",
-    "city": "Bergen",
-    "when": "Sun 13:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-26T13:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
-    "city": "Bergen",
-    "when": "Sun 13:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-26T13:00:00+01:00"
+    "starts_at": "2025-10-27T10:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -54,8 +22,8 @@
     "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
     "when": "Wed 20:30",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -70,8 +38,8 @@
     "url": "https://www.kunsthall.no/en/events/3195-2025-10-31/",
     "city": "Bergen",
     "when": "Fri 20:30",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -85,8 +53,8 @@
     "title": "Book project space",
     "url": "https://zipcollective.com/the-space/#project-space",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -99,8 +67,8 @@
     "title": "Contact",
     "url": "https://zipcollective.com/contact/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -113,8 +81,8 @@
     "title": "Events",
     "url": "https://zipcollective.com/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -155,8 +123,8 @@
     "title": "Load more events",
     "url": "https://zipcollective.com/events",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "community",
       "culture"
@@ -170,8 +138,8 @@
     "title": "Manifesto",
     "url": "https://zipcollective.com/manifesto/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -184,8 +152,8 @@
     "title": "Members",
     "url": "https://zipcollective.com/members/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -268,8 +236,8 @@
     "title": "Skip to content",
     "url": "https://zipcollective.com/events#main",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -282,8 +250,8 @@
     "title": "Space",
     "url": "https://zipcollective.com/the-space/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],

@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sun 10:00 • 10:15 • 10:45 (+95 later)",
-    "venue": "Bergen Kino",
+    "when": "Mon 10:00 • 10:15 • 10:45 (+80 later)",
     "where": "Bergen Kino",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,38 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-26T10:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2025 26 Oct Sunday guided tours Gallery I-V Guided Tours",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/",
-    "city": "Bergen",
-    "when": "Sun 13:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-26T13:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
-    "city": "Bergen",
-    "when": "Sun 13:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-26T13:00:00+01:00"
+    "starts_at": "2025-10-27T10:00:00+01:00"
   }
 ]
