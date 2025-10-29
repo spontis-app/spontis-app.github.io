@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Tue 10:15 • 10:30 • 10:45 (+78 later)",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
+    "when": "Wed 10:15 • 10:30 • 11:00 (+81 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,32 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-28T10:15:00+01:00"
+    "starts_at": "2025-10-29T10:15:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 29 Oct Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Wed 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-29T20:30:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
     "city": "Bergen",
-    "when": "Wed 20:30",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Wed 20:30",
     "tags": [
       "culture"
     ],
@@ -37,9 +53,9 @@
     "title": "Concert Perfect Sounds Forever: Tramhaus (NL) + support: Hounding Fri 31 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3195-2025-10-31/",
     "city": "Bergen",
-    "when": "Fri 20:30",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Fri 20:30",
     "tags": [
       "culture"
     ],
