@@ -4,7 +4,7 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Thu 10:15 • 10:30 • 10:45 (+75 later)",
+    "when": "Fri 06:05 • 08:38 • 09:45 (+86 later)",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
     "tags": [
@@ -14,7 +14,23 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-10-30T10:15:00+01:00"
+    "starts_at": "2025-10-31T06:05:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 31 Oct Perfect Sounds Forever: Tramhaus (NL) + support: Hounding Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3195-2025-10-31/",
+    "city": "Bergen",
+    "when": "Fri 20:30",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-31T20:30:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",

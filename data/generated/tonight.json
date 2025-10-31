@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 31 Oct Perfect Sounds Forever: Tramhaus (NL) + support: Hounding Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3195-2025-10-31/",
+    "city": "Bergen",
+    "when": "Fri 20:30",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-31T20:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Tramhaus (NL) + support: Hounding Fri 31 Oct 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3195-2025-10-31/",
+    "city": "Bergen",
+    "when": "Fri 20:30",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-10-31T20:30:00+01:00"
+  }
+]
