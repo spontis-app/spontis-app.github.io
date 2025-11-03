@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sun 10:15 • 10:30 • 11:15 (+88 later)",
-    "venue": "Bergen Kino",
     "where": "Bergen Kino",
+    "when": "Mon 10:15 • 10:30 • 10:45 (+77 later)",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-11-02T10:15:00+01:00"
+    "starts_at": "2025-11-03T10:15:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Softcore untd. Fri 5 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3203-2025-12-05/",
     "city": "Bergen",
+    "where": "Landmark",
     "when": "Fri 20:00",
     "venue": "Landmark",
-    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,9 +37,9 @@
     "title": "Performance Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Fri 12 Dec — 14 Dec 15:30, Gallery V",
     "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
     "city": "Bergen",
+    "where": "Bergen Kunsthall",
     "when": "Fri 15:30",
     "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -53,8 +53,8 @@
     "title": "Book project space",
     "url": "https://zipcollective.com/the-space/#project-space",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -67,8 +67,8 @@
     "title": "Contact",
     "url": "https://zipcollective.com/contact/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -81,8 +81,8 @@
     "title": "Events",
     "url": "https://zipcollective.com/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -123,8 +123,8 @@
     "title": "Load more events",
     "url": "https://zipcollective.com/events",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "community",
       "culture"
@@ -138,8 +138,8 @@
     "title": "Manifesto",
     "url": "https://zipcollective.com/manifesto/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -152,8 +152,8 @@
     "title": "Members",
     "url": "https://zipcollective.com/members/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -236,8 +236,8 @@
     "title": "Skip to content",
     "url": "https://zipcollective.com/events#main",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
@@ -250,8 +250,8 @@
     "title": "Space",
     "url": "https://zipcollective.com/the-space/",
     "city": "Bergen",
-    "venue": "Zip Collective",
     "where": "Zip Collective",
+    "venue": "Zip Collective",
     "tags": [
       "culture"
     ],
