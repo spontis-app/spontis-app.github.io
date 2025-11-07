@@ -97,6 +97,13 @@
                                 <span class="drawer-trigger__label">Topics</span>
                             </button>
                         </div>
+                        <form class="browse__search" role="search" aria-label="Søk i arrangementer" data-search-form novalidate>
+                            <label for="event-search" class="sr-only">Søk etter arrangement</label>
+                            <div class="browse__search-field">
+                                <input type="search" id="event-search" name="q" autocomplete="off" placeholder="Søk etter konsert, sted eller tag" data-search-input />
+                                <button type="button" class="browse__search-clear" data-search-clear aria-label="Tøm søk" hidden>×</button>
+                            </div>
+                        </form>
                         <div class="smart-filters" role="group" aria-label="Smartsøk" hidden></div>
                     </header>
                 </section>

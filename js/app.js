@@ -9,7 +9,9 @@ import {
     setCurrentVibe,
     resetState,
     getCurrentSmartFilter,
-    setCurrentSmartFilter
+    setCurrentSmartFilter,
+    getSearchQuery,
+    setSearchQuery
 } from './modules/state.js';
 import {
     setDatasets,
@@ -65,6 +67,9 @@ const datasetButtons = Array.from(document.querySelectorAll('.dataset-chip'));
 const updatedChip = $('#updated-chip');
 const sourceCountChip = $('#source-count-chip');
 const eventCountChip = $('#event-count-chip');
+const searchForm = document.querySelector('[data-search-form]');
+const searchInput = document.querySelector('[data-search-input]');
+const searchClearBtn = document.querySelector('[data-search-clear]');
 const metaAlert = $('#meta-alert');
 const metaAlertSummary = $('#meta-alert-summary');
 const metaAlertList = $('#meta-alert-list');
@@ -76,6 +81,7 @@ let topicButtons = new Map();
 let smartFilterButtons = new Map();
 let pendingTag = null;
 let lastTopicTrigger = null;
+let searchDebounceId = null;
 
 const LOW_EVENT_THRESHOLD = 3;
 const FALLBACK_SUGGESTIONS = [
@@ -407,6 +413,14 @@ function renderNowDeck(events, upcomingOverride) {
             venueEl.className = 'now-card__venue';
             venueEl.textContent = venue;
             card.appendChild(venueEl);
+        }
+
+        const primaryTag = selectPrimaryTag(event);
+        if (primaryTag) {
+            const tagEl = document.createElement('span');
+            tagEl.className = 'now-card__tag';
+            tagEl.textContent = labelForTag(primaryTag);
+            card.appendChild(tagEl);
         }
 
         const footer = document.createElement('div');
@@ -784,6 +798,13 @@ function updateUrlFilters() {
         params.delete('smart');
     }
 
+    const searchQuery = getSearchQuery().trim();
+    if (searchQuery) {
+        params.set('q', searchQuery);
+    } else {
+        params.delete('q');
+    }
+
     const query = params.toString();
     const newUrl = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
     window.history.replaceState({}, '', newUrl);
@@ -819,6 +840,79 @@ function buildEventHeadline(event) {
     const location = deriveLocation(event);
     if (location) parts.push(location);
     return parts.join(' • ');
+}
+
+function selectPrimaryTag(event) {
+    if (!event?.tags || !event.tags.length) return null;
+    return event.tags.find(tag => TAG_LABELS[tag]) || event.tags[0];
+}
+
+function buildMetaItems(event) {
+    const items = [];
+    const schedule = computeScheduleLabel(event);
+    if (schedule) {
+        items.push({ icon: 'clock', text: schedule });
+    }
+    const location = deriveLocation(event);
+    if (location) {
+        items.push({ icon: 'pin', text: location });
+    }
+    const primaryTag = selectPrimaryTag(event);
+    if (primaryTag) {
+        items.push({ icon: 'tag', text: labelForTag(primaryTag) });
+    }
+    return items;
+}
+
+function createCardThumb(event) {
+    const primaryTag = selectPrimaryTag(event);
+    const iconPath = primaryTag ? TAG_ICON[primaryTag] : null;
+    const thumb = document.createElement('div');
+    thumb.className = 'card__thumb';
+
+    if (iconPath) {
+        const img = document.createElement('img');
+        img.src = iconPath;
+        img.alt = '';
+        img.setAttribute('aria-hidden', 'true');
+        thumb.appendChild(img);
+    } else {
+        const fallback = document.createElement('span');
+        const label = String(event.venue || event.where || event.title || '?');
+        fallback.textContent = label.trim().charAt(0).toUpperCase() || '🎟️';
+        thumb.appendChild(fallback);
+    }
+
+    return thumb;
+}
+
+function buildSearchText(event) {
+    return [
+        event.title,
+        event.description,
+        event.summary,
+        event.venue,
+        event.where,
+        event.city,
+        event.source,
+        ...(event.sources || []),
+        (event.tags || []).join(' ')
+    ]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase();
+}
+
+function applySearchFilter(list = []) {
+    const query = getSearchQuery().trim().toLowerCase();
+    if (!query) return list;
+    const tokens = query.split(/\s+/).filter(Boolean);
+    if (!tokens.length) return list;
+    return list.filter(event => {
+        const haystack = event.searchText || buildSearchText(event);
+        if (!haystack) return false;
+        return tokens.every(token => haystack.includes(token));
+    });
 }
 
 function renderDetailSources(event) {
@@ -1393,12 +1487,16 @@ function enrichEvents(events) {
             event.summary,
             event.venue,
             event.where,
+            event.city,
+            event.source,
+            (event.sources || []).join(' '),
             (event.tags || []).join(' ')
         ].filter(Boolean).join(' ').toLowerCase();
 
         applySmartTags(event, combinedText);
 
         event.vibe = detectVibe(event, combinedText);
+        event.searchText = combinedText;
         event.vibeLabel = VIBE_LOOKUP[event.vibe]?.label || 'Performance';
 
         const dayInfo = getDayInfo(event);
@@ -1481,16 +1579,44 @@ function paint(list) {
             article.appendChild(meta);
         }
 
+        const header = document.createElement('div');
+        header.className = 'card__header';
+
+        const thumb = createCardThumb(event);
+        if (thumb) {
+            header.appendChild(thumb);
+        }
+
+        const headerBody = document.createElement('div');
+        headerBody.className = 'card__header-body';
+
         const title = document.createElement('h3');
         title.textContent = event.title || 'Untitled event';
-        article.appendChild(title);
+        headerBody.appendChild(title);
 
         const headline = event.displayHeadline || buildEventHeadline(event);
         if (headline) {
             const detailEl = document.createElement('p');
             detailEl.className = 'card__details';
             detailEl.textContent = headline;
-            article.appendChild(detailEl);
+            headerBody.appendChild(detailEl);
+        }
+
+        header.appendChild(headerBody);
+        article.appendChild(header);
+
+        const metaItems = buildMetaItems(event);
+        if (metaItems.length) {
+            const metaList = document.createElement('ul');
+            metaList.className = 'card__meta-grid';
+            metaItems.forEach(item => {
+                const metaItem = document.createElement('li');
+                metaItem.className = 'card__meta-item';
+                metaItem.dataset.icon = item.icon;
+                metaItem.textContent = item.text;
+                metaList.appendChild(metaItem);
+            });
+            article.appendChild(metaList);
         }
 
         const summary = event.summary || event.description;
@@ -1507,7 +1633,7 @@ function paint(list) {
         if (sourceNames) {
             const sourceEl = document.createElement('p');
             sourceEl.className = 'card__sources';
-            sourceEl.textContent = `Organiser: ${sourceNames}`;
+            sourceEl.textContent = `Arrangør: ${sourceNames}`;
             article.appendChild(sourceEl);
         }
 
@@ -1517,7 +1643,7 @@ function paint(list) {
         const detailButton = document.createElement('button');
         detailButton.type = 'button';
         detailButton.className = 'btn-secondary';
-        detailButton.textContent = 'Details';
+        detailButton.textContent = 'Detaljer';
         detailButton.addEventListener('click', (ev) => {
             ev.preventDefault();
             ev.stopPropagation();
@@ -1532,9 +1658,9 @@ function paint(list) {
             link.target = '_blank';
             link.rel = 'noopener noreferrer external';
             link.className = 'btn-primary';
-            link.textContent = 'Open event';
+            link.textContent = event.ticket_url ? 'Billetter' : 'Åpne hos arrangør';
             if (event.title) {
-                link.setAttribute('aria-label', `Open event: ${event.title}`);
+                link.setAttribute('aria-label', `Åpne hos arrangør: ${event.title}`);
             }
             actionRow.appendChild(link);
         }
@@ -1598,7 +1724,7 @@ function applySmartFilter(filterId) {
     if (!definition) return;
     const activeDatasetKey = getActiveDatasetKey();
     const source = getDataset(activeDatasetKey);
-    const data = source.filter(event => {
+    const matched = source.filter(event => {
         try {
             return definition.predicate(event);
         } catch (error) {
@@ -1606,18 +1732,17 @@ function applySmartFilter(filterId) {
             return false;
         }
     });
+    const data = applySearchFilter(matched);
     setCurrentSmartFilter(filterId);
     setCurrentFilter(null);
     setCurrentVibe(null);
     pendingTag = null;
-    showEvents(data, 2);
+    showEvents(data, { updateMeta: true });
     setActive(activeDatasetKey, 'dataset');
     setActive(null, 'tag');
     updateSmartFilterButtons(filterId);
     updateVibeCards();
     updatePendingSelection();
-    renderNowDeck(data);
-    updateHeroMeta(lastMeta, data);
     clearSpotlight();
     updateUrlFilters();
     if (eventsEl) {
@@ -1640,7 +1765,8 @@ function clearSpotlight() {
 function applyFilter(tag) {
     if (DATASET_FILTERS.has(tag)) {
         setActiveDatasetKey(tag);
-        const data = getDataset(tag);
+        const datasetEvents = getDataset(tag);
+        const data = applySearchFilter(datasetEvents);
         setCurrentFilter(null);
         setCurrentVibe(null);
         setCurrentSmartFilter(null);
@@ -1660,11 +1786,12 @@ function applyFilter(tag) {
     const activeDatasetKey = getActiveDatasetKey();
     const source = getDataset(activeDatasetKey);
     const data = source.filter(e => (e.tags || []).includes(tag));
+    const filtered = applySearchFilter(data);
     setCurrentFilter(tag);
     setCurrentVibe(null);
     setCurrentSmartFilter(null);
     pendingTag = null;
-    showEvents(data, { updateMeta: true });
+    showEvents(filtered, { updateMeta: true });
     setActive(activeDatasetKey, 'dataset');
     setActive(tag, 'tag');
     updateSmartFilterButtons(null);
@@ -1678,7 +1805,8 @@ function applyVibeFilter(vibeId) {
     if (!vibeId) return;
     const activeDatasetKey = getActiveDatasetKey();
     const source = getDataset(activeDatasetKey);
-    const data = source.filter(event => (event.vibe || 'performance') === vibeId);
+    const matched = source.filter(event => (event.vibe || 'performance') === vibeId);
+    const data = applySearchFilter(matched);
     setCurrentVibe(vibeId);
     setCurrentFilter(null);
     setCurrentSmartFilter(null);
@@ -1693,6 +1821,23 @@ function applyVibeFilter(vibeId) {
     updateUrlFilters();
     if (eventsEl) {
         eventsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+function rerunActiveFilters() {
+    const activeSmart = getCurrentSmartFilter();
+    const activeFilter = getCurrentFilter();
+    const activeVibe = getCurrentVibe();
+    const datasetKey = getActiveDatasetKey() || 'all';
+
+    if (activeSmart) {
+        applySmartFilter(activeSmart);
+    } else if (activeFilter) {
+        applyFilter(activeFilter);
+    } else if (activeVibe) {
+        applyVibeFilter(activeVibe);
+    } else {
+        applyFilter(datasetKey);
     }
 }
 
@@ -1724,7 +1869,7 @@ function showSpotlight(event) {
     if (sourceNames) {
         const meta = document.createElement('div');
         meta.className = 'spotlight__sources';
-        meta.textContent = `Source: ${sourceNames}`;
+        meta.textContent = `Arrangør: ${sourceNames}`;
         spotlightEl.appendChild(meta);
     }
 
@@ -1734,7 +1879,7 @@ function showSpotlight(event) {
         link.href = event.url;
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
-        link.textContent = 'Open event';
+        link.textContent = 'Åpne hos arrangør';
         spotlightEl.appendChild(link);
     }
 
@@ -2178,6 +2323,19 @@ async function boot() {
     if (smartParam && SMART_FILTER_MAP.has(smartParam)) {
         setCurrentSmartFilter(smartParam);
     }
+    const queryParam = params.get('q');
+    if (queryParam) {
+        setSearchQuery(queryParam);
+        if (searchInput) {
+            searchInput.value = queryParam;
+        }
+    } else {
+        setSearchQuery('');
+        if (searchInput) {
+            searchInput.value = '';
+        }
+    }
+    updateSearchUi();
 
     renderFilters(allEvents);
     lastMeta = meta || {};
@@ -2245,6 +2403,12 @@ datasetButtons.forEach(button => {
 
 smartFiltersContainer?.addEventListener('click', handleSmartFilterClick);
 
+searchForm?.addEventListener('submit', handleSearchSubmit);
+searchInput?.addEventListener('input', handleSearchInput);
+searchInput?.addEventListener('search', handleSearchInput);
+searchClearBtn?.addEventListener('click', handleSearchClear);
+updateSearchUi();
+
 function handleClusterActivation(card) {
     if (!card) return;
     const vibeId = card.dataset.vibe;
@@ -2267,6 +2431,44 @@ clusterDeckEl?.addEventListener('keydown', event => {
         handleClusterActivation(card);
     }
 });
+
+function updateSearchUi() {
+    if (searchClearBtn) {
+        const hasValue = getSearchQuery().trim().length > 0;
+        searchClearBtn.hidden = !hasValue;
+    }
+}
+
+function handleSearchInput(event) {
+    const value = event.target.value || '';
+    setSearchQuery(value);
+    updateSearchUi();
+    if (searchDebounceId) {
+        clearTimeout(searchDebounceId);
+    }
+    searchDebounceId = setTimeout(() => {
+        rerunActiveFilters();
+        searchDebounceId = null;
+    }, 180);
+}
+
+function handleSearchSubmit(event) {
+    event.preventDefault();
+    if (searchDebounceId) {
+        clearTimeout(searchDebounceId);
+        searchDebounceId = null;
+    }
+    rerunActiveFilters();
+}
+
+function handleSearchClear() {
+    if (!searchInput) return;
+    searchInput.value = '';
+    setSearchQuery('');
+    updateSearchUi();
+    rerunActiveFilters();
+    searchInput.focus({ preventScroll: true });
+}
 
 topicTriggers.forEach(trigger => {
     trigger.addEventListener('click', () => {

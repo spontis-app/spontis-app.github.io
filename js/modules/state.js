@@ -4,6 +4,7 @@ const state = {
     currentList: [],
     currentVibe: null,
     currentSmartFilter: null,
+    searchQuery: ''
 };
 
 export function getActiveDatasetKey() {
@@ -48,6 +49,7 @@ export function resetState() {
     state.currentList = [];
     state.currentVibe = null;
     state.currentSmartFilter = null;
+    state.searchQuery = '';
 }
 
 export function snapshotState() {
@@ -60,4 +62,12 @@ export function getCurrentSmartFilter() {
 
 export function setCurrentSmartFilter(value) {
     state.currentSmartFilter = value || null;
+}
+
+export function getSearchQuery() {
+    return state.searchQuery || '';
+}
+
+export function setSearchQuery(value) {
+    state.searchQuery = typeof value === 'string' ? value : '';
 }
