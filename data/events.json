@@ -1,29 +1,27 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2025 25 Oct Heisen: HEISEN Vol. 3: Moe, CMS, Uncle J, Mira and Visuals by Even Greve Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3192-2025-10-25/",
+    "title": "Concert Softcore untd. Fri 5 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3203-2025-12-05/",
     "city": "Bergen",
-    "when": "Sat 23:00",
     "venue": "Landmark",
+    "when": "Fri 20:00",
     "where": "Landmark",
     "tags": [
-      "culture",
-      "late-night",
-      "techno"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-10-25T23:00:00+02:00"
+    "starts_at": "2025-12-05T20:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Sunday guided tours Sun 26 Oct 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3174-2025-09-21/?d=2025-10-26",
+    "title": "Performance Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Fri 12 Dec — 14 Dec 15:30, Gallery V",
+    "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
     "city": "Bergen",
-    "when": "Sun 13:00",
     "venue": "Bergen Kunsthall",
+    "when": "Fri 15:30",
     "where": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -31,38 +29,6 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2025-10-26T13:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Hotline TNT (US) + Honey I'm Home (NL) Wed 29 Oct 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3118-2025-10-29/",
-    "city": "Bergen",
-    "when": "Wed 20:30",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-29T20:30:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Tramhaus (NL) + support: Hounding Fri 31 Oct 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3195-2025-10-31/",
-    "city": "Bergen",
-    "when": "Fri 20:30",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-10-31T20:30:00+01:00"
+    "starts_at": "2025-12-12T15:30:00+01:00"
   }
 ]
