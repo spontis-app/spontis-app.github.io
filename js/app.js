@@ -76,6 +76,8 @@ const metaAlertList = $('#meta-alert-list');
 const smartFiltersContainer = document.querySelector('.smart-filters');
 const nowDeckEl = $('#now-deck');
 const nowDeckBody = $('#now-deck-body');
+const storyStripEl = $('#story-strip');
+const storyStripBody = $('#story-strip-body');
 let lastMeta = {};
 let topicButtons = new Map();
 let smartFilterButtons = new Map();
@@ -372,6 +374,7 @@ function showEvents(list, { updateMeta = false } = {}) {
     renderSourceRollup(feed);
     renderNowDeck(base, upcoming);
     renderLowFeedState(feed, upcoming);
+    renderStoryStrip(feed);
     if (updateMeta) {
         updateHeroMeta(lastMeta, base);
         renderMetaAlert(lastMeta);
@@ -451,6 +454,60 @@ function renderNowDeck(events, upcomingOverride) {
 
     nowDeckBody.appendChild(fragment);
     nowDeckEl.hidden = false;
+}
+
+function renderStoryStrip(events) {
+    if (!storyStripEl || !storyStripBody) return;
+    const highlights = Array.isArray(events) ? events.slice(0, 4) : [];
+    storyStripBody.innerHTML = '';
+    if (!highlights.length) {
+        storyStripEl.hidden = true;
+        return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    highlights.forEach(event => {
+        const card = document.createElement('article');
+        card.className = 'story-card';
+
+        const meta = document.createElement('div');
+        meta.className = 'story-card__meta';
+        const bits = buildMetaItems(event);
+        bits.forEach(bit => {
+            const span = document.createElement('span');
+            span.textContent = bit.text;
+            meta.appendChild(span);
+        });
+        if (!bits.length && event.source) {
+            const span = document.createElement('span');
+            span.textContent = event.source;
+            meta.appendChild(span);
+        }
+        if (meta.children.length) {
+            card.appendChild(meta);
+        }
+
+        const title = document.createElement('h3');
+        title.className = 'story-card__title';
+        title.textContent = event.title || 'Untitled';
+        card.appendChild(title);
+
+        const ctaLink = resolveEventUrl(event);
+        if (ctaLink) {
+            const cta = document.createElement('a');
+            cta.href = ctaLink;
+            cta.target = '_blank';
+            cta.rel = 'noopener noreferrer';
+            cta.className = 'story-card__cta';
+            cta.textContent = 'Les mer';
+            card.appendChild(cta);
+        }
+
+        fragment.appendChild(card);
+    });
+
+    storyStripBody.appendChild(fragment);
+    storyStripEl.hidden = false;
 }
 
 function renderLowFeedState(events, upcoming) {
