@@ -3,7 +3,11 @@
   "Tue": 0,
   "Wed": 0,
   "Thu": 0,
+<<<<<<< HEAD
   "Fri": 0,
+=======
+  "Fri": 2,
+>>>>>>> a41a12f (Refresh events)
   "Sat": 1,
   "Sun": 0
 }

@@ -4,9 +4,15 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
+<<<<<<< HEAD
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
     "when": "Sat 10:30 • 10:45 • 11:00 (+91 later)",
+=======
+    "when": "Sat 10:30 • 10:45 • 11:00 (+91 later)",
+    "where": "Bergen Kino",
+    "venue": "Bergen Kino",
+>>>>>>> a41a12f (Refresh events)
     "tags": [
       "cinema",
       "date"
