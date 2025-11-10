@@ -1,17 +1,19 @@
 [
   {
-    "source": "Sample",
-    "title": "Quiz at Det Akademiske Kvarter",
-    "url": "https://kvarteret.no/",
+    "source": "Bergen Kino",
+    "title": "Kinovisning",
+    "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Thu 20:00",
-    "where": "Kvarteret",
+    "when": "Mon 10:15 • 10:30 • 10:45 (+81 later)",
+    "where": "Bergen Kino",
+    "venue": "Bergen Kino",
     "tags": [
-      "quiz"
+      "cinema",
+      "date"
     ],
     "sources": [
-      "Sample"
+      "Bergen Kino"
     ],
-    "starts_at": "2025-11-10T16:22:34+01:00"
+    "starts_at": "2025-11-10T10:15:00+01:00"
   }
 ]

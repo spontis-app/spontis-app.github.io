@@ -1,67 +1,67 @@
 [
   {
-    "source": "Sample",
-    "title": "Quiz at Det Akademiske Kvarter",
-    "url": "https://kvarteret.no/",
+    "source": "Bergen Kino",
+    "title": "Kinovisning",
+    "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Thu 20:00",
-    "where": "Kvarteret",
-    "tags": [
-      "quiz"
-    ],
-    "sources": [
-      "Sample"
-    ],
-    "starts_at": "2025-11-10T16:22:34+01:00"
-  },
-  {
-    "source": "Sample",
-    "title": "Midnight Rave",
-    "url": "https://ra.co/",
-    "city": "Bergen",
-    "when": "Fri 23:59",
-    "where": "USF Verftet",
-    "tags": [
-      "rave",
-      "techno"
-    ],
-    "sources": [
-      "Sample"
-    ],
-    "starts_at": "2025-11-10T19:22:34+01:00"
-  },
-  {
-    "source": "Sample",
-    "title": "Paint n’ Sip",
-    "url": "https://ticketco.events/",
-    "city": "Bergen",
-    "when": "Sat 18:00",
-    "where": "Kulturhuset",
-    "tags": [
-      "date",
-      "girls",
-      "late-night"
-    ],
-    "sources": [
-      "Sample"
-    ],
-    "starts_at": "2025-11-10T22:22:34+01:00"
-  },
-  {
-    "source": "Sample",
-    "title": "Cinema: Sci-Fi Classics",
-    "url": "https://bergenkino.no/",
-    "city": "Bergen",
-    "when": "Tonight 21:15",
+    "when": "Mon 10:15 • 10:30 • 10:45 (+81 later)",
     "where": "Bergen Kino",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
-      "date",
-      "late-night"
+      "date"
     ],
     "sources": [
-      "Sample"
+      "Bergen Kino"
     ],
-    "starts_at": "2025-11-11T01:22:34+01:00"
+    "starts_at": "2025-11-10T10:15:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Jenny Hval + Håvard Volden Wed 3 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3210-2025-12-03/",
+    "city": "Bergen",
+    "when": "Wed 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-03T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Softcore untd. Fri 5 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3203-2025-12-05/",
+    "city": "Bergen",
+    "when": "Fri 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-05T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Performance Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Fri 12 Dec — 14 Dec 15:30, Gallery V",
+    "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
+    "city": "Bergen",
+    "when": "Fri 15:30",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-12T15:30:00+01:00"
   }
 ]
