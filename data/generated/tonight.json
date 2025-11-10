@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "source": "Sample",
+    "title": "Midnight Rave",
+    "url": "https://ra.co/",
+    "city": "Bergen",
+    "when": "Fri 23:59",
+    "where": "USF Verftet",
+    "tags": [
+      "rave",
+      "techno"
+    ],
+    "sources": [
+      "Sample"
+    ],
+    "starts_at": "2025-11-10T19:22:34+01:00"
+  },
+  {
+    "source": "Sample",
+    "title": "Paint n’ Sip",
+    "url": "https://ticketco.events/",
+    "city": "Bergen",
+    "when": "Sat 18:00",
+    "where": "Kulturhuset",
+    "tags": [
+      "date",
+      "girls",
+      "late-night"
+    ],
+    "sources": [
+      "Sample"
+    ],
+    "starts_at": "2025-11-10T22:22:34+01:00"
+  }
+]

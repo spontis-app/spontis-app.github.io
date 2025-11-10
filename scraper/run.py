@@ -89,13 +89,20 @@ def _load_sample_events() -> List[dict]:
         return []
 
     hydrated: List[dict] = []
-    for raw in data:
+    base = datetime.now(TZ)
+    for idx, raw in enumerate(data):
         if not isinstance(raw, dict):
             continue
         sample = dict(raw)
         sample.setdefault("source", "Sample")
         sample.setdefault("city", DEFAULT_CITY)
         sample.setdefault("url", sample.get("url") or "https://spontis-app.github.io/")
+        if not sample.get("starts_at"):
+            offset_hours = 6 + idx * 3
+            start_time = base + timedelta(hours=offset_hours)
+            sample["starts_at"] = start_time.replace(microsecond=0).isoformat()
+            if not sample.get("when"):
+                sample["when"] = start_time.strftime("%a %H:%M")
         hydrated.append(sample)
     return hydrated
 

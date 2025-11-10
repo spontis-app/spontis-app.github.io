@@ -1,61 +1,67 @@
 [
   {
     "source": "Sample",
+    "title": "Quiz at Det Akademiske Kvarter",
+    "url": "https://kvarteret.no/",
+    "city": "Bergen",
+    "when": "Thu 20:00",
+    "where": "Kvarteret",
+    "tags": [
+      "quiz"
+    ],
+    "sources": [
+      "Sample"
+    ],
+    "starts_at": "2025-11-10T16:22:34+01:00"
+  },
+  {
+    "source": "Sample",
     "title": "Midnight Rave",
     "url": "https://ra.co/",
     "city": "Bergen",
-    "where": "USF Verftet",
     "when": "Fri 23:59",
+    "where": "USF Verftet",
     "tags": [
       "rave",
       "techno"
     ],
     "sources": [
       "Sample"
-    ]
+    ],
+    "starts_at": "2025-11-10T19:22:34+01:00"
   },
   {
     "source": "Sample",
     "title": "Paint n’ Sip",
     "url": "https://ticketco.events/",
     "city": "Bergen",
-    "where": "Kulturhuset",
     "when": "Sat 18:00",
+    "where": "Kulturhuset",
     "tags": [
       "date",
-      "girls"
+      "girls",
+      "late-night"
     ],
     "sources": [
       "Sample"
-    ]
-  },
-  {
-    "source": "Sample",
-    "title": "Quiz at Det Akademiske Kvarter",
-    "url": "https://kvarteret.no/",
-    "city": "Bergen",
-    "where": "Kvarteret",
-    "when": "Thu 20:00",
-    "tags": [
-      "quiz"
     ],
-    "sources": [
-      "Sample"
-    ]
+    "starts_at": "2025-11-10T22:22:34+01:00"
   },
   {
     "source": "Sample",
     "title": "Cinema: Sci-Fi Classics",
     "url": "https://bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
     "when": "Tonight 21:15",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
-      "date"
+      "date",
+      "late-night"
     ],
     "sources": [
       "Sample"
-    ]
+    ],
+    "starts_at": "2025-11-11T01:22:34+01:00"
   }
 ]

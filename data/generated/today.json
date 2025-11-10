@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source": "Sample",
+    "title": "Quiz at Det Akademiske Kvarter",
+    "url": "https://kvarteret.no/",
+    "city": "Bergen",
+    "when": "Thu 20:00",
+    "where": "Kvarteret",
+    "tags": [
+      "quiz"
+    ],
+    "sources": [
+      "Sample"
+    ],
+    "starts_at": "2025-11-10T16:22:34+01:00"
+  }
+]
