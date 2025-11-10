@@ -542,11 +542,16 @@ def _write_metadata(events: List[dict], output_path: Path, now: datetime) -> Non
         for event in events
         if event.get("source")
     })
+    status = os.getenv("SPONTIS_RUN_STATUS", "success")
+    message = os.getenv("SPONTIS_RUN_MESSAGE")
     payload = {
         "last_updated": now.replace(microsecond=0).isoformat(),
         "total_events": len(events),
         "source_count": len(sources),
+        "status": status,
     }
+    if message:
+        payload["message"] = message
     if sources:
         payload["sources"] = sources
 

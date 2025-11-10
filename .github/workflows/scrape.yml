@@ -32,6 +32,9 @@ jobs:
           pip install -r scraper/requirements.txt
 
       - name: Run auto scraper
+        env:
+          SPONTIS_RUN_STATUS: "success"
+          SPONTIS_RUN_MESSAGE: "GitHub Actions run #${{ github.run_number }}"
         run: |
           python auto_scraper.py
 

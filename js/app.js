@@ -323,7 +323,23 @@ function updateHeroMeta(meta, events) {
 
     if (updatedChip) {
         const formatted = formatUpdatedLabel(meta?.last_updated);
-        updatedChip.textContent = formatted ? `Oppdatert: ${formatted}` : 'Oppdatert nylig';
+        const status = String(meta?.status || '').toLowerCase();
+        let label = formatted ? `Oppdatert: ${formatted}` : 'Oppdatert nylig';
+        if (status === 'success') {
+            label += ' · ok';
+        } else if (status === 'fallback') {
+            label += ' · fallback';
+        } else if (status === 'error') {
+            label += ' · feil';
+        } else if (status === 'offline') {
+            label += ' · offline';
+        }
+        updatedChip.textContent = label;
+        if (meta?.message) {
+            updatedChip.title = meta.message;
+        } else if (!updatedChip.title) {
+            updatedChip.title = '';
+        }
     }
 }
 
