@@ -6,7 +6,7 @@
     "city": "Bergen",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
-    "when": "Wed 10:00 • 10:15 • 10:45 (+78 later)",
+    "when": "Thu 10:00 • 10:15 • 10:45 (+76 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,7 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-11-19T10:00:00+01:00"
+    "starts_at": "2025-11-20T10:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
