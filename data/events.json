@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
+    "when": "Fri 10:00 • 10:45 • 11:00 (+82 later)",
     "venue": "Bergen Kino",
-    "when": "Thu 10:00 • 10:15 • 10:45 (+76 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-11-20T10:00:00+01:00"
+    "starts_at": "2025-11-21T10:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Jenny Hval + Håvard Volden Wed 3 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3210-2025-12-03/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Wed 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,9 +37,9 @@
     "title": "Concert Softcore untd. Fri 5 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3203-2025-12-05/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Fri 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,9 +53,9 @@
     "title": "Performance Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Fri 12 Dec — 14 Dec 15:30, Gallery V",
     "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Fri 15:30",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
