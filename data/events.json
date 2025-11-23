@@ -4,7 +4,7 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sat 10:00 • 10:15 • 10:30 (+99 later)",
+    "when": "Sun 10:00 • 10:15 • 10:45 (+97 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
     "tags": [
@@ -14,7 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2025-11-22T10:00:00+01:00"
+    "starts_at": "2025-11-23T10:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
