@@ -1,12 +1,12 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Jenny Hval + Håvard Volden Wed 3 Dec 20:00, Landmark",
+    "title": "2025 3 Dec Perfect Sounds Forever: Jenny Hval + Håvard Volden Landmark Concert",
     "url": "https://www.kunsthall.no/en/events/3210-2025-12-03/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Wed 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -17,12 +17,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Conversation Architectural Practice: Oda Pälmke (DE) & Elizabeth Hatz (SEK) Thu 4 Dec 18:45, Landmark",
+    "title": "Concert Perfect Sounds Forever: Jenny Hval + Håvard Volden Wed 3 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3210-2025-12-03/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-03T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Conversation Architectural Practice: Oda Pälmke (DE) & Elizabeth Hatz (SE) Thu 4 Dec 18:45, Landmark",
     "url": "https://www.kunsthall.no/en/events/3222-2025-12-04/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 18:45",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,8 +53,8 @@
     "url": "https://www.kunsthall.no/en/events/3203-2025-12-05/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Fri 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,8 +69,8 @@
     "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Fri 15:30",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],

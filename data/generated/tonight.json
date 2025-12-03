@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 3 Dec Perfect Sounds Forever: Jenny Hval + Håvard Volden Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3210-2025-12-03/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-03T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Jenny Hval + Håvard Volden Wed 3 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3210-2025-12-03/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-03T20:00:00+01:00"
+  }
+]
