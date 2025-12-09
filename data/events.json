@@ -1,12 +1,28 @@
 [
   {
     "source": "Bergen Kunsthall",
+    "title": "Concert Playdate: Playdate Ensemble, Bernt Isak Wærstad Wed 10 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3223-2025-12-10/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Wed 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-10T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Performance Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Fri 12 Dec — 14 Dec 15:30, Gallery V",
     "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "when": "Fri 15:30",
     "venue": "Bergen Kunsthall",
+    "when": "Fri 15:30",
     "tags": [
       "culture"
     ],
@@ -14,5 +30,57 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2025-12-12T15:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Vestindien Fri 12 Dec 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3224-2025-12-12/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Fri 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-12T20:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Klubb Diaspora: Klubb Diaspora x Landmark x Nídia Sat 13 Dec 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3225-2025-12-13/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Sat 23:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-13T23:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Steike Holding Klubb Sat 20 Dec 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3226-2025-12-20/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Sat 23:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-20T23:00:00+01:00"
   }
 ]
