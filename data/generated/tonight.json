@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 10 Dec Playdate: Playdate Ensemble, Bernt Isak Wærstad Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3223-2025-12-10/",
+    "city": "Bergen",
+    "when": "Wed 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-10T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Playdate: Playdate Ensemble, Bernt Isak Wærstad Wed 10 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3223-2025-12-10/",
+    "city": "Bergen",
+    "when": "Wed 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-10T20:00:00+01:00"
+  }
+]
