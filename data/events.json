@@ -1,12 +1,12 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "Performance Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Fri 12 Dec — 14 Dec 15:30, Gallery V",
+    "title": "2025 12 Dec — 14 Dec Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Gallery V Performance",
     "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
     "city": "Bergen",
-    "where": "Landmark",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "when": "Fri 15:30",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -17,12 +17,44 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Performance Cornerstone: \"Sleep Locks the Bones\" av Maritea Dæhlin Fri 12 Dec — 14 Dec 15:30, Gallery V",
+    "url": "https://www.kunsthall.no/en/events/3204-2025-12-12/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 15:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-12T15:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 12 Dec Perfect Sounds Forever: Vestindien Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3224-2025-12-12/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-12T20:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Vestindien Fri 12 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3224-2025-12-12/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Fri 20:30",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -36,9 +68,9 @@
     "title": "Club Klubb Diaspora: Klubb Diaspora x Landmark x Nídia Sat 13 Dec 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3225-2025-12-13/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Sat 23:00",
-    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -54,9 +86,9 @@
     "title": "Club Steike Holding Klubb Sat 20 Dec 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3226-2025-12-20/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Sat 23:00",
-    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -66,5 +98,23 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2025-12-20T23:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Romjulsfest: Disco Paradiso & Mira Kahrs Sat 27 Dec 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3227-2025-12-27/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Sat 23:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-27T23:00:00+01:00"
   }
 ]

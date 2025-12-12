@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 12 Dec Perfect Sounds Forever: Vestindien Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3224-2025-12-12/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-12T20:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Vestindien Fri 12 Dec 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3224-2025-12-12/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-12T20:30:00+01:00"
+  }
+]
