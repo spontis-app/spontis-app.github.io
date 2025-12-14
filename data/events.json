@@ -1,48 +1,12 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2025 13 Dec Klubb Diaspora: Klubb Diaspora x Landmark x Nídia Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3225-2025-12-13/",
-    "city": "Bergen",
-    "when": "Sat 23:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-12-13T23:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Klubb Diaspora: Klubb Diaspora x Landmark x Nídia Sat 13 Dec 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3225-2025-12-13/",
-    "city": "Bergen",
-    "when": "Sat 23:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-12-13T23:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
     "title": "Club Steike Holding Klubb Sat 20 Dec 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3226-2025-12-20/",
     "city": "Bergen",
+    "where": "Landmark",
     "when": "Sat 23:00",
     "venue": "Landmark",
-    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -58,9 +22,9 @@
     "title": "Club Romjulsfest: Disco Paradiso & Mira Kahrs Sat 27 Dec 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3227-2025-12-27/",
     "city": "Bergen",
+    "where": "Landmark",
     "when": "Sat 23:00",
     "venue": "Landmark",
-    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
