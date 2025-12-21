@@ -1,48 +1,12 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2025 20 Dec Steike Holding Klubb Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3226-2025-12-20/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Sat 22:00",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-12-20T22:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Steike Holding Klubb Sat 20 Dec 22:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3226-2025-12-20/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Sat 22:00",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-12-20T22:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
     "title": "Club Ribbefett vol. III: Murt, Duafén og Ghanamannen Fri 26 Dec 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3230-2025-12-26/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Fri 23:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -59,8 +23,8 @@
     "url": "https://www.kunsthall.no/en/events/3227-2025-12-27/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sat 23:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -77,8 +41,8 @@
     "url": "https://www.kunsthall.no/en/events/3229-2025-12-31/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Wed 23:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -95,8 +59,8 @@
     "url": "https://www.kunsthall.no/en/events/3228-2026-01-03/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sat 23:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
