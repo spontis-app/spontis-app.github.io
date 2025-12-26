@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2025 26 Dec Ribbefett vol. III: Murt, Duafén og Ghanamannen Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3230-2025-12-26/",
+    "city": "Bergen",
+    "when": "Fri 23:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-26T23:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Ribbefett vol. III: Murt, Duafén og Ghanamannen Fri 26 Dec 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3230-2025-12-26/",
+    "city": "Bergen",
+    "when": "Fri 23:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2025-12-26T23:00:00+01:00"
+  }
+]
