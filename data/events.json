@@ -1,47 +1,11 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2025 31 Dec New Years Eve at Landmark: Skatebård, Victor Nøkleby Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3229-2025-12-31/",
-    "city": "Bergen",
-    "when": "Wed 23:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-12-31T23:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club New Years Eve at Landmark: Skatebård, Victor Nøkleby Wed 31 Dec 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3229-2025-12-31/",
-    "city": "Bergen",
-    "when": "Wed 23:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2025-12-31T23:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
     "title": "Club Mathea Oceana, Mia Bjørlykke & Isabel Fox Sat 3 Jan 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3228-2026-01-03/",
     "city": "Bergen",
-    "when": "Sat 23:00",
     "venue": "Landmark",
+    "when": "Sat 23:00",
     "where": "Landmark",
     "tags": [
       "culture",
