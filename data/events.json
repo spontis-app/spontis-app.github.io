@@ -1,11 +1,29 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "Club Mathea Oceana, Mia Bjørlykke & Isabel Fox Sat 3 Jan 23:00, Landmark",
+    "title": "2026 3 Jan Mathea Oceana, Hun Høie & Isabel Fox Landmark Club",
     "url": "https://www.kunsthall.no/en/events/3228-2026-01-03/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Sat 23:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-03T23:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Mathea Oceana, Hun Høie & Isabel Fox Sat 3 Jan 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3228-2026-01-03/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
     "when": "Sat 23:00",
     "tags": [
       "culture",
