@@ -1,12 +1,28 @@
 [
   {
     "source": "Bergen Kunsthall",
+    "title": "2026 8 Jan Von August (LIVE) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3232-2026-01-08/",
+    "city": "Bergen",
+    "when": "Thu 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-08T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Von August (LIVE) Thu 8 Jan 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3232-2026-01-08/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Thu 20:00",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -20,9 +36,9 @@
     "title": "Club DURO: Latin Edition Vol. 2 Sat 10 Jan 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3231-2026-01-10/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 23:00",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -38,9 +54,9 @@
     "title": "Exhibition Iter Subterraneum: Exhibition Opening Fri 16 Jan 20:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3233-2026-01-16/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "when": "Fri 20:00",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
