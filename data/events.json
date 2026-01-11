@@ -1,48 +1,12 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 10 Jan DURO: Latin Edition Vol. 2 Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3231-2026-01-10/",
-    "city": "Bergen",
-    "when": "Sat 23:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-01-10T23:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club DURO: Latin Edition Vol. 2 Sat 10 Jan 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3231-2026-01-10/",
-    "city": "Bergen",
-    "when": "Sat 23:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-01-10T23:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
     "title": "Exhibition Iter Subterraneum: Exhibition Opening Fri 16 Jan 20:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3233-2026-01-16/",
     "city": "Bergen",
     "when": "Fri 20:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
