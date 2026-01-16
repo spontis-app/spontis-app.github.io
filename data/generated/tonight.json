@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 16 Jan Iter Subterraneum: Exhibition Opening Gallery I-V Exhibition",
+    "url": "https://www.kunsthall.no/en/events/3233-2026-01-16/",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Fri 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-16T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Exhibition Iter Subterraneum: Exhibition Opening Fri 16 Jan 20:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3233-2026-01-16/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-16T20:00:00+01:00"
+  }
+]
