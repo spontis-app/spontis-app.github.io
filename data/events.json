@@ -1,44 +1,12 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 16 Jan Iter Subterraneum: Exhibition Opening Gallery I-V Exhibition",
-    "url": "https://www.kunsthall.no/en/events/3233-2026-01-16/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "when": "Fri 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-01-16T20:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Exhibition Iter Subterraneum: Exhibition Opening Fri 16 Jan 20:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3233-2026-01-16/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Fri 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-01-16T20:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Conversation Plattform: «Iter Subterraneum» — Artist Talks Sat 17 Jan 14:00, Upstairs",
+    "title": "2026 17 Jan Plattform: «Iter Subterraneum» — Artist Talks Upstairs Conversation",
     "url": "https://www.kunsthall.no/en/events/3234-2026-01-17/",
     "city": "Bergen",
+    "when": "Sat 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sat 14:00",
     "tags": [
       "culture"
     ],
@@ -49,12 +17,44 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Conversation Plattform: «Iter Subterraneum» — Artist Talks Sat 17 Jan 14:00, Upstairs",
+    "url": "https://www.kunsthall.no/en/events/3234-2026-01-17/",
+    "city": "Bergen",
+    "when": "Sat 14:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-17T14:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 17 Jan ETEPUB Landmark Food",
+    "url": "https://www.kunsthall.no/en/events/3238-2026-01-17/",
+    "city": "Bergen",
+    "when": "Sat 18:30",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-17T18:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Food ETEPUB Sat 17 Jan 18:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3238-2026-01-17/",
     "city": "Bergen",
+    "when": "Sat 18:30",
     "venue": "Landmark",
     "where": "Landmark",
-    "when": "Sat 18:30",
     "tags": [
       "culture"
     ],
@@ -68,9 +68,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 18 Jan 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-01-18",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -84,9 +84,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 25 Jan 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-01-25",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -100,9 +100,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 1 Feb 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-01",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -116,9 +116,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 8 Feb 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-08",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -132,9 +132,9 @@
     "title": "Reading Minimum World: P. Staff, TLF Trio Sun 8 Feb 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3235-2026-02-08/",
     "city": "Bergen",
+    "when": "Sun 20:00",
     "venue": "Landmark",
     "where": "Landmark",
-    "when": "Sun 20:00",
     "tags": [
       "culture"
     ],
@@ -148,9 +148,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 15 Feb 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-15",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -164,9 +164,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 22 Feb 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-22",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -180,9 +180,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 1 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-01",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -196,9 +196,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 8 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-08",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -212,9 +212,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 15 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-15",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -228,9 +228,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 22 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-22",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -244,9 +244,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 29 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-29",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -260,9 +260,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 5 Apr 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-04-05",
     "city": "Bergen",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],

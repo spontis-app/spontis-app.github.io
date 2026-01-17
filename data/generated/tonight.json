@@ -1,34 +1,34 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 16 Jan Iter Subterraneum: Exhibition Opening Gallery I-V Exhibition",
-    "url": "https://www.kunsthall.no/en/events/3233-2026-01-16/",
+    "title": "2026 17 Jan ETEPUB Landmark Food",
+    "url": "https://www.kunsthall.no/en/events/3238-2026-01-17/",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "when": "Fri 20:00",
+    "when": "Sat 18:30",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-01-16T20:00:00+01:00"
+    "starts_at": "2026-01-17T18:30:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Exhibition Iter Subterraneum: Exhibition Opening Fri 16 Jan 20:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3233-2026-01-16/",
+    "title": "Food ETEPUB Sat 17 Jan 18:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3238-2026-01-17/",
     "city": "Bergen",
+    "when": "Sat 18:30",
     "venue": "Landmark",
     "where": "Landmark",
-    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-01-16T20:00:00+01:00"
+    "starts_at": "2026-01-17T18:30:00+01:00"
   }
 ]
