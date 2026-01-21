@@ -1,12 +1,28 @@
 [
   {
     "source": "Bergen Kunsthall",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 22 Jan 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-01-22",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-22T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Vilnes Fri 23 Jan 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3239-2026-01-23/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 20:00",
     "where": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
@@ -21,8 +37,8 @@
     "url": "https://www.kunsthall.no/en/events/3240-2026-01-24/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sat 22:00",
     "where": "Landmark",
+    "when": "Sat 22:00",
     "tags": [
       "culture",
       "late-night",
@@ -35,12 +51,12 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 25 Jan 14:00, Gallery I-V",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 25 Jan 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-01-25",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -51,12 +67,28 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 29 Jan 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-01-29",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-29T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Les Dunes + Separate Bed Thu 29 Jan 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3241-2026-01-29/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Thu 20:00",
     "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
@@ -71,8 +103,8 @@
     "url": "https://www.kunsthall.no/en/events/3242-2026-01-30/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 21:00",
     "where": "Landmark",
+    "when": "Fri 21:00",
     "tags": [
       "culture"
     ],
@@ -83,12 +115,12 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 1 Feb 14:00, Gallery I-V",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 1 Feb 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-01",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
+    "venue": "Landmark",
+    "where": "Landmark",
     "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -99,12 +131,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 8 Feb 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 5 Feb 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-05",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-05T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 8 Feb 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-08",
     "city": "Bergen",
-    "venue": "Landmark",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "when": "Sun 14:00",
-    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -119,8 +167,8 @@
     "url": "https://www.kunsthall.no/en/events/3235-2026-02-08/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sun 20:00",
     "where": "Landmark",
+    "when": "Sun 20:00",
     "tags": [
       "culture"
     ],
@@ -131,12 +179,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 15 Feb 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 12 Feb 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-12",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-12T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 15 Feb 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-15",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -147,12 +211,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 22 Feb 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 19 Feb 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-19",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-19T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 22 Feb 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-22",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -163,12 +243,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 1 Mar 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 26 Feb 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-26",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-26T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 1 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-01",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -179,12 +275,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 8 Mar 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 5 Mar 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-05",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-03-05T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 8 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-08",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -195,12 +307,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 15 Mar 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 12 Mar 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-12",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-03-12T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 15 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-15",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -211,12 +339,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 22 Mar 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 19 Mar 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-19",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-03-19T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 22 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-22",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -227,12 +371,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 29 Mar 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 26 Mar 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-26",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-03-26T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 29 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-29",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -243,12 +403,28 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday Guided Tours Sun 5 Apr 14:00, Gallery I-V",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 2 Apr 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-04-02",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-02T17:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 5 Apr 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-04-05",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
