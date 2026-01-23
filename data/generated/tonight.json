@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 23 Jan Vilnes Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3239-2026-01-23/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-23T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Vilnes Fri 23 Jan 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3239-2026-01-23/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-23T20:00:00+01:00"
+  }
+]
