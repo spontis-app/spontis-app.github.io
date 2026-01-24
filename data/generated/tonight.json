@@ -1,34 +1,38 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 23 Jan Vilnes Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3239-2026-01-23/",
+    "title": "2026 24 Jan Jungelen 10år: Simon Alejandro, Gabriel Patås, Simran Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3240-2026-01-24/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:00",
     "where": "Landmark",
+    "when": "Sat 22:00",
+    "venue": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-01-23T20:00:00+01:00"
+    "starts_at": "2026-01-24T22:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Vilnes Fri 23 Jan 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3239-2026-01-23/",
+    "title": "Club Jungelen 10år: Simon Alejandro, Gabriel Patås, Simran Sat 24 Jan 22:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3240-2026-01-24/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:00",
     "where": "Landmark",
+    "when": "Sat 22:00",
+    "venue": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-01-23T20:00:00+01:00"
+    "starts_at": "2026-01-24T22:00:00+01:00"
   }
 ]
