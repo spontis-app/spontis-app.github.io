@@ -1,12 +1,12 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 29 Jan 17:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-01-29",
+    "title": "2026 29 Jan Iter Subterraneum: Free Late Thursdays Gallery I-V Exhibition",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
+    "where": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -17,12 +17,44 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 29 Jan 17:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-01-29",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Thu 17:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-29T17:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 29 Jan Perfect Sounds Forever: Les Dunes + Separate Bed Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3241-2026-01-29/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Thu 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-01-29T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Les Dunes + Separate Bed Thu 29 Jan 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3241-2026-01-29/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,8 +69,8 @@
     "url": "https://www.kunsthall.no/en/events/3242-2026-01-30/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Fri 21:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,8 +85,8 @@
     "url": "https://www.kunsthall.no/en/events/3245-2026-01-31/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sat 23:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -71,8 +103,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-01",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -87,8 +119,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-05",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -99,14 +131,15 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Conversation Litfest Bergen: Ludvig Holberg and Niels Klim's Fantastic World Thu 5 Feb 18:00, Outdoors",
+    "title": "Conversation Litfest Bergen: Ludvig Holberg and Niels Klim's Fantastic World Thu 5 Feb 18:00, The House of Literature in Bergen",
     "url": "https://www.kunsthall.no/en/events/3246-2026-02-05/",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 18:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
-      "culture"
+      "culture",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
@@ -119,8 +152,8 @@
     "url": "https://www.kunsthall.no/en/events/3244-2026-02-05/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -135,8 +168,8 @@
     "url": "https://www.kunsthall.no/en/events/3247-2026-02-07/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sat 21:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -151,8 +184,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-08",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -163,28 +196,12 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Reading Minimum World: P. Staff, TLF Trio Sun 8 Feb 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3235-2026-02-08/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Sun 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-02-08T20:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
     "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 12 Feb 17:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-12",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -199,8 +216,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-15",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -215,8 +232,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-19",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -231,8 +248,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-22",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -243,12 +260,12 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Talk Plattform Giovanni Aloi: Botanical Revolutions: Plants, Art, and Critical Plant Studies Sun 22 Feb 14:00,  / Online",
+    "title": "Talk Plattform — Giovanni Aloi: Botanical Revolutions: Plants, Art, and Critical Plant Studies Sun 22 Feb 14:00, Online / Online",
     "url": "https://www.kunsthall.no/en/events/3248-2026-02-22/",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture",
       "lecture"
@@ -264,8 +281,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-26",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -280,8 +297,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-01",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -296,8 +313,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-05",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -312,8 +329,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-08",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -328,8 +345,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-12",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -340,12 +357,28 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Performance Bergen Kunsthall X Borealis: Infinite Pollination Sat 14 Mar 12:00, Gallery I - IV",
+    "url": "https://www.kunsthall.no/en/events/3249-2026-03-14/",
+    "city": "Bergen",
+    "where": "Bergen Kunsthall",
+    "when": "Sat 12:00",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-03-14T12:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 15 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-15",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -360,8 +393,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-19",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -376,8 +409,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-22",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -392,8 +425,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-26",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -408,8 +441,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-29",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -424,8 +457,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-04-02",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -440,8 +473,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-04-05",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
