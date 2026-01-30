@@ -1,11 +1,11 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 29 Jan Perfect Sounds Forever: Les Dunes + Separate Bed Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3241-2026-01-29/",
+    "title": "2026 30 Jan Martin Hazy Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3242-2026-01-30/",
     "city": "Bergen",
+    "when": "Fri 21:00",
     "where": "Landmark",
-    "when": "Thu 20:00",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -13,15 +13,15 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-01-29T20:00:00+01:00"
+    "starts_at": "2026-01-30T21:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Les Dunes + Separate Bed Thu 29 Jan 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3241-2026-01-29/",
+    "title": "Concert Martin Hazy Fri 30 Jan 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3242-2026-01-30/",
     "city": "Bergen",
+    "when": "Fri 21:00",
     "where": "Landmark",
-    "when": "Thu 20:00",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -29,6 +29,6 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-01-29T20:00:00+01:00"
+    "starts_at": "2026-01-30T21:00:00+01:00"
   }
 ]
