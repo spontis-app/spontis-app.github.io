@@ -1,39 +1,19 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 31 Jan HEISEN Vol. 4 Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3245-2026-01-31/",
+    "title": "2026 1 Feb Iter Subterraneum: Every Sunday: Guided Tours Gallery I-V Guided Tours",
+    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Sat 23:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
-      "culture",
-      "late-night",
-      "techno"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-01-31T23:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club HEISEN Vol. 4 Sat 31 Jan 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3245-2026-01-31/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Sat 23:00",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-01-31T23:00:00+01:00"
+    "starts_at": "2026-02-01T14:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
