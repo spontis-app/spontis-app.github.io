@@ -1,44 +1,12 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 1 Feb Iter Subterraneum: Every Sunday: Guided Tours Gallery I-V Guided Tours",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
-    "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-02-01T14:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Every Sunday: Guided Tours Sun 1 Feb 14:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-01",
-    "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-02-01T14:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
     "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 5 Feb 17:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-05",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
+    "where": "Landmark",
     "when": "Thu 17:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,8 +21,8 @@
     "url": "https://www.kunsthall.no/en/events/3246-2026-02-05/",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 18:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture",
       "techno"
@@ -70,8 +38,8 @@
     "url": "https://www.kunsthall.no/en/events/3244-2026-02-05/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -86,8 +54,8 @@
     "url": "https://www.kunsthall.no/en/events/3247-2026-02-07/",
     "city": "Bergen",
     "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sat 21:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -102,8 +70,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-08",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -118,8 +86,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-12",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -134,8 +102,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-15",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -150,8 +118,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-19",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -166,8 +134,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-22",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -182,8 +150,8 @@
     "url": "https://www.kunsthall.no/en/events/3248-2026-02-22/",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture",
       "lecture"
@@ -199,8 +167,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-02-26",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -215,8 +183,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-01",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -231,8 +199,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-05",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -247,8 +215,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-08",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -263,8 +231,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-12",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -279,8 +247,8 @@
     "url": "https://www.kunsthall.no/en/events/3249-2026-03-14/",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sat 12:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -295,8 +263,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-15",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -311,8 +279,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-19",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -327,8 +295,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-22",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -343,8 +311,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-26",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -359,8 +327,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-29",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -375,8 +343,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-04-02",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -391,8 +359,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-04-05",
     "city": "Bergen",
     "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
