@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 13 Feb Dovregubbens tjall (LIVE) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3250-2026-02-13/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Fri 21:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-13T21:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Dovregubbens tjall (LIVE) Fri 13 Feb 21:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3250-2026-02-13/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Fri 21:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-13T21:30:00+01:00"
+  }
+]
