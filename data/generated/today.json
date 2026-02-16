@@ -1,34 +1,19 @@
 [
   {
-    "source": "Bergen Kunsthall",
-    "title": "2026 15 Feb Iter Subterraneum: Sunday guided tour Gallery I-V Guided Tours",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
+    "source": "Bergen Kino",
+    "title": "Kinovisning",
+    "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
+    "when": "Mon 10:45 • 11:00 • 11:30 (+79 later)",
+    "venue": "Bergen Kino",
+    "where": "Bergen Kino",
     "tags": [
-      "culture"
+      "cinema",
+      "date"
     ],
     "sources": [
-      "Bergen Kunsthall"
+      "Bergen Kino"
     ],
-    "starts_at": "2026-02-15T14:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday guided tour Sun 15 Feb 14:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-15",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-02-15T14:00:00+01:00"
+    "starts_at": "2026-02-16T10:45:00+01:00"
   }
 ]
