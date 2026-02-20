@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 20 Feb Etepub: Fried Chicken & Southern Hip-hop Landmark Pub",
+    "url": "https://www.kunsthall.no/en/events/3262-2026-02-20/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 18:30",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-20T18:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Pub Etepub: Fried Chicken & Southern Hip-hop Fri 20 Feb 18:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3262-2026-02-20/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 18:30",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-20T18:30:00+01:00"
+  }
+]
