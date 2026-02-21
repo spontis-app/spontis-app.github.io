@@ -1,11 +1,11 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 20 Feb Etepub: Fried Chicken & Southern Hip-hop Landmark Pub",
-    "url": "https://www.kunsthall.no/en/events/3262-2026-02-20/",
+    "title": "2026 21 Feb Bergen Jazzforum: Sofi O (LIVE) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3254-2026-02-21/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 18:30",
+    "when": "Sat 20:30",
     "where": "Landmark",
     "tags": [
       "culture"
@@ -13,15 +13,15 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-02-20T18:30:00+01:00"
+    "starts_at": "2026-02-21T20:30:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Pub Etepub: Fried Chicken & Southern Hip-hop Fri 20 Feb 18:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3262-2026-02-20/",
+    "title": "Concert Bergen Jazzforum: Sofi O (LIVE) Sat 21 Feb 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3254-2026-02-21/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 18:30",
+    "when": "Sat 20:30",
     "where": "Landmark",
     "tags": [
       "culture"
@@ -29,6 +29,6 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-02-20T18:30:00+01:00"
+    "starts_at": "2026-02-21T20:30:00+01:00"
   }
 ]
