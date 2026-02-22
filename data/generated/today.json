@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 22 Feb Iter Subterraneum: Sunday guided tour Gallery I-V Guided Tours",
+    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
+    "city": "Bergen",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "when": "Sun 14:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-22T14:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 22 Feb Plattform — Giovanni Aloi: Botanical Revolutions: Plants, Art, and Critical Plant Studies Online / Online Talk",
+    "url": "https://www.kunsthall.no/en/events/3248-2026-02-22/",
+    "city": "Bergen",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "when": "Sun 14:00",
+    "tags": [
+      "culture",
+      "lecture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-22T14:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Iter Subterraneum: Sunday guided tour Sun 22 Feb 14:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-02-22",
+    "city": "Bergen",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "when": "Sun 14:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-02-22T14:00:00+01:00"
+  }
+]
