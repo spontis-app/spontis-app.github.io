@@ -1,52 +1,19 @@
 [
   {
-    "source": "Bergen Kino",
-    "title": "Kinovisning",
-    "url": "https://www.bergenkino.no/",
-    "city": "Bergen",
-    "when": "Wed 10:45 • 11:15 • 11:30 (+79 later)",
-    "venue": "Bergen Kino",
-    "where": "Bergen Kino",
-    "tags": [
-      "cinema",
-      "date"
-    ],
-    "sources": [
-      "Bergen Kino"
-    ],
-    "starts_at": "2026-03-04T10:45:00+01:00"
-  },
-  {
     "source": "Bergen Kunsthall",
-    "title": "2026 4 Mar Playdate: Joel Ring solo, Sune Dommersnes og Jeanette Schreurs duo Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3274-2026-03-04/",
+    "title": "2026 5 Mar Iter Subterraneum: Free Late Thursdays Gallery I-V Exhibition",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/",
     "city": "Bergen",
-    "when": "Wed 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
+    "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-04T20:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Playdate: Joel Ring solo, Sune Dommersnes og Jeanette Schreurs duo Wed 4 Mar 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3274-2026-03-04/",
-    "city": "Bergen",
-    "when": "Wed 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-04T20:00:00+01:00"
+    "starts_at": "2026-03-05T17:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -54,8 +21,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-05",
     "city": "Bergen",
     "when": "Thu 17:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -134,8 +101,8 @@
     "url": "https://www.kunsthall.no/en/events/3264-2026-03-14/",
     "city": "Bergen",
     "when": "Sat 16:00",
-    "venue": "Landmark",
-    "where": "Landmark",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture",
       "lecture"
@@ -181,7 +148,7 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Film Bergen Kunsthall X BIFF Lokal: Film screening: Underland (2025) Wed 18 Mar 19:00, Landmark",
+    "title": "Film Bergen Kunsthall X BIFF Lokal —: \"Iter Subterraneum\": Film screening: Underland (2025) Wed 18 Mar 19:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3258-2026-03-18/",
     "city": "Bergen",
     "when": "Wed 19:00",
@@ -245,10 +212,10 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Performance Iter Subterraneum: One Fig, Ingela Ihrman Wed 25 Mar 18:30, Gallery I-V",
+    "title": "Performance \"Iter Subterraneum\": One Fig, Ingela Ihrman Wed 25 Mar 19:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3266-2026-03-25/",
     "city": "Bergen",
-    "when": "Wed 18:30",
+    "when": "Wed 19:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
     "tags": [
@@ -257,7 +224,7 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-25T18:30:00+01:00"
+    "starts_at": "2026-03-25T19:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
