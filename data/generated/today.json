@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sun 10:30 • 10:45 • 11:00 (+77 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
+    "when": "Mon 10:30 • 10:45 • 11:00 (+83 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,70 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-03-08T10:30:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 8 Mar Waffle Sunday at Landmark Landmark Food",
-    "url": "https://www.kunsthall.no/en/events/3277-2026-03-08/",
-    "city": "Bergen",
-    "when": "Sun 11:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-08T11:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Food Waffle Sunday at Landmark Sun 8 Mar 11:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3277-2026-03-08/",
-    "city": "Bergen",
-    "when": "Sun 11:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-08T11:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 8 Mar Iter Subterraneum: Sunday guided tour Gallery I-V Guided Tours",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
-    "city": "Bergen",
-    "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-08T14:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Iter Subterraneum: Sunday guided tour Sun 8 Mar 14:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-08",
-    "city": "Bergen",
-    "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-08T14:00:00+01:00"
+    "starts_at": "2026-03-09T10:30:00+01:00"
   }
 ]
