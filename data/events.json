@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
+    "when": "Tue 10:45 • 11:00 • 11:15 (+80 later)",
     "venue": "Bergen Kino",
-    "when": "Mon 10:30 • 10:45 • 11:00 (+83 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-03-09T10:30:00+01:00"
+    "starts_at": "2026-03-10T10:45:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 12 Mar 17:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-12",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 17:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,9 +37,9 @@
     "title": "Concert Perfect Sounds Forever: Motorpsycho (LIVE) (SOLD OUT) Thu 12 Mar 19:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3260-2026-03-12/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 19:30",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,9 +53,9 @@
     "title": "Concert Perfect Sounds Forever: Motorpsycho (LIVE) (SOLD OUT) Fri 13 Mar 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3261-2026-03-13/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Fri 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -69,9 +69,9 @@
     "title": "Performance Bergen Kunsthall X Borealis: Infinite Pollination Sat 14 Mar 12:00, Gallery I - IV",
     "url": "https://www.kunsthall.no/en/events/3249-2026-03-14/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sat 12:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -85,9 +85,9 @@
     "title": "Conversation Borealis Talk x Plattform: Crafting Alternate Realities Sat 14 Mar 16:00, Upstairs",
     "url": "https://www.kunsthall.no/en/events/3264-2026-03-14/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sat 16:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture",
       "lecture"
@@ -102,9 +102,9 @@
     "title": "Club Klubb Diaspora: Miss Tati & LovePump Sat 14 Mar 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3271-2026-03-14/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sat 23:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -120,9 +120,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday guided tour Sun 15 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-15",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -136,9 +136,9 @@
     "title": "Film Bergen Kunsthall X BIFF Lokal —: \"Iter Subterraneum\": Film screening: Underland (2025) Wed 18 Mar 19:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3258-2026-03-18/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Wed 19:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -152,9 +152,9 @@
     "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 19 Mar 17:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-19",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 17:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -168,9 +168,9 @@
     "title": "Concert UFLAKKS: Frio + Willsen Thu 19 Mar 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3267-2026-03-19/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -184,9 +184,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday guided tour Sun 22 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-22",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -200,9 +200,9 @@
     "title": "Performance \"Iter Subterraneum\": One Fig, Ingela Ihrman Wed 25 Mar 19:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3266-2026-03-25/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Wed 19:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -216,9 +216,9 @@
     "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 26 Mar 17:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-26",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -232,9 +232,9 @@
     "title": "Concert Naoko + Oak Ay Sat 28 Mar 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3268-2026-03-28/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sat 20:30",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -248,9 +248,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday guided tour Sun 29 Mar 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-29",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -264,9 +264,9 @@
     "title": "Exhibition Iter Subterraneum: Free Late Thursdays Thu 2 Apr 17:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-04-02",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Thu 17:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -280,9 +280,9 @@
     "title": "Guided Tours Iter Subterraneum: Sunday guided tour Sun 5 Apr 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-04-05",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -296,9 +296,9 @@
     "title": "Concert Mia Berg (LIVE) Sat 18 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3272-2026-04-18/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sat 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -312,9 +312,9 @@
     "title": "Concert Jungelfest 2026: Candura (LIVE) Thu 23 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -328,9 +328,9 @@
     "title": "Concert Perfect Sounds Forever: Resa Saffa Park (LIVE) Thu 30 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
