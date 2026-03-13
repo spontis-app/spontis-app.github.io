@@ -1,11 +1,11 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 12 Mar Perfect Sounds Forever: Motorpsycho (LIVE) (SOLD OUT) Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3260-2026-03-12/",
+    "title": "2026 13 Mar Perfect Sounds Forever: Motorpsycho (LIVE) (SOLD OUT) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3261-2026-03-13/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Thu 19:30",
+    "when": "Fri 20:00",
     "where": "Landmark",
     "tags": [
       "culture"
@@ -13,15 +13,15 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-12T19:30:00+01:00"
+    "starts_at": "2026-03-13T20:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Motorpsycho (LIVE) (SOLD OUT) Thu 12 Mar 19:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3260-2026-03-12/",
+    "title": "Concert Perfect Sounds Forever: Motorpsycho (LIVE) (SOLD OUT) Fri 13 Mar 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3261-2026-03-13/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Thu 19:30",
+    "when": "Fri 20:00",
     "where": "Landmark",
     "tags": [
       "culture"
@@ -29,6 +29,6 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-12T19:30:00+01:00"
+    "starts_at": "2026-03-13T20:00:00+01:00"
   }
 ]
