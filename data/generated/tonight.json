@@ -1,34 +1,38 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 13 Mar Perfect Sounds Forever: Motorpsycho (LIVE) (SOLD OUT) Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3261-2026-03-13/",
+    "title": "2026 14 Mar Klubb Diaspora: MultiTati & LovePump Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3271-2026-03-14/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 23:00",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-13T20:00:00+01:00"
+    "starts_at": "2026-03-14T23:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Motorpsycho (LIVE) (SOLD OUT) Fri 13 Mar 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3261-2026-03-13/",
+    "title": "Club Klubb Diaspora: MultiTati & LovePump Sat 14 Mar 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3271-2026-03-14/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 23:00",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-13T20:00:00+01:00"
+    "starts_at": "2026-03-14T23:00:00+01:00"
   }
 ]
