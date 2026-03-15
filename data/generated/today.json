@@ -4,7 +4,7 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sat 10:15 • 10:30 • 11:00 (+89 later)",
+    "when": "Sun 10:15 • 10:30 • 11:00 (+90 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
     "tags": [
@@ -14,14 +14,14 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-03-14T10:15:00+01:00"
+    "starts_at": "2026-03-15T10:15:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 14 Mar Bergen Kunsthall X Borealis: Infinite Pollination Gallery I - IV Performance",
-    "url": "https://www.kunsthall.no/en/events/3249-2026-03-14/",
+    "title": "2026 15 Mar \"Iter Subterraneum\": Sunday guided tour Gallery I-V Guided Tours",
+    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
     "city": "Bergen",
-    "when": "Sat 12:00",
+    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
     "tags": [
@@ -30,22 +30,22 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-14T12:00:00+01:00"
+    "starts_at": "2026-03-15T14:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Performance Bergen Kunsthall X Borealis: Infinite Pollination Sat 14 Mar 12:00, Gallery I - IV",
-    "url": "https://www.kunsthall.no/en/events/3249-2026-03-14/",
+    "title": "Guided Tours \"Iter Subterraneum\": Sunday guided tour Sun 15 Mar 14:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-15",
     "city": "Bergen",
-    "when": "Sat 12:00",
-    "where": "Landmark",
-    "venue": "Landmark",
+    "when": "Sun 14:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-14T12:00:00+01:00"
+    "starts_at": "2026-03-15T14:00:00+01:00"
   }
 ]

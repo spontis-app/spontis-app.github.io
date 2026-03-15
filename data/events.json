@@ -4,7 +4,7 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sat 10:15 • 10:30 • 11:00 (+89 later)",
+    "when": "Sun 10:15 • 10:30 • 11:00 (+90 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
     "tags": [
@@ -14,14 +14,14 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-03-14T10:15:00+01:00"
+    "starts_at": "2026-03-15T10:15:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 14 Mar Bergen Kunsthall X Borealis: Infinite Pollination Gallery I - IV Performance",
-    "url": "https://www.kunsthall.no/en/events/3249-2026-03-14/",
+    "title": "2026 15 Mar \"Iter Subterraneum\": Sunday guided tour Gallery I-V Guided Tours",
+    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
     "city": "Bergen",
-    "when": "Sat 12:00",
+    "when": "Sun 14:00",
     "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
     "tags": [
@@ -30,91 +30,7 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-14T12:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Performance Bergen Kunsthall X Borealis: Infinite Pollination Sat 14 Mar 12:00, Gallery I - IV",
-    "url": "https://www.kunsthall.no/en/events/3249-2026-03-14/",
-    "city": "Bergen",
-    "when": "Sat 12:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-14T12:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 14 Mar Plattform X Borealis Talks: Crafting Alternate Realities Upstairs Conversation",
-    "url": "https://www.kunsthall.no/en/events/3264-2026-03-14/",
-    "city": "Bergen",
-    "when": "Sat 16:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-14T16:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Conversation Plattform X Borealis Talks: Crafting Alternate Realities Sat 14 Mar 16:00, Upstairs",
-    "url": "https://www.kunsthall.no/en/events/3264-2026-03-14/",
-    "city": "Bergen",
-    "when": "Sat 16:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-14T16:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 14 Mar Klubb Diaspora: MultiTati & LovePump Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3271-2026-03-14/",
-    "city": "Bergen",
-    "when": "Sat 23:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-14T23:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Klubb Diaspora: MultiTati & LovePump Sat 14 Mar 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3271-2026-03-14/",
-    "city": "Bergen",
-    "when": "Sat 23:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-14T23:00:00+01:00"
+    "starts_at": "2026-03-15T14:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -186,8 +102,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-22",
     "city": "Bergen",
     "when": "Sun 14:00",
-    "where": "Landmark",
-    "venue": "Landmark",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -218,8 +134,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-26",
     "city": "Bergen",
     "when": "Thu 17:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
