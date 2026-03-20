@@ -1,34 +1,38 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 19 Mar UFLAKKS: Frio + Willsen Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3267-2026-03-19/",
+    "title": "2026 20 Mar Dønn House: Anwar fra Ændal, Trym Søvdsnes, Stine Lundberg Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3279-2026-03-20/",
     "city": "Bergen",
-    "when": "Thu 20:00",
     "venue": "Landmark",
+    "when": "Fri 23:00",
     "where": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-19T20:00:00+01:00"
+    "starts_at": "2026-03-20T23:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert UFLAKKS: Frio + Willsen Thu 19 Mar 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3267-2026-03-19/",
+    "title": "Club Dønn House: Anwar fra Ændal, Trym Søvdsnes, Stine Lundberg Fri 20 Mar 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3279-2026-03-20/",
     "city": "Bergen",
-    "when": "Thu 20:00",
     "venue": "Landmark",
+    "when": "Fri 23:00",
     "where": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-19T20:00:00+01:00"
+    "starts_at": "2026-03-20T23:00:00+01:00"
   }
 ]
