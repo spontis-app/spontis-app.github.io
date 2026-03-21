@@ -1,11 +1,11 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 20 Mar Dønn House: Anwar fra Ændal, Trym Søvdsnes, Stine Lundberg Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3279-2026-03-20/",
+    "title": "2026 21 Mar Spin Kitty: Malene Monslaup, Vilde Isabel, Maddemoiselle Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3280-2026-03-21/",
     "city": "Bergen",
+    "when": "Sat 23:00",
     "venue": "Landmark",
-    "when": "Fri 23:00",
     "where": "Landmark",
     "tags": [
       "culture",
@@ -15,15 +15,15 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-20T23:00:00+01:00"
+    "starts_at": "2026-03-21T23:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Club Dønn House: Anwar fra Ændal, Trym Søvdsnes, Stine Lundberg Fri 20 Mar 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3279-2026-03-20/",
+    "title": "Club Spin Kitty: Malene Monslaup, Vilde Isabel, Maddemoiselle Sat 21 Mar 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3280-2026-03-21/",
     "city": "Bergen",
+    "when": "Sat 23:00",
     "venue": "Landmark",
-    "when": "Fri 23:00",
     "where": "Landmark",
     "tags": [
       "culture",
@@ -33,6 +33,6 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-20T23:00:00+01:00"
+    "starts_at": "2026-03-21T23:00:00+01:00"
   }
 ]
