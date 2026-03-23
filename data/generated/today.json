@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sun 10:15 • 10:30 • 10:45 (+89 later)",
-    "where": "Bergen Kino",
     "venue": "Bergen Kino",
+    "when": "Mon 10:15 • 10:30 • 10:45 (+82 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,38 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-03-22T10:15:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 22 Mar \"Iter Subterraneum\": Sunday guided tour Gallery I-V Guided Tours",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
-    "city": "Bergen",
-    "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-22T14:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours \"Iter Subterraneum\": Sunday guided tour Sun 22 Mar 14:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-22",
-    "city": "Bergen",
-    "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-22T14:00:00+01:00"
+    "starts_at": "2026-03-23T10:15:00+01:00"
   }
 ]
