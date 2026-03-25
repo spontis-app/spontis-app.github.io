@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 25 Mar \"Iter Subterraneum\": One Fig, Ingela Ihrman Gallery I-V Performance",
+    "url": "https://www.kunsthall.no/en/events/3266-2026-03-25/",
+    "city": "Bergen",
+    "when": "Wed 19:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-03-25T19:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Performance \"Iter Subterraneum\": One Fig, Ingela Ihrman Wed 25 Mar 19:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3266-2026-03-25/",
+    "city": "Bergen",
+    "when": "Wed 19:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-03-25T19:00:00+01:00"
+  }
+]
