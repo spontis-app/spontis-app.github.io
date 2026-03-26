@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Wed 10:00 • 10:15 • 10:30 (+84 later)",
-    "where": "Bergen Kino",
+    "when": "Thu 10:00 • 10:15 • 10:30 (+75 later)",
     "venue": "Bergen Kino",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,39 +14,23 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-03-25T10:00:00+01:00"
+    "starts_at": "2026-03-26T10:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 25 Mar \"Iter Subterraneum\": One Fig, Ingela Ihrman Gallery I-V Performance",
-    "url": "https://www.kunsthall.no/en/events/3266-2026-03-25/",
+    "title": "2026 26 Mar \"Iter Subterraneum\": Free Late Thursdays Gallery I-V Exhibition",
+    "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/",
     "city": "Bergen",
-    "when": "Wed 19:00",
-    "where": "Bergen Kunsthall",
+    "when": "Thu 17:00",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-25T19:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Performance \"Iter Subterraneum\": One Fig, Ingela Ihrman Wed 25 Mar 19:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3266-2026-03-25/",
-    "city": "Bergen",
-    "when": "Wed 19:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-03-25T19:00:00+01:00"
+    "starts_at": "2026-03-26T17:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -54,8 +38,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-03-26",
     "city": "Bergen",
     "when": "Thu 17:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -70,8 +54,8 @@
     "url": "https://www.kunsthall.no/en/events/3268-2026-03-27/",
     "city": "Bergen",
     "when": "Fri 20:30",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -86,8 +70,8 @@
     "url": "https://www.kunsthall.no/en/events/3281-2026-03-28/",
     "city": "Bergen",
     "when": "Sat 21:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "techno"
@@ -103,8 +87,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-03-29",
     "city": "Bergen",
     "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -119,8 +103,8 @@
     "url": "https://www.kunsthall.no/en/events/3243-2026-01-22/?d=2026-04-02",
     "city": "Bergen",
     "when": "Thu 17:00",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -135,8 +119,8 @@
     "url": "https://www.kunsthall.no/en/events/3278-2026-04-04/",
     "city": "Bergen",
     "when": "Sat 23:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -153,8 +137,8 @@
     "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-04-05",
     "city": "Bergen",
     "when": "Sun 14:00",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -169,8 +153,8 @@
     "url": "https://www.kunsthall.no/en/events/3272-2026-04-18/",
     "city": "Bergen",
     "when": "Sat 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -185,8 +169,8 @@
     "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
     "when": "Thu 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -201,8 +185,8 @@
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
     "when": "Thu 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
