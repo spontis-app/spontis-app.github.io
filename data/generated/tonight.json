@@ -1,34 +1,36 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 27 Mar Naoko + Oak Ay Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3268-2026-03-27/",
+    "title": "2026 28 Mar Klubb Herz: Hun Høie, Isabel Fox & Tim Fandango Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3281-2026-03-28/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:30",
     "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Sat 21:00",
     "tags": [
-      "culture"
+      "culture",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-27T20:30:00+01:00"
+    "starts_at": "2026-03-28T21:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Naoko + Oak Ay Fri 27 Mar 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3268-2026-03-27/",
+    "title": "Club Klubb Herz: Hun Høie, Isabel Fox & Tim Fandango Sat 28 Mar 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3281-2026-03-28/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:30",
     "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Sat 21:00",
     "tags": [
-      "culture"
+      "culture",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-03-27T20:30:00+01:00"
+    "starts_at": "2026-03-28T21:00:00+01:00"
   }
 ]
