@@ -4,7 +4,7 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Fri 10:30 • 10:45 • 11:00 (+97 later)",
+    "when": "Sat 10:30 • 10:45 • 11:00 (+93 later)",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
     "tags": [
@@ -14,7 +14,25 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-03T10:30:00+02:00"
+    "starts_at": "2026-04-04T10:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 4 Apr Klubballiansen Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3278-2026-04-04/",
+    "city": "Bergen",
+    "when": "Sat 23:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-04T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",

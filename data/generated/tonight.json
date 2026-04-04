@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 4 Apr Klubballiansen Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3278-2026-04-04/",
+    "city": "Bergen",
+    "when": "Sat 23:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-04T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Klubballiansen Sat 4 Apr 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3278-2026-04-04/",
+    "city": "Bergen",
+    "when": "Sat 23:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-04T23:00:00+02:00"
+  }
+]
