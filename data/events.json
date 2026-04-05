@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sat 10:30 • 10:45 • 11:00 (+93 later)",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
+    "when": "Sun 10:30 • 10:45 • 11:00 (+96 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,52 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-04T10:30:00+02:00"
+    "starts_at": "2026-04-05T10:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 4 Apr Klubballiansen Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3278-2026-04-04/",
+    "title": "2026 5 Apr \"Iter Subterraneum\": Sunday guided tour Gallery I-V Guided Tours",
+    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/",
     "city": "Bergen",
-    "when": "Sat 23:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-04-04T23:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Klubballiansen Sat 4 Apr 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3278-2026-04-04/",
-    "city": "Bergen",
-    "when": "Sat 23:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-04-04T23:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours \"Iter Subterraneum\": Sunday guided tour Sun 5 Apr 14:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-04-05",
-    "city": "Bergen",
-    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -70,12 +34,44 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Guided Tours \"Iter Subterraneum\": Sunday guided tour Sun 5 Apr 14:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3237-2026-01-18/?d=2026-04-05",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-05T14:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Book Launch Bergen Art Book Fair 2026: Opening Night at Landmark Fri 10 Apr 20:12, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3282-2026-04-10/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:12",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-10T20:12:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Mia Berg (LIVE) Sat 18 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3272-2026-04-18/",
     "city": "Bergen",
-    "when": "Sat 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Sat 20:00",
     "tags": [
       "culture"
     ],
@@ -89,9 +85,9 @@
     "title": "Concert Jungelfest 2026: Candura (LIVE) Thu 23 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
-    "when": "Thu 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
@@ -105,9 +101,9 @@
     "title": "Concert Perfect Sounds Forever: Resa Saffa Park (LIVE) Thu 30 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "when": "Thu 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
