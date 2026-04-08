@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
-    "when": "Tue 10:30 • 10:45 • 11:00 (+78 later)",
     "where": "Bergen Kino",
+    "when": "Wed 10:30 • 10:45 • 11:00 (+78 later)",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,64 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-07T10:30:00+02:00"
+    "starts_at": "2026-04-08T10:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 8 Apr Playdate: Karl Bjorå Trio Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3283-2026-04-08/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-08T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Playdate: Karl Bjorå Trio Wed 8 Apr 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3283-2026-04-08/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-08T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Book Launch Tyding Release Party Thu 9 Apr 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3284-2026-04-09/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Thu 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-09T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Book Launch Bergen Art Book Fair 2026: Opening Night at Landmark Fri 10 Apr 20:12, Landmark",
     "url": "https://www.kunsthall.no/en/events/3282-2026-04-10/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:12",
     "where": "Landmark",
+    "when": "Fri 20:12",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -34,12 +82,30 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Club Algorytmer Sat 11 Apr 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3285-2026-04-11/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Sat 23:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-11T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Mia Berg (LIVE) Sat 18 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3272-2026-04-18/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Sat 20:00",
     "where": "Landmark",
+    "when": "Sat 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,9 +119,9 @@
     "title": "Concert Jungelfest 2026: Candura (LIVE) Thu 23 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Thu 20:00",
     "where": "Landmark",
+    "when": "Thu 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -69,9 +135,9 @@
     "title": "Concert Perfect Sounds Forever: Resa Saffa Park (LIVE) Thu 30 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Thu 20:00",
     "where": "Landmark",
+    "when": "Thu 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
