@@ -1,34 +1,34 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 8 Apr Playdate: Karl Bjorå Trio Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3283-2026-04-08/",
+    "title": "2026 9 Apr Tyding Release Party Landmark Book Launch",
+    "url": "https://www.kunsthall.no/en/events/3284-2026-04-09/",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Wed 20:00",
+    "when": "Thu 20:00",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-04-08T20:00:00+02:00"
+    "starts_at": "2026-04-09T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Playdate: Karl Bjorå Trio Wed 8 Apr 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3283-2026-04-08/",
+    "title": "Book Launch Tyding Release Party Thu 9 Apr 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3284-2026-04-09/",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Wed 20:00",
+    "when": "Thu 20:00",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-04-08T20:00:00+02:00"
+    "starts_at": "2026-04-09T20:00:00+02:00"
   }
 ]
