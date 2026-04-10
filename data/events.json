@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Thu 10:30 • 10:45 • 11:00 (+80 later)",
-    "venue": "Bergen Kino",
+    "when": "Fri 10:15 • 10:30 • 10:45 (+73 later)",
     "where": "Bergen Kino",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,39 +14,23 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-09T10:30:00+02:00"
+    "starts_at": "2026-04-10T10:15:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 9 Apr Tyding Release Party Landmark Book Launch",
-    "url": "https://www.kunsthall.no/en/events/3284-2026-04-09/",
+    "title": "2026 10 Apr Bergen Art Book Fair 2026: Opening Night at Landmark Landmark Book Launch",
+    "url": "https://www.kunsthall.no/en/events/3282-2026-04-10/",
     "city": "Bergen",
-    "when": "Thu 20:00",
-    "venue": "Landmark",
+    "when": "Fri 20:00",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-04-09T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Book Launch Tyding Release Party Thu 9 Apr 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3284-2026-04-09/",
-    "city": "Bergen",
-    "when": "Thu 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-04-09T20:00:00+02:00"
+    "starts_at": "2026-04-10T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -54,8 +38,8 @@
     "url": "https://www.kunsthall.no/en/events/3282-2026-04-10/",
     "city": "Bergen",
     "when": "Fri 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -70,8 +54,8 @@
     "url": "https://www.kunsthall.no/en/events/3285-2026-04-11/",
     "city": "Bergen",
     "when": "Sat 23:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -88,8 +72,8 @@
     "url": "https://www.kunsthall.no/en/events/3272-2026-04-18/",
     "city": "Bergen",
     "when": "Sat 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -104,8 +88,8 @@
     "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
     "when": "Thu 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -120,8 +104,8 @@
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
     "when": "Thu 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
