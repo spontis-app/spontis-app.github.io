@@ -1,34 +1,38 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 10 Apr Bergen Art Book Fair 2026: Opening Night at Landmark Landmark Book Launch",
-    "url": "https://www.kunsthall.no/en/events/3282-2026-04-10/",
+    "title": "2026 11 Apr Algorytmer Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3285-2026-04-11/",
     "city": "Bergen",
-    "when": "Fri 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-04-10T20:00:00+02:00"
+    "starts_at": "2026-04-11T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Book Launch Bergen Art Book Fair 2026: Opening Night at Landmark Fri 10 Apr 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3282-2026-04-10/",
+    "title": "Club Algorytmer Sat 11 Apr 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3285-2026-04-11/",
     "city": "Bergen",
-    "when": "Fri 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-04-10T20:00:00+02:00"
+    "starts_at": "2026-04-11T23:00:00+02:00"
   }
 ]
