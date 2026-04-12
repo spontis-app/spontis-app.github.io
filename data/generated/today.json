@@ -6,7 +6,7 @@
     "city": "Bergen",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
-    "when": "Sat 10:30 • 10:45 • 11:00 (+91 later)",
+    "when": "Sun 10:30 • 10:45 • 11:00 (+90 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,6 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-11T10:30:00+02:00"
+    "starts_at": "2026-04-12T10:30:00+02:00"
   }
 ]
