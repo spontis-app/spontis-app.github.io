@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "venue": "Bergen Kino",
+    "when": "Thu 10:00 • 10:15 • 10:30 (+84 later)",
     "where": "Bergen Kino",
-    "when": "Wed 10:00 • 10:15 • 10:30 (+77 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,7 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-15T10:00:00+02:00"
+    "starts_at": "2026-04-16T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -22,8 +22,8 @@
     "url": "https://www.kunsthall.no/en/events/3287-2026-04-17/",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
     "when": "Fri 20:00",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -38,8 +38,8 @@
     "url": "https://www.kunsthall.no/en/events/3272-2026-04-18/",
     "city": "Bergen",
     "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sat 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -54,8 +54,8 @@
     "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
     "venue": "Landmark",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -70,8 +70,8 @@
     "url": "https://www.kunsthall.no/en/events/3288-2026-04-24/",
     "city": "Bergen",
     "venue": "Landmark",
-    "where": "Landmark",
     "when": "Fri 20:30",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -86,8 +86,8 @@
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
     "venue": "Landmark",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -95,5 +95,22 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2026-04-30T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Grunnlovsstridig Vol. 5 Sun 17 May 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3289-2026-05-17/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Sun 21:00",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-17T21:00:00+02:00"
   }
 ]
