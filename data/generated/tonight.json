@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 17 Apr KMD Masterutstillingen i kunst 2026: \"Ears to the ground\" — Opening Night Gallery I-V Exhibition",
+    "url": "https://www.kunsthall.no/en/events/3287-2026-04-17/",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Fri 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-17T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Exhibition KMD Masterutstillingen i kunst 2026: \"Ears to the ground\" — Opening Night Fri 17 Apr 20:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3287-2026-04-17/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-17T20:00:00+02:00"
+  }
+]
