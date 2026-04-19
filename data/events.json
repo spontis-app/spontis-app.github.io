@@ -6,7 +6,7 @@
     "city": "Bergen",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
-    "when": "Sat 10:00 • 10:15 • 10:30 (+99 later)",
+    "when": "Sun 10:00 • 10:15 • 10:30 (+103 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,39 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-18T10:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 18 Apr Mia Berg (LIVE) Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3272-2026-04-18/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Sat 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-04-18T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Mia Berg (LIVE) Sat 18 Apr 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3272-2026-04-18/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Sat 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-04-18T20:00:00+02:00"
+    "starts_at": "2026-04-19T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
