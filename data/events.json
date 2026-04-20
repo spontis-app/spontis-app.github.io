@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
+    "when": "Mon 10:00 • 10:15 • 10:30 (+95 later)",
     "venue": "Bergen Kino",
-    "when": "Sun 10:00 • 10:15 • 10:30 (+103 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-19T10:00:00+02:00"
+    "starts_at": "2026-04-20T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Beth McBride + support: Most Likely Marlin Wed 22 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3292-2026-04-22/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Wed 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,9 +37,9 @@
     "title": "Concert Jungelfest 2026: Candura (LIVE) Thu 23 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,9 +53,9 @@
     "title": "Concert Jungelfest 2026: La Vacanza Fri 24 Apr 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3288-2026-04-24/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Fri 20:30",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -69,9 +69,9 @@
     "title": "Concert Perfect Sounds Forever: A Burial At Sea, Newhvn Sun 26 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3293-2026-04-26/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sun 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -85,9 +85,9 @@
     "title": "Concert Perfect Sounds Forever: Resa Saffa Park (LIVE) Thu 30 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Thu 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -101,9 +101,9 @@
     "title": "Club Grunnlovsstridig Vol. 5 Sun 17 May 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3289-2026-05-17/",
     "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
     "when": "Sun 21:00",
+    "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "techno"
