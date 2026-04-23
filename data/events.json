@@ -4,8 +4,8 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
+    "when": "Thu 10:00 • 10:15 • 10:30 (+80 later)",
     "where": "Bergen Kino",
-    "when": "Wed 10:00 • 10:15 • 10:30 (+83 later)",
     "venue": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,15 +14,15 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-22T10:00:00+02:00"
+    "starts_at": "2026-04-23T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 22 Apr Perfect Sounds Forever: Beth McBride + support: Most Likely Marlin Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3292-2026-04-22/",
+    "title": "2026 23 Apr Jungelfest 2026: Candura (LIVE) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
+    "when": "Thu 20:00",
     "where": "Landmark",
-    "when": "Wed 20:00",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -30,31 +30,15 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-04-22T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Beth McBride + support: Most Likely Marlin Wed 22 Apr 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3292-2026-04-22/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Wed 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-04-22T20:00:00+02:00"
+    "starts_at": "2026-04-23T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Jungelfest 2026: Candura (LIVE) Thu 23 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3276-2026-04-23/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -69,8 +53,8 @@
     "title": "Concert Jungelfest 2026: La Vacanza Fri 24 Apr 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3288-2026-04-24/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Fri 20:30",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture",
@@ -86,8 +70,8 @@
     "title": "Concert Jungelfest 2026: Giorgio Lopez (LIVE) Sat 25 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3297-2026-04-25/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -102,8 +86,8 @@
     "title": "Guided Tours Ears to the ground: Guided Sunday Tour Sun 26 Apr 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/?d=2026-04-26",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -118,8 +102,8 @@
     "title": "Concert Perfect Sounds Forever: A Burial At Sea, Newhvn Sun 26 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3293-2026-04-26/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -134,8 +118,8 @@
     "title": "Concert Perfect Sounds Forever: Resa Saffa Park (LIVE) Thu 30 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -150,8 +134,8 @@
     "title": "Guided Tours Ears to the ground: Guided Sunday Tour Sun 3 May 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/?d=2026-05-03",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -166,8 +150,8 @@
     "title": "Club Grunnlovsstridig Vol. 5 Sun 17 May 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3289-2026-05-17/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sun 21:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture",
