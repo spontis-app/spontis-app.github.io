@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sat 10:00 • 10:15 • 10:30 (+99 later)",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
+    "when": "Sun 10:00 • 10:15 • 10:30 (+100 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,48 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-25T10:00:00+02:00"
+    "starts_at": "2026-04-26T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 25 Apr Jungelfest 2026: Giorgio Lopez (LIVE) Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3297-2026-04-25/",
+    "title": "2026 26 Apr Ears to the ground: Guided Sunday Tour Gallery I-V Guided Tours",
+    "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/",
     "city": "Bergen",
-    "when": "Sat 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-04-25T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Jungelfest 2026: Giorgio Lopez (LIVE) Sat 25 Apr 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3297-2026-04-25/",
-    "city": "Bergen",
-    "when": "Sat 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-04-25T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Guided Tours Ears to the ground: Guided Sunday Tour Sun 26 Apr 14:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/?d=2026-04-26",
-    "city": "Bergen",
-    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -66,12 +34,44 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Guided Tours Ears to the ground: Guided Sunday Tour Sun 26 Apr 14:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/?d=2026-04-26",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-26T14:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 26 Apr Perfect Sounds Forever: A Burial At Sea, Newhvn Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3293-2026-04-26/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Sun 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-26T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: A Burial At Sea, Newhvn Sun 26 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3293-2026-04-26/",
     "city": "Bergen",
-    "when": "Sun 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Sun 20:00",
     "tags": [
       "culture"
     ],
@@ -85,9 +85,9 @@
     "title": "Concert Perfect Sounds Forever: Resa Saffa Park (LIVE) Thu 30 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "when": "Thu 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
@@ -101,9 +101,9 @@
     "title": "Guided Tours Ears to the ground: Guided Sunday Tour Sun 3 May 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/?d=2026-05-03",
     "city": "Bergen",
-    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "tags": [
       "culture"
     ],
@@ -117,9 +117,9 @@
     "title": "Club Grunnlovsstridig Vol. 5 Sun 17 May 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3289-2026-05-17/",
     "city": "Bergen",
-    "when": "Sun 21:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Sun 21:00",
     "tags": [
       "culture",
       "techno"
