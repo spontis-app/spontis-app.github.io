@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
+    "when": "Wed 10:30 • 10:45 • 11:00 (+88 later)",
     "where": "Bergen Kino",
-    "when": "Tue 10:30 • 10:45 • 11:00 (+83 later)",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,48 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-04-28T10:30:00+02:00"
+    "starts_at": "2026-04-29T10:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 29 Apr Playdate: EarthBall Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3298-2026-04-29/",
+    "city": "Bergen",
+    "when": "Wed 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-29T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Playdate: EarthBall Wed 29 Apr 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3298-2026-04-29/",
+    "city": "Bergen",
+    "when": "Wed 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-04-29T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Resa Saffa Park (LIVE) Thu 30 Apr 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -34,12 +66,78 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Join Us Ase Brunborg Lie: Hike to til Burkelandsfjellet! Sat 2 May 10:00, Outdoors",
+    "url": "https://www.kunsthall.no/en/events/3303-2026-05-02/",
+    "city": "Bergen",
+    "when": "Sat 10:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-02T10:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Exhibition Bergen Kunsthall: Mylder 2026 Sat 2 May 11:00, Mediation room",
+    "url": "https://www.kunsthall.no/en/events/3301-2026-05-02/",
+    "city": "Bergen",
+    "when": "Sat 11:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-02T11:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club P4NTHER PRESENTS: Klimaklubb: Isabel Fox, Ghanamannen, Midjefigur Sat 2 May 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3299-2026-05-02/",
+    "city": "Bergen",
+    "when": "Sat 23:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-02T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Exhibition Bergen Kunsthall: Mylder 2026 Sun 3 May 11:00, Mediation room",
+    "url": "https://www.kunsthall.no/en/events/3302-2026-05-03/",
+    "city": "Bergen",
+    "when": "Sun 11:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-03T11:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Guided Tours Ears to the ground: Guided Sunday Tour Sun 3 May 14:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/?d=2026-05-03",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
     "when": "Sun 14:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -50,12 +148,28 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: L.A. Witch (US) Fri 8 May 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3300-2026-05-08/",
+    "city": "Bergen",
+    "when": "Fri 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-08T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Club Grunnlovsstridig Vol. 5 Sun 17 May 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3289-2026-05-17/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sun 21:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "techno"
