@@ -1,34 +1,34 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 29 Apr Playdate: EarthBall Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3298-2026-04-29/",
+    "title": "2026 30 Apr Perfect Sounds Forever: Resa Saffa Park (LIVE) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "where": "Landmark",
     "venue": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-04-29T20:00:00+02:00"
+    "starts_at": "2026-04-30T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Playdate: EarthBall Wed 29 Apr 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3298-2026-04-29/",
+    "title": "Concert Perfect Sounds Forever: Resa Saffa Park (LIVE) Thu 30 Apr 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3273-2026-04-30/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "where": "Landmark",
     "venue": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-04-29T20:00:00+02:00"
+    "starts_at": "2026-04-30T20:00:00+02:00"
   }
 ]
