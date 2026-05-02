@@ -1,10 +1,42 @@
 [
   {
+    "source": "Bergen Kunsthall",
+    "title": "2026 2 May Ase Brunborg Lie: Hike to til Burkelandsfjellet! Outdoors Join Us",
+    "url": "https://www.kunsthall.no/en/events/3303-2026-05-02/",
+    "city": "Bergen",
+    "when": "Sat 10:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-02T10:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Join Us Ase Brunborg Lie: Hike to til Burkelandsfjellet! Sat 2 May 10:00, Outdoors",
+    "url": "https://www.kunsthall.no/en/events/3303-2026-05-02/",
+    "city": "Bergen",
+    "when": "Sat 10:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-02T10:00:00+02:00"
+  },
+  {
     "source": "Bergen Kino",
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Fri 10:30 • 10:45 • 11:00 (+85 later)",
+    "when": "Sat 10:30 • 10:45 • 11:00 (+87 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
     "tags": [
@@ -14,6 +46,38 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-01T10:30:00+02:00"
+    "starts_at": "2026-05-02T10:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 2 May Bergen Kunsthall: Mylder 2026 Mediation room Exhibition",
+    "url": "https://www.kunsthall.no/en/events/3301-2026-05-02/",
+    "city": "Bergen",
+    "when": "Sat 11:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-02T11:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Exhibition Bergen Kunsthall: Mylder 2026 Sat 2 May 11:00, Mediation room",
+    "url": "https://www.kunsthall.no/en/events/3301-2026-05-02/",
+    "city": "Bergen",
+    "when": "Sat 11:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-02T11:00:00+02:00"
   }
 ]

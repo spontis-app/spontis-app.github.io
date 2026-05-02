@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 2 May P4NTHER PRESENTS: Klimaklubb: Isabel Fox, Ghanamannen, Midjefigur Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3299-2026-05-02/",
+    "city": "Bergen",
+    "when": "Sat 23:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-02T23:00:00+02:00"
+  }
+]
