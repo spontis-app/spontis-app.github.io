@@ -1,43 +1,11 @@
 [
   {
-    "source": "Bergen Kunsthall",
-    "title": "2026 2 May Ase Brunborg Lie: Hike to til Burkelandsfjellet! Outdoors Join Us",
-    "url": "https://www.kunsthall.no/en/events/3303-2026-05-02/",
-    "city": "Bergen",
-    "when": "Sat 10:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-02T10:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Join Us Ase Brunborg Lie: Hike to til Burkelandsfjellet! Sat 2 May 10:00, Outdoors",
-    "url": "https://www.kunsthall.no/en/events/3303-2026-05-02/",
-    "city": "Bergen",
-    "when": "Sat 10:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-02T10:00:00+02:00"
-  },
-  {
     "source": "Bergen Kino",
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sat 10:30 • 10:45 • 11:00 (+87 later)",
     "where": "Bergen Kino",
+    "when": "Sun 10:30 • 10:45 • 11:00 (+86 later)",
     "venue": "Bergen Kino",
     "tags": [
       "cinema",
@@ -46,15 +14,15 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-02T10:30:00+02:00"
+    "starts_at": "2026-05-03T10:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 2 May Bergen Kunsthall: Mylder 2026 Mediation room Exhibition",
-    "url": "https://www.kunsthall.no/en/events/3301-2026-05-02/",
+    "title": "2026 3 May Bergen Kunsthall: Mylder 2026 Mediation room Exhibition",
+    "url": "https://www.kunsthall.no/en/events/3302-2026-05-03/",
     "city": "Bergen",
-    "when": "Sat 11:00",
     "where": "Bergen Kunsthall",
+    "when": "Sun 11:00",
     "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -62,15 +30,31 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-02T11:00:00+02:00"
+    "starts_at": "2026-05-03T11:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Exhibition Bergen Kunsthall: Mylder 2026 Sat 2 May 11:00, Mediation room",
-    "url": "https://www.kunsthall.no/en/events/3301-2026-05-02/",
+    "title": "Exhibition Bergen Kunsthall: Mylder 2026 Sun 3 May 11:00, Mediation room",
+    "url": "https://www.kunsthall.no/en/events/3302-2026-05-03/",
     "city": "Bergen",
-    "when": "Sat 11:00",
+    "where": "Landmark",
+    "when": "Sun 11:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-03T11:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 3 May Ears to the ground: Guided Sunday Tour Gallery I-V Guided Tours",
+    "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/",
+    "city": "Bergen",
     "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
     "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -78,6 +62,22 @@
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-02T11:00:00+02:00"
+    "starts_at": "2026-05-03T14:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Guided Tours Ears to the ground: Guided Sunday Tour Sun 3 May 14:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3294-2026-04-19/?d=2026-05-03",
+    "city": "Bergen",
+    "where": "Bergen Kunsthall",
+    "when": "Sun 14:00",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-03T14:00:00+02:00"
   }
 ]
