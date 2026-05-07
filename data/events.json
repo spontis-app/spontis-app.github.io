@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
     "where": "Bergen Kino",
-    "when": "Tue 10:30 • 10:45 • 11:00 (+73 later)",
+    "when": "Thu 10:45 • 11:00 • 11:15 (+74 later)",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-05T10:30:00+02:00"
+    "starts_at": "2026-05-07T10:45:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: L.A. Witch (US) Fri 8 May 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3300-2026-05-08/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
     "when": "Fri 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -34,12 +34,29 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Concert The Soul Alive!: Soul Club + DJ Stig Paa Sat 9 May 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3304-2026-05-09/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Sat 21:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-09T21:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Club Grunnlovsstridig Vol. 5 Sun 17 May 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3289-2026-05-17/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
     "when": "Sun 21:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "techno"
