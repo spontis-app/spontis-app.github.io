@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 8 May Perfect Sounds Forever: L.A. Witch (US) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3300-2026-05-08/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-08T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: L.A. Witch (US) Fri 8 May 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3300-2026-05-08/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-08T20:00:00+02:00"
+  }
+]
