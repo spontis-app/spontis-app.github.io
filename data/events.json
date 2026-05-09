@@ -5,7 +5,7 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "venue": "Bergen Kino",
-    "when": "Fri 10:15 • 10:30 • 10:45 (+79 later)",
+    "when": "Sat 10:15 • 10:30 • 10:45 (+89 later)",
     "where": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,39 +14,24 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-08T10:15:00+02:00"
+    "starts_at": "2026-05-09T10:15:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 8 May Perfect Sounds Forever: L.A. Witch (US) Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3300-2026-05-08/",
+    "title": "2026 9 May The Soul Alive!: Soul Club + DJ Stig Paa Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3304-2026-05-09/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 21:00",
     "where": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-08T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: L.A. Witch (US) Fri 8 May 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3300-2026-05-08/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:00",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-08T20:00:00+02:00"
+    "starts_at": "2026-05-09T21:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -81,5 +66,23 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2026-05-17T21:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Opening Party: DJ Hawa Thu 28 May 22:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3305-2026-05-28/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Thu 22:00",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-28T22:00:00+02:00"
   }
 ]

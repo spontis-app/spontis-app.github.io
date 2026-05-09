@@ -1,34 +1,36 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 8 May Perfect Sounds Forever: L.A. Witch (US) Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3300-2026-05-08/",
+    "title": "2026 9 May The Soul Alive!: Soul Club + DJ Stig Paa Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3304-2026-05-09/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 21:00",
     "where": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-08T20:00:00+02:00"
+    "starts_at": "2026-05-09T21:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: L.A. Witch (US) Fri 8 May 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3300-2026-05-08/",
+    "title": "Concert The Soul Alive!: Soul Club + DJ Stig Paa Sat 9 May 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3304-2026-05-09/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 21:00",
     "where": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-08T20:00:00+02:00"
+    "starts_at": "2026-05-09T21:00:00+02:00"
   }
 ]
