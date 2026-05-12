@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
-    "when": "Mon 10:15 • 10:30 • 10:45 (+82 later)",
+    "when": "Tue 10:15 • 10:30 • 10:45 (+83 later)",
     "venue": "Bergen Kino",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,48 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-11T10:15:00+02:00"
+    "starts_at": "2026-05-12T10:15:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Playdate: Babies On Airplanes + Skrotfabrikken Wed 13 May 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3306-2026-05-13/",
+    "city": "Bergen",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-13T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Misty Coast + support: Ayka Fri 15 May 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3307-2026-05-15/",
+    "city": "Bergen",
+    "when": "Fri 20:30",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-15T20:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Club Grunnlovsstridig Vol. 5 Sun 17 May 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3289-2026-05-17/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sun 21:00",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "techno"
@@ -35,12 +67,28 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Florry (US) Tue 19 May 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3308-2026-05-19/",
+    "city": "Bergen",
+    "when": "Tue 20:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-19T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Club Opening Party: DJ Hawa Thu 28 May 22:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3305-2026-05-28/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Thu 22:00",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
