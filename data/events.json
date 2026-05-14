@@ -6,7 +6,7 @@
     "city": "Bergen",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
-    "when": "Wed 10:15 • 10:30 • 10:45 (+83 later)",
+    "when": "Thu 10:30 • 10:45 • 11:00 (+92 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,39 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-13T10:15:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 13 May Playdate: Babies On Airplanes + Skrotfabrikken Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3306-2026-05-13/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Wed 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-13T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Playdate: Babies On Airplanes + Skrotfabrikken Wed 13 May 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3306-2026-05-13/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Wed 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-13T20:00:00+02:00"
+    "starts_at": "2026-05-14T10:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
