@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Mon 10:15 • 10:30 • 10:45 (+84 later)",
-    "where": "Bergen Kino",
     "venue": "Bergen Kino",
+    "when": "Tue 10:30 • 10:45 • 11:00 (+85 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,32 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-18T10:15:00+02:00"
+    "starts_at": "2026-05-19T10:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 19 May Perfect Sounds Forever: Florry (US) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3308-2026-05-19/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Tue 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-19T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Florry (US) Tue 19 May 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3308-2026-05-19/",
     "city": "Bergen",
+    "venue": "Landmark",
     "when": "Tue 20:00",
     "where": "Landmark",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,9 +53,9 @@
     "title": "Book Launch Skrivekunstakademiet: Release party + concerts with Bare Folk & Pretty Little Tubas Wed 20 May 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3309-2026-05-20/",
     "city": "Bergen",
+    "venue": "Landmark",
     "when": "Wed 20:00",
     "where": "Landmark",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,9 +69,9 @@
     "title": "Talk Architectural Practice: TEST (ES) + Max Otto Ziztelsberger (DE) Thu 21 May 18:45, Landmark",
     "url": "https://www.kunsthall.no/en/events/3310-2026-05-21/",
     "city": "Bergen",
+    "venue": "Landmark",
     "when": "Thu 18:45",
     "where": "Landmark",
-    "venue": "Landmark",
     "tags": [
       "culture",
       "lecture"
@@ -70,9 +86,9 @@
     "title": "Concert Greatfruit Fri 22 May 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3311-2026-05-22/",
     "city": "Bergen",
+    "venue": "Landmark",
     "when": "Fri 20:00",
     "where": "Landmark",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -86,9 +102,9 @@
     "title": "Club Opening Party: DJ Hawa Thu 28 May 22:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3305-2026-05-28/",
     "city": "Bergen",
+    "venue": "Landmark",
     "when": "Thu 22:00",
     "where": "Landmark",
-    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -104,9 +120,9 @@
     "title": "Concert døssi (Release Concert) + support: Lee Sharpe Fri 29 May 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3312-2026-05-29/",
     "city": "Bergen",
+    "venue": "Landmark",
     "when": "Fri 20:30",
     "where": "Landmark",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -114,5 +130,21 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2026-05-29T20:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Conversation Plattform: Anawana Haloba Sat 30 May 14:00, Upstairs",
+    "url": "https://www.kunsthall.no/en/events/3314-2026-05-30/",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "when": "Sat 14:00",
+    "where": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-30T14:00:00+02:00"
   }
 ]
