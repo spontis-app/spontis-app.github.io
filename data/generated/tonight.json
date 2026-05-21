@@ -1,34 +1,36 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 20 May Skrivekunstakademiet: Release party + concerts with Bare Folk & Pretty Little Tubas Landmark Book Launch",
-    "url": "https://www.kunsthall.no/en/events/3309-2026-05-20/",
+    "title": "2026 21 May Architectural Practice: TEST (ES) + Max Otto Ziztelsberger (DE) Landmark Talk",
+    "url": "https://www.kunsthall.no/en/events/3310-2026-05-21/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "where": "Landmark",
     "venue": "Landmark",
+    "when": "Thu 18:45",
     "tags": [
-      "culture"
+      "culture",
+      "lecture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-20T20:00:00+02:00"
+    "starts_at": "2026-05-21T18:45:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Book Launch Skrivekunstakademiet: Release party + concerts with Bare Folk & Pretty Little Tubas Wed 20 May 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3309-2026-05-20/",
+    "title": "Talk Architectural Practice: TEST (ES) + Max Otto Ziztelsberger (DE) Thu 21 May 18:45, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3310-2026-05-21/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "where": "Landmark",
     "venue": "Landmark",
+    "when": "Thu 18:45",
     "tags": [
-      "culture"
+      "culture",
+      "lecture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-20T20:00:00+02:00"
+    "starts_at": "2026-05-21T18:45:00+02:00"
   }
 ]
