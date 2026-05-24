@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
-    "when": "Fri 10:15 • 10:45 • 11:00 (+84 later)",
     "venue": "Bergen Kino",
+    "when": "Sun 10:00 • 10:30 • 10:45 (+91 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,66 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-22T10:15:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 22 May Greatfruit Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3311-2026-05-22/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-22T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Greatfruit Fri 22 May 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3311-2026-05-22/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-22T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Klubb Afro: DJ MICHELINE (Oslo), MIA CID, MARCO FONDERA, EDILSON DRUMMER & PATO Sat 23 May 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3315-2026-05-23/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sat 23:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-23T23:00:00+02:00"
+    "starts_at": "2026-05-24T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Exhibition Festspillutstillingen 2026: Opening Thu 28 May 13:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3317-2026-05-28/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "when": "Thu 13:00",
     "venue": "Bergen Kunsthall",
+    "when": "Thu 13:00",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -87,9 +37,9 @@
     "title": "Club Opening Party: DJ Hawa Thu 28 May 22:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3305-2026-05-28/",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Thu 22:00",
     "venue": "Landmark",
+    "when": "Thu 22:00",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -105,9 +55,9 @@
     "title": "Concert døssi (Release Concert) + support: Lee Sharpe Fri 29 May 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3312-2026-05-29/",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 20:30",
     "venue": "Landmark",
+    "when": "Fri 20:30",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -121,9 +71,9 @@
     "title": "Conversation Plattform: Anawana Haloba in conversation with Trond Lossius Sat 30 May 14:00, Upstairs",
     "url": "https://www.kunsthall.no/en/events/3314-2026-05-30/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "when": "Sat 14:00",
     "venue": "Bergen Kunsthall",
+    "when": "Sat 14:00",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
