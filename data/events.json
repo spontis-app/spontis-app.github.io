@@ -5,7 +5,7 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "venue": "Bergen Kino",
-    "when": "Sun 10:00 • 10:30 • 10:45 (+91 later)",
+    "when": "Mon 10:00 • 10:15 • 10:30 (+92 later)",
     "where": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,72 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-24T10:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Exhibition Festspillutstillingen 2026: Opening Thu 28 May 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3317-2026-05-28/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "when": "Thu 13:00",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-28T13:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Opening Party: DJ Hawa Thu 28 May 22:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3305-2026-05-28/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Thu 22:00",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-28T22:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert døssi (Release Concert) + support: Lee Sharpe Fri 29 May 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3312-2026-05-29/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:30",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-29T20:30:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Conversation Plattform: Anawana Haloba in conversation with Trond Lossius Sat 30 May 14:00, Upstairs",
-    "url": "https://www.kunsthall.no/en/events/3314-2026-05-30/",
-    "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "when": "Sat 14:00",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-30T14:00:00+02:00"
+    "starts_at": "2026-05-25T10:00:00+02:00"
   }
 ]
