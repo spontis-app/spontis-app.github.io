@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
-    "when": "Mon 10:00 • 10:15 • 10:30 (+92 later)",
     "where": "Bergen Kino",
+    "venue": "Bergen Kino",
+    "when": "Tue 10:00 • 10:15 • 10:30 (+88 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,6 +14,107 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-25T10:00:00+02:00"
+    "starts_at": "2026-05-26T10:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Exhibition Exhibition Opening: Anawana Haloba The Festival Exhibition 2026 + Hanni Kamaly Thu 28 May 13:00, Gallery I-V",
+    "url": "https://www.kunsthall.no/en/events/3317-2026-05-28/",
+    "city": "Bergen",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "when": "Thu 13:00",
+    "tags": [
+      "culture",
+      "festival"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-28T13:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Opening Party: DJ Hawa Thu 28 May 22:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3305-2026-05-28/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Thu 22:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-28T22:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert døssi (Release Concert) + support: Lee Sharpe Fri 29 May 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3312-2026-05-29/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Fri 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-29T20:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Conversation Plattform: Anawana Haloba in conversation with Trond Lossius Sat 30 May 14:00, Upstairs",
+    "url": "https://www.kunsthall.no/en/events/3314-2026-05-30/",
+    "city": "Bergen",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
+    "when": "Sat 14:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-30T14:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Heisen Vol. 5 with special guest Vilde Greger Sat 30 May 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3318-2026-05-30/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Sat 23:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-30T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Date of Birth + support: Joe's Truly Fri 5 Jun 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3319-2026-06-05/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Fri 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-05T20:30:00+02:00"
   }
 ]
