@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 28 May Opening Party: DJ Hawa Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3305-2026-05-28/",
+    "city": "Bergen",
+    "when": "Thu 22:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-28T22:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Opening Party: DJ Hawa Thu 28 May 22:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3305-2026-05-28/",
+    "city": "Bergen",
+    "when": "Thu 22:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-05-28T22:00:00+02:00"
+  }
+]
