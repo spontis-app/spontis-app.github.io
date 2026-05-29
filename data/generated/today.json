@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Thu 10:00 • 10:15 • 10:30 (+91 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
+    "when": "Fri 10:00 • 10:15 • 10:30 (+74 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,40 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-28T10:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 28 May Exhibition Opening: Anawana Haloba The Festival Exhibition 2026 + Hanni Kamaly Gallery I-V Exhibition",
-    "url": "https://www.kunsthall.no/en/events/3317-2026-05-28/",
-    "city": "Bergen",
-    "when": "Thu 13:00",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-28T13:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Exhibition Exhibition Opening: Anawana Haloba The Festival Exhibition 2026 + Hanni Kamaly Thu 28 May 13:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3317-2026-05-28/",
-    "city": "Bergen",
-    "when": "Thu 13:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "festival"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-05-28T13:00:00+02:00"
+    "starts_at": "2026-05-29T10:00:00+02:00"
   }
 ]
