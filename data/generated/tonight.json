@@ -1,34 +1,38 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 29 May døssi (Release Concert) + support: Lee Sharpe Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3312-2026-05-29/",
+    "title": "2026 30 May Heisen Vol. 5 with special guest Vilde Greger Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3318-2026-05-30/",
     "city": "Bergen",
     "where": "Landmark",
+    "when": "Sat 23:00",
     "venue": "Landmark",
-    "when": "Fri 20:30",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-29T20:30:00+02:00"
+    "starts_at": "2026-05-30T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert døssi (Release Concert) + support: Lee Sharpe Fri 29 May 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3312-2026-05-29/",
+    "title": "Club Heisen Vol. 5 with special guest Vilde Greger Sat 30 May 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3318-2026-05-30/",
     "city": "Bergen",
     "where": "Landmark",
+    "when": "Sat 23:00",
     "venue": "Landmark",
-    "when": "Fri 20:30",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-05-29T20:30:00+02:00"
+    "starts_at": "2026-05-30T23:00:00+02:00"
   }
 ]
