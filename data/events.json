@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
-    "when": "Sun 10:00 • 10:15 • 10:30 (+88 later)",
+    "when": "Mon 10:30 • 10:45 • 11:00 (+77 later)",
     "venue": "Bergen Kino",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-05-31T10:00:00+02:00"
+    "starts_at": "2026-06-01T10:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Date of Birth + support: Joe's Truly Fri 5 Jun 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3319-2026-06-05/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Fri 20:30",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
