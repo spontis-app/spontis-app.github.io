@@ -5,7 +5,7 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
-    "when": "Sun 10:15 • 10:30 • 10:45 (+87 later)",
+    "when": "Mon 10:30 • 11:00 • 11:45 (+75 later)",
     "venue": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,6 +14,40 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-07T10:15:00+02:00"
+    "starts_at": "2026-06-08T10:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Performance Prøverommet at Landmark Thu 11 Jun 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3321-2026-06-11/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Thu 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-11T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Darkdome: GOTH CLUBBING: Darkdome + VJ Victor Nøkleby Sat 13 Jun 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3323-2026-06-13/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Sat 23:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-13T23:00:00+02:00"
   }
 ]
