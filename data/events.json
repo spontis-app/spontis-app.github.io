@@ -5,7 +5,7 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
-    "when": "Mon 10:30 • 11:00 • 11:45 (+75 later)",
+    "when": "Tue 10:30 • 11:00 • 11:30 (+78 later)",
     "venue": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,7 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-08T10:30:00+02:00"
+    "starts_at": "2026-06-09T10:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -31,6 +31,22 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2026-06-11T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Conversation Plattform: Elvira Dyangani Ose in conversation with Anawana Haloba Sat 13 Jun 15:00, Upstairs",
+    "url": "https://www.kunsthall.no/en/events/3325-2026-06-13/",
+    "city": "Bergen",
+    "where": "Bergen Kunsthall",
+    "when": "Sat 15:00",
+    "venue": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-13T15:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
