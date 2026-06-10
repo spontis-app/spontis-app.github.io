@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
-    "when": "Tue 10:30 • 11:00 • 11:30 (+78 later)",
     "venue": "Bergen Kino",
+    "when": "Wed 10:30 • 11:00 • 11:15 (+82 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-09T10:30:00+02:00"
+    "starts_at": "2026-06-10T10:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Performance Prøverommet at Landmark Thu 11 Jun 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3321-2026-06-11/",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Thu 20:00",
     "venue": "Landmark",
+    "when": "Thu 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,9 +37,9 @@
     "title": "Conversation Plattform: Elvira Dyangani Ose in conversation with Anawana Haloba Sat 13 Jun 15:00, Upstairs",
     "url": "https://www.kunsthall.no/en/events/3325-2026-06-13/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "when": "Sat 15:00",
     "venue": "Bergen Kunsthall",
+    "when": "Sat 15:00",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -53,9 +53,9 @@
     "title": "Club Darkdome: GOTH CLUBBING: Darkdome + VJ Victor Nøkleby Sat 13 Jun 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3323-2026-06-13/",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sat 23:00",
     "venue": "Landmark",
+    "when": "Sat 23:00",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
