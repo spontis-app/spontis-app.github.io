@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "venue": "Bergen Kino",
-    "when": "Wed 10:30 • 11:00 • 11:15 (+82 later)",
     "where": "Bergen Kino",
+    "when": "Thu 10:30 • 10:45 • 11:00 (+81 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-10T10:30:00+02:00"
+    "starts_at": "2026-06-11T10:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Performance Prøverommet at Landmark Thu 11 Jun 20:00, Landmark",
+    "title": "2026 11 Jun Prøverommet at Landmark Landmark Performance",
     "url": "https://www.kunsthall.no/en/events/3321-2026-06-11/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Thu 20:00",
     "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
@@ -34,12 +34,44 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Performance Prøverommet at Landmark Thu 11 Jun 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3321-2026-06-11/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Thu 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-11T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Turdus Musicus: Sectarian Love + Split/Bite Fri 12 Jun 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3326-2026-06-12/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 21:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-12T21:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Conversation Plattform: Elvira Dyangani Ose in conversation with Anawana Haloba Sat 13 Jun 15:00, Upstairs",
     "url": "https://www.kunsthall.no/en/events/3325-2026-06-13/",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sat 15:00",
     "where": "Bergen Kunsthall",
+    "when": "Sat 15:00",
     "tags": [
       "culture"
     ],
@@ -54,8 +86,8 @@
     "url": "https://www.kunsthall.no/en/events/3323-2026-06-13/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sat 23:00",
     "where": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
       "culture",
       "late-night",
