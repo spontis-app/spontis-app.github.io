@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Fri 10:30 • 10:45 • 11:30 (+83 later)",
-    "venue": "Bergen Kino",
+    "when": "Sat 10:15 • 10:30 • 10:45 (+90 later)",
     "where": "Bergen Kino",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,7 +14,25 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-19T10:30:00+02:00"
+    "starts_at": "2026-06-20T10:15:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 20 Jun Klubb Herz #3 Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3329-2026-06-20/",
+    "city": "Bergen",
+    "when": "Sat 23:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-20T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -22,8 +40,8 @@
     "url": "https://www.kunsthall.no/en/events/3329-2026-06-20/",
     "city": "Bergen",
     "when": "Sat 23:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -40,8 +58,8 @@
     "url": "https://www.kunsthall.no/en/events/3330-2026-06-26/",
     "city": "Bergen",
     "when": "Fri 23:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -58,8 +76,8 @@
     "url": "https://www.kunsthall.no/en/events/3331-2026-06-27/",
     "city": "Bergen",
     "when": "Sat 21:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "techno"
@@ -75,8 +93,8 @@
     "url": "https://www.kunsthall.no/en/events/3333-2026-08-17/",
     "city": "Bergen",
     "when": "Mon 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -91,8 +109,8 @@
     "url": "https://www.kunsthall.no/en/events/3334-2026-08-23/",
     "city": "Bergen",
     "when": "Sun 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -107,8 +125,8 @@
     "url": "https://www.kunsthall.no/en/events/3327-2026-09-05/",
     "city": "Bergen",
     "when": "Sat 14:00",
-    "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -123,8 +141,8 @@
     "url": "https://www.kunsthall.no/en/events/3335-2026-10-04/",
     "city": "Bergen",
     "when": "Sun 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -139,8 +157,8 @@
     "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
     "city": "Bergen",
     "when": "Thu 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -155,8 +173,8 @@
     "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
     "city": "Bergen",
     "when": "Sun 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -171,8 +189,8 @@
     "url": "https://www.kunsthall.no/en/events/3338-2026-10-22/",
     "city": "Bergen",
     "when": "Thu 20:00",
-    "venue": "Landmark",
     "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
