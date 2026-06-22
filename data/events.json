@@ -4,8 +4,8 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sun 10:15 • 10:30 • 10:45 (+91 later)",
     "venue": "Bergen Kino",
+    "when": "Mon 10:15 • 10:30 • 11:30 (+75 later)",
     "where": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,6 +14,153 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-21T10:15:00+02:00"
+    "starts_at": "2026-06-22T10:15:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Ellemelli Fri 26 Jun 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3330-2026-06-26/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 23:00",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-26T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Landmark « summer » party Sat 27 Jun 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3331-2026-06-27/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Sat 21:00",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-06-27T21:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Juni Habel + Toria Wooff (UK) Mon 17 Aug 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3333-2026-08-17/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Mon 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-08-17T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Ryan Davis & the Roadhouse Band (US) Sun 23 Aug 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3334-2026-08-23/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Sun 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-08-23T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Conversation Dr. Memory Biwa in conversation with Anawana Haloba Sat 5 Sept 14:00, Upstairs",
+    "url": "https://www.kunsthall.no/en/events/3327-2026-09-05/",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "when": "Sat 14:00",
+    "where": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-05T14:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Grant-Lee Phillips (US) Sun 4 Oct 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3335-2026-10-04/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Sun 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-04T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Les Imprimés + Sam Eagle (UK) Thu 15 Oct 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Thu 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-15T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: King Hüsky + Selma French Sun 18 Oct 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Sun 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-18T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Jesca Hoop (US) Thu 22 Oct 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3338-2026-10-22/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Thu 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-22T20:00:00+02:00"
   }
 ]
