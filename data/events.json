@@ -5,7 +5,7 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "venue": "Bergen Kino",
-    "when": "Mon 10:15 • 10:30 • 11:30 (+75 later)",
+    "when": "Tue 10:00 • 10:15 • 10:30 (+82 later)",
     "where": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,7 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-22T10:15:00+02:00"
+    "starts_at": "2026-06-23T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
