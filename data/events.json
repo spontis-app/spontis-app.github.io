@@ -5,7 +5,7 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "venue": "Bergen Kino",
-    "when": "Tue 10:00 • 10:15 • 10:30 (+82 later)",
+    "when": "Wed 10:00 • 10:15 • 10:30 (+83 later)",
     "where": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,7 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-23T10:00:00+02:00"
+    "starts_at": "2026-06-24T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -53,6 +53,24 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Club DJ Supreme, DJ Gaza, Pato: Klubb Afro Summer Party Sat 11 Jul 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3341-2026-07-11/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Sat 23:00",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-07-11T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Juni Habel + Toria Wooff (UK) Mon 17 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3333-2026-08-17/",
     "city": "Bergen",
@@ -66,6 +84,22 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2026-08-17T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Dobbeltgjenger: Dobbeltgjenger – 10th Anniversary Concert Fri 21 Aug 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3339-2026-08-21/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-08-21T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -98,6 +132,22 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2026-09-05T14:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Superføkk: Superføkk Release Party Fri 18 Sept 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Fri 20:00",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-18T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
