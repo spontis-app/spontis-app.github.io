@@ -1,38 +1,36 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 26 Jun Ellemelli Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3330-2026-06-26/",
+    "title": "2026 27 Jun Landmark « summer » party Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3331-2026-06-27/",
     "city": "Bergen",
     "where": "Landmark",
+    "when": "Sat 21:00",
     "venue": "Landmark",
-    "when": "Fri 23:00",
     "tags": [
       "culture",
-      "late-night",
       "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-06-26T23:00:00+02:00"
+    "starts_at": "2026-06-27T21:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Club Ellemelli Fri 26 Jun 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3330-2026-06-26/",
+    "title": "Club Landmark « summer » party Sat 27 Jun 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3331-2026-06-27/",
     "city": "Bergen",
     "where": "Landmark",
+    "when": "Sat 21:00",
     "venue": "Landmark",
-    "when": "Fri 23:00",
     "tags": [
       "culture",
-      "late-night",
       "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-06-26T23:00:00+02:00"
+    "starts_at": "2026-06-27T21:00:00+02:00"
   }
 ]
