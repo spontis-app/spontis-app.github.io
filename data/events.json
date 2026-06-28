@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
-    "when": "Sat 10:00 • 10:15 • 10:30 (+97 later)",
     "venue": "Bergen Kino",
+    "where": "Bergen Kino",
+    "when": "Sun 10:00 • 10:15 • 10:30 (+97 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,50 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-06-27T10:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 27 Jun Landmark « summer » party Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3331-2026-06-27/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sat 21:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-06-27T21:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Landmark « summer » party Sat 27 Jun 21:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3331-2026-06-27/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sat 21:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-06-27T21:00:00+02:00"
+    "starts_at": "2026-06-28T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Club DJ Supreme, DJ Gaza, Pato: Klubb Afro Summer Party Sat 11 Jul 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3341-2026-07-11/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Sat 23:00",
-    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -73,9 +39,9 @@
     "title": "Concert Perfect Sounds Forever: Juni Habel + Toria Wooff (UK) Mon 17 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3333-2026-08-17/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Mon 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -89,9 +55,9 @@
     "title": "Concert Dobbeltgjenger: Dobbeltgjenger – 10th Anniversary Concert Fri 21 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3339-2026-08-21/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Fri 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -105,9 +71,9 @@
     "title": "Concert Perfect Sounds Forever: Ryan Davis & the Roadhouse Band (US) Sun 23 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3334-2026-08-23/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Sun 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -121,9 +87,9 @@
     "title": "Conversation Dr. Memory Biwa in conversation with Anawana Haloba Sat 5 Sept 14:00, Upstairs",
     "url": "https://www.kunsthall.no/en/events/3327-2026-09-05/",
     "city": "Bergen",
+    "venue": "Bergen Kunsthall",
     "where": "Bergen Kunsthall",
     "when": "Sat 14:00",
-    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -137,9 +103,9 @@
     "title": "Concert Superføkk: Superføkk Release Party Fri 18 Sept 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Fri 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -153,9 +119,9 @@
     "title": "Concert Ingvild Homme, Bare Folk: Ingvild Homme + support: Bare Folk Fri 25 Sept 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3342-2026-09-25/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Fri 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -169,9 +135,9 @@
     "title": "Concert Perfect Sounds Forever: Grant-Lee Phillips (US) Sun 4 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3335-2026-10-04/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Sun 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -185,9 +151,9 @@
     "title": "Concert Perfect Sounds Forever: Les Imprimés + Sam Eagle (UK) Thu 15 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Thu 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -201,9 +167,9 @@
     "title": "Concert Perfect Sounds Forever: King Hüsky + Selma French Sun 18 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Sun 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -217,9 +183,9 @@
     "title": "Concert Perfect Sounds Forever: Jesca Hoop (US) Thu 22 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3338-2026-10-22/",
     "city": "Bergen",
+    "venue": "Landmark",
     "where": "Landmark",
     "when": "Thu 20:00",
-    "venue": "Landmark",
     "tags": [
       "culture"
     ],
