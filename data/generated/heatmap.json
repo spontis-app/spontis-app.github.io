@@ -1,9 +1,9 @@
 {
-  "Mon": 1,
+  "Mon": 0,
   "Tue": 0,
-  "Wed": 1,
-  "Thu": 2,
-  "Fri": 3,
-  "Sat": 3,
-  "Sun": 3
+  "Wed": 0,
+  "Thu": 1,
+  "Fri": 0,
+  "Sat": 0,
+  "Sun": 0
 }
