@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
     "venue": "Bergen Kino",
-    "when": "Sun 10:15 • 10:30 • 10:45 (+87 later)",
+    "when": "Mon 10:15 • 10:30 • 10:45 (+87 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,16 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-08-09T10:15:00+02:00"
+    "starts_at": "2026-08-10T10:15:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Perfect Sounds Forever: Juni Habel + Toria Wooff (UK) Mon 17 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3333-2026-08-17/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Mon 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -37,9 +37,9 @@
     "title": "Concert Dobbeltgjenger: Dobbeltgjenger – 10th Anniversary Concert Fri 21 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3339-2026-08-21/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Fri 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -53,9 +53,9 @@
     "title": "Concert Perfect Sounds Forever: Ryan Davis & the Roadhouse Band (US) Sun 23 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3334-2026-08-23/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -69,9 +69,9 @@
     "title": "Conversation Plattform: Dr. Memory Biwa Sat 5 Sept 14:00, Upstairs",
     "url": "https://www.kunsthall.no/en/events/3327-2026-09-05/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
-    "venue": "Bergen Kunsthall",
+    "venue": "Landmark",
     "when": "Sat 14:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -85,9 +85,9 @@
     "title": "Concert Superføkk: Superføkk Release Party Fri 18 Sept 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Fri 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -101,9 +101,9 @@
     "title": "Concert Ingvild Homme, Bare Folk: Ingvild Homme + support: Bare Folk Fri 25 Sept 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3342-2026-09-25/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Fri 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -117,9 +117,9 @@
     "title": "Concert Perfect Sounds Forever: Grant-Lee Phillips (US) Sun 4 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3335-2026-10-04/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -133,9 +133,9 @@
     "title": "Concert Perfect Sounds Forever: Les Imprimés + Sam Eagle (UK) Thu 15 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -149,9 +149,9 @@
     "title": "Concert Perfect Sounds Forever: King Hüsky + Selma French Sun 18 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -165,9 +165,9 @@
     "title": "Concert Perfect Sounds Forever: Jesca Hoop (US) Thu 22 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3338-2026-10-22/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
