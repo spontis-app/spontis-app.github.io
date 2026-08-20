@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 20 Aug Griegakademiet (UiB): Opening Concert 2026/1: Jazz and Folk Music Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3366-2026-08-20/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Thu 21:00",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "jazz"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-08-20T21:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Griegakademiet (UiB): Opening Concert 2026/1: Jazz and Folk Music Thu 20 Aug 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3366-2026-08-20/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "when": "Thu 21:00",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "jazz"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-08-20T21:00:00+02:00"
+  }
+]
