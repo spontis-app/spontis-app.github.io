@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "venue": "Bergen Kino",
-    "when": "Thu 10:30 • 10:45 • 11:00 (+79 later)",
     "where": "Bergen Kino",
+    "when": "Fri 10:00 • 10:15 • 10:30 (+79 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,41 +14,23 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-08-20T10:30:00+02:00"
+    "starts_at": "2026-08-21T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 20 Aug Griegakademiet (UiB): Opening Concert 2026/1: Jazz and Folk Music Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3366-2026-08-20/",
+    "title": "2026 21 Aug Dobbeltgjenger: 10th Anniversary Concert Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3339-2026-08-21/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Thu 21:00",
     "where": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
-      "culture",
-      "jazz"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-08-20T21:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Griegakademiet (UiB): Opening Concert 2026/1: Jazz and Folk Music Thu 20 Aug 21:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3366-2026-08-20/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Thu 21:00",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "jazz"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-08-20T21:00:00+02:00"
+    "starts_at": "2026-08-21T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -56,8 +38,8 @@
     "url": "https://www.kunsthall.no/en/events/3339-2026-08-21/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 20:00",
     "where": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
@@ -72,9 +54,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Konserter",
     "city": "Bergen",
     "venue": "Kulturhuset i Bergen",
-    "when": "Sat 00:00",
     "description": "Den danske duoen Bremer/McCoy har de siste årene etablert seg som et av Nordens mest særpregede og kritikerroste musikalske samarbeid.",
     "where": "Kulturhuset i Bergen",
+    "when": "Sat 00:00",
     "tags": [
       "culture",
       "dj",
@@ -92,9 +74,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=L%C3%B8rdagsyoga+p%C3%A5+Kulturhuset",
     "city": "Bergen",
     "venue": "Kulturhuset i Bergen",
-    "when": "Sat 00:00",
     "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
     "where": "Kulturhuset i Bergen",
+    "when": "Sat 00:00",
     "tags": [
       "culture",
       "late-night"
@@ -110,8 +92,8 @@
     "url": "https://www.kunsthall.no/en/events/3353-2026-08-26/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Wed 18:30",
     "where": "Landmark",
+    "when": "Wed 18:30",
     "tags": [
       "culture"
     ],
@@ -126,8 +108,8 @@
     "url": "https://www.kunsthall.no/en/events/3354-2026-08-27/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Thu 20:00",
     "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
@@ -142,8 +124,8 @@
     "url": "https://www.kunsthall.no/en/events/3355-2026-08-29/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sat 22:00",
     "where": "Landmark",
+    "when": "Sat 22:00",
     "tags": [
       "culture",
       "late-night",
@@ -160,8 +142,8 @@
     "url": "https://www.kunsthall.no/en/events/3351-2026-08-30/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sun 20:00",
     "where": "Landmark",
+    "when": "Sun 20:00",
     "tags": [
       "culture"
     ],
@@ -176,8 +158,8 @@
     "url": "https://www.kunsthall.no/en/events/3352-2026-08-31/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Mon 20:00",
     "where": "Landmark",
+    "when": "Mon 20:00",
     "tags": [
       "culture"
     ],
@@ -192,8 +174,8 @@
     "url": "https://www.kunsthall.no/en/events/3327-2026-09-05/",
     "city": "Bergen",
     "venue": "Bergen Kunsthall",
-    "when": "Sat 14:00",
     "where": "Bergen Kunsthall",
+    "when": "Sat 14:00",
     "tags": [
       "culture"
     ],
@@ -208,8 +190,8 @@
     "url": "https://www.kunsthall.no/en/events/3360-2026-09-05/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sat 21:00",
     "where": "Landmark",
+    "when": "Sat 21:00",
     "tags": [
       "culture"
     ],
@@ -224,8 +206,8 @@
     "url": "https://www.kunsthall.no/en/events/3363-2026-09-06/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sun 20:00",
     "where": "Landmark",
+    "when": "Sun 20:00",
     "tags": [
       "culture"
     ],
@@ -240,8 +222,8 @@
     "url": "https://www.kunsthall.no/en/events/3364-2026-09-09/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Wed 19:00",
     "where": "Landmark",
+    "when": "Wed 19:00",
     "tags": [
       "culture"
     ],
@@ -256,8 +238,8 @@
     "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 20:00",
     "where": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
@@ -272,9 +254,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Trommesirkel",
     "city": "Bergen",
     "venue": "Kulturhuset i Bergen",
-    "when": "Mon 00:00",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
     "where": "Kulturhuset i Bergen",
+    "when": "Mon 00:00",
     "tags": [
       "culture",
       "late-night"
@@ -290,8 +272,8 @@
     "url": "https://www.kunsthall.no/en/events/3342-2026-09-25/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Fri 20:00",
     "where": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
@@ -306,8 +288,8 @@
     "url": "https://www.kunsthall.no/en/events/3335-2026-10-04/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sun 20:00",
     "where": "Landmark",
+    "when": "Sun 20:00",
     "tags": [
       "culture"
     ],
@@ -322,8 +304,8 @@
     "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Thu 20:00",
     "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
@@ -338,8 +320,8 @@
     "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Sun 20:00",
     "where": "Landmark",
+    "when": "Sun 20:00",
     "tags": [
       "culture"
     ],
@@ -354,8 +336,8 @@
     "url": "https://www.kunsthall.no/en/events/3338-2026-10-22/",
     "city": "Bergen",
     "venue": "Landmark",
-    "when": "Thu 20:00",
     "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
       "culture"
     ],
@@ -370,9 +352,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Musikkbingo",
     "city": "Bergen",
     "venue": "Kulturhuset i Bergen",
-    "when": "Fri 00:00",
     "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
     "where": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
     "tags": [
       "culture",
       "late-night"
