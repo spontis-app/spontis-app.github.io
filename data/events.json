@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
+    "when": "Sat 10:00 • 10:15 • 10:30 (+87 later)",
     "where": "Bergen Kino",
-    "when": "Fri 10:00 • 10:15 • 10:30 (+79 later)",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,86 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-08-21T10:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 21 Aug Dobbeltgjenger: 10th Anniversary Concert Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3339-2026-08-21/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Fri 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-08-21T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Dobbeltgjenger: 10th Anniversary Concert Fri 21 Aug 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3339-2026-08-21/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Fri 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-08-21T20:00:00+02:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Konserter",
-    "url": "https://www.kulturhusetibergen.no/program?category=Konserter",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Den danske duoen Bremer/McCoy har de siste årene etablert seg som et av Nordens mest særpregede og kritikerroste musikalske samarbeid.",
-    "where": "Kulturhuset i Bergen",
-    "when": "Sat 00:00",
-    "tags": [
-      "culture",
-      "dj",
-      "late-night",
-      "live"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-08-22T00:00:00+02:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Lørdagsyoga på Kulturhuset",
-    "url": "https://www.kulturhusetibergen.no/program?category=L%C3%B8rdagsyoga+p%C3%A5+Kulturhuset",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
-    "where": "Kulturhuset i Bergen",
-    "when": "Sat 00:00",
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-08-22T00:00:00+02:00"
+    "starts_at": "2026-08-22T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Conversation Blekk: Ariana Reines in conversation with Anna Kleiva and Eira Søyseth Wed 26 Aug 18:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3353-2026-08-26/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Wed 18:30",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -107,9 +37,9 @@
     "title": "Concert UFLAKKS: Nelly Moar Thu 27 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3354-2026-08-27/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -123,9 +53,9 @@
     "title": "Club Jungelen: Brasil Spesial: Simon Alejandro B2B Gabriel Patås, Gabriela Garrubo Sat 29 Aug 22:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3355-2026-08-29/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sat 22:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -141,9 +71,9 @@
     "title": "Concert Perfect Sounds Forever: The Tubs (UK) + Lande Hekt (UK) + Bramwell (UK) Sun 30 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3351-2026-08-30/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -157,9 +87,9 @@
     "title": "Concert Perfect Sounds Forever: Folk Bitch Trio (AUS) + Emilia Stajer Mon 31 Aug 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3352-2026-08-31/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Mon 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -173,9 +103,9 @@
     "title": "Conversation SKULKESKOLEN: Plattform: Dr. Memory Biwa Sat 5 Sept 14:00, Upstairs",
     "url": "https://www.kunsthall.no/en/events/3327-2026-09-05/",
     "city": "Bergen",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
     "when": "Sat 14:00",
+    "where": "Bergen Kunsthall",
+    "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -186,12 +116,12 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert SKULKESKOLEN: Olan Monk and Dylan Kerr (C.A.N.V.A.S) + guests Sat 5 Sept 21:00, Landmark",
+    "title": "Concert SKULKESKOLEN: Alpha Maid, Dylan Kerr, Karina Sletten and Olan Monk (C.A.N.V.A.S) Sat 5 Sept 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3360-2026-09-05/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sat 21:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -202,12 +132,12 @@
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Film SKULKESKOLEN: Khartoum (2025) — screening and fundraiser + Q&A with Abdalla Eltayeb and Rawia Elhag Sun 6 Sept 20:00, Landmark",
+    "title": "Film SKULKESKOLEN: Khartoum (2025) — screening and fundraiser + Q&A with Abdalla Eltayeb, Rawia Elhag, Lokain and Wilson Sun 6 Sept 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3363-2026-09-06/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -221,9 +151,9 @@
     "title": "Reading BLEKK: Poesi i villniset 3 Wed 9 Sept 19:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3364-2026-09-09/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Wed 19:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -237,9 +167,9 @@
     "title": "Concert Superføkk: Superføkk Release Party Fri 18 Sept 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Fri 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -253,10 +183,10 @@
     "title": "Trommesirkel",
     "url": "https://www.kulturhusetibergen.no/program?category=Trommesirkel",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
-    "where": "Kulturhuset i Bergen",
     "when": "Mon 00:00",
+    "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -271,9 +201,9 @@
     "title": "Concert Ingvild Homme, Bare Folk: Ingvild Homme + support: Bare Folk Fri 25 Sept 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3342-2026-09-25/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Fri 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -287,9 +217,9 @@
     "title": "Concert Perfect Sounds Forever: Grant-Lee Phillips (US) Sun 4 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3335-2026-10-04/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -303,9 +233,9 @@
     "title": "Concert Perfect Sounds Forever: Les Imprimés + Sam Eagle (UK) Thu 15 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -319,9 +249,9 @@
     "title": "Concert Perfect Sounds Forever: King Hüsky + Selma French Sun 18 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -335,9 +265,9 @@
     "title": "Concert Perfect Sounds Forever: Jesca Hoop (US) Thu 22 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3338-2026-10-22/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -351,10 +281,10 @@
     "title": "Musikkbingo",
     "url": "https://www.kulturhusetibergen.no/program?category=Musikkbingo",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
-    "where": "Kulturhuset i Bergen",
     "when": "Fri 00:00",
+    "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
