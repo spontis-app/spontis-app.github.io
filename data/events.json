@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
-    "when": "Mon 10:00 • 10:15 • 10:30 (+83 later)",
     "venue": "Bergen Kino",
+    "when": "Tue 10:00 • 10:15 • 10:30 (+87 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,7 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-08-24T10:00:00+02:00"
+    "starts_at": "2026-08-25T10:00:00+02:00"
   },
   {
     "source": "Kulturhuset i Bergen",
@@ -22,9 +22,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Trommesirkel",
     "city": "Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
     "when": "Mon 00:00",
-    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -40,9 +40,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=L%C3%B8rdagsyoga+p%C3%A5+Kulturhuset",
     "city": "Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
     "when": "Sat 00:00",
-    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -58,9 +58,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Musikkbingo",
     "city": "Bergen",
     "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
     "when": "Fri 00:00",
-    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
