@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 26 Aug Blekk: Ariana Reines in conversation with Anna Kleiva and Eira Søyseth Landmark Conversation",
+    "url": "https://www.kunsthall.no/en/events/3353-2026-08-26/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Wed 18:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-08-26T18:30:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Conversation Blekk: Ariana Reines in conversation with Anna Kleiva and Eira Søyseth Wed 26 Aug 18:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3353-2026-08-26/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Wed 18:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-08-26T18:30:00+02:00"
+  }
+]
