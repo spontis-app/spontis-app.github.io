@@ -1,19 +1,34 @@
 [
   {
-    "source": "Bergen Kino",
-    "title": "Kinovisning",
-    "url": "https://www.bergenkino.no/",
+    "source": "Bergen Kunsthall",
+    "title": "2026 27 Aug UFLAKKS: Nelly Moar Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3354-2026-08-27/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
-    "where": "Bergen Kino",
-    "when": "Wed 10:00 • 10:15 • 10:30 (+82 later)",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Thu 20:00",
     "tags": [
-      "cinema",
-      "date"
+      "culture"
     ],
     "sources": [
-      "Bergen Kino"
+      "Bergen Kunsthall"
     ],
-    "starts_at": "2026-08-26T10:00:00+02:00"
+    "starts_at": "2026-08-27T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert UFLAKKS: Nelly Moar Thu 27 Aug 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3354-2026-08-27/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Thu 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-08-27T20:00:00+02:00"
   }
 ]
