@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sat 10:00 • 10:15 • 10:45 (+93 later)",
-    "where": "Bergen Kino",
     "venue": "Bergen Kino",
+    "when": "Sun 10:00 • 10:15 • 10:45 (+91 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,17 +14,17 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-08-29T10:00:00+02:00"
+    "starts_at": "2026-08-30T10:00:00+02:00"
   },
   {
     "source": "Kulturhuset i Bergen",
     "title": "Trommesirkel",
     "url": "https://www.kulturhusetibergen.no/program?category=Trommesirkel",
     "city": "Bergen",
-    "when": "Mon 00:00",
-    "where": "Kulturhuset i Bergen",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
     "venue": "Kulturhuset i Bergen",
+    "when": "Mon 00:00",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -39,10 +39,10 @@
     "title": "Lørdagsyoga på Kulturhuset",
     "url": "https://www.kulturhusetibergen.no/program?category=L%C3%B8rdagsyoga+p%C3%A5+Kulturhuset",
     "city": "Bergen",
-    "when": "Sat 00:00",
-    "where": "Kulturhuset i Bergen",
     "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
     "venue": "Kulturhuset i Bergen",
+    "when": "Sat 00:00",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -57,10 +57,10 @@
     "title": "Musikkbingo",
     "url": "https://www.kulturhusetibergen.no/program?category=Musikkbingo",
     "city": "Bergen",
-    "when": "Fri 00:00",
-    "where": "Kulturhuset i Bergen",
     "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
     "venue": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
