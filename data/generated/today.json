@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
+    "when": "Tue 10:15 • 10:30 • 10:45 (+80 later)",
     "venue": "Bergen Kino",
-    "when": "Mon 10:15 • 10:30 • 11:00 (+81 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,38 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-08-31T10:15:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 31 Aug Perfect Sounds Forever: Folk Bitch Trio (AUS) + Emilia Stajer Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3352-2026-08-31/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Mon 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-08-31T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Folk Bitch Trio (AUS) + Emilia Stajer Mon 31 Aug 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3352-2026-08-31/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Mon 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-08-31T20:00:00+02:00"
+    "starts_at": "2026-09-01T10:15:00+02:00"
   }
 ]
