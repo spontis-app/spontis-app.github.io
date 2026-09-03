@@ -1,34 +1,36 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 2 Sept Playdate: Monkey Plot Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3373-2026-09-02/",
+    "title": "2026 3 Sept BAS + BAF: Architectural Practice: Philip Christou (UK/CAN) Landmark Talk",
+    "url": "https://www.kunsthall.no/en/events/3375-2026-09-03/",
     "city": "Bergen",
-    "where": "Landmark",
+    "when": "Thu 18:45",
     "venue": "Landmark",
-    "when": "Wed 20:00",
+    "where": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "lecture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-02T20:00:00+02:00"
+    "starts_at": "2026-09-03T18:45:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Playdate: Monkey Plot Wed 2 Sept 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3373-2026-09-02/",
+    "title": "Talk BAS + BAF: Architectural Practice: Philip Christou (UK/CAN) Thu 3 Sept 18:45, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3375-2026-09-03/",
     "city": "Bergen",
-    "where": "Landmark",
+    "when": "Thu 18:45",
     "venue": "Landmark",
-    "when": "Wed 20:00",
+    "where": "Landmark",
     "tags": [
-      "culture"
+      "culture",
+      "lecture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-02T20:00:00+02:00"
+    "starts_at": "2026-09-03T18:45:00+02:00"
   }
 ]

@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
+    "when": "Thu 10:15 • 10:30 • 10:45 (+73 later)",
     "venue": "Bergen Kino",
-    "when": "Wed 10:30 • 10:45 • 11:00 (+76 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,6 +14,40 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-09-02T10:30:00+02:00"
+    "starts_at": "2026-09-03T10:15:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 3 Sept BAS + BAF: Architectural Practice: Philip Christou (UK/CAN) Landmark Talk",
+    "url": "https://www.kunsthall.no/en/events/3375-2026-09-03/",
+    "city": "Bergen",
+    "when": "Thu 18:45",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "lecture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-03T18:45:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Talk BAS + BAF: Architectural Practice: Philip Christou (UK/CAN) Thu 3 Sept 18:45, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3375-2026-09-03/",
+    "city": "Bergen",
+    "when": "Thu 18:45",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture",
+      "lecture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-03T18:45:00+02:00"
   }
 ]
