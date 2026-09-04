@@ -1,36 +1,34 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 3 Sept BAS + BAF: Architectural Practice: Philip Christou (UK/CAN) Landmark Talk",
-    "url": "https://www.kunsthall.no/en/events/3375-2026-09-03/",
+    "title": "2026 4 Sept Ekkolodd + Støv Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3371-2026-09-04/",
     "city": "Bergen",
-    "when": "Thu 18:45",
-    "venue": "Landmark",
     "where": "Landmark",
+    "when": "Fri 20:30",
+    "venue": "Landmark",
     "tags": [
-      "culture",
-      "lecture"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-03T18:45:00+02:00"
+    "starts_at": "2026-09-04T20:30:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Talk BAS + BAF: Architectural Practice: Philip Christou (UK/CAN) Thu 3 Sept 18:45, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3375-2026-09-03/",
+    "title": "Concert Ekkolodd + Støv Fri 4 Sept 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3371-2026-09-04/",
     "city": "Bergen",
-    "when": "Thu 18:45",
-    "venue": "Landmark",
     "where": "Landmark",
+    "when": "Fri 20:30",
+    "venue": "Landmark",
     "tags": [
-      "culture",
-      "lecture"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-03T18:45:00+02:00"
+    "starts_at": "2026-09-04T20:30:00+02:00"
   }
 ]
