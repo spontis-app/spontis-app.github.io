@@ -1,34 +1,18 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 4 Sept Ekkolodd + Støv Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3371-2026-09-04/",
+    "title": "2026 5 Sept SKULKESKOLEN: Alpha Maid, Dylan Kerr, Karina Sletten and Olan Monk (C.A.N.V.A.S) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3360-2026-09-05/",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 20:30",
     "venue": "Landmark",
+    "when": "Sat 21:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-04T20:30:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Ekkolodd + Støv Fri 4 Sept 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3371-2026-09-04/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 20:30",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-09-04T20:30:00+02:00"
+    "starts_at": "2026-09-05T21:00:00+02:00"
   }
 ]
