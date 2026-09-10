@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
-    "when": "Wed 11:00 • 11:15 • 11:30 (+67 later)",
     "venue": "Bergen Kino",
+    "when": "Thu 10:15 • 10:40 • 10:45 (+78 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,67 +14,17 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-09-09T11:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 9 Sept BLEKK: Poesi i villniset 3 Landmark Reading",
-    "url": "https://www.kunsthall.no/en/events/3364-2026-09-09/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Wed 19:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-09-09T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Reading BLEKK: Poesi i villniset 3 Wed 9 Sept 19:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3364-2026-09-09/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Wed 19:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-09-09T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Bergen Bossnett: SOLAR PLEX: Kromoplastik, Mira Kahrs & Olav Eggestøl Sat 12 Sept 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3376-2026-09-12/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sat 23:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-09-12T23:00:00+02:00"
+    "starts_at": "2026-09-10T10:15:00+02:00"
   },
   {
     "source": "Kulturhuset i Bergen",
     "title": "Rett fra jobb JAZZ",
     "url": "https://www.kulturhusetibergen.no/program?category=Rett%20fra%20jobb%20JAZZ",
     "city": "Bergen",
-    "where": "Kulturhuset i Bergen",
-    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
-    "when": "Fri 00:00",
     "venue": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
+    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "jazz",
@@ -86,30 +36,14 @@
     "starts_at": "2026-09-18T00:00:00+02:00"
   },
   {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Superføkk: Superføkk Release Party Fri 18 Sept 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-09-18T20:00:00+02:00"
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Trommesirkel",
     "url": "https://www.kulturhusetibergen.no/program?category=Trommesirkel",
     "city": "Bergen",
-    "where": "Kulturhuset i Bergen",
-    "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
-    "when": "Mon 00:00",
     "venue": "Kulturhuset i Bergen",
+    "when": "Mon 00:00",
+    "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -120,30 +54,14 @@
     "starts_at": "2026-09-21T00:00:00+02:00"
   },
   {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Ingvild Homme, Bare Folk: Ingvild Homme + support: Bare Folk Fri 25 Sept 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3342-2026-09-25/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-09-25T20:00:00+02:00"
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Lørdagsyoga på Kulturhuset",
     "url": "https://www.kulturhusetibergen.no/program?category=L%C3%B8rdagsyoga%20p%C3%A5%20Kulturhuset",
     "city": "Bergen",
-    "where": "Kulturhuset i Bergen",
-    "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
-    "when": "Sat 00:00",
     "venue": "Kulturhuset i Bergen",
+    "when": "Sat 00:00",
+    "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -154,94 +72,14 @@
     "starts_at": "2026-09-26T00:00:00+02:00"
   },
   {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Grant-Lee Phillips (US) Sun 4 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3335-2026-10-04/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sun 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-04T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Les Imprimés + Sam Eagle (UK) Thu 15 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Thu 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-15T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: King Hüsky + Selma French Sun 18 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sun 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-18T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Jesca Hoop (US) Thu 22 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3338-2026-10-22/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Thu 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-22T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Frøkedal & Powerfolk-Familien Sun 25 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sun 20:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-25T20:00:00+01:00"
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Musikkbingo",
     "url": "https://www.kulturhusetibergen.no/program?category=Musikkbingo",
     "city": "Bergen",
-    "where": "Kulturhuset i Bergen",
-    "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
-    "when": "Fri 00:00",
     "venue": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
+    "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -256,10 +94,10 @@
     "title": "Konserter",
     "url": "https://www.kulturhusetibergen.no/program?category=Konserter",
     "city": "Bergen",
-    "where": "Kulturhuset i Bergen",
-    "description": "Den danske duoen Bremer/McCoy har de siste årene etablert seg som et av Nordens mest særpregede og kritikerroste musikalske samarbeid.",
-    "when": "Mon 00:00",
     "venue": "Kulturhuset i Bergen",
+    "when": "Mon 00:00",
+    "description": "Den danske duoen Bremer/McCoy har de siste årene etablert seg som et av Nordens mest særpregede og kritikerroste musikalske samarbeid.",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "dj",
