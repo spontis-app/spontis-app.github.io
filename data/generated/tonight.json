@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 12 Sept Bergen Bossnett: SOLAR PLEX: Kromoplastik, Mira Kahrs & Olav Eggestøl Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3376-2026-09-12/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Sat 23:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-12T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Bergen Bossnett: SOLAR PLEX: Kromoplastik, Mira Kahrs & Olav Eggestøl Sat 12 Sept 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3376-2026-09-12/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Sat 23:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-12T23:00:00+02:00"
+  }
+]
