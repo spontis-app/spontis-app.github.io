@@ -1,41 +1,21 @@
 [
   {
     "source": "Kulturhuset i Bergen",
-    "title": "Bingo",
-    "url": "https://www.kulturhusetibergen.no/program?category=Bingo",
+    "title": "Rett fra jobb JAZZ",
+    "url": "https://www.kulturhusetibergen.no/program?category=Rett%20fra%20jobb%20JAZZ",
     "city": "Bergen",
+    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
     "where": "Kulturhuset i Bergen",
-    "when": "Thu 00:00",
+    "when": "Fri 00:00",
     "venue": "Kulturhuset i Bergen",
-    "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
     "tags": [
       "culture",
-      "dj",
-      "late-night",
-      "live"
+      "jazz",
+      "late-night"
     ],
     "sources": [
       "Kulturhuset i Bergen"
     ],
-    "starts_at": "2026-09-17T00:00:00+02:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Konserter",
-    "url": "https://www.kulturhusetibergen.no/program?category=Konserter",
-    "city": "Bergen",
-    "where": "Kulturhuset i Bergen",
-    "when": "Thu 00:00",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Siden gjennombruddet med Stockholm i mitt hjärta (2011) – og ikke minst den ikoniske «Besvärjelse» – har publikum i hele Skandinavia tatt ham til sitt hjerte.",
-    "tags": [
-      "culture",
-      "late-night",
-      "live"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-09-17T00:00:00+02:00"
+    "starts_at": "2026-09-18T00:00:00+02:00"
   }
 ]
