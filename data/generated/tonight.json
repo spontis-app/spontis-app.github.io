@@ -1,21 +1,34 @@
 [
   {
-    "source": "Kulturhuset i Bergen",
-    "title": "Rett fra jobb JAZZ",
-    "url": "https://www.kulturhusetibergen.no/program?category=Rett%20fra%20jobb%20JAZZ",
+    "source": "Bergen Kunsthall",
+    "title": "2026 18 Sept Superføkk: Superføkk Release Party Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
     "city": "Bergen",
-    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
-    "where": "Kulturhuset i Bergen",
-    "when": "Fri 00:00",
-    "venue": "Kulturhuset i Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
-      "culture",
-      "jazz",
-      "late-night"
+      "culture"
     ],
     "sources": [
-      "Kulturhuset i Bergen"
+      "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-18T00:00:00+02:00"
+    "starts_at": "2026-09-18T20:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Superføkk: Superføkk Release Party Fri 18 Sept 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-18T20:00:00+02:00"
   }
 ]
