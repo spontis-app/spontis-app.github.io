@@ -1,34 +1,38 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 18 Sept Superføkk: Superføkk Release Party Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
+    "title": "2026 19 Sept Girson, Espen Iden: DUNK #1 – Girson & Espen Iden Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3374-2026-09-19/",
     "city": "Bergen",
     "venue": "Landmark",
     "where": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-18T20:00:00+02:00"
+    "starts_at": "2026-09-19T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Superføkk: Superføkk Release Party Fri 18 Sept 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
+    "title": "Club Girson, Espen Iden: DUNK #1 – Girson & Espen Iden Sat 19 Sept 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3374-2026-09-19/",
     "city": "Bergen",
     "venue": "Landmark",
     "where": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-18T20:00:00+02:00"
+    "starts_at": "2026-09-19T23:00:00+02:00"
   }
 ]

@@ -6,7 +6,7 @@
     "city": "Bergen",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
-    "when": "Fri 10:20 • 10:30 • 10:45 (+84 later)",
+    "when": "Sat 10:15 • 10:30 • 10:45 (+92 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,39 +14,25 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-09-18T10:20:00+02:00"
+    "starts_at": "2026-09-19T10:15:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 18 Sept Superføkk: Superføkk Release Party Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
+    "title": "2026 19 Sept Girson, Espen Iden: DUNK #1 – Girson & Espen Iden Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3374-2026-09-19/",
     "city": "Bergen",
     "venue": "Landmark",
     "where": "Landmark",
-    "when": "Fri 20:00",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-18T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Superføkk: Superføkk Release Party Fri 18 Sept 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3340-2026-09-18/",
-    "city": "Bergen",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "when": "Fri 20:00",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-09-18T20:00:00+02:00"
+    "starts_at": "2026-09-19T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -68,12 +54,32 @@
   },
   {
     "source": "Kulturhuset i Bergen",
+    "title": "Annet",
+    "url": "https://www.kulturhusetibergen.no/program?category=Annet",
+    "city": "Bergen",
+    "venue": "Kulturhuset i Bergen",
+    "description": "Arrangementet er i samarbeid med Universitetet i Bergen og Havforskningsinstituttet, og modereres av Bergen Næringsråd.",
+    "where": "Kulturhuset i Bergen",
+    "when": "Mon 00:00",
+    "tags": [
+      "culture",
+      "dj",
+      "late-night",
+      "live"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-09-21T00:00:00+02:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
     "title": "Trommesirkel",
     "url": "https://www.kulturhusetibergen.no/program?category=Trommesirkel",
     "city": "Bergen",
     "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
+    "where": "Kulturhuset i Bergen",
     "when": "Mon 00:00",
     "tags": [
       "culture",
@@ -106,8 +112,8 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Konserter",
     "city": "Bergen",
     "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
     "description": "Kulturhuset i Bergen har gleden av å samarbeide med Bergen Internasjonale Musikkfestival, og inviterer hele Bergen by til folkedanskurs og påfølgende konsert med den prisvinnende svenske feleduoen Vågspel!",
+    "where": "Kulturhuset i Bergen",
     "when": "Sat 00:00",
     "tags": [
       "culture",
@@ -125,8 +131,8 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Yoga",
     "city": "Bergen",
     "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
     "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
+    "where": "Kulturhuset i Bergen",
     "when": "Sat 00:00",
     "tags": [
       "culture",
