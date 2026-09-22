@@ -4,7 +4,7 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Mon 10:00 • 10:20 • 10:30 (+85 later)",
+    "when": "Tue 10:00 • 10:20 • 10:30 (+83 later)",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
     "tags": [
@@ -14,7 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-09-21T10:00:00+02:00"
+    "starts_at": "2026-09-22T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -38,8 +38,8 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Konserter",
     "city": "Bergen",
     "when": "Sat 00:00",
-    "description": "Kulturhuset i Bergen har gleden av å samarbeide med Bergen Internasjonale Musikkfestival, og inviterer hele Bergen by til folkedanskurs og påfølgende konsert med den prisvinnende svenske feleduoen Vågspel!",
     "where": "Kulturhuset i Bergen",
+    "description": "Kulturhuset i Bergen har gleden av å samarbeide med Bergen Internasjonale Musikkfestival, og inviterer hele Bergen by til folkedanskurs og påfølgende konsert med den prisvinnende svenske feleduoen Vågspel!",
     "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
@@ -57,8 +57,8 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Yoga",
     "city": "Bergen",
     "when": "Sat 00:00",
-    "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
     "where": "Kulturhuset i Bergen",
+    "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
     "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
@@ -164,5 +164,23 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2026-12-05T20:30:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Trommesirkel",
+    "url": "https://www.kulturhusetibergen.no/program?category=Trommesirkel",
+    "city": "Bergen",
+    "when": "Thu 00:00",
+    "where": "Kulturhuset i Bergen",
+    "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
+    "venue": "Kulturhuset i Bergen",
+    "tags": [
+      "culture",
+      "late-night"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-12-10T00:00:00+01:00"
   }
 ]
