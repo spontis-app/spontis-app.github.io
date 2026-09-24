@@ -1,1 +1,54 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 24 Sept Bergen Internasjonale Musikkfestival: Kit Sebastian (UK) Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3379-2026-09-24/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Thu 21:45",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-24T21:45:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Bergen Internasjonale Musikkfestival: Kit Sebastian (UK) Thu 24 Sept 21:45, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3379-2026-09-24/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Thu 21:45",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-09-24T21:45:00+02:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Annet",
+    "url": "https://www.kulturhusetibergen.no/program?category=Annet",
+    "city": "Bergen",
+    "where": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
+    "venue": "Kulturhuset i Bergen",
+    "description": "700 000 mennesker står utenfor jobb og utdanning, i tillegg til over en million pensjonister. Hvordan kan et av verdens beste arbeidsliv være utilgjengelig for så mange unge – og har vi råd til det?",
+    "tags": [
+      "culture",
+      "dj",
+      "late-night",
+      "live"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-09-25T00:00:00+02:00"
+  }
+]
