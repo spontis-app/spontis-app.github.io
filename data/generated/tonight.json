@@ -1,54 +1,71 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 24 Sept Bergen Internasjonale Musikkfestival: Kit Sebastian (UK) Landmark Concert",
-    "url": "https://www.kunsthall.no/en/events/3379-2026-09-24/",
+    "title": "2026 25 Sept Ingvild Homme, Bare Folk: Ingvild Homme + support: Bare Folk Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3342-2026-09-25/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Thu 21:45",
     "venue": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-24T21:45:00+02:00"
+    "starts_at": "2026-09-25T20:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Concert Bergen Internasjonale Musikkfestival: Kit Sebastian (UK) Thu 24 Sept 21:45, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3379-2026-09-24/",
+    "title": "Concert Ingvild Homme, Bare Folk: Ingvild Homme + support: Bare Folk Fri 25 Sept 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3342-2026-09-25/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Thu 21:45",
     "venue": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-09-24T21:45:00+02:00"
+    "starts_at": "2026-09-25T20:00:00+02:00"
   },
   {
     "source": "Kulturhuset i Bergen",
-    "title": "Annet",
-    "url": "https://www.kulturhusetibergen.no/program?category=Annet",
+    "title": "Konserter",
+    "url": "https://www.kulturhusetibergen.no/program?category=Konserter",
     "city": "Bergen",
     "where": "Kulturhuset i Bergen",
-    "when": "Fri 00:00",
     "venue": "Kulturhuset i Bergen",
-    "description": "700 000 mennesker står utenfor jobb og utdanning, i tillegg til over en million pensjonister. Hvordan kan et av verdens beste arbeidsliv være utilgjengelig for så mange unge – og har vi råd til det?",
+    "description": "Kulturhuset i Bergen har gleden av å samarbeide med Bergen Internasjonale Musikkfestival, og inviterer hele Bergen by til folkedanskurs og påfølgende konsert med den prisvinnende svenske feleduoen Vågspel!",
+    "when": "Sat 00:00",
     "tags": [
       "culture",
-      "dj",
       "late-night",
       "live"
     ],
     "sources": [
       "Kulturhuset i Bergen"
     ],
-    "starts_at": "2026-09-25T00:00:00+02:00"
+    "starts_at": "2026-09-26T00:00:00+02:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Yoga",
+    "url": "https://www.kulturhusetibergen.no/program?category=Yoga",
+    "city": "Bergen",
+    "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
+    "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
+    "when": "Sat 00:00",
+    "tags": [
+      "culture",
+      "late-night"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-09-26T00:00:00+02:00"
   }
 ]
