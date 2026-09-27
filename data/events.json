@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
-    "when": "Sat 10:00 • 10:15 • 10:30 (+99 later)",
     "venue": "Bergen Kino",
+    "when": "Sun 10:30 • 10:45 • 11:00 (+96 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,7 +14,25 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-09-26T10:00:00+02:00"
+    "starts_at": "2026-09-27T10:30:00+02:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Yoga",
+    "url": "https://www.kulturhusetibergen.no/program?category=Yoga",
+    "city": "Bergen",
+    "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
+    "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
+    "when": "Sat 00:00",
+    "tags": [
+      "culture",
+      "late-night"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-10-31T00:00:00+01:00"
   },
   {
     "source": "Kulturhuset i Bergen",
@@ -23,8 +41,8 @@
     "city": "Bergen",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
     "where": "Kulturhuset i Bergen",
-    "when": "Thu 00:00",
     "venue": "Kulturhuset i Bergen",
+    "when": "Thu 00:00",
     "tags": [
       "culture",
       "late-night"
