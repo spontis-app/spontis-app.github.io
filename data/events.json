@@ -1,227 +1,32 @@
 [
   {
-    "source": "Bergen Kunsthall",
-    "title": "Club Klubb Afro: Select Sat 3 Oct 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3380-2026-10-03/",
+    "source": "Kulturhuset i Bergen",
+    "title": "Rett fra jobb JAZZ",
+    "url": "https://www.kulturhusetibergen.no/program?category=Rett%20fra%20jobb%20JAZZ",
     "city": "Bergen",
-    "when": "Sat 23:00",
-    "venue": "Landmark",
-    "where": "Landmark",
+    "where": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
+    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
-      "late-night",
-      "techno"
+      "jazz",
+      "late-night"
     ],
     "sources": [
-      "Bergen Kunsthall"
+      "Kulturhuset i Bergen"
     ],
-    "starts_at": "2026-10-03T23:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Grant-Lee Phillips (US) Sun 4 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3335-2026-10-04/",
-    "city": "Bergen",
-    "when": "Sun 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-04T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Film Bergen internasjonale filmfestival: The Best Summer Thu 8 Oct 19:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3386-2026-10-08/",
-    "city": "Bergen",
-    "when": "Thu 19:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-08T19:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Exhibition Sung Hwan Kim + Olof Marsja: Exhibition Opening Fri 9 Oct 20:00, Gallery I-V",
-    "url": "https://www.kunsthall.no/en/events/3390-2026-10-09/",
-    "city": "Bergen",
-    "when": "Fri 20:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-09T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Åpningkonsert: Read Aloud Lyrics iv: Bergen by dogr Fri 9 Oct 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3392-2026-10-09/",
-    "city": "Bergen",
-    "when": "Fri 20:30",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-09T20:30:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Conversation Plattform: Sung Hwan Kim, Yolande Zola Zoli van der Heide, Michael DiGregorio (aka dogr), Silja Leifsdottir Sat 10 Oct 14:00, Upstairs",
-    "url": "https://www.kunsthall.no/en/events/3398-2026-10-10/",
-    "city": "Bergen",
-    "when": "Sat 14:00",
-    "venue": "Bergen Kunsthall",
-    "where": "Bergen Kunsthall",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-10T14:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Book Launch Hverdag Books Boklansering: The Fallow Year: A Guidebook Wed 14 Oct 18:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3388-2026-10-14/",
-    "city": "Bergen",
-    "when": "Wed 18:30",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-14T18:30:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Les Imprimés + Sam Eagle (UK) Thu 15 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
-    "city": "Bergen",
-    "when": "Thu 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-15T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Jungelen Colombia Spesial: Sofia Guidi, Marxiz & Simon Alejandro (live) + Anny Roxanna (DJ) Sat 17 Oct — 18 Oct 22:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3389-2026-10-17/",
-    "city": "Bergen",
-    "when": "Sat 22:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-17T22:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: King Hüsky + Selma French Sun 18 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
-    "city": "Bergen",
-    "when": "Sun 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-18T20:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Sat 24 Oct 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
-    "city": "Bergen",
-    "when": "Sat 23:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-24T23:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Frøkedal & Powerfolk-Familien Sun 25 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
-    "city": "Bergen",
-    "when": "Sun 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-25T20:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Playdate: Einmal Immer Wed 28 Oct 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3381-2026-10-28/",
-    "city": "Bergen",
-    "when": "Wed 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-28T20:00:00+01:00"
+    "starts_at": "2026-10-23T00:00:00+02:00"
   },
   {
     "source": "Kulturhuset i Bergen",
     "title": "Yoga",
     "url": "https://www.kulturhusetibergen.no/program?category=Yoga",
     "city": "Bergen",
+    "where": "Kulturhuset i Bergen",
     "when": "Sat 00:00",
     "description": "Yoga med Maria Djoenne. Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
     "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -232,62 +37,14 @@
     "starts_at": "2026-10-31T00:00:00+01:00"
   },
   {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
-    "city": "Bergen",
-    "when": "Wed 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-12-02T20:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp Fri 4 Dec 20:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
-    "city": "Bergen",
-    "when": "Fri 20:00",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-12-04T20:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Concert Perfect Sounds Forever: Kanaan Sat 5 Dec 20:30, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
-    "city": "Bergen",
-    "when": "Sat 20:30",
-    "venue": "Landmark",
-    "where": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-12-05T20:30:00+01:00"
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Trommesirkel",
     "url": "https://www.kulturhusetibergen.no/program?category=Trommesirkel",
     "city": "Bergen",
+    "where": "Kulturhuset i Bergen",
     "when": "Thu 00:00",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
     "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
