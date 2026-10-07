@@ -1,11 +1,28 @@
 [
   {
+    "source": "Bergen Kino",
+    "title": "Kinovisning",
+    "url": "https://www.bergenkino.no/",
+    "city": "Bergen",
+    "when": "Wed 10:30 • 10:45 • 11:00 (+92 later)",
+    "where": "Bergen Kino",
+    "venue": "Bergen Kino",
+    "tags": [
+      "cinema",
+      "date"
+    ],
+    "sources": [
+      "Bergen Kino"
+    ],
+    "starts_at": "2026-10-07T10:30:00+02:00"
+  },
+  {
     "source": "Bergen Kunsthall",
     "title": "Film Bergen internasjonale filmfestival: The Best Summer Thu 8 Oct 19:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3386-2026-10-08/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Thu 19:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -20,8 +37,8 @@
     "title": "Exhibition Sung Hwan Kim + Olof Marsja: Exhibition Opening Fri 9 Oct 20:00, Gallery I-V",
     "url": "https://www.kunsthall.no/en/events/3390-2026-10-09/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "when": "Fri 20:00",
+    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -36,8 +53,8 @@
     "title": "Concert Åpningskonsert: Read Aloud Lyrics iv: Bergen by dogr Fri 9 Oct 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3392-2026-10-09/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Fri 20:30",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -48,13 +65,31 @@
     "starts_at": "2026-10-09T20:30:00+02:00"
   },
   {
+    "source": "Bergen Kunsthall",
+    "title": "Club Opening Party: Mira Kahrs Fri 9 Oct — 10 Oct 22:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3400-2026-10-09/",
+    "city": "Bergen",
+    "when": "Fri 22:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-09T22:00:00+02:00"
+  },
+  {
     "source": "Kulturhuset i Bergen",
     "title": "Konferanseprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
     "city": "Bergen",
+    "when": "Sat 00:00",
     "where": "Kulturhuset i Bergen",
     "description": "Hilja Balsnes Løvvik og Viljar Ratama Dunđerović er komponister og utøvende musikere som har jobbet mye med kvensk musikktradisjon. De jobber nå med et studioalbum som skal romme både kvensk tradisjonsmusikk og nykomponerte låter på både kvensk og norsk. Dette vil du ikke gå glipp av!",
-    "when": "Sat 00:00",
     "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
@@ -72,9 +107,9 @@
     "title": "Konsertprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
     "city": "Bergen",
+    "when": "Sat 00:00",
     "where": "Kulturhuset i Bergen",
     "description": "Charmeurselskabets Salongensemble består av tolv herremenn som i 15 år har knyttet sin sløyfe, tent sin pipe og sunget smektende a cappella. Dette skal feires med en storslått jubileumskonsert!",
-    "when": "Sat 00:00",
     "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
@@ -91,8 +126,8 @@
     "title": "Conversation Plattform: Sung Hwan Kim, Yolande Zola Zoli van der Heide, David Michael DiGregorio (aka dogr), Silja Leifsdottir Sat 10 Oct 14:00, Upstairs",
     "url": "https://www.kunsthall.no/en/events/3398-2026-10-10/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "when": "Sat 14:00",
+    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -107,8 +142,8 @@
     "title": "Book Launch Hverdag Books Boklansering: The Fallow Year: A Guidebook Wed 14 Oct 19:00, Live studio",
     "url": "https://www.kunsthall.no/en/events/3388-2026-10-14/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "when": "Wed 19:00",
+    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
     "tags": [
       "culture"
@@ -123,8 +158,8 @@
     "title": "Concert Perfect Sounds Forever: Les Imprimés + Sam Eagle (UK) Thu 15 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Thu 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -139,8 +174,8 @@
     "title": "Club Jungelen Colombia Spesial: Sofia Guidi, Marxiz & Simon Alejandro (live) + Anny Roxanna (DJ) Sat 17 Oct — 18 Oct 22:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3389-2026-10-17/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 22:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture",
@@ -157,8 +192,8 @@
     "title": "Concert Perfect Sounds Forever: King Hüsky + Selma French Sun 18 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -173,8 +208,8 @@
     "title": "Club KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Sat 24 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 23:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture",
@@ -191,8 +226,8 @@
     "title": "Concert Perfect Sounds Forever: Frøkedal & Powerfolk-Familien Sun 25 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sun 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -207,8 +242,8 @@
     "title": "Concert Playdate: Einmal Immer Wed 28 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3381-2026-10-28/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Wed 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -223,8 +258,8 @@
     "title": "Club Darkdome: Linn, Haakon, Elli, Lilly-Mae Sat 31 Oct 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 21:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture",
@@ -240,8 +275,8 @@
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Wed 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -256,8 +291,8 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp Fri 4 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Fri 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -272,8 +307,8 @@
     "title": "Concert Perfect Sounds Forever: Kanaan Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 20:30",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -288,9 +323,9 @@
     "title": "Kulturprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
+    "when": "Thu 00:00",
     "where": "Kulturhuset i Bergen",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
-    "when": "Thu 00:00",
     "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
