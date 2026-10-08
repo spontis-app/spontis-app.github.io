@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Wed 10:30 • 10:45 • 11:00 (+92 later)",
-    "where": "Bergen Kino",
+    "when": "Thu 10:00 • 10:30 • 10:45 (+89 later)",
     "venue": "Bergen Kino",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,6 +14,38 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-07T10:30:00+02:00"
+    "starts_at": "2026-10-08T10:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 8 Oct Bergen internasjonale filmfestival: The Best Summer Landmark Film",
+    "url": "https://www.kunsthall.no/en/events/3386-2026-10-08/",
+    "city": "Bergen",
+    "when": "Thu 19:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-08T19:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Film Bergen internasjonale filmfestival: The Best Summer Thu 8 Oct 19:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3386-2026-10-08/",
+    "city": "Bergen",
+    "when": "Thu 19:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-08T19:00:00+02:00"
   }
 ]

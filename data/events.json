@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Wed 10:30 • 10:45 • 11:00 (+92 later)",
-    "where": "Bergen Kino",
+    "when": "Thu 10:00 • 10:30 • 10:45 (+89 later)",
     "venue": "Bergen Kino",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,7 +14,23 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-07T10:30:00+02:00"
+    "starts_at": "2026-10-08T10:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 8 Oct Bergen internasjonale filmfestival: The Best Summer Landmark Film",
+    "url": "https://www.kunsthall.no/en/events/3386-2026-10-08/",
+    "city": "Bergen",
+    "when": "Thu 19:00",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-08T19:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -22,8 +38,8 @@
     "url": "https://www.kunsthall.no/en/events/3386-2026-10-08/",
     "city": "Bergen",
     "when": "Thu 19:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -38,8 +54,8 @@
     "url": "https://www.kunsthall.no/en/events/3390-2026-10-09/",
     "city": "Bergen",
     "when": "Fri 20:00",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -54,8 +70,8 @@
     "url": "https://www.kunsthall.no/en/events/3392-2026-10-09/",
     "city": "Bergen",
     "when": "Fri 20:30",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -70,8 +86,8 @@
     "url": "https://www.kunsthall.no/en/events/3400-2026-10-09/",
     "city": "Bergen",
     "when": "Fri 22:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -88,9 +104,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
     "city": "Bergen",
     "when": "Sat 00:00",
+    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "description": "Hilja Balsnes Løvvik og Viljar Ratama Dunđerović er komponister og utøvende musikere som har jobbet mye med kvensk musikktradisjon. De jobber nå med et studioalbum som skal romme både kvensk tradisjonsmusikk og nykomponerte låter på både kvensk og norsk. Dette vil du ikke gå glipp av!",
-    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "dj",
@@ -108,9 +124,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
     "city": "Bergen",
     "when": "Sat 00:00",
+    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "description": "Charmeurselskabets Salongensemble består av tolv herremenn som i 15 år har knyttet sin sløyfe, tent sin pipe og sunget smektende a cappella. Dette skal feires med en storslått jubileumskonsert!",
-    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night",
@@ -127,8 +143,8 @@
     "url": "https://www.kunsthall.no/en/events/3398-2026-10-10/",
     "city": "Bergen",
     "when": "Sat 14:00",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -143,8 +159,8 @@
     "url": "https://www.kunsthall.no/en/events/3388-2026-10-14/",
     "city": "Bergen",
     "when": "Wed 19:00",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "tags": [
       "culture"
     ],
@@ -159,8 +175,8 @@
     "url": "https://www.kunsthall.no/en/events/3336-2026-10-15/",
     "city": "Bergen",
     "when": "Thu 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -175,8 +191,8 @@
     "url": "https://www.kunsthall.no/en/events/3389-2026-10-17/",
     "city": "Bergen",
     "when": "Sat 22:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -193,8 +209,8 @@
     "url": "https://www.kunsthall.no/en/events/3337-2026-10-18/",
     "city": "Bergen",
     "when": "Sun 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -209,8 +225,8 @@
     "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
     "city": "Bergen",
     "when": "Sat 23:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -227,8 +243,8 @@
     "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
     "city": "Bergen",
     "when": "Sun 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -243,8 +259,8 @@
     "url": "https://www.kunsthall.no/en/events/3381-2026-10-28/",
     "city": "Bergen",
     "when": "Wed 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -259,8 +275,8 @@
     "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
     "city": "Bergen",
     "when": "Sat 21:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture",
       "techno"
@@ -276,8 +292,8 @@
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
     "when": "Wed 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -292,8 +308,8 @@
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
     "when": "Fri 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -308,8 +324,8 @@
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
     "when": "Sat 20:30",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -324,9 +340,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
     "when": "Thu 00:00",
+    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
-    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
