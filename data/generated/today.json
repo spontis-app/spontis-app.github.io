@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Fri 10:00 • 10:30 • 10:45 (+95 later)",
-    "where": "Bergen Kino",
     "venue": "Bergen Kino",
+    "when": "Sat 10:00 • 10:30 • 10:45 (+95 later)",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,6 +14,22 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-09T10:00:00+02:00"
+    "starts_at": "2026-10-10T10:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 10 Oct Plattform: Sung Hwan Kim, Yolande Zola Zoli van der Heide, David Michael DiGregorio (aka dogr), Silja Leifsdottir Upstairs Conversation",
+    "url": "https://www.kunsthall.no/en/events/3398-2026-10-10/",
+    "city": "Bergen",
+    "venue": "Bergen Kunsthall",
+    "when": "Sat 14:00",
+    "where": "Bergen Kunsthall",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-10T14:00:00+02:00"
   }
 ]
