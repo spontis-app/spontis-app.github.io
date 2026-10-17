@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "source": "Bergen Kunsthall",
+    "title": "2026 17 Oct — 18 Oct Jungelen Colombia Spesial: Sofia Guidi, Marxiz & Simon Alejandro (live) + Anny Roxanna (DJ) Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3389-2026-10-17/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Sat 22:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-17T22:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club Jungelen Colombia Spesial: Sofia Guidi, Marxiz & Simon Alejandro (live) + Anny Roxanna (DJ) Sat 17 Oct — 18 Oct 22:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3389-2026-10-17/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Sat 22:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-17T22:00:00+02:00"
+  }
+]
