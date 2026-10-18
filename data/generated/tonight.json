@@ -1,38 +1,40 @@
 [
   {
-    "source": "Bergen Kunsthall",
-    "title": "2026 17 Oct — 18 Oct Jungelen Colombia Spesial: Sofia Guidi, Marxiz & Simon Alejandro (live) + Anny Roxanna (DJ) Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3389-2026-10-17/",
+    "source": "Kulturhuset i Bergen",
+    "title": "Konferanseprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sat 22:00",
-    "venue": "Landmark",
+    "venue": "Kulturhuset i Bergen",
+    "description": "Hilja Balsnes Løvvik og Viljar Ratama Dunđerović er komponister og utøvende musikere som har jobbet mye med kvensk musikktradisjon. De jobber nå med et studioalbum som skal romme både kvensk tradisjonsmusikk og nykomponerte låter på både kvensk og norsk. Dette vil du ikke gå glipp av!",
+    "when": "Mon 00:00",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
+      "dj",
       "late-night",
-      "techno"
+      "live"
     ],
     "sources": [
-      "Bergen Kunsthall"
+      "Kulturhuset i Bergen"
     ],
-    "starts_at": "2026-10-17T22:00:00+02:00"
+    "starts_at": "2026-10-19T00:00:00+02:00"
   },
   {
-    "source": "Bergen Kunsthall",
-    "title": "Club Jungelen Colombia Spesial: Sofia Guidi, Marxiz & Simon Alejandro (live) + Anny Roxanna (DJ) Sat 17 Oct — 18 Oct 22:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3389-2026-10-17/",
+    "source": "Kulturhuset i Bergen",
+    "title": "Kulturprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "where": "Landmark",
-    "when": "Sat 22:00",
-    "venue": "Landmark",
+    "venue": "Kulturhuset i Bergen",
+    "description": "Konteksten for REPLICA er dagens Kina, men filmen er like aktuell for et norsk publikum. Kom og bli med på en samtale om kunstig intelligens, ensomhet, kjærlighet, kjønn og kommersialisering av intimitet.",
+    "when": "Mon 00:00",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
-      "late-night",
-      "techno"
+      "late-night"
     ],
     "sources": [
-      "Bergen Kunsthall"
+      "Kulturhuset i Bergen"
     ],
-    "starts_at": "2026-10-17T22:00:00+02:00"
+    "starts_at": "2026-10-19T00:00:00+02:00"
   }
 ]
