@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "where": "Bergen Kino",
     "venue": "Bergen Kino",
-    "when": "Mon 10:00 • 10:40 • 11:00 (+51 later)",
+    "where": "Bergen Kino",
+    "when": "Tue 10:00 • 10:30 • 10:45 (+50 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,15 +14,15 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-19T10:00:00+02:00"
+    "starts_at": "2026-10-20T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Art Histories Kunsthistorier: Art photography: Cindy Sherman, Torbjørn Rødland and Vibeke Tandberg Wed 21 Oct 18:00, Mediation room",
     "url": "https://www.kunsthall.no/en/events/3403-2026-10-21/",
     "city": "Bergen",
-    "where": "Bergen Kunsthall",
     "venue": "Bergen Kunsthall",
+    "where": "Bergen Kunsthall",
     "when": "Wed 18:00",
     "tags": [
       "culture"
@@ -37,9 +37,9 @@
     "title": "Konsertprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
     "city": "Bergen",
-    "where": "Kulturhuset i Bergen",
-    "venue": "Kulturhuset i Bergen",
     "description": "Hilja Balsnes Løvvik og Viljar Ratama Dunđerović er komponister og utøvende musikere som har jobbet mye med kvensk musikktradisjon. De jobber nå med et studioalbum som skal romme både kvensk tradisjonsmusikk og nykomponerte låter på både kvensk og norsk. Dette vil du ikke gå glipp av!",
+    "venue": "Kulturhuset i Bergen",
+    "where": "Kulturhuset i Bergen",
     "when": "Fri 00:00",
     "tags": [
       "culture",
@@ -56,8 +56,8 @@
     "title": "Food ETEPUB Fri 23 Oct 18:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3401-2026-10-23/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Fri 18:00",
     "tags": [
       "culture"
@@ -72,8 +72,8 @@
     "title": "Club KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Sat 24 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Sat 23:00",
     "tags": [
       "culture",
@@ -90,8 +90,8 @@
     "title": "Concert Perfect Sounds Forever: Frøkedal & Powerfolk-Familien Sun 25 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Sun 20:00",
     "tags": [
       "culture"
@@ -106,8 +106,8 @@
     "title": "Concert Playdate: Einmal Immer Wed 28 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3381-2026-10-28/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Wed 20:00",
     "tags": [
       "culture"
@@ -122,8 +122,8 @@
     "title": "Club Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Sat 31 Oct 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Sat 21:00",
     "tags": [
       "culture",
@@ -139,8 +139,8 @@
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Wed 20:00",
     "tags": [
       "culture"
@@ -155,8 +155,8 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp Fri 4 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Fri 20:00",
     "tags": [
       "culture"
@@ -171,8 +171,8 @@
     "title": "Concert Perfect Sounds Forever: Kanaan Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "when": "Sat 20:30",
     "tags": [
       "culture"
