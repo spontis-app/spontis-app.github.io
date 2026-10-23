@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "venue": "Bergen Kino",
-    "when": "Thu 10:00 • 10:30 • 10:45 (+51 later)",
     "where": "Bergen Kino",
+    "when": "Fri 10:00 • 10:30 • 10:45 (+83 later)",
+    "venue": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,73 +14,16 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-22T10:00:00+02:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Konferanseprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Hilja Balsnes Løvvik og Viljar Ratama Dunđerović er komponister og utøvende musikere som har jobbet mye med kvensk musikktradisjon. De jobber nå med et studioalbum som skal romme både kvensk tradisjonsmusikk og nykomponerte låter på både kvensk og norsk. Dette vil du ikke gå glipp av!",
-    "when": "Fri 00:00",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture",
-      "dj",
-      "late-night",
-      "live"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-10-23T00:00:00+02:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Konsertprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Hilja Balsnes Løvvik og Viljar Ratama Dunđerović er komponister og utøvende musikere som har jobbet mye med kvensk musikktradisjon. De jobber nå med et studioalbum som skal romme både kvensk tradisjonsmusikk og nykomponerte låter på både kvensk og norsk. Dette vil du ikke gå glipp av!",
-    "when": "Fri 00:00",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture",
-      "late-night",
-      "live"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-10-23T00:00:00+02:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Kulturprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
-    "when": "Fri 00:00",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-10-23T00:00:00+02:00"
+    "starts_at": "2026-10-23T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Food ETEPUB Fri 23 Oct 18:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3401-2026-10-23/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 18:00",
     "where": "Landmark",
+    "when": "Fri 18:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -94,9 +37,9 @@
     "title": "Club KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Sat 24 Oct 23:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Sat 23:00",
     "where": "Landmark",
+    "when": "Sat 23:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "late-night",
@@ -112,9 +55,9 @@
     "title": "Concert Perfect Sounds Forever: Frøkedal & Powerfolk-Familien Sun 25 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Sun 20:00",
     "where": "Landmark",
+    "when": "Sun 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -128,9 +71,9 @@
     "title": "Concert Playdate: Einmal Immer Wed 28 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3381-2026-10-28/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Wed 20:00",
     "where": "Landmark",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -144,9 +87,9 @@
     "title": "Club Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Sat 31 Oct 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Sat 21:00",
     "where": "Landmark",
+    "when": "Sat 21:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
       "techno"
@@ -161,9 +104,9 @@
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Wed 20:00",
     "where": "Landmark",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -177,9 +120,9 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp Fri 4 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Fri 20:00",
     "where": "Landmark",
+    "when": "Fri 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -193,9 +136,9 @@
     "title": "Concert Perfect Sounds Forever: Kanaan Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "venue": "Landmark",
-    "when": "Sat 20:30",
     "where": "Landmark",
+    "when": "Sat 20:30",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],

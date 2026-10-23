@@ -1,59 +1,18 @@
 [
   {
-    "source": "Kulturhuset i Bergen",
-    "title": "Konferanseprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
+    "source": "Bergen Kunsthall",
+    "title": "Food ETEPUB Fri 23 Oct 18:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3401-2026-10-23/",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Hilja Balsnes Løvvik og Viljar Ratama Dunđerović er komponister og utøvende musikere som har jobbet mye med kvensk musikktradisjon. De jobber nå med et studioalbum som skal romme både kvensk tradisjonsmusikk og nykomponerte låter på både kvensk og norsk. Dette vil du ikke gå glipp av!",
-    "when": "Fri 00:00",
-    "where": "Kulturhuset i Bergen",
+    "where": "Landmark",
+    "when": "Fri 18:00",
+    "venue": "Landmark",
     "tags": [
-      "culture",
-      "dj",
-      "late-night",
-      "live"
+      "culture"
     ],
     "sources": [
-      "Kulturhuset i Bergen"
+      "Bergen Kunsthall"
     ],
-    "starts_at": "2026-10-23T00:00:00+02:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Konsertprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Hilja Balsnes Løvvik og Viljar Ratama Dunđerović er komponister og utøvende musikere som har jobbet mye med kvensk musikktradisjon. De jobber nå med et studioalbum som skal romme både kvensk tradisjonsmusikk og nykomponerte låter på både kvensk og norsk. Dette vil du ikke gå glipp av!",
-    "when": "Fri 00:00",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture",
-      "late-night",
-      "live"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-10-23T00:00:00+02:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Kulturprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
-    "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
-    "when": "Fri 00:00",
-    "where": "Kulturhuset i Bergen",
-    "tags": [
-      "culture",
-      "late-night"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-10-23T00:00:00+02:00"
+    "starts_at": "2026-10-23T18:00:00+02:00"
   }
 ]
