@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
-    "when": "Fri 10:00 • 10:30 • 10:45 (+83 later)",
     "venue": "Bergen Kino",
+    "when": "Sat 10:00 • 10:15 • 10:45 (+96 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,22 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-23T10:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Food ETEPUB Fri 23 Oct 18:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3401-2026-10-23/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "when": "Fri 18:00",
-    "venue": "Landmark",
-    "tags": [
-      "culture"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-23T18:00:00+02:00"
+    "starts_at": "2026-10-24T10:00:00+02:00"
   }
 ]

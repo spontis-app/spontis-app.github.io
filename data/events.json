@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
-    "when": "Fri 10:00 • 10:30 • 10:45 (+83 later)",
     "venue": "Bergen Kino",
+    "when": "Sat 10:00 • 10:15 • 10:45 (+96 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,23 +14,25 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-23T10:00:00+02:00"
+    "starts_at": "2026-10-24T10:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Food ETEPUB Fri 23 Oct 18:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3401-2026-10-23/",
+    "title": "2026 24 Oct KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Fri 18:00",
     "venue": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-10-23T18:00:00+02:00"
+    "starts_at": "2026-10-24T23:00:00+02:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -38,8 +40,8 @@
     "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Sat 23:00",
     "venue": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
       "culture",
       "late-night",
@@ -56,8 +58,8 @@
     "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Sun 20:00",
     "venue": "Landmark",
+    "when": "Sun 20:00",
     "tags": [
       "culture"
     ],
@@ -72,8 +74,8 @@
     "url": "https://www.kunsthall.no/en/events/3381-2026-10-28/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Wed 20:00",
     "venue": "Landmark",
+    "when": "Wed 20:00",
     "tags": [
       "culture"
     ],
@@ -88,8 +90,8 @@
     "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Sat 21:00",
     "venue": "Landmark",
+    "when": "Sat 21:00",
     "tags": [
       "culture",
       "techno"
@@ -105,8 +107,8 @@
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Wed 20:00",
     "venue": "Landmark",
+    "when": "Wed 20:00",
     "tags": [
       "culture"
     ],
@@ -121,8 +123,8 @@
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Fri 20:00",
     "venue": "Landmark",
+    "when": "Fri 20:00",
     "tags": [
       "culture"
     ],
@@ -137,8 +139,8 @@
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Sat 20:30",
     "venue": "Landmark",
+    "when": "Sat 20:30",
     "tags": [
       "culture"
     ],

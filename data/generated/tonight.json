@@ -1,18 +1,38 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "Food ETEPUB Fri 23 Oct 18:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3401-2026-10-23/",
+    "title": "2026 24 Oct KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Landmark Club",
+    "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
     "city": "Bergen",
     "where": "Landmark",
-    "when": "Fri 18:00",
     "venue": "Landmark",
+    "when": "Sat 23:00",
     "tags": [
-      "culture"
+      "culture",
+      "late-night",
+      "techno"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-10-23T18:00:00+02:00"
+    "starts_at": "2026-10-24T23:00:00+02:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Club KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Sat 24 Oct 23:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "when": "Sat 23:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-24T23:00:00+02:00"
   }
 ]
