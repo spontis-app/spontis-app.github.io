@@ -6,7 +6,7 @@
     "city": "Bergen",
     "where": "Bergen Kino",
     "venue": "Bergen Kino",
-    "when": "Sat 10:00 • 10:15 • 10:45 (+96 later)",
+    "when": "Sun 10:00 • 10:30 • 10:45 (+93 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,43 +14,23 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-24T10:00:00+02:00"
+    "starts_at": "2026-10-25T10:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 24 Oct KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
+    "title": "2026 25 Oct Perfect Sounds Forever: Frøkedal & Powerfolk-Familien Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
     "city": "Bergen",
     "where": "Landmark",
     "venue": "Landmark",
-    "when": "Sat 23:00",
+    "when": "Sun 20:00",
     "tags": [
-      "culture",
-      "late-night",
-      "techno"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-10-24T23:00:00+02:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Sat 24 Oct 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
-    "city": "Bergen",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "when": "Sat 23:00",
-    "tags": [
-      "culture",
-      "late-night",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-24T23:00:00+02:00"
+    "starts_at": "2026-10-25T20:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
@@ -83,6 +63,63 @@
       "Bergen Kunsthall"
     ],
     "starts_at": "2026-10-28T20:00:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Konferanseprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
+    "city": "Bergen",
+    "description": "Gjennom refleksjon, diskusjon og arbeid sammen ser vi nærmere på hva som skjer med et næringsmiljø når flere tenker litt mindre transaksjonelt og litt mer langsiktig. Når spørsmålet ikke bare er «hva får jeg igjen for dette», men også «hva kan jeg bidra med».",
+    "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
+    "when": "Thu 00:00",
+    "tags": [
+      "culture",
+      "dj",
+      "late-night",
+      "live"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-10-29T00:00:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Konsertprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
+    "city": "Bergen",
+    "description": "“Dette er allerede unge Symres tredje album. Det tok altså si tid før jeg greide å kaste meg på den musikalske kassebilen hennes, men fra nå av blir jeg garantert fast passasjer.” - Nettavisen, Tor Hammerø 5/6",
+    "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
+    "when": "Thu 00:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "live"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-10-29T00:00:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Kulturprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
+    "city": "Bergen",
+    "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
+    "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
+    "tags": [
+      "culture",
+      "late-night"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-10-30T00:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",

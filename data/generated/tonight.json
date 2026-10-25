@@ -1,38 +1,34 @@
 [
   {
     "source": "Bergen Kunsthall",
-    "title": "2026 24 Oct KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
+    "title": "2026 25 Oct Perfect Sounds Forever: Frøkedal & Powerfolk-Familien Landmark Concert",
+    "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
     "city": "Bergen",
     "where": "Landmark",
     "venue": "Landmark",
-    "when": "Sat 23:00",
+    "when": "Sun 20:00",
     "tags": [
-      "culture",
-      "late-night",
-      "techno"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-10-24T23:00:00+02:00"
+    "starts_at": "2026-10-25T20:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Club KLUBB KYBERIA: Ellem, Marshion, Kriminelli, Strobelys Sat 24 Oct 23:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3391-2026-10-24/",
+    "title": "Concert Perfect Sounds Forever: Frøkedal & Powerfolk-Familien Sun 25 Oct 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3367-2026-10-25/",
     "city": "Bergen",
     "where": "Landmark",
     "venue": "Landmark",
-    "when": "Sat 23:00",
+    "when": "Sun 20:00",
     "tags": [
-      "culture",
-      "late-night",
-      "techno"
+      "culture"
     ],
     "sources": [
       "Bergen Kunsthall"
     ],
-    "starts_at": "2026-10-24T23:00:00+02:00"
+    "starts_at": "2026-10-25T20:00:00+01:00"
   }
 ]
