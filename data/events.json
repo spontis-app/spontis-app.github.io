@@ -4,8 +4,8 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Mon 10:30 • 10:45 • 11:00 (+86 later)",
     "where": "Bergen Kino",
+    "when": "Tue 10:30 • 10:45 • 11:00 (+84 later)",
     "venue": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,15 +14,15 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-26T10:30:00+01:00"
+    "starts_at": "2026-10-27T10:30:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Playdate: Einmal Immer Wed 28 Oct 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3381-2026-10-28/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "where": "Landmark",
+    "when": "Wed 20:00",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -37,10 +37,10 @@
     "title": "Konferanseprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
     "city": "Bergen",
-    "when": "Thu 00:00",
-    "where": "Kulturhuset i Bergen",
-    "venue": "Kulturhuset i Bergen",
     "description": "Gjennom refleksjon, diskusjon og arbeid sammen ser vi nærmere på hva som skjer med et næringsmiljø når flere tenker litt mindre transaksjonelt og litt mer langsiktig. Når spørsmålet ikke bare er «hva får jeg igjen for dette», men også «hva kan jeg bidra med».",
+    "where": "Kulturhuset i Bergen",
+    "when": "Thu 00:00",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "dj",
@@ -57,10 +57,10 @@
     "title": "Konsertprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
     "city": "Bergen",
-    "when": "Thu 00:00",
-    "where": "Kulturhuset i Bergen",
-    "venue": "Kulturhuset i Bergen",
     "description": "“Dette er allerede unge Symres tredje album. Det tok altså si tid før jeg greide å kaste meg på den musikalske kassebilen hennes, men fra nå av blir jeg garantert fast passasjer.” - Nettavisen, Tor Hammerø 5/6",
+    "where": "Kulturhuset i Bergen",
+    "when": "Thu 00:00",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night",
@@ -76,10 +76,10 @@
     "title": "Kulturprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "when": "Fri 00:00",
-    "where": "Kulturhuset i Bergen",
-    "venue": "Kulturhuset i Bergen",
     "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
+    "where": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -94,8 +94,8 @@
     "title": "Club Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Sat 31 Oct 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
     "city": "Bergen",
-    "when": "Sat 21:00",
     "where": "Landmark",
+    "when": "Sat 21:00",
     "venue": "Landmark",
     "tags": [
       "culture",
@@ -111,8 +111,8 @@
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "where": "Landmark",
+    "when": "Wed 20:00",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -127,8 +127,8 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp Fri 4 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "when": "Fri 20:00",
     "where": "Landmark",
+    "when": "Fri 20:00",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -143,8 +143,8 @@
     "title": "Concert Perfect Sounds Forever: Kanaan Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "when": "Sat 20:30",
     "where": "Landmark",
+    "when": "Sat 20:30",
     "venue": "Landmark",
     "tags": [
       "culture"
