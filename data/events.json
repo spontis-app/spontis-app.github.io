@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "where": "Bergen Kino",
+    "when": "Fri 10:45 • 11:15 • 11:30 (+83 later)",
     "venue": "Bergen Kino",
-    "when": "Thu 09:00 • 10:15 • 10:30 (+86 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,24 +14,71 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-29T09:00:00+01:00"
+    "starts_at": "2026-10-30T10:45:00+01:00"
   },
   {
-    "source": "Kulturhuset i Bergen",
-    "title": "Kulturprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
+    "source": "Bergen Kunsthall",
+    "title": "Club Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Sat 31 Oct 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
     "city": "Bergen",
-    "description": "Med sin skarpe tunge og frekke tilnærming, har hun tatt publikum med storm – for når Ivana slipper skravla løs er ingen trygge og ingen temaer tabu.",
-    "where": "Kulturhuset i Bergen",
-    "venue": "Kulturhuset i Bergen",
-    "when": "Fri 00:00",
+    "where": "Landmark",
+    "when": "Sat 21:00",
+    "venue": "Landmark",
     "tags": [
       "culture",
-      "late-night"
+      "techno"
     ],
     "sources": [
-      "Kulturhuset i Bergen"
+      "Bergen Kunsthall"
     ],
-    "starts_at": "2026-10-30T00:00:00+01:00"
+    "starts_at": "2026-10-31T21:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Wed 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-12-02T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp Fri 4 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Fri 20:00",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-12-04T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Kanaan Sat 5 Dec 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
+    "city": "Bergen",
+    "where": "Landmark",
+    "when": "Sat 20:30",
+    "venue": "Landmark",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-12-05T20:30:00+01:00"
   }
 ]
