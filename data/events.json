@@ -4,8 +4,8 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
+    "when": "Sat 10:30 • 10:45 • 11:00 (+99 later)",
     "where": "Bergen Kino",
-    "when": "Fri 10:45 • 11:15 • 11:30 (+83 later)",
     "venue": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,15 +14,15 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-30T10:45:00+01:00"
+    "starts_at": "2026-10-31T10:30:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
-    "title": "Club Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Sat 31 Oct 21:00, Landmark",
+    "title": "2026 31 Oct Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Landmark Club",
     "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 21:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture",
@@ -35,11 +35,46 @@
   },
   {
     "source": "Bergen Kunsthall",
+    "title": "Club Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Sat 31 Oct 21:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
+    "city": "Bergen",
+    "when": "Sat 21:00",
+    "where": "Landmark",
+    "venue": "Landmark",
+    "tags": [
+      "culture",
+      "techno"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-10-31T21:00:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Kulturprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
+    "city": "Bergen",
+    "when": "Fri 00:00",
+    "where": "Kulturhuset i Bergen",
+    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
+    "venue": "Kulturhuset i Bergen",
+    "tags": [
+      "culture",
+      "late-night"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-11-13T00:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Wed 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -54,8 +89,8 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp Fri 4 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Fri 20:00",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
@@ -70,8 +105,8 @@
     "title": "Concert Perfect Sounds Forever: Kanaan Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "where": "Landmark",
     "when": "Sat 20:30",
+    "where": "Landmark",
     "venue": "Landmark",
     "tags": [
       "culture"
