@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Sat 10:30 • 10:45 • 11:00 (+99 later)",
-    "where": "Bergen Kino",
+    "when": "Sun 10:30 • 10:45 • 11:15 (+96 later)",
     "venue": "Bergen Kino",
+    "where": "Bergen Kino",
     "tags": [
       "cinema",
       "date"
@@ -14,41 +14,7 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-10-31T10:30:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "2026 31 Oct Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Landmark Club",
-    "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
-    "city": "Bergen",
-    "when": "Sat 21:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-31T21:00:00+01:00"
-  },
-  {
-    "source": "Bergen Kunsthall",
-    "title": "Club Darkdome: HALLOWEEN GOTH CLUBBING: Darkdome + DJ Ellem Sat 31 Oct 21:00, Landmark",
-    "url": "https://www.kunsthall.no/en/events/3399-2026-10-31/",
-    "city": "Bergen",
-    "when": "Sat 21:00",
-    "where": "Landmark",
-    "venue": "Landmark",
-    "tags": [
-      "culture",
-      "techno"
-    ],
-    "sources": [
-      "Bergen Kunsthall"
-    ],
-    "starts_at": "2026-10-31T21:00:00+01:00"
+    "starts_at": "2026-11-01T10:30:00+01:00"
   },
   {
     "source": "Kulturhuset i Bergen",
@@ -56,9 +22,9 @@
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
     "when": "Fri 00:00",
+    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
-    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -74,8 +40,8 @@
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
     "when": "Wed 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -90,8 +56,8 @@
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
     "when": "Fri 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -106,8 +72,8 @@
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
     "when": "Sat 20:30",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
