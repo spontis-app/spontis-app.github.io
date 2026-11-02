@@ -1,30 +1,13 @@
 [
   {
-    "source": "Bergen Kino",
-    "title": "Kinovisning",
-    "url": "https://www.bergenkino.no/",
-    "city": "Bergen",
-    "when": "Sun 10:30 • 10:45 • 11:15 (+96 later)",
-    "venue": "Bergen Kino",
-    "where": "Bergen Kino",
-    "tags": [
-      "cinema",
-      "date"
-    ],
-    "sources": [
-      "Bergen Kino"
-    ],
-    "starts_at": "2026-11-01T10:30:00+01:00"
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Kulturprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "when": "Fri 00:00",
     "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
     "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -39,8 +22,8 @@
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "venue": "Landmark",
+    "when": "Wed 20:00",
     "where": "Landmark",
     "tags": [
       "culture"
@@ -55,8 +38,8 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp Fri 4 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "when": "Fri 20:00",
     "venue": "Landmark",
+    "when": "Fri 20:00",
     "where": "Landmark",
     "tags": [
       "culture"
@@ -71,8 +54,8 @@
     "title": "Concert Perfect Sounds Forever: Kanaan Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "when": "Sat 20:30",
     "venue": "Landmark",
+    "when": "Sat 20:30",
     "where": "Landmark",
     "tags": [
       "culture"
