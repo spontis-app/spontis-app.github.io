@@ -4,9 +4,9 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
-    "when": "Tue 10:30 • 10:45 • 12:00 (+66 later)",
     "venue": "Bergen Kino",
     "where": "Bergen Kino",
+    "when": "Wed 10:45 • 12:00 • 12:15 (+63 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,6 +14,6 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-11-03T10:30:00+01:00"
+    "starts_at": "2026-11-04T10:45:00+01:00"
   }
 ]
