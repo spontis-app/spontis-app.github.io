@@ -1,13 +1,30 @@
 [
   {
+    "source": "Bergen Kino",
+    "title": "Kinovisning",
+    "url": "https://www.bergenkino.no/",
+    "city": "Bergen",
+    "venue": "Bergen Kino",
+    "where": "Bergen Kino",
+    "when": "Sat 10:00 • 10:15 • 10:30 (+101 later)",
+    "tags": [
+      "cinema",
+      "date"
+    ],
+    "sources": [
+      "Bergen Kino"
+    ],
+    "starts_at": "2026-11-07T10:00:00+01:00"
+  },
+  {
     "source": "Kulturhuset i Bergen",
     "title": "Kulturprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "when": "Fri 00:00",
     "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
     "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
+    "where": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
     "tags": [
       "culture",
       "late-night"
@@ -16,5 +33,53 @@
       "Kulturhuset i Bergen"
     ],
     "starts_at": "2026-11-13T00:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Wed 20:00",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-12-02T20:00:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp + Hekt Fri 4 Dec 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-12-04T20:30:00+01:00"
+  },
+  {
+    "source": "Bergen Kunsthall",
+    "title": "Concert Perfect Sounds Forever: Kanaan + Frocket Sat 5 Dec 20:30, Landmark",
+    "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
+    "city": "Bergen",
+    "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Sat 20:30",
+    "tags": [
+      "culture"
+    ],
+    "sources": [
+      "Bergen Kunsthall"
+    ],
+    "starts_at": "2026-12-05T20:30:00+01:00"
   }
 ]
