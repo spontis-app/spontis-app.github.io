@@ -5,8 +5,8 @@
     "url": "https://www.bergenkino.no/",
     "city": "Bergen",
     "venue": "Bergen Kino",
+    "when": "Sun 10:30 • 10:45 • 11:00 (+93 later)",
     "where": "Bergen Kino",
-    "when": "Sat 10:00 • 10:15 • 10:30 (+101 later)",
     "tags": [
       "cinema",
       "date"
@@ -14,17 +14,56 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-11-07T10:00:00+01:00"
+    "starts_at": "2026-11-08T10:30:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Konferanseprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
+    "city": "Bergen",
+    "description": "Vill Vill Vest er en musikk- og bransjefestival som arrangeres i Bergen hver høst. Festivalen består av en konferanse og en musikkfestival og har siden første festivalen i 2016 etablert seg som en viktig musikkfestival og arena for nyetablerte artister.",
+    "venue": "Kulturhuset i Bergen",
+    "when": "Thu 00:00",
+    "where": "Kulturhuset i Bergen",
+    "tags": [
+      "culture",
+      "dj",
+      "late-night",
+      "live"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-11-12T00:00:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Konsertprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
+    "city": "Bergen",
+    "description": "Etter et hesblesende fjorår med over 60 konserter land og strand rundt, fra de største festivalene til de minste klubbene, kommer bandet med ny musikk, ny turné og ny konsert på Kulturhuset i Bergen 12. november.",
+    "venue": "Kulturhuset i Bergen",
+    "when": "Thu 00:00",
+    "where": "Kulturhuset i Bergen",
+    "tags": [
+      "culture",
+      "late-night",
+      "live"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-11-12T00:00:00+01:00"
   },
   {
     "source": "Kulturhuset i Bergen",
     "title": "Kulturprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
-    "where": "Kulturhuset i Bergen",
+    "venue": "Kulturhuset i Bergen",
     "when": "Fri 00:00",
+    "where": "Kulturhuset i Bergen",
     "tags": [
       "culture",
       "late-night"
@@ -40,8 +79,8 @@
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
     "venue": "Landmark",
-    "where": "Landmark",
     "when": "Wed 20:00",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -56,8 +95,8 @@
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
     "venue": "Landmark",
-    "where": "Landmark",
     "when": "Fri 20:30",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
@@ -72,8 +111,8 @@
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
     "venue": "Landmark",
-    "where": "Landmark",
     "when": "Sat 20:30",
+    "where": "Landmark",
     "tags": [
       "culture"
     ],
