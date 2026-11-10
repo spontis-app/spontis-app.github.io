@@ -1,13 +1,30 @@
 [
   {
+    "source": "Bergen Kino",
+    "title": "Kinovisning",
+    "url": "https://www.bergenkino.no/program",
+    "city": "Bergen",
+    "venue": "Bergen Kino",
+    "where": "Bergen Kino",
+    "when": "Tue 10:30 • 11:00 • 11:15 (+74 later)",
+    "tags": [
+      "cinema",
+      "date"
+    ],
+    "sources": [
+      "Bergen Kino"
+    ],
+    "starts_at": "2026-11-10T10:30:00+01:00"
+  },
+  {
     "source": "Kulturhuset i Bergen",
     "title": "Konferanseprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
     "city": "Bergen",
-    "when": "Wed 00:00",
-    "venue": "Kulturhuset i Bergen",
     "description": "Vill Vill Vest er en musikk- og bransjefestival som arrangeres i Bergen hver høst. Festivalen består av en konferanse og en musikkfestival og har siden første festivalen i 2016 etablert seg som en viktig musikkfestival og arena for nyetablerte artister.",
+    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "when": "Wed 00:00",
     "tags": [
       "culture",
       "dj",
@@ -24,10 +41,10 @@
     "title": "Konsertprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
     "city": "Bergen",
-    "when": "Wed 00:00",
-    "venue": "Kulturhuset i Bergen",
     "description": "Konsert for å feire 20 år med forsking, utdanning og formidling av musikkterapi ved Griegakademiet. På scena denne kvelden står artistar, studentar og musikkterapeutar frå musikkterapimiljøet i Bergen.",
+    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "when": "Wed 00:00",
     "tags": [
       "culture",
       "late-night",
@@ -43,10 +60,10 @@
     "title": "Kulturprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "when": "Fri 00:00",
-    "venue": "Kulturhuset i Bergen",
     "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
+    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
+    "when": "Fri 00:00",
     "tags": [
       "culture",
       "late-night"
@@ -61,9 +78,9 @@
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Wed 20:00",
     "tags": [
       "culture"
     ],
@@ -77,9 +94,9 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp + Hekt Fri 4 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "when": "Fri 20:30",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Fri 20:30",
     "tags": [
       "culture"
     ],
@@ -93,9 +110,9 @@
     "title": "Concert Perfect Sounds Forever: Kanaan + Frocket Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "when": "Sat 20:30",
     "venue": "Landmark",
     "where": "Landmark",
+    "when": "Sat 20:30",
     "tags": [
       "culture"
     ],

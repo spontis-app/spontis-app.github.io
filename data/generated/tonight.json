@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Konferanseprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
+    "city": "Bergen",
+    "description": "Vill Vill Vest er en musikk- og bransjefestival som arrangeres i Bergen hver høst. Festivalen består av en konferanse og en musikkfestival og har siden første festivalen i 2016 etablert seg som en viktig musikkfestival og arena for nyetablerte artister.",
+    "venue": "Kulturhuset i Bergen",
+    "where": "Kulturhuset i Bergen",
+    "when": "Wed 00:00",
+    "tags": [
+      "culture",
+      "dj",
+      "late-night",
+      "live"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-11-11T00:00:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Konsertprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
+    "city": "Bergen",
+    "description": "Konsert for å feire 20 år med forsking, utdanning og formidling av musikkterapi ved Griegakademiet. På scena denne kvelden står artistar, studentar og musikkterapeutar frå musikkterapimiljøet i Bergen.",
+    "venue": "Kulturhuset i Bergen",
+    "where": "Kulturhuset i Bergen",
+    "when": "Wed 00:00",
+    "tags": [
+      "culture",
+      "late-night",
+      "live"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-11-11T00:00:00+01:00"
+  }
+]
