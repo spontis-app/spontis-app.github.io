@@ -4,8 +4,8 @@
     "title": "Kinovisning",
     "url": "https://www.bergenkino.no/program",
     "city": "Bergen",
-    "when": "Fri 10:20 • 10:30 • 10:45 (+81 later)",
     "venue": "Bergen Kino",
+    "when": "Sat 10:30 • 10:45 • 11:00 (+86 later)",
     "where": "Bergen Kino",
     "tags": [
       "cinema",
@@ -14,15 +14,33 @@
     "sources": [
       "Bergen Kino"
     ],
-    "starts_at": "2026-11-13T10:20:00+01:00"
+    "starts_at": "2026-11-14T10:30:00+01:00"
+  },
+  {
+    "source": "Kulturhuset i Bergen",
+    "title": "Kulturprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
+    "city": "Bergen",
+    "venue": "Kulturhuset i Bergen",
+    "when": "Mon 00:00",
+    "where": "Kulturhuset i Bergen",
+    "description": "I en trommesirkel kommer vi sammen for å spille og ha det gøy! Vi følger ingen spesiell stilart eller tradisjon; - og ingen risikerer å spille feil.",
+    "tags": [
+      "culture",
+      "late-night"
+    ],
+    "sources": [
+      "Kulturhuset i Bergen"
+    ],
+    "starts_at": "2026-11-16T00:00:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "when": "Wed 20:00",
     "venue": "Landmark",
+    "when": "Wed 20:00",
     "where": "Landmark",
     "tags": [
       "culture"
@@ -37,8 +55,8 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp + Hekt Fri 4 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "when": "Fri 20:30",
     "venue": "Landmark",
+    "when": "Fri 20:30",
     "where": "Landmark",
     "tags": [
       "culture"
@@ -53,8 +71,8 @@
     "title": "Concert Perfect Sounds Forever: Kanaan + Frocket Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "when": "Sat 20:30",
     "venue": "Landmark",
+    "when": "Sat 20:30",
     "where": "Landmark",
     "tags": [
       "culture"
