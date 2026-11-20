@@ -1,41 +1,20 @@
 [
   {
     "source": "Kulturhuset i Bergen",
-    "title": "Konferanseprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
+    "title": "Kulturprogram",
+    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "when": "Fri 00:00",
-    "venue": "Kulturhuset i Bergen",
+    "description": "Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
+    "when": "Sat 00:00",
     "where": "Kulturhuset i Bergen",
-    "description": "Vill Vill Vest er en musikk- og bransjefestival som arrangeres i Bergen hver høst. Festivalen består av en konferanse og en musikkfestival og har siden første festivalen i 2016 etablert seg som en viktig musikkfestival og arena for nyetablerte artister.",
+    "venue": "Kulturhuset i Bergen",
     "tags": [
       "culture",
-      "dj",
-      "late-night",
-      "live"
+      "late-night"
     ],
     "sources": [
       "Kulturhuset i Bergen"
     ],
-    "starts_at": "2026-11-20T00:00:00+01:00"
-  },
-  {
-    "source": "Kulturhuset i Bergen",
-    "title": "Konsertprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
-    "city": "Bergen",
-    "when": "Fri 00:00",
-    "venue": "Kulturhuset i Bergen",
-    "where": "Kulturhuset i Bergen",
-    "description": "BERGEN! You asked, we deliver. After the wonderful sold out edition we're back at the new place Kulturhuset with even more room to scream and dance together.",
-    "tags": [
-      "culture",
-      "late-night",
-      "live"
-    ],
-    "sources": [
-      "Kulturhuset i Bergen"
-    ],
-    "starts_at": "2026-11-20T00:00:00+01:00"
+    "starts_at": "2026-11-21T00:00:00+01:00"
   }
 ]
