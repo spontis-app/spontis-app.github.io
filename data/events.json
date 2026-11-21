@@ -1,30 +1,29 @@
 [
   {
-    "source": "Kulturhuset i Bergen",
-    "title": "Kulturprogram",
-    "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
+    "source": "Bergen Kino",
+    "title": "Kinovisning",
+    "url": "https://www.bergenkino.no/program",
     "city": "Bergen",
-    "description": "Yogaklassene er åpne for alle nivå. Kom som du er, bare husk på å ta med deg en yogamatte.",
-    "when": "Sat 00:00",
-    "where": "Kulturhuset i Bergen",
-    "venue": "Kulturhuset i Bergen",
+    "venue": "Bergen Kino",
+    "where": "Bergen Kino",
+    "when": "Sat 10:30 • 10:45 • 10:50 (+76 later)",
     "tags": [
-      "culture",
-      "late-night"
+      "cinema",
+      "date"
     ],
     "sources": [
-      "Kulturhuset i Bergen"
+      "Bergen Kino"
     ],
-    "starts_at": "2026-11-21T00:00:00+01:00"
+    "starts_at": "2026-11-21T10:30:00+01:00"
   },
   {
     "source": "Bergen Kunsthall",
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "when": "Wed 20:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Wed 20:00",
     "tags": [
       "culture"
     ],
@@ -38,9 +37,9 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp + Hekt Fri 4 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "when": "Fri 20:30",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 20:30",
     "tags": [
       "culture"
     ],
@@ -54,9 +53,9 @@
     "title": "Concert Perfect Sounds Forever: Kanaan + Frocket Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "when": "Sat 20:30",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Sat 20:30",
     "tags": [
       "culture"
     ],
@@ -70,9 +69,9 @@
     "title": "Concert KØBER Fri 26 Feb 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3419-2027-02-26/",
     "city": "Bergen",
-    "when": "Fri 21:00",
-    "where": "Landmark",
     "venue": "Landmark",
+    "where": "Landmark",
+    "when": "Fri 21:00",
     "tags": [
       "culture"
     ],
