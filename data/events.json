@@ -1,30 +1,13 @@
 [
   {
-    "source": "Bergen Kino",
-    "title": "Kinovisning",
-    "url": "https://www.bergenkino.no/program",
-    "city": "Bergen",
-    "venue": "Bergen Kino",
-    "where": "Bergen Kino",
-    "when": "Sun 10:40 • 10:45 • 10:50 (+78 later)",
-    "tags": [
-      "cinema",
-      "date"
-    ],
-    "sources": [
-      "Bergen Kino"
-    ],
-    "starts_at": "2026-11-22T10:40:00+01:00"
-  },
-  {
     "source": "Kulturhuset i Bergen",
     "title": "Konferanseprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
     "city": "Bergen",
-    "description": "Vill Vill Vest er en musikk- og bransjefestival som arrangeres i Bergen hver høst. Festivalen består av en konferanse og en musikkfestival og har siden første festivalen i 2016 etablert seg som en viktig musikkfestival og arena for nyetablerte artister.",
     "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "when": "Fri 00:00",
+    "description": "Vill Vill Vest er en musikk- og bransjefestival som arrangeres i Bergen hver høst. Festivalen består av en konferanse og en musikkfestival og har siden første festivalen i 2016 etablert seg som en viktig musikkfestival og arena for nyetablerte artister.",
     "tags": [
       "culture",
       "dj",
@@ -41,10 +24,10 @@
     "title": "Kulturprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venne eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
     "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "when": "Fri 00:00",
+    "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venn eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
     "tags": [
       "culture",
       "late-night"
@@ -59,10 +42,10 @@
     "title": "Konsertprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
     "city": "Bergen",
-    "description": "Trioen leverer musikk i skjæringspunktet mellom jazz og klassisk; rytmedrevet og intrikat, i særs sjelfull og melodisk innpakning. Gled deg til samspill i verdensklasse!",
     "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "when": "Sat 00:00",
+    "description": "Trioen leverer musikk i skjæringspunktet mellom jazz og klassisk; rytmedrevet og intrikat, i særs sjelfull og melodisk innpakning. Gled deg til samspill i verdensklasse!",
     "tags": [
       "culture",
       "late-night",
