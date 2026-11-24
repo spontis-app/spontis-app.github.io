@@ -4,9 +4,9 @@
     "title": "Konferanseprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konferanseprogram",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "when": "Fri 00:00",
+    "venue": "Kulturhuset i Bergen",
     "description": "Vill Vill Vest er en musikk- og bransjefestival som arrangeres i Bergen hver høst. Festivalen består av en konferanse og en musikkfestival og har siden første festivalen i 2016 etablert seg som en viktig musikkfestival og arena for nyetablerte artister.",
     "tags": [
       "culture",
@@ -24,9 +24,9 @@
     "title": "Kulturprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Kulturprogram",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "when": "Fri 00:00",
+    "venue": "Kulturhuset i Bergen",
     "description": "Vårt faste konsept hvor du får live bakgrunns-jazzmusikk med profesjonelle musikere som studerer på Grieg Akademiet. Ta med deg en kollega, en god venn eller noen du er ekstra glad i, og nyt deilig live jazz med noe godt attåt!",
     "tags": [
       "culture",
@@ -42,9 +42,9 @@
     "title": "Konsertprogram",
     "url": "https://www.kulturhusetibergen.no/program?category=Konsertprogram",
     "city": "Bergen",
-    "venue": "Kulturhuset i Bergen",
     "where": "Kulturhuset i Bergen",
     "when": "Sat 00:00",
+    "venue": "Kulturhuset i Bergen",
     "description": "Trioen leverer musikk i skjæringspunktet mellom jazz og klassisk; rytmedrevet og intrikat, i særs sjelfull og melodisk innpakning. Gled deg til samspill i verdensklasse!",
     "tags": [
       "culture",
@@ -61,9 +61,9 @@
     "title": "Concert Playdate: Thea Grant Solo // Uniah Wed 2 Dec 20:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3383-2026-12-02/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
     "when": "Wed 20:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -77,9 +77,9 @@
     "title": "Concert Perfect Sounds Forever: Vepsestikk – albumslipp + Hekt Fri 4 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3384-2026-12-04/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
     "when": "Fri 20:30",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -93,9 +93,9 @@
     "title": "Concert Perfect Sounds Forever: Kanaan + Frocket Sat 5 Dec 20:30, Landmark",
     "url": "https://www.kunsthall.no/en/events/3365-2026-12-05/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
     "when": "Sat 20:30",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
@@ -109,9 +109,9 @@
     "title": "Concert KØBER Fri 26 Feb 21:00, Landmark",
     "url": "https://www.kunsthall.no/en/events/3419-2027-02-26/",
     "city": "Bergen",
-    "venue": "Landmark",
     "where": "Landmark",
     "when": "Fri 21:00",
+    "venue": "Landmark",
     "tags": [
       "culture"
     ],
